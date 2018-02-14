@@ -1,0 +1,23 @@
+# Git metadata
+.git
+.gitignore
+
+# Docker configuration files
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Node stuff
+node_modules/
+
+# Nuxt stuff
+dist/
+.nuxt/
+
+# Documentation
+README.md
+LICENSE
+.editorconfig
+
+# Environment variables
+.env
