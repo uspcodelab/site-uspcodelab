@@ -1,28 +1,34 @@
 {
-  "name": "USPCodeLab",
-  "version": "1.0.0",
-  "description": "Website for the extension group USPCodeLab",
-  "author": "Renato Cordeiro Ferreira",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
-  },
-  "dependencies": {
-    "nuxt": "^1.0.0"
-  },
-  "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "cross-env": "^5.0.1",
-    "eslint": "^4.15.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-prettier": "^2.6.0",
-    "eslint-plugin-vue": "^4.0.0",
-    "prettier": "^1.10.2"
-  }
+    "name": "USPCodeLab",
+    "version": "1.0.0",
+    "description": "Website for the extension group USPCodeLab",
+    "author": "Renato Cordeiro Ferreira",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate",
+        "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+        "precommit": "npm run lint"
+    },
+    "dependencies": {
+        "@nuxtjs/font-awesome": "^1.0.0",
+        "dev": "^0.1.3",
+        "koa": "^1.0.0",
+        "nuxt": "^1.0.0"
+    },
+    "devDependencies": {
+        "babel-eslint": "^8.2.1",
+        "cross-env": "^5.0.1",
+        "eslint": "^4.15.0",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-loader": "^1.7.1",
+        "eslint-plugin-prettier": "^2.6.0",
+        "eslint-plugin-vue": "^4.0.0",
+        "prettier": "^1.10.2",
+        "node-sass": "^4.7.2",
+        "nodemon": "^1.11.0",
+        "sass-loader": "^6.0.6"
+    }
 }
