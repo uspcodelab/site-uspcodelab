@@ -1,6 +1,6 @@
 .navbar {
-  color: $main-color;
-  background: $secondary-color;
+  color: $secondary-color;
+  background: $main-color;
 
   font-size: 1.3em;
 
@@ -37,7 +37,7 @@
   height: 100%;
 
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, $secondary-color 50%, $main-color 50%);
+  background-image: linear-gradient(to bottom, $main-color 50%, $secondary-color 50%);
   transition: background-position 0.4s;
 
   display: flex;
@@ -47,6 +47,6 @@
 
 .nav-button:hover {
   cursor: pointer;
-  color: $secondary-color;
+  color: $main-color;
   background-position: 0 -99%;
 }

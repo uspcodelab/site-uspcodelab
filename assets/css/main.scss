@@ -1,18 +1,12 @@
 @import "variables";
 @import "navbar";
 @import "info";
+@import "banner";
 
 .container {
   display: flex;
   flex-flow: column nowrap;
   overflow: hidden;
-}
-
-.banner {
-  background-image: url(../../images/milkyway.jpg);
-
-  min-width: 100vw;
-  min-height: 65vh;
 }
 
 .photo-menu {
