@@ -1,52 +1,56 @@
 .navbar {
-  color: $secondary-color;
-  background: $main-color;
+	color: $secondary-color;
 
-  font-size: 1.3em;
+	font-size: 1.3em;
 
-  min-width: 100vw;
-  height: 6vh;
+	min-width: 100vw;
+	height: 6vh;
 
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
 }
 
 .nav-logo {
-  flex: 1 1 20%;
-  padding: 10em;
+	flex: 1 1 20%;
+	padding: 10em;
 }
 
 .nav-menu {
-  height: 100%;
+	height: 100%;
 
-  margin-right: 1.2em;
+	margin-right: 1.2em;
 
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-  flex: 1 1 0;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	flex: 1 1 0;
 
 }
 
 .nav-button {
-  padding: 0 1em;
+	padding: 0 1em;
 
-  height: 100%;
+	height: 100%;
 
-  background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, $main-color 50%, $secondary-color 50%);
-  transition: background-position 0.4s;
+	background-size: 100% 200%;
+	background-image: linear-gradient(to bottom, transparent 50%, $secondary-color 50%);
+	transition: background-position 0.4s;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .nav-button:hover {
-  cursor: pointer;
-  color: $main-color;
-  background-position: 0 -99%;
+	cursor: pointer;
+	color: $main-color;
+	background-position: 0 -99%;
 }
