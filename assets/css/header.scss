@@ -1,7 +1,14 @@
 .header {
 	position: relative;
-	height: 65vh;
+  height: 70vh;
 	overflow: hidden;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 10em;
 }
 
 .header-background {
@@ -17,25 +24,22 @@
 	transform-origin: top left;
 }
 
-// .header-background:after {
-	// content: "";
-	// height: 100px;
-	// bottom: 0px;
-	// left: 0px;
-	// right: 0px;
-	// position: absolute;
-	// transform-origin: 0px center 0px;
-	// background: rgba(12, 12, 12, 0.05);
-// }
-
 .title {
-	margin: 0;
-	padding: 100px 0;
-	font: 44px "Arial";
-	text-align: center;
-}
-
-.header .title {
 	position: relative;
 	color: white;
+	margin: 0;
+	font: 44px "Arial";
+  padding-left: 5em;
+}
+
+.logo {
+  position: relative;
+  align-self: flex-end;
+  border-radius: 100%;
+  background-image: url("../../images/logo-black.png");
+  width: 500px;
+  height: 500px;
+  background-size: 500px 500px;
+  overflow: auto;
+  margin-right: 10em;
 }
