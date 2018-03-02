@@ -8,48 +8,37 @@
           <div class="nav-text">{{ btn.text }}</div>
           <div class="nav-line"/>
         </div>
-        </div>
+      </div>
     </nav>
 
     <header class="header">
       <div class="header-background"/>
-        <h1 class="title">Header Content</h1>
-        <div class="logo"/>
+      <h1 class="title">USPCodeLab</h1>
+      <div class="logo"/>
     </header>
 
 
-    <div class="info-section">
-      <div class="info-title">
-        O que oferecemos
-      </div>
+    <main>
+      <div class="info-section" id="dev_journey">
+        <div class="info-title">
+          <h3>dev.journey()</h3>
+        </div>
 
-      <div v-for="info in infos" :key="info.KEY" class="info">
-        <div class="info-text">
-          {{ info.text }}
-        </div>
-      </div>
-
-      <div class="photo-menu">
-        <div class="photo-menu-entry">
-          <img src="../images/blue-glass.jpg">
-        </div>
-        <div class="photo-menu-entry">
-          <img src="../images/green-glass.jpg">
-        </div>
-        <div class="photo-menu-entry">
-          <img src="../images/blue-glass.jpg">
-        </div>
-        <div class="photo-menu-entry">
-          <img src="../images/green-glass.jpg">
+        <div v-for="obj in dev_section" :key="obj.KEY" class="info">
+          <div class="info-text">
+            {{ obj.text }}
+          </div>
         </div>
       </div>
+    </main>
 
-      <footer>
-        <div class="footer-info">a</div>
-        <div class="footer-copyright">b</div>
-      </footer>
+    <footer class="footer">
+      <div class="footer-text">a</div>
+      <div class="footer-bar"/>
+      <div class="footer-btn"/>
+    </footer>
 
-    </div>
+  </div>
 </template>
 
 
@@ -65,14 +54,27 @@ export default {
         { KEY: 5, text: "CodeSchools" },
         { KEY: 6, text: "Contato" }
       ],
-      infos: [
-        { KEY: 1,
-          text: "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"},
-        { KEY: 2,
-          text: "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"},
-        { KEY: 3,
-          text: "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"},
-
+      dev_section: [
+        {
+          KEY: 1,
+          text:
+            "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"
+        },
+        {
+          KEY: 2,
+          text:
+            "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"
+        },
+        {
+          KEY: 3,
+          text:
+            "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"
+        },
+        {
+          KEY: 4,
+          text:
+            "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"
+        }
       ]
     };
   }

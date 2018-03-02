@@ -1,0 +1,21 @@
+.footer {
+  width: 100vw;
+  height: 30vh;
+
+  background: #000;
+
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-bar {
+  content: '';
+  display: block;
+
+  width: 2px;
+  height: 90%;
+  background: #FFF;
+}
