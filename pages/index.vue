@@ -30,6 +30,31 @@
           </div>
         </div>
       </div>
+
+      <div class="info-section" id="hackathonusp">
+        <div class="info-title">
+          <h3>HackathonUSP</h3>
+        </div>
+
+        <div class="info" v-for="obj in hackathon" :key="obj.KEY" >
+          <div class="info-text">
+            {{ obj.text }}
+          </div>
+        </div>
+      </div>
+
+      <div class="info-section" id="hackathonusp">
+        <div class="info-title">
+          <h3>Code Schools</h3>
+        </div>
+
+        <div class="info" v-for="obj in hackathon" :key="obj.KEY" >
+          <div class="info-text">
+            {{ obj.text }}
+          </div>
+        </div>
+      </div>
+
     </main>
 
     <footer class="footer">
@@ -55,6 +80,50 @@ export default {
         { KEY: 6, text: "Contato" }
       ],
       dev_section: [
+        {
+          KEY: 1,
+          text:
+            "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"
+        },
+        {
+          KEY: 2,
+          text:
+            "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"
+        },
+        {
+          KEY: 3,
+          text:
+            "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"
+        },
+        {
+          KEY: 4,
+          text:
+            "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"
+        }
+      ],
+      hackathon: [
+        {
+          KEY: 1,
+          text:
+            "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"
+        },
+        {
+          KEY: 2,
+          text:
+            "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"
+        },
+        {
+          KEY: 3,
+          text:
+            "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"
+        },
+        {
+          KEY: 4,
+          text:
+            "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"
+        }
+      ],
+      code_schools: [
         {
           KEY: 1,
           text:
