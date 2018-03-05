@@ -1,15 +1,7 @@
 <template>
   <div class="container">
-
-    <nav class="navbar">
-      <div class="nav-logo">USPCodeLab</div>
-      <div class="nav-menu">
-        <div v-for="btn in nav_buttons" :key="btn.KEY" class="nav-button">
-          <div class="nav-text">{{ btn.text }}</div>
-          <div class="nav-line"/>
-        </div>
-      </div>
-    </nav>
+    
+    <site-nav-bar/>
 
     <header class="header">
       <div class="header-background"/>
@@ -57,28 +49,22 @@
 
     </main>
 
-    <footer class="footer">
-      <div class="footer-text">a</div>
-      <div class="footer-bar"/>
-      <div class="footer-btn"/>
-    </footer>
-
+    <site-footer/>
   </div>
 </template>
 
 
 <script>
+import navBar from "../components/navbar.vue";
+import siteFooter from "../components/footer.vue";
+
 export default {
+  components: {
+    siteNavBar: navBar,
+    siteFooter: siteFooter
+  },
   data: () => {
     return {
-      nav_buttons: [
-        { KEY: 1, text: "Home" },
-        { KEY: 2, text: "Sobre" },
-        { KEY: 3, text: "HackathonUSP" },
-        { KEY: 4, text: "dev.journey" },
-        { KEY: 5, text: "CodeSchools" },
-        { KEY: 6, text: "Contato" }
-      ],
       dev_section: [
         {
           KEY: 1,
