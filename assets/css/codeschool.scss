@@ -1,0 +1,23 @@
+.codeschools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+
+    .codeschools-info {
+        width: 45%;
+        font-size: 1.3em;
+        text-align: justify;
+        padding-left: 20px;
+        flex-basis: flex-start;
+    }
+}
+
+.codeschools-photos {
+    width: 40%;
+    height: 450px;
+    background-color: #574C4C;
+    flex-basis: flex-end;
+}
+
