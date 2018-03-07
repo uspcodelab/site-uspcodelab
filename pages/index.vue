@@ -24,19 +24,13 @@
       </div>
 
       <div class="hackathon-usp">
-        <div class="section-title">
-          <h3>HackathonUSP</h3>
-        </div>
         <div class="hackathon-usp-info">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam delectus aut accusamus hic architecto sapiente tempore deserunt eos, veniam incidunt, aliquam temporibus error, odit laudantium laboriosam quia dignissimos ab ullam.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tenetur commodi, reiciendis explicabo laudantium necessitatibus expedita ipsa in, eum sequi voluptas architecto placeat cupiditate, saepe omnis facere dignissimos provident minus.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, sunt impedit ab maiores, animi qui ut dolorum quis optio cumque iusto magni fuga tempore similique. Maiores id expedita perferendis repudiandae?
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi totam doloribus mollitia rem eos facere, commodi animi! Quae eveniet ad, omnis suscipit doloribus quidem iusto, quod eligendi eaque adipisci aliquam?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure officia suscipit blanditiis culpa alias vel est, eum dolor, eaque, dicta debitis aspernatur aliquid sit exercitationem. Commodi possimus eveniet magnam modi?
+          <div class="hackathon-usp-title">
+            <h3>HackathonUSP</h3>
+          </div>
+          O HackathonUSP é o nosso maior evento, um hackathon focado para alunos da USP e que visa melhorar algum aspecto da universidade. Geralmente são realizadas duas edições por ano e o foco é em alunos que nunca participaram de um hackathon.
         </div>
-        <div class="hackathon-logo">
-          Logo placeholder
-        </div>
+        <div class="hackathon-logo"/>
       </div>
 
       <div class="codeschools">
@@ -44,16 +38,10 @@
           <h3>Code Schoools</h3>
         </div>
 
-        <div class="codeschools-photos">
-          Photo gallery placeholder
-        </div>
+        <div class="codeschools-photos"/>
 
         <div class="codeschools-info">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam delectus aut accusamus hic architecto sapiente tempore deserunt eos, veniam incidunt, aliquam temporibus error, odit laudantium laboriosam quia dignissimos ab ullam.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tenetur commodi, reiciendis explicabo laudantium necessitatibus expedita ipsa in, eum sequi voluptas architecto placeat cupiditate, saepe omnis facere dignissimos provident minus.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, sunt impedit ab maiores, animi qui ut dolorum quis optio cumque iusto magni fuga tempore similique. Maiores id expedita perferendis repudiandae?
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi totam doloribus mollitia rem eos facere, commodi animi! Quae eveniet ad, omnis suscipit doloribus quidem iusto, quod eligendi eaque adipisci aliquam?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure officia suscipit blanditiis culpa alias vel est, eum dolor, eaque, dicta debitis aspernatur aliquid sit exercitationem. Commodi possimus eveniet magnam modi?
+          Nossas Code Schools são escolas que acontecem no período de férias escolares,  num período de normalmente uma semana de trabalho intenso. Nelas aplicamos todo o conhecimento adquirido durante o semestre em um grande projeto em grupo, geralmente pertinente à vida universitária.
         </div>
       </div>
 
