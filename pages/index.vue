@@ -6,12 +6,12 @@
     <header class="header">
       <div class="header-background"/>
       <h1 class="title">USPCodeLab</h1>
-      <div class="logo"/>
+      <img class="ucl-logo" src="~/assets/UCL-Logo.svg">
     </header>
 
 
     <main>
-      <div class="info-section" id="dev_journey">
+      <section class="info-section" id="dev_journey">
         <div class="info-title">
           <h3>dev.journey()</h3>
         </div>
@@ -21,21 +21,21 @@
             {{ obj.text }}
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="hackathon-usp">
+      <section class="hackathon-usp">
         <div class="hackathon-usp-info">
           <div class="hackathon-usp-title">
             <h3>HackathonUSP</h3>
           </div>
           O HackathonUSP é o nosso maior evento, um hackathon focado para alunos da USP e que visa melhorar algum aspecto da universidade. Geralmente são realizadas duas edições por ano e o foco é em alunos que nunca participaram de um hackathon.
         </div>
-        <div class="hackathon-logo"/>
-      </div>
+        <img src="~/assets/logo-hackathonUSP.png">
+      </section>
 
-      <div class="codeschools">
+      <section class="codeschools">
         <div class="section-title">
-          <h3>Code Schoools</h3>
+          <h3>Code Schools</h3>
         </div>
 
         <div class="codeschools-photos"/>
@@ -43,7 +43,7 @@
         <div class="codeschools-info">
           Nossas Code Schools são escolas que acontecem no período de férias escolares,  num período de normalmente uma semana de trabalho intenso. Nelas aplicamos todo o conhecimento adquirido durante o semestre em um grande projeto em grupo, geralmente pertinente à vida universitária.
         </div>
-      </div>
+      </section>
 
     </main>
 
