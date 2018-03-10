@@ -3,7 +3,7 @@
     <div class="nav-logo">USPCodeLab</div>
     <div class="nav-menu">
       <div v-for="btn in nav_buttons" :key="btn.KEY" class="nav-button">
-        <div class="nav-text">{{ btn.text }}</div>
+        <a class="nav-text" :href="btn.section">{{ btn.text }}</a>
         <div class="nav-line"/>
       </div>
     </div>
@@ -15,12 +15,12 @@ export default {
   data: function() {
     return {
       nav_buttons: [
-        { KEY: 1, text: "Home" },
-        { KEY: 2, text: "Sobre" },
-        { KEY: 3, text: "HackathonUSP" },
-        { KEY: 4, text: "dev.journey" },
-        { KEY: 5, text: "CodeSchools" },
-        { KEY: 6, text: "Contato" }
+        // { KEY: 1, text: "Home", section: "#home" },
+        { KEY: 2, text: "Sobre", section: "#about" },
+        { KEY: 3, text: "HackathonUSP", section: "#HackathonUSP" },
+        { KEY: 4, text: "dev.journey", section: "#dev_journey" },
+        { KEY: 5, text: "CodeSchools", section: "#CodeSchools" },
+        { KEY: 6, text: "Contato", section: "#footer" }
       ]
     };
   }

@@ -5,12 +5,33 @@
 
     <header class="header">
       <div class="header-background"/>
-      <h1 class="title">USPCodeLab</h1>
-      <img class="ucl-logo" src="~/assets/UCL-Logo.svg">
+      <!-- <h1 class="title">USPCodeLab</h1> -->
+      <img src="~/assets/UCL-Logo-Text.png" 
+           style="z-index: 9; background-color: #ffffff; border-radius: 15px">
     </header>
 
-
     <main>
+
+      <section>
+        <div class="about" id="about">
+          <div class="section-title">
+            <h3>Quem somos?</h3>
+          </div>
+          O USPCodeLab (UCL) é um grupo de extensão universitária fundado por alunos de Ciência da Computação do Instituto de Matemática e Estatística (IME) e que atualmente conta com participantes de outras unidades da USP. O grupo tem por objetivo criar um espaço colaborativo para o desenvolvimento de tecnologia na universidade. Para isso, atua em duas frentes: uma voltada para alunos de cursos de tecnologia (Ciência da Computação, Engenharia da Computação, Sistemas da Informação, etc.), com foco em ajudá-los a se tornarem engenheiros de software capazes de utilizar as melhores ferramentas e técnicas de desenvolvimento disponíveis; e outra para o público geral interessado, para difundir o uso de tecnologia para criação de soluções em suas respectivas áreas.
+        </div>
+        <img src="~/assets/UCL-Logo.svg" class="ucl-logo">
+      </section>
+
+      <section id="HackathonUSP">
+        <div class="hackathon-usp-info">
+          <div class="section-title">
+            <h3>HackathonUSP</h3>
+          </div>
+          O HackathonUSP é o nosso maior evento. De âmbito USPiano, feito em parceira com a univerdade e focado em quem nunca participou de um hackathon!
+        </div>
+        <img src="~/assets/logo-hackathonUSP.png">
+      </section>
+
       <section class="info-section" id="dev_journey">
         <div class="info-title">
           <h3>dev.journey()</h3>
@@ -23,31 +44,19 @@
         </div>
       </section>
 
-      <section class="hackathon-usp">
-        <div class="hackathon-usp-info">
-          <div class="hackathon-usp-title">
-            <h3>HackathonUSP</h3>
+
+      <section id="CodeSchools">
+        <div class="codeschools">
+          <div class="section-title">
+            <h3>CodeSchools</h3>
           </div>
-          O HackathonUSP é o nosso maior evento, um hackathon focado para alunos da USP e que visa melhorar algum aspecto da universidade. Geralmente são realizadas duas edições por ano e o foco é em alunos que nunca participaram de um hackathon.
-        </div>
-        <img src="~/assets/logo-hackathonUSP.png">
-      </section>
-
-      <section class="codeschools">
-        <div class="section-title">
-          <h3>Code Schools</h3>
-        </div>
-
-        <div class="codeschools-photos"/>
-
-        <div class="codeschools-info">
-          Nossas Code Schools são escolas que acontecem no período de férias escolares,  num período de normalmente uma semana de trabalho intenso. Nelas aplicamos todo o conhecimento adquirido durante o semestre em um grande projeto em grupo, geralmente pertinente à vida universitária.
+          Nossas escolas de períodos de férias tem como objetivo um grande projeto de desenvolvimento em equipe e com tecnologias modernas.
         </div>
       </section>
 
     </main>
 
-    <site-footer/>
+    <site-footer id="footer"/>
   </div>
 </template>
 

@@ -5,18 +5,12 @@
 @import "footer";
 @import "hackathon";
 @import "codeschool";
+@import "about";
 
-.section-title {
-  flex: 1 1 100%;
-  text-align: center;
-  font-size: 4em;
-  color: $main-color;
-}
-
-.container {
-  display: flex;
-  flex-flow: column nowrap;
-  overflow: hidden;
+.ucl-logo {
+  z-index: 9;
+  border-radius: 100%;
+  width: 25%;
 }
 
 section {
@@ -25,6 +19,19 @@ section {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  height: 100vh;
+  height: 95vh;
   padding: 1vh 2vh 1vh 2vh;
+}
+
+.section-title {
+  flex: 1 1 100%;
+  font-size: 1.8em;
+  color: $main-color;
+  padding-bottom: 0.3em;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: hidden;
 }
