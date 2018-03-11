@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer-distributed">
+  <footer class="footer-distributed" id="footer">
     <div class="footer-left">
       <img src="~/assets/UCL-Logo_Text.svg" style="border-radius: 10px;">
 
