@@ -1,24 +1,24 @@
 <template>
   <div class="container">
-    <ucl-navbar/>
-    <ucl-header/>
-    <ucl-main/>
-    <ucl-footer/>
+    <the-navbar/>
+    <the-header/>
+    <the-main/>
+    <the-footer/>
   </div>
 </template>
 
 <script>
-import uclNavbar from "../components/navbar.vue";
-import uclHeader from "../components/header.vue";
-import uclMain from "../components/main.vue";
-import uclFooter from "../components/footer.vue";
+import TheNavbar from "../components/TheNavbar.vue";
+import TheHeader from "../components/TheHeader.vue";
+import TheMain from "../components/TheMain.vue";
+import TheFooter from "../components/TheFooter.vue";
 
 export default {
   components: {
-    uclNavbar,
-    uclHeader,
-    uclMain,
-    uclFooter
+    TheNavbar,
+    TheHeader,
+    TheMain,
+    TheFooter
   }
 };
 </script>
