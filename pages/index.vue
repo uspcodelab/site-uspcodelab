@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <site-nav-bar/>
+    <ucl-navbar/>
 
     <header id="head" class="header">
       <div class="header-background"/>
@@ -54,19 +54,19 @@
 
     </main>
 
-    <site-footer id="footer"/>
+    <ucl-footer/>
   </div>
 </template>
 
 
 <script>
-import navBar from "../components/navbar.vue";
-import siteFooter from "../components/footer.vue";
+import uclNavbar from "../components/navbar.vue";
+import uclFooter from "../components/footer.vue";
 
 export default {
   components: {
-    siteNavBar: navBar,
-    siteFooter: siteFooter
+    uclNavbar,
+    uclFooter
   },
   data: () => {
     return {
