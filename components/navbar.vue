@@ -6,7 +6,7 @@
     </a>
 
     <div class="nav-menu">
-      <div v-for="btn in nav_buttons" :key="btn.KEY" class="nav-button">
+      <div v-for="btn in nav_buttons" :key="btn.key" class="nav-button">
         <a v-scroll-to="btn.section" class="nav-text" href="#">{{ btn.text }}</a>
         <div class="nav-line"/>
       </div>
@@ -19,17 +19,14 @@ export default {
   data: function() {
     return {
       nav_buttons: [
-        // { KEY: 1, text: "Home", section: "#home" },
-        { KEY: 2, text: "Sobre", section: "#about" },
-        { KEY: 3, text: "HackathonUSP", section: "#HackathonUSP" },
-        { KEY: 4, text: "dev.journey", section: "#dev_journey" },
-        { KEY: 5, text: "CodeSchools", section: "#CodeSchools" },
-        { KEY: 6, text: "Contato", section: "#footer" }
+        // { key: 1, text: "Home", section: "#home" },
+        { key: 2, text: "Sobre", section: "#about" },
+        { key: 3, text: "HackathonUSP", section: "#HackathonUSP" },
+        { key: 4, text: "dev.journey", section: "#dev_journey" },
+        { key: 5, text: "CodeSchools", section: "#CodeSchools" },
+        { key: 6, text: "Contato", section: "#footer" }
       ]
     };
   }
 };
 </script>
-
-<style>
-</style>
