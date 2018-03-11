@@ -45,10 +45,10 @@ export default {
 
 section {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 1em;
   height: 100vh;
   padding: 1vh 2vh 1vh 2vh;
 }
