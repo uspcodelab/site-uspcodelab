@@ -27,7 +27,7 @@
 
       <div>
         <i class="fa fa-envelope"/>
-        <p><a href="mailto:support@company.com">codelab@ime.usp.br</a></p>
+        <p><a href="mailto:codelab@ime.usp.br">codelab@ime.usp.br</a></p>
       </div>
 
     </div>
