@@ -1,13 +1,13 @@
 <template>
   <nav class="navbar">
     <!-- <a class="nav-logo" v-scroll-to="'#head'">USPCodeLab</a> -->
-    <a class="nav-logo" href="#" v-scroll-to="'#head'">
+    <a v-scroll-to="'#head'" class="nav-logo" href="#">
       <img src="~/assets/UCL-Logo.svg">
     </a>
-      
+
     <div class="nav-menu">
       <div v-for="btn in nav_buttons" :key="btn.KEY" class="nav-button">
-        <a class="nav-text" href="#" v-scroll-to="btn.section">{{ btn.text }}</a>
+        <a v-scroll-to="btn.section" class="nav-text" href="#">{{ btn.text }}</a>
         <div class="nav-line"/>
       </div>
     </div>
@@ -32,5 +32,4 @@ export default {
 </script>
 
 <style>
-
 </style>

@@ -1,12 +1,11 @@
 <template>
   <div class="container">
-    
     <site-nav-bar/>
 
-    <header class="header" id="head">
+    <header id="head" class="header">
       <div class="header-background"/>
       <!-- <h1 class="title">USPCodeLab</h1> -->
-      <img src="~/assets/UCL-Logo-Text.png" 
+      <img src="~/assets/UCL-Logo-Text.png"
            style="z-index: 9; background-color: #ffffff; border-radius: 15px">
     </header>
 
@@ -32,7 +31,7 @@
         <img src="~/assets/logo-hackathonUSP.png">
       </section>
 
-      <section class="info-section" id="dev_journey">
+      <section id="dev_journey" class="info-section">
         <div class="info-title">
           <h3>dev.journey()</h3>
         </div>
@@ -43,7 +42,6 @@
           </div>
         </div>
       </section>
-
 
       <section id="CodeSchools">
         <div class="codeschools">
