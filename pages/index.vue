@@ -49,7 +49,7 @@ section {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  height: 95vh;
+  height: 100vh;
   padding: 1vh 2vh 1vh 2vh;
 }
 
