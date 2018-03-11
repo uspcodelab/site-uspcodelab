@@ -1,13 +1,7 @@
 <template>
   <div class="container">
     <ucl-navbar/>
-
-    <header id="head" class="header">
-      <div class="header-background"/>
-      <!-- <h1 class="title">USPCodeLab</h1> -->
-      <img src="~/assets/UCL-Logo-Text.png"
-           style="z-index: 9; background-color: #ffffff; border-radius: 15px">
-    </header>
+    <ucl-header/>
 
     <main>
 
@@ -61,11 +55,13 @@
 
 <script>
 import uclNavbar from "../components/navbar.vue";
+import uclHeader from "../components/header.vue";
 import uclFooter from "../components/footer.vue";
 
 export default {
   components: {
     uclNavbar,
+    uclHeader,
     uclFooter
   },
   data: () => {
