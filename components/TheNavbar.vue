@@ -21,9 +21,9 @@ export default {
       nav_buttons: [
         // { key: 1, text: "Home", section: "#home" },
         { key: 2, text: "Sobre", section: "#about" },
-        { key: 3, text: "HackathonUSP", section: "#HackathonUSP" },
-        { key: 4, text: "dev.journey", section: "#dev_journey" },
-        { key: 5, text: "CodeSchools", section: "#CodeSchools" },
+        { key: 3, text: "dev.journey", section: "#dev_journey" },
+        { key: 4, text: "CodeSchools", section: "#CodeSchools" },
+        { key: 5, text: "HackathonUSP", section: "#HackathonUSP" },
         { key: 6, text: "Contato", section: "#footer" }
       ]
     };
@@ -78,7 +78,7 @@ export default {
 }
 
 .nav-button {
-  padding: 5em 1em;
+  padding: 0 1em;
 
   height: 100%;
 
@@ -103,7 +103,7 @@ export default {
   margin-top: 5px;
   width: 0;
   height: 5px;
-  background: #000;
+  background: $secondary-color;
 
   transition: width 0.3s ease;
 }
@@ -112,7 +112,7 @@ export default {
   width: 100%;
 }
 
-a {
+.nav-text {
   color: white;
   text-decoration: none;
 }
