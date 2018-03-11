@@ -4,9 +4,9 @@
     <the-header/>
     <main>
       <about-code-lab/>
-      <about-hackathon-usp/>
       <about-dev-journey/>
       <about-code-schools/>
+      <about-hackathon-usp/>
     </main>
     <the-footer/>
   </div>
