@@ -9,3 +9,17 @@
     <img src="~/assets/UCL-Logo.svg" class="ucl-logo">
   </section>
 </template>
+
+<style lang="scss">
+.about {
+  width: 60%;
+  font-size: 1.3em;
+  text-align: justify;
+}
+
+.ucl-logo {
+  z-index: 9;
+  border-radius: 100%;
+  width: 25%;
+}
+</style>

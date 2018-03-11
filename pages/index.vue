@@ -35,3 +35,28 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: hidden;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  height: 95vh;
+  padding: 1vh 2vh 1vh 2vh;
+}
+
+.section-title {
+  flex: 1 1 100%;
+  font-size: 1.8em;
+  color: $main-color;
+  padding-bottom: 0.3em;
+}
+</style>

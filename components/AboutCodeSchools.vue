@@ -8,3 +8,11 @@
     </div>
   </section>
 </template>
+
+<style lang="scss">
+.codeschools {
+  width: 60%;
+  font-size: 1.3em;
+  text-align: justify;
+}
+</style>

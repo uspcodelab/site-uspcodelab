@@ -9,3 +9,15 @@
     <img src="~/assets/logo-hackathonUSP.png">
   </section>
 </template>
+
+<style lang="scss">
+.hackathon-logo {
+  width: 25%;
+}
+
+.hackathon-usp-info {
+  width: 60%;
+  font-size: 1.3em;
+  text-align: justify;
+}
+</style>
