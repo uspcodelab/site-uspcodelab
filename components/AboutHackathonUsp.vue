@@ -6,12 +6,12 @@
       </div>
       O HackathonUSP é o nosso maior evento. De âmbito USPiano, feito em parceira com a univerdade e focado em quem nunca participou de um hackathon!
     </div>
-    <img src="~/assets/logo-hackathonUSP.png">
+    <img class="hackathon-usp-logo" src="~/assets/logo-hackathonUSP.png">
   </section>
 </template>
 
 <style lang="scss">
-.hackathon-logo {
+.hackathon-usp-logo {
   width: 25%;
 }
 
