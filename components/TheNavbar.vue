@@ -1,6 +1,5 @@
 <template>
   <nav class="navbar">
-    <!-- <a class="nav-logo" v-scroll-to="'#head'">USPCodeLab</a> -->
     <a v-scroll-to="'#head'" class="nav-logo" href="#">
       <img src="~/assets/UCL-Logo.svg">
     </a>
@@ -35,8 +34,6 @@ export default {
 .navbar {
   color: $secondary-color;
 
-  font-size: 1.2em;
-
   min-width: 100%;
   height: 8vh;
 
@@ -56,11 +53,10 @@ export default {
 .nav-logo {
   flex: 1 1;
   opacity: 1;
-  border-radius: 10px;
+  margin: 0.8em;
 
   img {
-    margin: 10px;
-    border-radius: 40px;
+    border-radius: 50%;
   }
 }
 
@@ -114,6 +110,6 @@ export default {
 .nav-text {
   color: white;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.6em;
 }
 </style>
