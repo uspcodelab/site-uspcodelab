@@ -19,7 +19,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: "#3B8070" },
+  loading: { color: "#FF690A" },
 
   /*
   ** Global CSS
@@ -29,7 +29,7 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
+  plugins: ["~plugins/vue-scrollto.js"],
 
   /*
   ** Nuxt.js modules

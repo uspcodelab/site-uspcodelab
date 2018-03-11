@@ -3,7 +3,7 @@
     
     <site-nav-bar/>
 
-    <header class="header">
+    <header class="header" id="head">
       <div class="header-background"/>
       <!-- <h1 class="title">USPCodeLab</h1> -->
       <img src="~/assets/UCL-Logo-Text.png" 
@@ -12,8 +12,8 @@
 
     <main>
 
-      <section>
-        <div class="about" id="about">
+      <section id="about">
+        <div class="about">
           <div class="section-title">
             <h3>Quem somos?</h3>
           </div>

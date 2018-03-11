@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar">
-    <div class="nav-logo">USPCodeLab</div>
+    <a class="nav-logo" v-scroll-to="'#head'">USPCodeLab</a>
     <div class="nav-menu">
       <div v-for="btn in nav_buttons" :key="btn.KEY" class="nav-button">
-        <a class="nav-text" :href="btn.section">{{ btn.text }}</a>
+        <a class="nav-text" href="#" v-scroll-to="btn.section">{{ btn.text }}</a>
         <div class="nav-line"/>
       </div>
     </div>
