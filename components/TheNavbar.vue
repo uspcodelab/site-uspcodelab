@@ -114,5 +114,6 @@ export default {
 .nav-text {
   color: white;
   text-decoration: none;
+  font-size: 1.3em;
 }
 </style>
