@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar">
     <!-- <a class="nav-logo" v-scroll-to="'#head'">USPCodeLab</a> -->
-    <div class="nav-logo">
+    <a class="nav-logo" href="#" v-scroll-to="'#head'">
       <img src="~/assets/UCL-Logo.svg">
-    </div>
+    </a>
       
     <div class="nav-menu">
       <div v-for="btn in nav_buttons" :key="btn.KEY" class="nav-button">
