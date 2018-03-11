@@ -21,7 +21,7 @@ export default {
       nav_buttons: [
         // { key: 1, text: "Home", section: "#home" },
         { key: 2, text: "Sobre", section: "#about" },
-        { key: 3, text: "dev.journey", section: "#dev_journey" },
+        { key: 3, text: "dev.journey()", section: "#dev_journey" },
         { key: 4, text: "CodeSchools", section: "#CodeSchools" },
         { key: 5, text: "HackathonUSP", section: "#HackathonUSP" },
         { key: 6, text: "Contato", section: "#footer" }
@@ -43,14 +43,13 @@ export default {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  // align-items: center;
 
   position: fixed;
   top: 0px;
   left: 0px;
   z-index: 10;
 
-  background-color: #292827;
+  background-color: $terciary-color;
   opacity: 0.95;
 }
 
