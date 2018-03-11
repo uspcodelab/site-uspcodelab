@@ -1,6 +1,10 @@
 <template>
   <nav class="navbar">
-    <a class="nav-logo" v-scroll-to="'#head'">USPCodeLab</a>
+    <!-- <a class="nav-logo" v-scroll-to="'#head'">USPCodeLab</a> -->
+    <div class="nav-logo">
+      <img src="~/assets/UCL-Logo.svg">
+    </div>
+      
     <div class="nav-menu">
       <div v-for="btn in nav_buttons" :key="btn.KEY" class="nav-button">
         <a class="nav-text" href="#" v-scroll-to="btn.section">{{ btn.text }}</a>
