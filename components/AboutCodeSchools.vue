@@ -1,5 +1,5 @@
 <template>
-  <section id="CodeSchools">
+  <section id="CodeSchools" class="codeschools-section">
     <div class="codeschools-info">
       <div class="section-title">
         <h3>CodeSchools</h3>
@@ -11,9 +11,10 @@
 
 <style lang="scss">
 .codeschools-info {
+  font-size: 1.3em;
+}
+.codeschools-section {
   background: $terciary-color;
   color: $secondary-color;
-
-  font-size: 1.3em;
 }
 </style>
