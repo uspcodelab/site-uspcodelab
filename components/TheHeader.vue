@@ -1,11 +1,9 @@
 <template>
   <header id="head" class="header">
-    <div class="header-background"/>
-    <img src="~/assets/UCL-Logo_Text.svg" class="header-logo">
-    <div style="z-index: 9; width: 90%">
+    <!-- <img src="~/assets/UCL-Logo_Text.svg" class="header-logo"> -->
+    <div style="z-index: 9; margin: auto">
       <img src="~/assets/UCL-Logo.svg" class="mobile-logo">
     </div>
-    
   </header>
 </template>
 
@@ -15,39 +13,39 @@
   background-color: #ffffff;
   border-radius: 15px;
   width: 65%;
+  margin: auto;
 }
 .mobile-logo {
   z-index: 9;
-  width: 100%;
-  border-radius: 25%;
-  display: none;
+  width: 70vw;
+  max-width: 700px;
+  border-radius: 50%;
+  margin: auto;
+  // display: none;
 }
 .header {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  padding-top: 9vh;
-
   display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-
-  border-bottom: 10em;
-}
-
-.header-background {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  height: 100vh;
   width: 100%;
-  height: 100%;
+  padding-top: 9vh;
+  border-bottom: 10em;
   background-image: linear-gradient(#ff8b46 0%, $main-color 100%);
-  transform: skewY(-6deg);
-  transform-origin: top left;
+  // justify-content: center;
+  // align-items: center;
 }
+
+// .header-background {
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   right: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-image: linear-gradient(#ff8b46 0%, $main-color 100%);
+//   transform: skewY(-6deg);
+//   transform-origin: top left;
+// }
 
 @media only screen and (max-device-width: 480px) {
   .mobile-logo {

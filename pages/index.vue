@@ -41,20 +41,20 @@ export default {
   display: flex;
   flex-flow: column nowrap;
   overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
 }
 
 section {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
   font-size: 1em;
   height: 100vh;
+  width: 100vw;
   padding: 1vh 2vh 1vh 2vh;
 }
 
 .section-title {
-  flex: 1 1 100%;
+  // flex: 1 1 100%;
   font-size: 1.8em;
   color: $main-color;
   padding-bottom: 0.3em;
