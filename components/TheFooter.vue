@@ -4,13 +4,13 @@
       <img src="~/assets/UCL-Logo_Text.svg" style="border-radius: 10px;">
 
       <p class="footer-links">
-        <a href="#">Sobre</a>
+        <a href="#about">Sobre</a>
         ·
-        <a href="#">HackathonUSP</a>
+        <a href="#dev_journey">dev.journey()</a>
         ·
-        <a href="#">dev.journey</a>
+        <a href="#CodeSchools">CodeSchools</a>
         ·
-        <a href="#">CodeSchools</a>
+        <a href="#HackathonUSP">HackathonUSP</a>
         ·
       </p>
 
