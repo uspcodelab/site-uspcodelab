@@ -1,15 +1,29 @@
 <template>
-  <div class="container">
+  <!-- <div class="container"> -->
+  <b-container fluid>
     <the-navbar/>
-    <the-header/>
+    <b-row>
+      <the-header/>
+    </b-row>
     <main>
-      <about-code-lab/>
-      <about-dev-journey/>
-      <about-code-schools/>
-      <about-hackathon-usp/>
+      <b-row>
+        <about-code-lab/>
+      </b-row>
+      <b-row>
+        <about-dev-journey/>
+      </b-row>
+      <b-row>
+        <about-code-schools/>
+      </b-row>
+      <b-row>
+        <about-hackathon-usp/>
+      </b-row>
     </main>
-    <the-footer/>
-  </div>
+    <b-row>
+      <the-footer/>
+    </b-row>
+  <!-- </div> -->
+  </b-container>
 </template>
 
 <script>
@@ -37,14 +51,15 @@ export default {
 </script>
 
 <style lang="scss">
-.container {
-  display: flex;
-  flex-flow: column nowrap;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-}
+// .container {
+//   display: flex;
+//   flex-flow: column nowrap;
+//   overflow: hidden;
+//   justify-content: center;
+//   align-items: center;
+//   font-size: 16px;
+//   font-family: "Roboto", sans-serif;
+// }
 
 section {
   font-size: 1em;
