@@ -198,8 +198,12 @@
   .footer-distributed .footer-right {
     display: block;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 2vh;
     text-align: center;
+  }
+
+  .footer-distributed .footer-left {
+    padding-top: 5vh;
   }
 
   .footer-distributed .footer-center i {
