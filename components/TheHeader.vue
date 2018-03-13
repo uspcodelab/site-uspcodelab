@@ -46,13 +46,4 @@
 //   transform: skewY(-6deg);
 //   transform-origin: top left;
 // }
-
-@media only screen and (max-device-width: 480px) {
-  .mobile-logo {
-    display: block;
-  }
-  .header-logo {
-    display: none;
-  }
-}
 </style>
