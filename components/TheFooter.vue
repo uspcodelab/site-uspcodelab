@@ -14,7 +14,7 @@
         ·
       </p>
 
-      <p class="footer-company-name">USPCodeLab - 2018</p>
+      <!-- <p class="footer-company-name">USPCodeLab - 2018</p> -->
     </div>
 
     <div class="footer-center">
@@ -31,7 +31,7 @@
 
     <div class="footer-right">
       <p class="footer-company-about">
-        <span>Sobre</span>
+        <span>USPCodeLab</span>
         Grupo de extensão universitária com foco em desenvolvimento web e mobile. Nossos principais projetos são grupos de estudos, realização de palestras e participação e organização de hackathons.
       </p>
 
@@ -185,5 +185,25 @@
 
   margin-right: 3px;
   margin-bottom: 5px;
+}
+
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+    height: 100vh;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
 }
 </style>
