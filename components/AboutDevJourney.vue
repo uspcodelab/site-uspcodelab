@@ -1,19 +1,25 @@
 <template>
-  <section id="dev_journey" class="dev-journey-info">
-    <div class="section-title dev-journey-title">
+  <!-- <section id="dev_journey" class="dev-journey-info"> -->
+  <b-row id="dev_journey" bg-color>
+    <!-- <div class="section-title dev-journey-title">
       <h3>dev.journey()</h3>
-    </div>
-
-    <div v-for="obj in dev_section" :key="obj.KEY" class="dev-journey-card">
+    </div> -->
+    <!-- <div v-for="obj in dev_section" :key="obj.KEY" class="dev-journey-card"> -->
+    <b-col sm class="dev-journey-info" v-for="obj in dev_section" :key="obj.KEY">
       <div class="dev-journey-card-icon">
         <!-- <img src="../assets/study.svg"> -->
         <img src="~/assets/resume.svg">
       </div>
-      <div class="dev-journey-card-text">
+      <!-- <div class="dev-journey-card-text">
         {{ obj.text }}
+      </div> -->
+      <div>
+        Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?
       </div>
-    </div>
-  </section>
+    <!-- </div> -->
+    </b-col>
+  <!-- </section> -->
+  </b-row>
 </template>
 
 <script>
@@ -58,6 +64,9 @@ export default {
 </script>
 
 <style lang="scss">
+.bg-color {
+  background-color: #ff690a;
+}
 .dev-journey-info {
   background: $main-color;
   color: $secondary-color;
