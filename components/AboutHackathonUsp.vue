@@ -22,7 +22,7 @@
   flex-wrap: wrap;
   width: 100%;
   font-size: 1.1em;
-  text-align: justify;
+  // text-align: justify;
   height: 90vh;
   padding: 10vh 2vh;
   align-items: center;
