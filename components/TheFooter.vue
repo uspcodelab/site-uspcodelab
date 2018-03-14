@@ -1,7 +1,7 @@
 <template>
   <footer class="footer-distributed" id="footer">
     <div class="footer-left">
-      <img src="~/assets/UCL-Logo_Text.svg" style="border-radius: 10px;">
+      <img src="~/assets/UCL-Logo_Footer.svg" style="border-radius: 10px;">
 
       <p class="footer-links">
         <a href="#about">Sobre</a>
@@ -54,8 +54,9 @@
   text-align: left;
   font: bold 16px sans-serif;
 
-  padding: 55px 50px;
-  margin-top: 80px;
+  // padding: 55px 50px;
+  padding: 15vh 4vw 0 4vw;
+  margin-top: 5vh;
 }
 
 .footer-distributed .footer-left,
@@ -196,18 +197,18 @@
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
   .footer-distributed .footer-right {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    margin-bottom: 2vh;
     text-align: center;
   }
-
-  .footer-distributed .footer-left {
-    padding-top: 5vh;
-  }
-
   .footer-distributed .footer-center i {
     margin-left: 0;
+  }
+  .footer-distributed .footer-icons a {
+    margin-bottom: 1vh;
   }
 }
 </style>
