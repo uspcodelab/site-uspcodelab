@@ -11,18 +11,18 @@
       </div>
     </div>
   </nav> -->
-  <b-navbar style="background-color: #ffffff" fixed="top" type="light" toggleable>
+  <b-navbar style="background-color: #ffffff;" fixed="top" type="light" toggleable>
     <b-navbar-brand v-scroll-to="'#head'">
-      <img src="~/assets/UCL-Logo_Text.svg" alt="BV" style="width: 60%; height: 40%; border-radius: 15px">
+      <img src="~/assets/UCL-Logo_Text.svg" alt="BV" style="width: 60vw; border-radius: 15px; max-width: 200px;">
     </b-navbar-brand>
     <b-navbar-toggle target="nav_dropdown_collapse"/>
     <b-collapse is-nav id="nav_dropdown_collapse">
       <b-navbar-nav>
-        <b-nav-item href="#about" style="color: white;">Sobre</b-nav-item>
-        <b-nav-item href="#dev_journey">dev.journey()</b-nav-item>
-        <b-nav-item href="#CodeSchools">CodeSchools</b-nav-item>
-        <b-nav-item href="#HackathonUSP">HackathonUSP</b-nav-item>
-        <b-nav-item href="#footer" >Contato</b-nav-item>
+        <b-nav-item href="#" v-scroll-to="'#about'" style="color: white;">Sobre</b-nav-item>
+        <b-nav-item href="#" v-scroll-to="'#dev_journey'">dev.journey()</b-nav-item>
+        <b-nav-item href="#" v-scroll-to="'#CodeSchools'">CodeSchools</b-nav-item>
+        <b-nav-item href="#" v-scroll-to="'#HackathonUSP'">HackathonUSP</b-nav-item>
+        <b-nav-item href="#" v-scroll-to="'#footer'">Contato</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
