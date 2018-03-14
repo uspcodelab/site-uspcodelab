@@ -18,7 +18,7 @@
 .mobile-logo {
   z-index: 9;
   width: 70vw;
-  max-width: 700px;
+  max-width: 500px;
   border-radius: 50%;
   margin: auto;
   // display: none;
