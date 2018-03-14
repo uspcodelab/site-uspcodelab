@@ -10,8 +10,8 @@
         <about-code-lab/>
       </b-row>
       <!-- <b-row> -->
-      <b-row>
-        <div class="section-title">
+      <b-row class="dev-journey-title" id="dev_journey">
+        <div class="section-title dev-journey-title">
           <h3>dev.journey()</h3>
         </div>
       </b-row>
@@ -67,10 +67,17 @@ export default {
 // }
 
 section {
-  font-size: 1em;
+  font-size: 0.8em;
   height: 100vh;
   width: 100vw;
   padding: 1vh 2vh 1vh 2vh;
+}
+
+.dev-journey-title {
+  background-color: #ff690a;
+  color: $secondary-color;
+  align-items: center;
+  padding-top: 7vh;
 }
 
 .section-title {
