@@ -65,7 +65,6 @@ export default {
 //   font-size: 16px;
 //   font-family: "Roboto", sans-serif;
 // }
-
 section {
   font-size: 0.8em;
   height: 100vh;
@@ -77,7 +76,9 @@ section {
   background-color: #ff690a;
   color: $secondary-color;
   align-items: center;
-  padding-top: 7vh;
+  justify-content: center;
+  padding-top: 9vh;
+  font-size: 1.8em;
 }
 
 .section-title {
