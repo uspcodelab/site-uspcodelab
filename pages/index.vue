@@ -9,9 +9,14 @@
       <b-row>
         <about-code-lab/>
       </b-row>
+      <!-- <b-row> -->
       <b-row>
-        <about-dev-journey/>
+        <div class="section-title">
+          <h3>dev.journey()</h3>
+        </div>
       </b-row>
+      <about-dev-journey/>
+      <!-- </b-row> -->
       <b-row>
         <about-code-schools/>
       </b-row>
