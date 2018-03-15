@@ -28,9 +28,10 @@
   height: 100vh;
   padding: 10vh 2vh;
   align-items: center;
+  color: #ffffff;
   // background configuration
   background-image: url("~/assets/UCL-Logo-NoBackground.svg");
-  background-color: rgba(5, 5, 5, 0.7);
+  background-color: rgba(5, 5, 5, 0.6);
   background-repeat: no-repeat;
   background-origin: center;
   background-size: cover;
