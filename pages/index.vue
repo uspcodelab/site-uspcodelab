@@ -57,16 +57,6 @@ section {
   font-size: 0.8em;
   height: 100vh;
   width: 100vw;
-  padding: 1vh 2vh 1vh 2vh;
-}
-
-.dev-journey-title {
-  background-color: #ff690a;
-  color: $secondary-color;
-  align-items: center;
-  justify-content: center;
-  padding-top: 9vh;
-  font-size: 1.8em;
 }
 
 .section-title {

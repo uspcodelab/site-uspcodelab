@@ -1,11 +1,17 @@
 <template>
-  <section id="HackathonUSP">
-    <div class="hackathon-usp-info">
-      <div class="section-title">
-        <h3>HackathonUSP</h3>
-      </div>
-      O HackathonUSP é o nosso maior evento. De âmbito USPiano, feito em parceira com a univerdade e focado em quem nunca participou de um hackathon!
-    </div>
+  <section id="HackathonUSP" class="hackathonusp-section">
+    <b-row>
+      <b-col>
+        <h3 class="section-title">HackathonUSP</h3>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col>
+        <p>
+          O HackathonUSP é o nosso maior evento. De âmbito USPiano, feito em parceira com a univerdade e focado em quem nunca participou de um hackathon!
+        </p>
+      </b-col>
+    </b-row>
     <!-- <img class="hackathon-usp-logo" src="~/assets/logo-hackathonUSP.png"> -->
   </section>
 </template>
@@ -14,15 +20,15 @@
 .hackathon-usp-logo {
   width: 25%;
 }
-.hackathon-usp-info {
+.hackathonusp-section {
   // width: 60%;
   // font-size: 1.3em;
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
   width: 100%;
   font-size: 1.1em;
-  height: 90vh;
-  padding: 10vh 2vh;
+  height: 100vh;
+  padding: 20vh 2vh;
   align-items: center;
   // background configuration
   background-image: url("~/assets/NEWhackathonUSP.svg");

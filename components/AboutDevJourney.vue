@@ -103,7 +103,7 @@
   width: 100%;
   font-size: 1.1em;
   height: 100%;
-  padding: 10vh 2vh;
+  padding: 20vh 2vh;
 }
 
 .dev-journey-info {

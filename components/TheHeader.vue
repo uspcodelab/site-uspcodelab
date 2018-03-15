@@ -18,7 +18,7 @@
 .mobile-logo {
   z-index: 9;
   width: 70vw;
-  max-width: 500px;
+  max-width: 400px;
   border-radius: 50%;
   margin: auto;
   // display: none;
@@ -27,7 +27,7 @@
   display: flex;
   height: 100vh;
   width: 100%;
-  padding-top: 9vh;
+  padding-top: 10vh;
   border-bottom: 10em;
   background-image: linear-gradient(#ff8b46 0%, $main-color 100%);
   // justify-content: center;

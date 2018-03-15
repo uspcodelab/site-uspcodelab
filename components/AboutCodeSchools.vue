@@ -37,7 +37,7 @@
   // width: 100%;
   font-size: 1.1em;
   height: 100vh;
-  padding: 10vh 2vh;
+  padding: 20vh 2vh;
   color: #ffffff;
   // background configuration
   background-image: url("~/assets/UCL-Logo-NoBackground.svg");
