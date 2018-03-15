@@ -1,11 +1,23 @@
 <template>
   <section id="CodeSchools" class="codeschools-section">
-    <div class="codeschools-info">
-      <div class="section-title">
+    <!-- <div class="codeschools-info"> -->
+    <b-row>
+      <b-col>
+        <h3 class="section-title">CodeSchools</h3>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col>
+        <p>
+          Nossas escolas de períodos de férias tem como objetivo um grande projeto de desenvolvimento em equipe e com tecnologias modernas. Uma verdadeira experiência de desenvolvimento!
+        </p>
+      </b-col>
+    </b-row>
+    <!-- <div class="section-title">
         <h3>CodeSchools</h3>
       </div>
-      Nossas escolas de períodos de férias tem como objetivo um grande projeto de desenvolvimento em equipe e com tecnologias modernas. Uma verdadeira experiência de desenvolvimento!
-    </div>
+      Nossas escolas de períodos de férias tem como objetivo um grande projeto de desenvolvimento em equipe e com tecnologias modernas. Uma verdadeira experiência de desenvolvimento! -->
+    <!-- </div> -->
   </section>
 </template>
 
@@ -20,14 +32,12 @@
   // background-color: rgba(255, 255, 255, 0.452);
   // background-repeat: no-repeat;
   // background-size: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  // display: flex;
+  // flex-wrap: wrap;
+  // width: 100%;
   font-size: 1.1em;
-  text-align: justify;
   height: 100vh;
   padding: 10vh 2vh;
-  align-items: center;
   color: #ffffff;
   // background configuration
   background-image: url("~/assets/UCL-Logo-NoBackground.svg");

@@ -19,7 +19,7 @@
     <b-collapse is-nav id="nav_dropdown_collapse">
       <b-navbar-nav>
         <b-nav-item href="#" v-scroll-to="'#about'" style="color: white;">Sobre</b-nav-item>
-        <b-nav-item href="#" v-scroll-to="'#dev_journey'">dev.journey()</b-nav-item>
+        <b-nav-item href="#" v-scroll-to="'#dev-journey'">dev.journey()</b-nav-item>
         <b-nav-item href="#" v-scroll-to="'#CodeSchools'">CodeSchools</b-nav-item>
         <b-nav-item href="#" v-scroll-to="'#HackathonUSP'">HackathonUSP</b-nav-item>
         <b-nav-item href="#" v-scroll-to="'#footer'">Contato</b-nav-item>

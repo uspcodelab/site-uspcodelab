@@ -1,23 +1,35 @@
 <template>
   <section id="about" class="about">
-    <div class="section-title">
+    <b-row>
+      <b-col>
+        <h3 class="section-title">Quem somos?</h3>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col>
+        <p>
+          O USPCodeLab (UCL) é um grupo de extensão universitária com o objetivo  de criar um espaço colaborativo para o desenvolvimento de tecnologia na universidade, com nossos grupos de estudo, e oferecer aprendizado na área de Engenharia de Software.
+        </p>
+      </b-col>
+    </b-row>
+    <!-- <div class="section-title">
       <h3>Quem somos?</h3>
-    </div>
-    <div id="about-text">
+    </div> -->
+    <!-- <div id="about-text">
       O USPCodeLab (UCL) é um grupo de extensão universitária com o objetivo  de criar um espaço colaborativo para o desenvolvimento de tecnologia na universidade, com nossos grupos de estudo, e oferecer aprendizado na área de Engenharia de Software.
-    </div>
+    </div> -->
   </section>
 </template>
 
 <style lang="scss">
 .about {
-  display: flex;
-  flex-wrap: wrap;
+  // align-items: center;
+  // display: flex;
+  // flex-wrap: wrap;
   width: 100%;
   font-size: 1.1em;
   height: 100vh;
   padding: 10vh 2vh;
-  align-items: center;
   // background configuration
   background-image: url("~/assets/UCL-Logo-Translucid.svg");
   background-color: rgba(255, 255, 255, 0.452);

@@ -2,31 +2,14 @@
   <!-- <div class="container"> -->
   <b-container fluid>
     <the-navbar/>
-    <b-row>
-      <the-header/>
-    </b-row>
+    <the-header/>
     <main>
-      <b-row>
-        <about-code-lab/>
-      </b-row>
-      <!-- <b-row> -->
-      <b-row class="dev-journey-title" id="dev_journey">
-        <div class="section-title dev-journey-title">
-          <h3>dev.journey()</h3>
-        </div>
-      </b-row>
+      <about-code-lab/>
       <about-dev-journey/>
-      <!-- </b-row> -->
-      <b-row>
-        <about-code-schools/>
-      </b-row>
-      <b-row>
-        <about-hackathon-usp/>
-      </b-row>
+      <about-code-schools/>
+      <about-hackathon-usp/>
     </main>
-    <b-row>
-      <the-footer/>
-    </b-row>
+    <the-footer/>
   <!-- </div> -->
   </b-container>
 </template>
@@ -65,6 +48,11 @@ export default {
 //   font-size: 16px;
 //   font-family: "Roboto", sans-serif;
 // }
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 section {
   font-size: 0.8em;
   height: 100vh;
@@ -86,5 +74,14 @@ section {
   font-size: 1.8em;
   color: $main-color;
   padding-bottom: 0.3em;
+  text-align: center;
+}
+
+.white {
+  color: $secondary-color;
+}
+
+p {
+  text-align: justify;
 }
 </style>
