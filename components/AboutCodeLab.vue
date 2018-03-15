@@ -6,11 +6,11 @@
       </b-col>
     </b-row>
     <b-row>
-      <b-col>
+      <!-- <b-col>
         <p>
           O USPCodeLab (UCL) é um grupo de extensão universitária com o objetivo  de criar um espaço colaborativo para o desenvolvimento de tecnologia na universidade, com nossos grupos de estudo, e oferecer aprendizado na área de Engenharia de Software.
         </p>
-      </b-col>
+      </b-col> -->
     </b-row>
     <!-- <div class="section-title">
       <h3>Quem somos?</h3>

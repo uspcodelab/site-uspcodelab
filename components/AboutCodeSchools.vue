@@ -40,10 +40,10 @@
   padding: 20vh 2vh;
   color: #ffffff;
   // background configuration
-  background-image: url("~/assets/UCL-Logo-NoBackground.svg");
+  background-image: url("~/assets/UCL-Logo_dark.svg");
   background-color: rgba(5, 5, 5, 0.6);
   background-repeat: no-repeat;
-  background-origin: center;
-  background-size: cover;
+  // background-origin: center;
+  background-size: 100vh;
 }
 </style>

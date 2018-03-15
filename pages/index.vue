@@ -4,7 +4,7 @@
     <the-navbar/>
     <the-header/>
     <main>
-      <about-code-lab/>
+      <!-- <about-code-lab/> -->
       <about-dev-journey/>
       <about-code-schools/>
       <about-hackathon-usp/>

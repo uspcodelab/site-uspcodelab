@@ -7,7 +7,7 @@
     </b-row>
 
     <b-row>
-      <b-col sm class="dev-journey-info">
+      <b-col sm="12" lg="3" class="dev-journey-info">
         <div class="dev-journey-info-icon">
           <img src="~/assets/play-button-sing.svg">
         </div>
@@ -17,7 +17,7 @@
         </p>
       </b-col>
 
-      <b-col sm class="dev-journey-info">
+      <b-col sm="12" lg="3" class="dev-journey-info">
         <div class="dev-journey-info-icon">
           <img src="~/assets/study.svg">
         </div>
@@ -29,7 +29,7 @@
         </div>
       </b-col>
 
-      <b-col sm class="dev-journey-info">
+      <b-col sm="12" lg="3" class="dev-journey-info">
         <div class="dev-journey-info-icon">
           <img src="~/assets/startup.svg">
         </div>
@@ -39,7 +39,7 @@
         </p>
       </b-col>
 
-      <b-col sm class="dev-journey-info">
+      <b-col sm="12" lg="3" class="dev-journey-info">
         <div class="dev-journey-info-icon">
           <img src="~/assets/resume.svg">
         </div>
@@ -108,7 +108,7 @@
 
 .dev-journey-info {
   height: 85vh;
-  padding: 0 5vw;
+  padding: 0 2vw;
   text-align: center;
   // display: flex;
   // flex-flow: row wrap;
@@ -126,5 +126,9 @@
 
 .dev-journey-info h4 {
   padding: 5vh 0vh;
+}
+
+.dev-journey-info p {
+  text-indent: 20px;
 }
 </style>
