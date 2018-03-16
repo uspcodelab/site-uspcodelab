@@ -52,7 +52,7 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  padding: 10vh 2vw;
+  padding: 15vh 2vw 5vh;
   font-size: 14px;
 
   .footer-company-about {
@@ -100,7 +100,6 @@
   .footer-icons {
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 38px;
   }
   .fa {
     font-size: 30px;
