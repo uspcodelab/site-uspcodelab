@@ -1,6 +1,6 @@
 # USPCodeLab
 
-> Website for the extension group USPCodeLab
+Website for the extension group [USPCodeLab](https://codelab.ime.usp.br).
 
 ## Build Setup
 
