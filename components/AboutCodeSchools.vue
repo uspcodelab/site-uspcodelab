@@ -17,13 +17,13 @@
         <img class="img-fluid" src="~/assets/summer-school1.jpeg" alt="">
       </b-col>
       <b-col sm lg="3" md="4" xs="6" style="padding-top: 5vh; padding-bottom: 5vh;">
-        <img class="img-fluid" src="~/assets/summer-school2.jpeg" alt="">
+        <img class="img-fluid" src="~/assets/summer-school2-min.jpeg" alt="">
       </b-col>
       <b-col sm lg="3" md="4" xs="6" style="padding-top: 5vh; padding-bottom: 5vh;">
-        <img class="img-fluid" src="~/assets/summer-school3.jpeg" alt="">
+        <img class="img-fluid" src="~/assets/summer-school3-min.jpeg" alt="">
       </b-col>
       <b-col sm lg="3" md="4" xs="6" style="padding-top: 5vh; padding-bottom: 5vh;">
-        <img class="img-fluid" src="~/assets/summer-school4.jpeg" alt="">
+        <img class="img-fluid" src="~/assets/summer-school4-min.jpeg" alt="">
       </b-col>
     </b-row>
   </section>
