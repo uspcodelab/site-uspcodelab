@@ -37,7 +37,6 @@
   img {
     padding-top: 10vh;
     width: 100%;
-    min-height: 60vh;
   }
 }
 
