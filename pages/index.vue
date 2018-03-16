@@ -54,14 +54,13 @@ export default {
 }
 
 section {
-  font-size: 0.8em;
+  font-size: 1em;
   height: 100vh;
   width: 100vw;
 }
 
 .section-title {
-  // flex: 1 1 100%;
-  font-size: 1.8em;
+  font-size: 4em;
   color: $main-color;
   padding-bottom: 0.3em;
   text-align: center;
@@ -72,6 +71,16 @@ section {
 }
 
 p {
-  text-align: justify;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+@media (max-width: 880px) {
+  .section-title {
+    font-size: 3em;
+    color: $main-color;
+    padding-bottom: 0.3em;
+    text-align: center;
+  }
 }
 </style>
