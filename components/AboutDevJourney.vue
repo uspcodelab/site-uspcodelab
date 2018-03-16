@@ -2,7 +2,7 @@
   <section id="dev-journey" class="dev-journey-section">
     <b-row>
       <b-col>
-        <h3 class="section-title white">dev.journey()</h3>
+        <h3 class="section-title" style="color: #FF690A">dev.journey()</h3>
       </b-col>
     </b-row>
 
@@ -13,7 +13,7 @@
         </div>
         <h4>dev.start()</h4>
         <p>
-          Ciclo de oficinas para apresentar programação web para o público geral da universidade, com tópicos como <em>HTML</em>, <em>CSS</em> e <em>JavaScript</em>.
+          Ci&shy;clo&shy; de&shy; o&shy;fi&shy;ci&shy;na&shy;s pa&shy;ra&shy; a&shy;pre&shy;se&shy;nta&shy;r pro&shy;grama&shy;ção&shy; we&shy;b pa&shy;ra&shy; o&shy; públi&shy;co&shy; ge&shy;ra&shy;l da&shy; u&shy;ni&shy;ve&shy;rsi&shy;da&shy;de&shy;, com tópi&shy;co&shy;s como&shy; <em>HTML</em>, <em>CSS</em> e&shy; <em>Ja&shy;va&shy;Scri&shy;pt</em>.
         </p>
       </b-col>
 
@@ -24,7 +24,7 @@
         <div>
           <h4>dev.learn()</h4>
           <p>
-            Um dos nossos grupos de estudo com reuniões semanais, ao longo de um semestre, para aplicar os conhecimentos em projetos propostos pela organização.
+            Um do&shy;s no&shy;sso&shy;s gru&shy;po&shy;s de&shy; e&shy;stu&shy;do&shy; com re&shy;u&shy;ni&shy;õe&shy;s sema&shy;na&shy;i&shy;s, a&shy;o&shy; lo&shy;ngo&shy; de&shy; um seme&shy;stre&shy;, pa&shy;ra&shy; a&shy;pli&shy;ca&shy;r o&shy;s co&shy;nhe&shy;cime&shy;nto&shy;s em pro&shy;je&shy;to&shy;s pro&shy;po&shy;sto&shy;s pe&shy;la&shy; o&shy;rga&shy;ni&shy;za&shy;ção&shy;.
           </p>  
         </div>
       </b-col>
@@ -55,50 +55,12 @@
 </template>
 
 <script>
-// export default {
-//   data: () => {
-//     return {
-//       dev_section: [
-//         {
-//           KEY: 1,
-//           icon: "play-button-sing.svg",
-//           text:
-//             "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"
-//         },
-//         {
-//           KEY: 2,
-//           icon: "study.svg",
-//           text:
-//             "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"
-//         },
-//         {
-//           KEY: 3,
-//           icon: "startup.svg",
-//           text:
-//             "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"
-//         },
-//         {
-//           KEY: 4,
-//           icon: "resume.svg",
-//           text:
-//             "Elit nisi consequuntur dolores tempore error! Voluptate aspernatur repellat minima molestias nostrum? Distinctio ullam neque voluptas quasi maiores. Officia laboriosam possimus in aspernatur tempore Provident reprehenderit excepturi voluptates quidem blanditiis?"
-//         }
-//       ]
-//     };
-//   },
-//   computed: {
-//     path(obj) {
-//       alert(obj);
-//       return "~/assets/" + "resume" + ".svg";
-//     }
-//   }
-// };
 </script>
 
 <style lang="scss">
 .dev-journey-section {
-  background: $main-color;
-  color: $secondary-color;
+  background: $secondary-color;
+  color: #2c2c2c;
 
   width: 100%;
   font-size: 1.1em;
@@ -108,12 +70,12 @@
 
 .dev-journey-info {
   height: 85vh;
-  padding: 0 2vw;
+  padding: 0 3vw;
   text-align: center;
-  // display: flex;
-  // flex-flow: row wrap;
-  // justify-content: center;
-  // align-items: center;
+
+  h3 {
+    font-size: 2em;
+  }
 }
 
 .dev-journey-info-icon {
@@ -126,9 +88,11 @@
 
 .dev-journey-info h4 {
   padding: 5vh 0vh;
+  font-size: 2em;
 }
 
 .dev-journey-info p {
   text-indent: 20px;
+  text-align: justify;
 }
 </style>
