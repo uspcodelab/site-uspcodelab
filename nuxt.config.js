@@ -22,7 +22,7 @@ module.exports = {
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Roboto"
+        href: "https://fonts.googleapis.com/css?family=Cabin|IBM+Plex+Sans+Condensed|Nunito|Open+Sans"
       }
     ]
   },

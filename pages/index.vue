@@ -39,7 +39,11 @@ export default {
 .container-fluid {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  // font-family: "Roboto", sans-serif;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  // font-family: 'Open Sans', sans-serif;
+  // font-family: 'Nunito', sans-serif;
+  // font-family: 'Cabin', sans-serif;
   font-size: 16px;
 }
 
