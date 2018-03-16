@@ -129,5 +129,12 @@
   .fa-gitlab:focus {
     color: #e24329;
   }
+
+  .fa-envelope:hover {
+    color: #00aced;
+  }
+  .fa-envelope:focus {
+    color: #00aced;
+  }
 }
 </style>
