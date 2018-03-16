@@ -38,6 +38,11 @@
     color: #ffffff;
     font-size: 1.1em;
   }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: calc(calc(100vw - 1200px) / 2);
+    padding-right: calc(calc(100vw - 1200px) / 2 + 4em);
+  }
 }
 
 @media (max-width: 480px) {
