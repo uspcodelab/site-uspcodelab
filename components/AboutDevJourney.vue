@@ -66,15 +66,24 @@
   font-size: 1.1em;
   height: 100%;
   padding: 20vh 2vh;
+
+  @media screen and (min-width: 1200px) {
+    padding-left: calc(calc(100vw - 1200px) / 2);
+    padding-right: calc(calc(100vw - 1200px) / 2);
+  }
 }
 
 .dev-journey-info {
   height: 90vh;
-  padding: 0 3vw;
+  padding: 0 2vw;
   text-align: center;
 
   h3 {
     font-size: 2em;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
   }
 }
 
