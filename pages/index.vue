@@ -54,6 +54,7 @@ section {
 }
 
 .section-title {
+  font-weight: bold;
   font-size: 4em;
   color: $main-color;
   padding-bottom: 0.3em;
