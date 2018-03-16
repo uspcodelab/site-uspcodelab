@@ -1,40 +1,46 @@
 <template>
   <section id="HackathonUSP" class="hackathonusp-section">
     <b-row>
-      <b-col>
-        <h3 class="section-title">HackathonUSP</h3>
-      </b-col>
-    </b-row>
-    <b-row>
-      <b-col>
+      <b-col sm class="hackathon-text">
+        <h3 class="section-title" style="text-align: left">HackathonUSP</h3>
         <p>
           O HackathonUSP é o nosso maior evento. De âmbito USPiano, feito em parceira com a univerdade e focado em quem nunca participou de um hackathon!
         </p>
       </b-col>
+      <b-col sm style="text-align: center;" class="hackathon-logo">
+        <img src="~/assets/NEWhackathonUSP.svg" alt="">
+      </b-col>
     </b-row>
-    <!-- <img class="hackathon-usp-logo" src="~/assets/logo-hackathonUSP.png"> -->
   </section>
 </template>
 
 <style lang="scss">
-.hackathon-usp-logo {
-  width: 25%;
-}
 .hackathonusp-section {
-  // width: 60%;
-  // font-size: 1.3em;
-  // display: flex;
-  // flex-wrap: wrap;
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   font-size: 1.1em;
   height: 100vh;
+  width: 100%;
   padding: 20vh 2vh;
-  align-items: center;
-  // background configuration
-  background-image: url("~/assets/NEWhackathonUSP.svg");
-  background-color: rgba(255, 255, 255, 0.5);
-  background-repeat: no-repeat;
-  background-position: center;
-  // background-size: 90vh;
+  .hackathon-logo {
+    height: 60vh;
+    img {
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hackathonusp-section {
+    .hackathon-logo {
+      height: 30vh;
+      img {
+        height: 100%;
+      }
+    }
+    .hackathon-text {
+      order: 2;
+    }
+  }
 }
 </style>
