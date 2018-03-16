@@ -185,7 +185,7 @@
   line-height: 35px;
 
   margin-right: 3px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 880px) {

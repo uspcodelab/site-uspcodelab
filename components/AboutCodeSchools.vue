@@ -13,11 +13,6 @@
         </p>
       </b-col>
     </b-row>
-    <!-- <div class="section-title">
-        <h3>CodeSchools</h3>
-      </div>
-      Nossas escolas de períodos de férias tem como objetivo um grande projeto de desenvolvimento em equipe e com tecnologias modernas. Uma verdadeira experiência de desenvolvimento! -->
-    <!-- </div> -->
   </section>
 </template>
 
@@ -26,24 +21,13 @@
   font-size: 1.3em;
 }
 .codeschools-section {
-  // background: $terciary-color;
-  // color: $secondary-color;
-  // background-image: url("~/assets/UCL-Logo-Translucid.svg");
-  // background-color: rgba(255, 255, 255, 0.452);
-  // background-repeat: no-repeat;
-  // background-size: 100vh;
-  // display: flex;
-  // flex-wrap: wrap;
-  // width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   font-size: 1.1em;
   height: 100vh;
+  width: 100%;
   padding: 20vh 2vh;
   color: #ffffff;
-  // background configuration
-  background-image: url("~/assets/UCL-Logo_dark.svg");
-  background-color: rgba(5, 5, 5, 0.6);
-  background-repeat: no-repeat;
-  // background-origin: center;
-  background-size: 100vh;
+  background-color: #2c2c2c;
 }
 </style>

@@ -35,7 +35,7 @@
         </div>
         <h4>dev.boost()</h4>
         <p>
-          Uma continuação da fase anterior, agora com projetos em times, voltada para aprendizado de técnicas de modelagem, implementação e manutenção de sistemas.
+          Uma continua&shy;ção da fase an&shy;te&shy;rior, ago&shy;ra com pro&shy;je&shy;tos em ti&shy;mes, vol&shy;ta&shy;da pa&shy;ra apren&shy;dizado de téc&shy;ni&shy;cas de mo&shy;de&shy;lagem, im&shy;ple&shy;men&shy;ta&shy;ção e ma&shy;nu&shy;ten&shy;ção de sis&shy;te&shy;mas.
         </p>
       </b-col>
 
@@ -45,7 +45,7 @@
         </div>
         <h4>dev.hire()</h4>
         <p>
-          Nosso programa de captação de currículos de alunos, em particular os participantes do programa, para facilitar o contato profissional com empresas parceiras.
+          Nos&shy;so pro&shy;gra&shy;ma de cap&shy;ta&shy;ção de cur&shy;rí&shy;cu&shy;los de a&shy;lu&shy;nos, em par&shy;ti&shy;cu&shy;lar os par&shy;ti&shy;ci&shy;pan&shy;tes do pro&shy;gra&shy;ma, pa&shy;ra fa&shy;ci&shy;li&shy;tar o con&shy;ta&shy;to pro&shy;fis&shy;sio&shy;nal com em&shy;pre&shy;sas par&shy;ceiras.
         </p> 
       </b-col>
 
@@ -69,7 +69,7 @@
 }
 
 .dev-journey-info {
-  height: 85vh;
+  height: 90vh;
   padding: 0 3vw;
   text-align: center;
 

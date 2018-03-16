@@ -1,16 +1,13 @@
 <template>
-  <!-- <div class="container"> -->
   <b-container fluid>
     <the-navbar/>
     <the-header/>
     <main>
-      <!-- <about-code-lab/> -->
       <about-dev-journey/>
       <about-code-schools/>
       <about-hackathon-usp/>
     </main>
     <the-footer/>
-  <!-- </div> -->
   </b-container>
 </template>
 
@@ -19,7 +16,7 @@ import TheHeader from "~/components/TheHeader.vue";
 import TheNavbar from "~/components/TheNavbar.vue";
 import TheFooter from "~/components/TheFooter.vue";
 
-import AboutCodeLab from "~/components/AboutCodeLab.vue";
+// import AboutCodeLab from "~/components/AboutCodeLab.vue";
 import AboutHackathonUsp from "~/components/AboutHackathonUsp.vue";
 import AboutDevJourney from "~/components/AboutDevJourney.vue";
 import AboutCodeSchools from "~/components/AboutCodeSchools.vue";
@@ -30,7 +27,7 @@ export default {
     TheHeader,
     TheFooter,
 
-    AboutCodeLab,
+    // AboutCodeLab,
     AboutHackathonUsp,
     AboutDevJourney,
     AboutCodeSchools
@@ -39,24 +36,17 @@ export default {
 </script>
 
 <style lang="scss">
-// .container {
-//   display: flex;
-//   flex-flow: column nowrap;
-//   overflow: hidden;
-//   justify-content: center;
-//   align-items: center;
-//   font-size: 16px;
-//   font-family: "Roboto", sans-serif;
-// }
 .container-fluid {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 section {
   font-size: 1em;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .section-title {
@@ -66,10 +56,6 @@ section {
   text-align: center;
 }
 
-.white {
-  color: $secondary-color;
-}
-
 p {
   text-align: left;
   word-wrap: break-word;
@@ -77,7 +63,7 @@ p {
 
 @media (max-width: 880px) {
   .section-title {
-    font-size: 3em;
+    font-size: 2.5em;
     color: $main-color;
     padding-bottom: 0.3em;
     text-align: center;
