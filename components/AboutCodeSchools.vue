@@ -44,8 +44,8 @@
   background-color: #2c2c2c;
 
   img {
-    width: 310px;
-    height: 230px;
+    width: 100%;
+    height: 100%;
     border: 5px solid #000000;
     border-radius: 5px;
   }
