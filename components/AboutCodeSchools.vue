@@ -14,16 +14,16 @@
     </b-row>
     <b-row>
       <b-col sm lg="3" md="4" xs="6" style="padding-top: 5vh;">
-        <img class="img-fluid" src="~/assets/summer-school1.png" alt="">
+        <img class="img-fluid" src="~/assets/summer-school1.jpeg" alt="">
       </b-col>
       <b-col sm lg="3" md="4" xs="6" style="padding-top: 5vh; padding-bottom: 5vh;">
-        <img class="img-fluid" src="~/assets/summer-school2.png" alt="">
+        <img class="img-fluid" src="~/assets/summer-school2.jpeg" alt="">
       </b-col>
       <b-col sm lg="3" md="4" xs="6" style="padding-top: 5vh; padding-bottom: 5vh;">
-        <img class="img-fluid" src="~/assets/summer-school3.png" alt="">
+        <img class="img-fluid" src="~/assets/summer-school3.jpeg" alt="">
       </b-col>
       <b-col sm lg="3" md="4" xs="6" style="padding-top: 5vh; padding-bottom: 5vh;">
-        <img class="img-fluid" src="~/assets/summer-school4.png" alt="">
+        <img class="img-fluid" src="~/assets/summer-school4.jpeg" alt="">
       </b-col>
     </b-row>
   </section>
