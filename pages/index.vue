@@ -16,7 +16,6 @@ import TheHeader from "~/components/TheHeader.vue";
 import TheNavbar from "~/components/TheNavbar.vue";
 import TheFooter from "~/components/TheFooter.vue";
 
-// import AboutCodeLab from "~/components/AboutCodeLab.vue";
 import AboutHackathonUsp from "~/components/AboutHackathonUsp.vue";
 import AboutDevJourney from "~/components/AboutDevJourney.vue";
 import AboutCodeSchools from "~/components/AboutCodeSchools.vue";
@@ -27,7 +26,6 @@ export default {
     TheHeader,
     TheFooter,
 
-    // AboutCodeLab,
     AboutHackathonUsp,
     AboutDevJourney,
     AboutCodeSchools
@@ -39,7 +37,6 @@ export default {
 .container-fluid {
   padding: 0;
   margin: 0;
-  // font-family: "Roboto", sans-serif;
   font-family: "IBM Plex Sans Condensed", sans-serif;
   // font-family: 'Open Sans', sans-serif;
   // font-family: 'Nunito', sans-serif;
