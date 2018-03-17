@@ -7,14 +7,24 @@
     </b-row>
     <b-row>
       <b-col style="display:flex;">
-        <p class="codeschools-padding" style="align-self:flex-end; padding-bottom:1.2em;">
+        <p class="codeschools-padding" style="align-self:flex-end; padding-bottom:3em;">
           Nossas escolas de períodos de férias tem como objetivo um grande projeto de desenvolvimento em equipe e com tecnologias modernas. Uma verdadeira experiência de desenvolvimento!
         </p>
       </b-col>
     </b-row>
     <b-row>
       <b-col style="padding:0;">
-        <img src="~/assets/summer-schools0-grad.jpeg" alt="">
+        <b-carousel id="carousel1" style="text-shadow: 1px 1px 2px #333;" controls indicators background="#ababab" :interval="4000" v-model="slide" @sliding-start="onSlideStart" @sliding-end="onSlideEnd">
+          <b-carousel-slide img-src="~/assets/summer-school2-min.jpeg">
+            _
+          </b-carousel-slide>
+          <b-carousel-slide img-src="~/assets/summer-school3-min.jpeg">
+            _
+          </b-carousel-slide>
+          <b-carousel-slide img-src="~/assets/summer-school4-min.jpeg">
+            _
+          </b-carousel-slide>
+        </b-carousel>
       </b-col>
     </b-row>
   </section>
@@ -33,11 +43,6 @@
   padding: 20vh 0vh 0vh 0vh;
   color: #ffffff;
   background-color: #2c2c2c;
-
-  img {
-    padding-top: 10vh;
-    width: 100%;
-  }
 }
 
 .codeschools-padding {
