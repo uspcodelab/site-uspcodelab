@@ -6,34 +6,34 @@
           USPCodeLab
         </h1>
         <h3>
-          Grupo de extensão universitária com o objetivo  de criar um <b>espaço colaborativo</b> para o desenvolvimento de <b>tecnologia</b> na <b>universidade</b>
+          Grupo de extensão universitária com o objetivo  de criar um <strong>espaço colaborativo</strong> para o desenvolvimento de <strong>tecnologia</strong> na <strong>universidade</strong>
         </h3>
       </b-col>
       <b-col lg="5" style="text-align: center; overflow: hidden;">
-        <img src="/UCL-Logo.svg" class="header-logo">
+        <img src="~/assets/UCL-Logo.svg" class="header-logo">
       </b-col>
     </b-row>
   </section>
 </template>
 
 <style lang="scss">
-@font-face {
-  font-family: Montserrat;
-  font-weight: normal;
-  src: url("/Montserrat-Regular.otf");
-}
+// @font-face {
+//   font-family: Montserrat;
+//   font-weight: normal;
+//   src: url("/Montserrat-Regular.otf");
+// }
 
-@font-face {
-  font-family: Montserrat;
-  font-weight: 600;
-  src: url("/Montserrat-Medium.otf");
-}
+// @font-face {
+//   font-family: Montserrat;
+//   font-weight: 600;
+//   src: url("/Montserrat-Medium.otf");
+// }
 
-@font-face {
-  font-family: Montserrat;
-  font-weight: bold;
-  src: url("/Montserrat-Bold.otf");
-}
+// @font-face {
+//   font-family: Montserrat;
+//   font-weight: bold;
+//   src: url("/Montserrat-Bold.otf");
+// }
 
 .row {
   margin-right: 0;
@@ -43,15 +43,16 @@
   display: flex;
   min-height: 100vh;
   width: 100%;
-  padding: 20vh 3vw 3vh 3vw;
+  padding: 20vh 3vw 5vh 3vw;
   background-image: linear-gradient(#ff8b46, $main-color);
   justify-content: center;
   align-items: center;
 
   .header-logo {
-    z-index: 0;
+    z-index: 9;
     width: calc(calc(60vw + 60vh) / 3);
     max-width: 400px;
+    border-radius: 50%;
   }
 
   p {
@@ -65,7 +66,7 @@
   }
 
   h1 {
-    font-family: Montserrat, sans;
+    // font-family: Montserrat, sans;
     font-size: 3em;
     font-weight: 600;
   }
@@ -78,5 +79,20 @@
 
 .header-text {
   flex-wrap: wrap;
+
+  h3 {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    .header-logo {
+      order: 1;
+    }
+    .header-text {
+      order: 2;
+    }
+  }
 }
 </style>
