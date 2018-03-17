@@ -3,6 +3,7 @@
     <b-row>
       <b-col>
         <h3 class="section-title" style="color: #FF690A">dev.journey( )</h3>
+        <p style="text-align: center">Programa de 4 fases que visa introduzir e amadurecer os conhecimentos dos alunos da USP sobre desenvolvimento de software</p>
       </b-col>
     </b-row>
 
