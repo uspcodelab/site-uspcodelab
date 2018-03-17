@@ -91,4 +91,9 @@ p {
     text-align: center;
   }
 }
+@media (max-width: 480px) {
+  .container-fluid {
+    font-size: 13px;
+  }
+}
 </style>
