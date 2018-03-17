@@ -7,16 +7,6 @@
     </b-row>
 
     <b-row>
-      <!-- <b-card-group deck> -->
-      <!-- <b-col sm="12" lg="3" class="dev-journey-info">
-        <div class="dev-journey-info-icon">
-          <img src="~/assets/play-button-sing.svg">
-        </div>
-        <h4>dev.start()</h4>
-        <p>
-          Ciclo de oficinas para apresentar programação web para o público geral da universidade, com tópicos como HTML, CSS e JavaScript
-        </p>
-      </b-col> -->
       <b-col sm="12" lg="3" class="dev-journey-info">
         <b-card>
           <div class="dev-journey-info-icon">
@@ -29,17 +19,6 @@
         </b-card>
       </b-col>
 
-      <!-- <b-col sm="12" lg="3" class="dev-journey-info">
-        <div class="dev-journey-info-icon">
-          <img src="~/assets/study.svg">
-        </div>
-        <div>
-          <h4>dev.learn()</h4>
-          <p>
-            Um dos nossos grupos de estudo com reuniões semanais, ao longo de um semestre, para aplicar os conhecimentos em projetos propostos pela organização
-          </p>  
-        </div>
-      </b-col> -->
       <b-col sm="12" lg="3" class="dev-journey-info">
         <b-card>
           <div class="dev-journey-info-icon">
@@ -53,15 +32,7 @@
           </div>
         </b-card>
       </b-col>
-      <!-- <b-col sm="12" lg="3" class="dev-journey-info">
-        <div class="dev-journey-info-icon">
-          <img src="~/assets/startup.svg">
-        </div>
-        <h4>dev.boost()</h4>
-        <p>
-          Uma continuação da fase anterior, agora com projetos em times, voltada para aprendizado de técnicas de modelagem, implementação e manutenção de sistemas
-        </p>
-      </b-col> -->
+      
       <b-col sm="12" lg="3" class="dev-journey-info">
         <b-card>
           <div class="dev-journey-info-icon">
@@ -73,15 +44,7 @@
           </p>
         </b-card>
       </b-col>
-      <!-- <b-col sm="12" lg="3" class="dev-journey-info">
-        <div class="dev-journey-info-icon">
-          <img src="~/assets/resume.svg">
-        </div>
-        <h4>dev.hire()</h4>
-        <p>
-          Nosso programa de captação de currículos de alunos, em particular os participantes do programa, para facilitar o contato profissional com empresas parceiras
-        </p> 
-      </b-col> -->
+
       <b-col sm="12" lg="3" class="dev-journey-info">
         <b-card>
           <div class="dev-journey-info-icon">
@@ -92,8 +55,8 @@
             Nosso programa de captação de currículos de alunos, em particular os participantes do programa, para facilitar o contato profissional com empresas parceiras
           </p> 
         </b-card>
-      <!-- </b-card-group> -->
       </b-col>
+      
     </b-row>
   </section>
   
