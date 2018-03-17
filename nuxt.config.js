@@ -20,7 +20,7 @@ module.exports = {
       {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css?family=Cabin|IBM+Plex+Sans+Condensed|Nunito|Open+Sans"
+          "https://fonts.googleapis.com/css?family=Cabin|IBM+Plex+Sans+Condensed|Nunito|Open+Sans|IBM+Plex+Serif"
       }
     ]
   },

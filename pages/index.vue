@@ -34,6 +34,23 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: Montserrat;
+  font-weight: normal;
+  src: url("/Montserrat-Regular.otf");
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 600;
+  src: url("/Montserrat-Medium.otf");
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: bold;
+  src: url("/Montserrat-Bold.otf");
+}
 .container-fluid {
   padding: 0;
   margin: 0;
@@ -51,11 +68,14 @@ section {
 }
 
 .section-title {
-  font-weight: bold;
+  // font-weight: bold;
   font-size: 4em;
   color: $main-color;
   padding-bottom: 0.3em;
   text-align: center;
+  font-family: Montserrat, "IBM Plex Sans Condensed";
+  // font-family: "Open Sans", sans-serif;
+  // font-family: "IBM Plex Serif", serif;
 }
 
 p {
