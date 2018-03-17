@@ -18,7 +18,7 @@
         </p>
       </b-col> -->
       <b-col sm="12" lg="3" class="dev-journey-info">
-        <b-card style="height: 90vh">
+        <b-card>
           <div class="dev-journey-info-icon">
             <img src="~/assets/play-button-sing.svg">
           </div>
@@ -41,7 +41,7 @@
         </div>
       </b-col> -->
       <b-col sm="12" lg="3" class="dev-journey-info">
-        <b-card style="height: 90vh">
+        <b-card>
           <div class="dev-journey-info-icon">
             <img src="~/assets/study.svg">
           </div>
@@ -63,7 +63,7 @@
         </p>
       </b-col> -->
       <b-col sm="12" lg="3" class="dev-journey-info">
-        <b-card style="height: 90vh">
+        <b-card>
           <div class="dev-journey-info-icon">
             <img src="~/assets/startup.svg">
           </div>
@@ -83,7 +83,7 @@
         </p> 
       </b-col> -->
       <b-col sm="12" lg="3" class="dev-journey-info">
-        <b-card style="height: 90vh">
+        <b-card>
           <div class="dev-journey-info-icon">
             <img src="~/assets/resume.svg">
           </div>
