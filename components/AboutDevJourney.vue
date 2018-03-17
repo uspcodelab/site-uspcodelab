@@ -67,6 +67,11 @@
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: Montserrat;
+  font-weight: normal;
+  src: url("/Montserrat-Regular.otf");
+}
 .dev-journey-section {
   background: $secondary-color;
   color: #2c2c2c;
@@ -109,6 +114,7 @@
 .dev-journey-info h4 {
   padding: 3vh 0vh 2vh 0vh;
   font-size: 2em;
+  font-family: Montserrat, "IBM Plex Sans Condensed";
 }
 
 .dev-journey-info p {
