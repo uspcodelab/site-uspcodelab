@@ -7,21 +7,21 @@
     </b-row>
     <b-row>
       <b-col style="display:flex;">
-        <p class="codeschools-padding" style="align-self:flex-end; padding-bottom:3em;">
+        <p class="codeschools-padding" style="align-self:flex-end; padding-bottom:1em;">
           Nossas escolas de períodos de férias tem como objetivo um grande projeto de desenvolvimento em equipe e com tecnologias modernas. Uma verdadeira experiência de desenvolvimento!
         </p>
       </b-col>
     </b-row>
     <b-row>
       <b-col style="padding:0;">
-        <b-carousel id="carousel1" style="text-shadow: 1px 1px 2px #333;" controls indicators background="#ababab" :interval="4000" v-model="slide" @sliding-start="onSlideStart" @sliding-end="onSlideEnd">
-          <b-carousel-slide img-src="~/assets/summer-school2-min.jpeg">
+        <b-carousel id="carousel1" style="text-shadow: 1px 1px 2px #333;" controls indicators background="#ababab" :interval="4000">
+          <b-carousel-slide img-src="~/assets/summer-school2-min.jpeg" style="max-height: 85vh">
             _
           </b-carousel-slide>
-          <b-carousel-slide img-src="~/assets/summer-school3-min.jpeg">
+          <b-carousel-slide img-src="~/assets/summer-school3-min.jpeg" style="max-height: 85vh">
             _
           </b-carousel-slide>
-          <b-carousel-slide img-src="~/assets/summer-school4-min.jpeg">
+          <b-carousel-slide img-src="~/assets/summer-school4-min.jpeg" style="max-height: 85vh">
             _
           </b-carousel-slide>
         </b-carousel>
