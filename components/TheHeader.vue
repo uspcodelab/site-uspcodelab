@@ -17,23 +17,23 @@
 </template>
 
 <style lang="scss">
-// @font-face {
-//   font-family: Montserrat;
-//   font-weight: normal;
-//   src: url("/Montserrat-Regular.otf");
-// }
+@font-face {
+  font-family: Montserrat;
+  font-weight: normal;
+  src: url("/Montserrat-Regular.otf");
+}
 
-// @font-face {
-//   font-family: Montserrat;
-//   font-weight: 600;
-//   src: url("/Montserrat-Medium.otf");
-// }
+@font-face {
+  font-family: Montserrat;
+  font-weight: 600;
+  src: url("/Montserrat-Medium.otf");
+}
 
-// @font-face {
-//   font-family: Montserrat;
-//   font-weight: bold;
-//   src: url("/Montserrat-Bold.otf");
-// }
+@font-face {
+  font-family: Montserrat;
+  font-weight: bold;
+  src: url("/Montserrat-Bold.otf");
+}
 
 .row {
   margin-right: 0;
@@ -66,7 +66,7 @@
   }
 
   h1 {
-    // font-family: Montserrat, sans;
+    font-family: Montserrat, sans;
     font-size: 3em;
     font-weight: 600;
   }

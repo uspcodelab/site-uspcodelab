@@ -12,7 +12,7 @@
           <div class="dev-journey-info-icon">
             <img src="~/assets/play-button-sing.svg">
           </div>
-          <h4 class="dev-journey-phase">dev.start()</h4>
+          <h4 class="dev-journey-phase">dev.start( )</h4>
           <p>
             Ciclo de oficinas para apresentar programação web para o público geral da universidade, com tópicos como HTML, CSS e JavaScript
           </p>
@@ -25,7 +25,7 @@
             <img src="~/assets/study.svg">
           </div>
           <div>
-            <h4 class="dev-journey-phase">dev.learn()</h4>
+            <h4 class="dev-journey-phase">dev.learn( )</h4>
             <p>
               Um dos nossos grupos de estudo com reuniões semanais, ao longo de um semestre, para aplicar os conhecimentos em projetos propostos pela organização
             </p>  
@@ -38,7 +38,7 @@
           <div class="dev-journey-info-icon">
             <img src="~/assets/startup.svg">
           </div>
-          <h4 class="dev-journey-phase">dev.boost()</h4>
+          <h4 class="dev-journey-phase">dev.boost( )</h4>
           <p>
             Uma continuação da fase anterior, agora com projetos em times, voltada para aprendizado de técnicas de modelagem, implementação e manutenção de sistemas
           </p>
@@ -50,7 +50,7 @@
           <div class="dev-journey-info-icon">
             <img src="~/assets/resume.svg">
           </div>
-          <h4 class="dev-journey-phase">dev.hire()</h4>
+          <h4 class="dev-journey-phase">dev.hire( )</h4>
           <p>
             Nosso programa de captação de currículos de alunos, em particular os participantes do programa, para facilitar o contato profissional com empresas parceiras
           </p> 
