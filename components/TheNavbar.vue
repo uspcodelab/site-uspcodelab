@@ -1,6 +1,6 @@
 <template>
   <b-navbar style="background-color: #ffffff;" fixed="top" type="light" toggleable>
-    <b-navbar-brand v-scroll-to="'#head'">
+    <b-navbar-brand v-scroll-to="'#head'" style="cursor: pointer;">
       <img src="~/assets/UCL-Logo_Text.svg" alt="USPCodeLab" style="width: 60vw; border-radius: 15px; max-width: 200px;">
     </b-navbar-brand>
     <b-navbar-toggle target="nav_dropdown_collapse"/>
