@@ -13,7 +13,7 @@
       </b-col>
     </b-row>
     <b-row>
-      <b-col style="padding:0;">
+      <b-col class="codeschools-carousel">
         <b-carousel id="carousel1" style="text-shadow: 1px 1px 2px #333;" controls indicators background="#ababab" :interval="4000">
           <b-carousel-slide img-src="~/assets/summer-school2-min.jpeg" style="max-height: 85vh">
             _
@@ -43,6 +43,14 @@
   padding: 20vh 0vh 0vh 0vh;
   color: #ffffff;
   background-color: #2c2c2c;
+}
+
+.codeschools-carousel {
+  padding: 0;
+  @media screen and (min-width: 1200px) {
+    padding-left: calc(calc(100vw - 1200px) / 2);
+    padding-right: calc(calc(100vw - 1200px) / 2 + 4em);
+  }
 }
 
 .codeschools-padding {
