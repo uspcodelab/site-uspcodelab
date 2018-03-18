@@ -1,127 +1,74 @@
 <template>
-  <section id="dev-journey" class="dev-journey-section">
-    <b-row>
-      <b-col>
-        <h3 class="section-title" style="color: #FF690A">dev.journey()</h3>
-        <p style="text-align: center">Programa de 4 fases que visa introduzir e amadurecer os conhecimentos dos alunos da USP sobre desenvolvimento de software</p>
-      </b-col>
-    </b-row>
+  <b-row id="dev-journey" tag="section" class="dev-journey px-3 py-5 px-sm-5">
+    <b-col sm="12">
+      <h2 class="text-primary text-center">
+        dev.journey()
+      </h2>
+      <p class="text-center">
+        Programa de 4 fases que visa introduzir e amadurecer
+        os conhecimentos dos alunos da USP sobre desenvolvimento
+        de software
+      </p>
+    </b-col>
 
-    <b-row>
-      <b-col xs="12" sm="6" md="6" lg="3" class="dev-journey-info">
-        <b-card>
-          <div class="dev-journey-info-icon">
-            <img src="~/assets/play-button-sing.svg">
-          </div>
-          <h4 class="dev-journey-phase">dev.start()</h4>
-          <p>
-            Ciclo de oficinas para apresentar programação web para o público geral da universidade, com tópicos como HTML, CSS e JavaScript
-          </p>
-        </b-card>
-      </b-col>
+    <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
+      <b-card class="text-center">
+        <img src="~/assets/play-button-sing.svg"
+             class="dev-journey__info__icon py-4">
+        <h3 class="dev-journey-phase">dev.start()</h3>
+        Ciclo de oficinas para apresentar programação web
+        para o público geral da universidade, com tópicos
+        como HTML, CSS e JavaScript
+      </b-card>
+    </b-col>
 
-      <b-col xs="12" sm="6" md="6" lg="3" class="dev-journey-info">
-        <b-card>
-          <div class="dev-journey-info-icon">
-            <img src="~/assets/study.svg">
-          </div>
-          <div>
-            <h4 class="dev-journey-phase">dev.learn()</h4>
-            <p>
-              Um dos nossos grupos de estudo com reuniões semanais, ao longo de um semestre, para aplicar os conhecimentos em projetos propostos pela organização
-            </p>  
-          </div>
-        </b-card>
-      </b-col>
-      
-      <b-col xs="12" sm="6" md="6" lg="3" class="dev-journey-info">
-        <b-card>
-          <div class="dev-journey-info-icon">
-            <img src="~/assets/startup.svg">
-          </div>
-          <h4 class="dev-journey-phase">dev.boost()</h4>
-          <p>
-            Uma continuação da fase anterior, agora com projetos em times, voltada para aprendizado de técnicas de modelagem, implementação e manutenção de sistemas
-          </p>
-        </b-card>
-      </b-col>
+    <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
+      <b-card class="text-center">
+        <img src="~/assets/study.svg"
+             class="dev-journey__info__icon py-4">
+        <h3 class="dev-journey-phase">dev.learn()</h3>
+        Grupos de estudo com reuniões semanais, ao longo
+        de um semestre, para aplicar os conhecimentos
+        em projetos propostos pela organização
+      </b-card>
+    </b-col>
 
-      <b-col xs="12" sm="6" md="6" lg="3" class="dev-journey-info">
-        <b-card>
-          <div class="dev-journey-info-icon">
-            <img src="~/assets/resume.svg">
-          </div>
-          <h4 class="dev-journey-phase">dev.hire()</h4>
-          <p>
-            Nosso programa de captação de currículos de alunos, em particular os participantes do programa, para facilitar o contato profissional com empresas parceiras
-          </p> 
-        </b-card>
-      </b-col>
-      
-    </b-row>
-  </section>
-  
+    <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
+      <b-card class="text-center">
+        <img src="~/assets/startup.svg"
+             class="dev-journey__info__icon py-4">
+        <h3 class="dev-journey-phase">dev.boost()</h3>
+        Grupo de estudos avançado, com projetos em times
+        para aprendizado de técnicas de modelagem,
+        implementação e manutenção de sistemas
+      </b-card>
+    </b-col>
+
+    <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
+      <b-card class="text-center">
+        <img src="~/assets/resume.svg"
+             class="dev-journey__info__icon py-4">
+        <h3 class="dev-journey-phase">dev.hire()</h3>
+        Iniciativa de captação de currículos de alunos,
+        em particular os participantes do programa,
+        para facilitar o contato profissional
+        com empresas parceiras
+      </b-card>
+    </b-col>
+  </b-row>
 </template>
 
-<script>
-</script>
-
 <style lang="scss">
-@font-face {
-  font-family: Montserrat;
-  font-weight: normal;
-  src: url("/Montserrat-Regular.otf");
-}
-.dev-journey-section {
-  background: $secondary-color;
-  color: #2c2c2c;
+.dev-journey {
+  color: theme-color("dark");
+  background-color: theme-color("light");
 
-  width: 100%;
-  font-size: 1.1em;
-  height: 100%;
-  padding: 20vh 2vh;
+  &__info {
+    display: inline-flex;
 
-  @media screen and (min-width: 1200px) {
-    padding-left: calc(calc(100vw - 1200px) / 2);
-    padding-right: calc(calc(100vw - 1200px) / 2);
+    &__icon {
+      max-width: 80%;
+    }
   }
-}
-
-.dev-journey-info {
-  padding: 0 1vw;
-  text-align: center;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  display: inline-flex;
-
-  h3 {
-    font-size: 2em;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-  }
-}
-
-.dev-journey-info-icon {
-  padding: 5vh 0vh;
-  fill: $secondary-color;
-  img {
-    width: 10em;
-  }
-}
-
-.dev-journey-info h4 {
-  padding: 3vh 0vh 2vh 0vh;
-  font-size: 2em;
-  font-family: Montserrat, "IBM Plex Sans Condensed";
-}
-
-.dev-journey-info p {
-  text-align: center;
-}
-
-.card-body {
-  height: 100%;
 }
 </style>

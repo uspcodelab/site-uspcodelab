@@ -1,98 +1,82 @@
 <template>
-  <section>
-    <b-row id="head" class="header">
-      <b-col lg="7" class="header-text">
-        <h1>
-          USPCodeLab
-        </h1>
-        <h3>
-          Grupo de extensão universitária com o objetivo  de criar um <strong>espaço colaborativo</strong> para o desenvolvimento de <strong>tecnologia</strong> na <strong>universidade</strong>
-        </h3>
-      </b-col>
-      <b-col lg="5" style="text-align: center; overflow: hidden;">
-        <img src="~/assets/UCL-Logo.svg" class="header-logo">
-      </b-col>
-    </b-row>
-  </section>
+  <b-row id="header" tag="section" class="header p-3 p-sm-5">
+    <b-col sm="6" class="header__logo pb-4 pb-sm-0">
+      <img src="~/assets/UCL-Logo.svg" class="header__logo__img rounded-circle">
+    </b-col>
+    <b-col sm="6" class="header__text">
+      <h1 class="text-center text-md-left">
+        USPCodeLab
+      </h1>
+      <p class="lead text-center text-md-left">
+        Grupo de extensão universitária que tem como
+        objetivo criar um <strong>espaço colaborativo</strong>
+        para o desenvolvimento de <strong>tecnologia</strong>
+        na <strong>USP</strong>
+      </p>
+    </b-col>
+  </b-row>
 </template>
 
 <style lang="scss">
-@font-face {
-  font-family: Montserrat;
-  font-weight: normal;
-  src: url("/Montserrat-Regular.otf");
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-weight: 600;
-  src: url("/Montserrat-Medium.otf");
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-weight: bold;
-  src: url("/Montserrat-Bold.otf");
-}
-
-.row {
-  margin-right: 0;
-  margin-left: 0;
-}
 .header {
-  display: flex;
-  min-height: 100vh;
-  width: 100%;
-  padding: 20vh 3vw 5vh 3vw;
-  background-image: linear-gradient(#ff8b46, $main-color);
-  justify-content: center;
-  align-items: center;
+  min-height: calc(100vh - 5rem);
 
-  .header-logo {
-    z-index: 9;
-    width: calc(calc(60vw + 60vh) / 3);
-    max-width: 400px;
-    border-radius: 50%;
+  color: theme-color("light");
+  background-image: linear-gradient(
+    theme-color-level("primary", -4),
+    theme-color("primary")
+  );
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__img {
+      min-width: 50vw;
+      width: 80%;
+    }
   }
 
-  p {
-    color: #ffffff;
-    font-size: 1.1em;
-  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 
-  h3,
-  h1 {
-    color: #ffffff;
-  }
+    h1 {
+      font-family: Montserrat, sans;
+      font-weight: 600;
+    }
 
-  h1 {
-    font-family: Montserrat, sans;
-    font-size: 3em;
-    font-weight: 600;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-left: calc(calc(100vw - 1200px) / 2);
-    padding-right: calc(calc(100vw - 1200px) / 2 + 4em);
+    p.lead strong {
+      font-weight: bold;
+    }
   }
 }
 
-.header-text {
-  flex-wrap: wrap;
+@include media-breakpoint-up(md) {
+  .header__logo {
+    order: 2;
+    justify-content: center;
 
-  h3 {
-    font-size: 1.3em;
+    &__img {
+      min-width: 0;
+      width: 90%;
+    }
+  }
+
+  .header__text {
+    order: 1;
+    align-items: left;
+    justify-content: center;
   }
 }
 
-@media (max-width: 768px) {
-  .header {
-    .header-logo {
-      order: 1;
-    }
-    .header-text {
-      order: 2;
-    }
+@include media-breakpoint-up(lg) {
+  .header__logo__img {
+    width: 70%;
   }
 }
 </style>

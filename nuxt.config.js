@@ -84,5 +84,8 @@ module.exports = {
     }
   },
 
-  sassResources: ["~/assets/variables.scss"]
+  sassResources: [
+    "@/assets/custom.scss",
+    "@/node_modules/bootstrap/scss/bootstrap.scss"
+  ]
 };

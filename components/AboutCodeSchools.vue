@@ -1,63 +1,41 @@
 <template>
-  <section id="CodeSchools" class="codeschools-section">
-    <b-row>
-      <b-col>
-        <h3 class="section-title codeschools-padding">CodeSchools</h3>
-      </b-col>
-    </b-row>
-    <b-row>
-      <b-col style="display:flex;">
-        <p class="codeschools-padding" style="align-self:flex-end; padding-bottom:1em;">
-          Nossas escolas de períodos de férias tem como objetivo um grande projeto de desenvolvimento em equipe e com tecnologias modernas. Uma verdadeira experiência de desenvolvimento!
-        </p>
-      </b-col>
-    </b-row>
-    <b-row>
-      <b-col class="codeschools-carousel">
-        <b-carousel id="carousel1" style="text-shadow: 1px 1px 2px #333;" controls indicators background="#ababab" :interval="4000">
-          <b-carousel-slide img-src="~/assets/summer-school2-min.jpeg" style="max-height: 85vh">
-            _
-          </b-carousel-slide>
-          <b-carousel-slide img-src="~/assets/summer-school3-min.jpeg" style="max-height: 85vh">
-            _
-          </b-carousel-slide>
-          <b-carousel-slide img-src="~/assets/summer-school4-min.jpeg" style="max-height: 85vh">
-            _
-          </b-carousel-slide>
-        </b-carousel>
-      </b-col>
-    </b-row>
-  </section>
+  <b-row id="code-schools" tag="section" class="code-schools px-3 py-5 px-sm-5">
+    <b-col sm="12">
+      <h2 class="text-primary text-center">
+        CodeSchools
+      </h2>
+      <p class="text-center">
+        Escolas de férias para desenvolvimento de projetos em equipe
+        usando as tecnologias mais modernas. Uma verdadeira experiência
+        de desenvolvimento!
+      </p>
+    </b-col>
+
+    <b-col sm="12" class="code-schools__showcase text-center py-3">
+      <b-carousel class="code-schools__showcase__carousel"
+                  controls indicators interval="4000">
+        <b-carousel-slide img-src="~/assets/summer-school2-min.jpeg"/>
+        <b-carousel-slide img-src="~/assets/summer-school3-min.jpeg"/>
+        <b-carousel-slide img-src="~/assets/summer-school4-min.jpeg"/>
+      </b-carousel>
+    </b-col>
+  </b-row>
 </template>
 
 <style lang="scss">
-.codeschools-info {
-  font-size: 1.3em;
-}
-.codeschools-section {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 1.1em;
-  height: 100%;
-  width: 100%;
-  padding: 20vh 0vh 0vh 0vh;
-  color: #ffffff;
-  background-color: #2c2c2c;
-}
+.code-schools {
+  color: theme-color("light");
+  background-color: theme-color("dark");
 
-.codeschools-carousel {
-  padding: 0;
-  @media screen and (min-width: 1200px) {
-    padding-left: calc(calc(100vw - 1200px) / 2);
-    padding-right: calc(calc(100vw - 1200px) / 2 + 4em);
+  &__showcase {
+    display: flex;
+    justify-content: center;
   }
 }
 
-.codeschools-padding {
-  padding-left: 2vw;
-  @media screen and (min-width: 1200px) {
-    padding-left: calc(calc(100vw - 1200px) / 2);
-    padding-right: calc(calc(100vw - 1200px) / 2 + 4em);
+@include media-breakpoint-up(lg) {
+  .code-schools__showcase__carousel {
+    max-width: 50vw;
   }
 }
 </style>

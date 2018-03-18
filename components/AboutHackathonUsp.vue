@@ -1,50 +1,58 @@
 <template>
-  <section id="HackathonUSP" class="hackathonusp-section">
-    <b-row>
-      <b-col sm class="hackathon-text">
-        <h3 class="section-title" style="text-align: left">HackathonUSP</h3>
-        <p>
-          O HackathonUSP é o nosso maior evento. De âmbito USPiano, feito em parceira com a univerdade e focado em quem nunca participou de um hackathon!
-        </p>
-      </b-col>
-      <b-col sm style="text-align: center;" class="hackathon-logo">
-        <img src="~/assets/NEWhackathonUSP.svg" alt="">
-      </b-col>
-    </b-row>
-  </section>
+  <b-row id="hackathon-usp" tag="section" class="hackathon-usp px-3 py-5 px-sm-5">
+    <b-col sm="6" class="hackathon-usp__logo pb-4 pb-sm-0">
+      <img src="~/assets/NEWhackathonUSP.svg">
+    </b-col>
+
+    <b-col sm="6" class="hackathon-usp__text">
+      <h2 class="text-primary text-center text-md-left">
+        HackathonUSP
+      </h2>
+      <p class="text-center text-md-left">
+        Maior evento do USPCodeLab. Voltado para USPianos,
+        patrocinado pela reitoria da USP e empresas parceiras,
+        focado em quem vai participar de um hackathon pela primeira vez!
+      </p>
+    </b-col>
+  </b-row>
 </template>
 
 <style lang="scss">
-.hackathonusp-section {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 1.1em;
-  height: 100vh;
-  width: 100%;
-  padding: 20vh 2vh;
-  .hackathon-logo {
-    height: 60vh;
+.hackathon-usp {
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
     img {
-      height: 100%;
+      max-height: 30vh;
     }
   }
-  @media screen and (min-width: 1200px) {
-    padding-left: calc(calc(100vw - 1200px) / 2);
-    padding-right: calc(calc(100vw - 1200px) / 2 + 4em);
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
   }
 }
 
-@media (max-width: 480px) {
-  .hackathonusp-section {
-    .hackathon-logo {
-      height: 30vh;
-      img {
-        height: 100%;
-      }
+@include media-breakpoint-up(md) {
+  .hackathon-usp__logo {
+    order: 2;
+    justify-content: center;
+
+    &__img {
+      min-width: 0;
+      width: 90%;
     }
-    .hackathon-text {
-      order: 2;
-    }
+  }
+
+  .hackathon-usp__text {
+    order: 1;
+    align-items: left;
+    justify-content: center;
   }
 }
 </style>
