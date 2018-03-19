@@ -13,7 +13,7 @@
 
     <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
       <b-card class="text-center">
-        <img src="~/assets/play-button-sing.svg"
+        <img src="~/assets/dev-journey/dev-start.svg"
              class="dev-journey__info__icon py-4">
         <h3 class="dev-journey-phase">dev.start()</h3>
         Ciclo de oficinas para apresentar programação web
@@ -24,7 +24,7 @@
 
     <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
       <b-card class="text-center">
-        <img src="~/assets/study.svg"
+        <img src="~/assets/dev-journey/dev-learn.svg"
              class="dev-journey__info__icon py-4">
         <h3 class="dev-journey-phase">dev.learn()</h3>
         Grupos de estudo com reuniões semanais, ao longo
@@ -35,7 +35,7 @@
 
     <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
       <b-card class="text-center">
-        <img src="~/assets/startup.svg"
+        <img src="~/assets/dev-journey/dev-boost.svg"
              class="dev-journey__info__icon py-4">
         <h3 class="dev-journey-phase">dev.boost()</h3>
         Grupo de estudos avançado, com projetos em times
@@ -46,7 +46,7 @@
 
     <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
       <b-card class="text-center">
-        <img src="~/assets/resume.svg"
+        <img src="~/assets/dev-journey/dev-hire.svg"
              class="dev-journey__info__icon py-4">
         <h3 class="dev-journey-phase">dev.hire()</h3>
         Iniciativa de captação de currículos de alunos,

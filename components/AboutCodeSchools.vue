@@ -14,9 +14,9 @@
     <b-col sm="12" class="code-schools__showcase text-center py-3">
       <b-carousel class="code-schools__showcase__carousel"
                   controls indicators interval="4000">
-        <b-carousel-slide img-src="~/assets/summer-school2-min.jpeg"/>
-        <b-carousel-slide img-src="~/assets/summer-school3-min.jpeg"/>
-        <b-carousel-slide img-src="~/assets/summer-school4-min.jpeg"/>
+        <b-carousel-slide img-src="~/assets/code-schools/team-process.jpg"/>
+        <b-carousel-slide img-src="~/assets/code-schools/team-request.jpg"/>
+        <b-carousel-slide img-src="~/assets/code-schools/team-user.jpg"/>
       </b-carousel>
     </b-col>
   </b-row>

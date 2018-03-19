@@ -1,7 +1,7 @@
 <template>
   <b-navbar class="navbar" variant="light" fixed="top" type="light" toggleable>
     <b-navbar-brand v-scroll-to="'#header'">
-      <img src="~/assets/UCL-Logo_Text.svg" alt="USPCodeLab" class="navbar__logo">
+      <img src="~/assets/logos/ucl-logo-colored-alpha.svg" alt="USPCodeLab" class="navbar__logo">
     </b-navbar-brand>
     <b-navbar-toggle target="nav_dropdown_collapse"/>
     <b-collapse id="nav_dropdown_collapse" is-nav>

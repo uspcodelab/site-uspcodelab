@@ -1,7 +1,7 @@
 <template>
   <b-row id="footer" tag="footer" class="footer p-3 p-sm-5 bg-dark text-white">
     <b-col class="footer__about mb-3 mb-sm-0">
-      <img src="~/assets/UCL-Logo_Footer.svg" class="footer__about__logo">
+      <img src="~/assets/logos/ucl-logo-wb-alpha.svg" class="footer__about__logo">
       <p class="footer__about__description text-center">
         Criando um espaço colaborativo para o
         desenvolvimento de tecnologia na USP

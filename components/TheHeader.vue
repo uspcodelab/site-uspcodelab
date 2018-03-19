@@ -1,7 +1,7 @@
 <template>
   <b-row id="header" tag="section" class="header p-3 p-sm-5">
     <b-col sm="6" class="header__logo pb-4 pb-sm-0">
-      <img src="~/assets/UCL-Logo.svg" class="header__logo__img rounded-circle">
+      <img src="~/assets/logos/ucl-mark-alpha.svg" class="header__logo__img rounded-circle">
     </b-col>
     <b-col sm="6" class="header__text">
       <h1 class="text-center text-md-left">

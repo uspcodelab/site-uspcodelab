@@ -15,10 +15,9 @@ module.exports = {
     ],
     script: [{}],
     link: [
-      // { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      { rel: "icon", type: "image/x-icon", href: "/favi-32.png" },
-      { rel: "icon", type: "image/x-icon", href: "/favi-64.png" },
-      { rel: "icon", type: "image/x-icon", href: "/favi-128.png" },
+      { rel: "icon", type: "image/x-icon", href: "/favicon-32.png" },
+      { rel: "icon", type: "image/x-icon", href: "/favicon-64.png" },
+      { rel: "icon", type: "image/x-icon", href: "/favicon-128.png" },
       {
         rel: "stylesheet",
         href:
