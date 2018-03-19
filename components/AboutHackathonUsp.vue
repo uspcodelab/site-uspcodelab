@@ -5,9 +5,9 @@
     </b-col>
 
     <b-col sm="6" class="hackathon-usp__text">
-      <h2 class="text-primary text-center text-md-left">
+      <h1 class="text-primary text-center text-md-left pb-3">
         HackathonUSP
-      </h2>
+      </h1>
       <p class="text-center text-md-left">
         Maior evento do USPCodeLab. Voltado para USPianos,
         patrocinado pela reitoria da USP e empresas parceiras,
@@ -26,7 +26,7 @@
     justify-content: flex-start;
 
     img {
-      max-height: 30vh;
+      max-height: 40vh;
     }
   }
 

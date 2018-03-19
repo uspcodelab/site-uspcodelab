@@ -1,9 +1,9 @@
 <template>
   <b-row id="code-schools" tag="section" class="code-schools px-3 py-5 px-sm-5">
     <b-col sm="12">
-      <h2 class="text-primary text-center">
+      <h1 class="text-primary text-center pb-3">
         CodeSchools
-      </h2>
+      </h1>
       <p class="text-center">
         Escolas de férias para desenvolvimento de projetos em equipe
         usando as tecnologias mais modernas. Uma verdadeira experiência

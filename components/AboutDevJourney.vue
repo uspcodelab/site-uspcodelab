@@ -1,9 +1,9 @@
 <template>
   <b-row id="dev-journey" tag="section" class="dev-journey px-3 py-5 px-sm-5">
     <b-col sm="12">
-      <h2 class="text-primary text-center">
+      <h1 class="text-primary text-center pb-3">
         dev.journey()
-      </h2>
+      </h1>
       <p class="text-center">
         Programa de 4 fases que visa introduzir e amadurecer
         os conhecimentos dos alunos da USP sobre desenvolvimento
@@ -14,7 +14,7 @@
     <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
       <b-card class="text-center">
         <img src="~/assets/dev-journey/dev-start.svg"
-             class="dev-journey__info__icon py-4">
+             class="dev-journey__info__icon p-4">
         <h3 class="dev-journey-phase">dev.start()</h3>
         Ciclo de oficinas para apresentar programação web
         para o público geral da universidade, com tópicos
@@ -25,7 +25,7 @@
     <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
       <b-card class="text-center">
         <img src="~/assets/dev-journey/dev-learn.svg"
-             class="dev-journey__info__icon py-4">
+             class="dev-journey__info__icon p-4">
         <h3 class="dev-journey-phase">dev.learn()</h3>
         Grupos de estudo com reuniões semanais, ao longo
         de um semestre, para aplicar os conhecimentos
@@ -36,7 +36,7 @@
     <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
       <b-card class="text-center">
         <img src="~/assets/dev-journey/dev-boost.svg"
-             class="dev-journey__info__icon py-4">
+             class="dev-journey__info__icon p-4">
         <h3 class="dev-journey-phase">dev.boost()</h3>
         Grupo de estudos avançado, com projetos em times
         para aprendizado de técnicas de modelagem,
@@ -47,7 +47,7 @@
     <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
       <b-card class="text-center">
         <img src="~/assets/dev-journey/dev-hire.svg"
-             class="dev-journey__info__icon py-4">
+             class="dev-journey__info__icon p-4">
         <h3 class="dev-journey-phase">dev.hire()</h3>
         Iniciativa de captação de currículos de alunos,
         em particular os participantes do programa,
@@ -61,7 +61,7 @@
 <style lang="scss">
 .dev-journey {
   color: theme-color("dark");
-  background-color: theme-color("light");
+  background-color: theme-color("white");
 
   &__info {
     display: inline-flex;

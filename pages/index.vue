@@ -49,7 +49,7 @@ html {
 
 @include media-breakpoint-up(lg) {
   html {
-    font-size: 1.5vmax;
+    font-size: 16px;
   }
 }
 </style>

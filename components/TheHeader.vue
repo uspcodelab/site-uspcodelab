@@ -4,7 +4,7 @@
       <img src="~/assets/logos/ucl-mark-alpha.svg" class="header__logo__img rounded-circle">
     </b-col>
     <b-col sm="6" class="header__text">
-      <h1 class="text-center text-md-left">
+      <h1 class="text-center text-md-left pb-3">
         USPCodeLab
       </h1>
       <p class="lead text-center text-md-left">
@@ -22,10 +22,7 @@
   min-height: calc(100vh - 5rem);
 
   color: theme-color("light");
-  background-image: linear-gradient(
-    theme-color-level("primary", -4),
-    theme-color("primary")
-  );
+  background-image: linear-gradient(#ff8b46, theme-color("primary"));
 
   &__logo {
     display: flex;
