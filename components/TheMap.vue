@@ -6,6 +6,6 @@
 .map {
   display: block;
   width: 100%;
-  max-height: 15vh;
+  max-height: 20vh;
 }
 </style>
