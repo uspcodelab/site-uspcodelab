@@ -1,14 +1,14 @@
 <template>
-  <b-row id="footer" tag="footer" class="footer p-3 p-sm-5 bg-dark text-white">
-    <b-col class="footer__about mb-3 mb-sm-0">
+  <b-row id="footer" tag="footer" class="footer px-3 py-5 px-sm-5 bg-dark text-white">
+    <b-col class="footer__about pb-3 pb-sm-0">
       <img src="~/assets/logos/ucl-logo-wb-alpha.svg" class="footer__about__logo">
       <p class="footer__about__description text-center">
-        Criando um espaço colaborativo para o
-        desenvolvimento de tecnologia na USP
+        Criando um espaço colaborativo para
+        para o desenvolvimento de tecnologia na USP
       </p>
     </b-col>
 
-    <b-col class="footer__social mb-3 mb-sm-0">
+    <b-col class="footer__social">
       <p class="footer__social__description text-center">
         Encontre-nos nas redes sociais!
       </p>
@@ -41,6 +41,10 @@
 
     &__logo {
       height: 4rem;
+    }
+
+    &__description {
+      max-width: 24rem;
     }
   }
 

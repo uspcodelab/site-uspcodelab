@@ -10,7 +10,6 @@
       </main>
       <the-footer/>
     </b-container>
-    <the-map/>
   </div>
 </template>
 
@@ -40,16 +39,22 @@ export default {
 
 <style lang="scss">
 html {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .page {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 
 @include media-breakpoint-up(lg) {
   html {
     font-size: 16px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  html {
+    font-size: 1.5vmax;
   }
 }
 </style>

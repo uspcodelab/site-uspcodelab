@@ -1,6 +1,6 @@
 <template>
   <b-row id="code-schools" tag="section" class="code-schools px-3 py-5 px-sm-5">
-    <b-col sm="12">
+    <b-col sm="12" class="py-5">
       <h1 class="text-primary text-center pb-3">
         CodeSchools
       </h1>
@@ -11,7 +11,7 @@
       </p>
     </b-col>
 
-    <b-col sm="12" class="code-schools__showcase text-center py-3">
+    <b-col sm="12" class="code-schools__showcase text-center pb-5">
       <b-carousel class="code-schools__showcase__carousel"
                   controls indicators interval="4000">
         <b-carousel-slide img-src="~/assets/code-schools/team-process.jpg"/>

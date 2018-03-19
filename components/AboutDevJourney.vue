@@ -1,6 +1,6 @@
 <template>
   <b-row id="dev-journey" tag="section" class="dev-journey px-3 py-5 px-sm-5">
-    <b-col sm="12">
+    <b-col sm="12" class="py-5">
       <h1 class="text-primary text-center pb-3">
         dev.journey()
       </h1>
@@ -12,7 +12,7 @@
     </b-col>
 
     <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
-      <b-card class="text-center">
+      <b-card body-bg-variant="light" class="text-center">
         <img src="~/assets/dev-journey/dev-start.svg"
              class="dev-journey__info__icon p-4">
         <h3 class="dev-journey-phase">dev.start()</h3>
@@ -23,7 +23,7 @@
     </b-col>
 
     <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
-      <b-card class="text-center">
+      <b-card body-bg-variant="light" class="text-center">
         <img src="~/assets/dev-journey/dev-learn.svg"
              class="dev-journey__info__icon p-4">
         <h3 class="dev-journey-phase">dev.learn()</h3>
@@ -34,7 +34,7 @@
     </b-col>
 
     <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
-      <b-card class="text-center">
+      <b-card body-bg-variant="light" class="text-center">
         <img src="~/assets/dev-journey/dev-boost.svg"
              class="dev-journey__info__icon p-4">
         <h3 class="dev-journey-phase">dev.boost()</h3>
@@ -45,7 +45,7 @@
     </b-col>
 
     <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
-      <b-card class="text-center">
+      <b-card body-bg-variant="light" class="text-center">
         <img src="~/assets/dev-journey/dev-hire.svg"
              class="dev-journey__info__icon p-4">
         <h3 class="dev-journey-phase">dev.hire()</h3>
@@ -61,7 +61,7 @@
 <style lang="scss">
 .dev-journey {
   color: theme-color("dark");
-  background-color: theme-color("white");
+  background-color: theme-color("light");
 
   &__info {
     display: inline-flex;

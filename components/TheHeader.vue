@@ -19,7 +19,7 @@
 
 <style lang="scss">
 .header {
-  min-height: calc(100vh - 5rem);
+  min-height: calc(100vh - 4rem);
 
   color: theme-color("light");
   background-image: linear-gradient(#ff8b46, theme-color("primary"));

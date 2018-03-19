@@ -1,10 +1,10 @@
 <template>
   <b-row id="hackathon-usp" tag="section" class="hackathon-usp px-3 py-5 px-sm-5">
-    <b-col sm="6" class="hackathon-usp__logo pb-4 pb-sm-0">
+    <b-col sm="6" class="hackathon-usp__logo py-5 py-sm-0">
       <img src="~/assets/logos/hackathon-usp.svg">
     </b-col>
 
-    <b-col sm="6" class="hackathon-usp__text">
+    <b-col sm="6" class="hackathon-usp__text py-5 py-sm-0">
       <h1 class="text-primary text-center text-md-left pb-3">
         HackathonUSP
       </h1>
