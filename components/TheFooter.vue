@@ -3,8 +3,8 @@
     <b-col class="footer__about pb-3 pb-sm-0">
       <img src="~/assets/logos/ucl-logo-wb-alpha.svg" class="footer__about__logo">
       <p class="footer__about__description text-center">
-        Criando um espaço colaborativo para
-        para o desenvolvimento de tecnologia na USP
+        Criando um espaço colaborativo para 
+        o desenvolvimento de tecnologia na USP
       </p>
     </b-col>
 
