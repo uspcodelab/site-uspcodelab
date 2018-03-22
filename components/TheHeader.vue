@@ -8,10 +8,8 @@
         USPCodeLab
       </h1>
       <p class="lead text-center text-md-left">
-        Grupo de extensão universitária que tem como
-        objetivo criar um <strong>espaço colaborativo</strong>
-        para o desenvolvimento de <strong>tecnologia</strong>
-        na <strong>USP</strong>
+        Grupo de extensão universitária que tem como objetivo
+        <strong>estimular a inovação tecnológica na USP</strong>
       </p>
     </b-col>
   </b-row>
