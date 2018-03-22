@@ -3,8 +3,7 @@
     <b-col class="footer__about pb-3 pb-sm-0">
       <img src="~/assets/logos/ucl-logo-wb-alpha.svg" class="footer__about__logo">
       <p class="footer__about__description text-center">
-        Criando um espaço colaborativo para 
-        o desenvolvimento de tecnologia na USP
+        Estimulando a inovação tecnológica na USP
       </p>
     </b-col>
 
@@ -18,8 +17,8 @@
       <a href="https://facebook.com/uspcodelab/">
         <span class="fa fa-facebook mx-2"/>
       </a>
-      <a href="https://github.com/uspcodelab/">
-        <span class="fa fa-github mx-2"/>
+      <a href="http://bit.ly/uspcodelab_tg">
+        <span class="fa fa-telegram mx-2"/>
       </a>
       <a href="https://gitlab.com/uspcodelab/">
         <span class="fa fa-gitlab mx-2"/>
@@ -29,6 +28,10 @@
 </template>
 
 <style lang="scss">
+a:hover {
+  text-decoration: none;
+}
+
 .footer {
   color: theme-color("light");
   background-color: theme-color("dark");
@@ -95,11 +98,11 @@
       color: #2b55ff;
     }
 
-    .fa-github:hover {
-      color: #24292e;
+    .fa-telegram:hover {
+      color: #1f95d3;
     }
-    .fa-github:focus {
-      color: #24292e;
+    .fa-telegram:focus {
+      color: #1f95d3;
     }
 
     .fa-gitlab:hover {
