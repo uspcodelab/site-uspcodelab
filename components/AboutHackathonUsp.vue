@@ -9,7 +9,7 @@
         HackathonUSP
       </h1>
       <p class="text-center text-md-left">
-        Maior evento do USPCodeLab. Voltado para USPianos,
+        Maior evento do USPCodeLab, feito em parceria com o <a href="http://www.uspempreende.org">Núcleo de Empreendedorismo da USP (NEU)</a>. Voltado para USPianos,
         patrocinado pela reitoria da USP e empresas parceiras,
         focado em quem vai participar de um hackathon pela primeira vez!
       </p>
