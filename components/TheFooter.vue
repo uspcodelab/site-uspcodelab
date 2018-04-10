@@ -23,6 +23,9 @@
       <a href="https://gitlab.com/uspcodelab/">
         <span class="fa fa-gitlab mx-2"/>
       </a>
+      <a href="https://github.com/uspcodelab">
+        <span class="fa fa-github mx-2"/>
+      </a>
     </b-col>
   </b-row>
 </template>
