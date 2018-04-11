@@ -11,20 +11,20 @@
       <p class="footer__social__description text-center">
         Encontre-nos nas redes sociais!
       </p>
-      <a href="mailto:codelab@ime.usp.br">
-        <span class="fa fa-envelope mx-2"/>
-      </a>
       <a href="https://facebook.com/uspcodelab/">
         <span class="fa fa-facebook mx-2"/>
       </a>
-      <a href="http://bit.ly/uspcodelab_tg">
-        <span class="fa fa-telegram mx-2"/>
+      <a href="https://github.com/uspcodelab">
+        <span class="fa fa-github mx-2"/>
       </a>
       <a href="https://gitlab.com/uspcodelab/">
         <span class="fa fa-gitlab mx-2"/>
       </a>
-      <a href="https://github.com/uspcodelab">
-        <span class="fa fa-github mx-2"/>
+      <a href="http://bit.ly/uspcodelab_tg">
+        <span class="fa fa-telegram mx-2"/>
+      </a>
+      <a href="mailto:codelab@ime.usp.br">
+        <span class="fa fa-envelope mx-2"/>
       </a>
     </b-col>
   </b-row>
