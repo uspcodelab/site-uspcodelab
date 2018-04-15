@@ -11,16 +11,16 @@
       <p class="footer__social__description text-center">
         Encontre-nos nas redes sociais!
       </p>
-      <a href="https://facebook.com/uspcodelab/">
+      <a href="http://uclab.xyz/facebook">
         <span class="fa fa-facebook mx-2"/>
       </a>
-      <a href="https://github.com/uspcodelab">
+      <a href="http://uclab.xyz/github">
         <span class="fa fa-github mx-2"/>
       </a>
-      <a href="https://gitlab.com/uspcodelab/">
+      <a href="http://uclab.xyz/gitlab">
         <span class="fa fa-gitlab mx-2"/>
       </a>
-      <a href="http://bit.ly/uspcodelab_tg">
+      <a href="http://uclab.xyz/telegram">
         <span class="fa fa-telegram mx-2"/>
       </a>
       <a href="mailto:codelab@ime.usp.br">
