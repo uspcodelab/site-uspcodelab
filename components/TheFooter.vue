@@ -23,6 +23,9 @@
       <a href="http://uclab.xyz/telegram">
         <span class="fa fa-telegram mx-2"/>
       </a>
+      <a href="http://uclab.xyz/medium">
+        <span class="fa fa-medium mx-2"/>
+      </a>
       <a href="mailto:codelab@ime.usp.br">
         <span class="fa fa-envelope mx-2"/>
       </a>
@@ -113,6 +116,13 @@ a:hover {
     }
     .fa-gitlab:focus {
       color: #e24329;
+    }
+
+    .fa-medium:hover {
+      color: #02b875;
+    }
+    .fa-medium:focus {
+      color: #02b875;
     }
   }
 }
