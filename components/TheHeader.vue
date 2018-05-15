@@ -4,7 +4,7 @@
       <img src="~/assets/logos/ucl-mark-alpha.svg" class="header__logo__img rounded-circle">
     </b-col>
     <b-col sm="6" class="header__text">
-      <h1 class="text-center text-md-left pb-3">
+      <h1 class="text-center text-md-left pb-3 w-100">
         USPCodeLab
       </h1>
       <p class="lead text-center text-md-left">
