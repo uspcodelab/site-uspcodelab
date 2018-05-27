@@ -5,7 +5,7 @@
         CodeSchools
       </h1>
       <p class="text-center">
-        Escolas de férias para desenvolvimento de projetos em equipe
+        Escolas de férias voltadas ao desenvolvimento de projetos em equipe
         usando as tecnologias mais modernas. Uma verdadeira experiência
         de desenvolvimento!
       </p>
