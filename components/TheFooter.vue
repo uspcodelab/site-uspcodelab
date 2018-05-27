@@ -92,7 +92,6 @@ a:hover {
     .fa-envelope:hover {
       color: #00aced;
     }
-
     .fa-envelope:focus {
       color: #00aced;
     }
@@ -123,6 +122,13 @@ a:hover {
     }
     .fa-medium:focus {
       color: #02b875;
+    }
+
+    .fa-github:hover {
+      color: #bfbfbf;
+    }
+    .fa-github:focus {
+      color: #bfbfbf;
     }
   }
 }
