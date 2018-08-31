@@ -5,7 +5,7 @@
         dev.journey()
       </h1>
       <p class="text-center">
-        Programa de 4 fases que visa a introduzir e amadurecer
+        Programa de 4 fases que visa introduzir e amadurecer
         os conhecimentos dos alunos da USP sobre desenvolvimento
         de software
       </p>
@@ -16,7 +16,7 @@
         <img src="~/assets/dev-journey/dev-start.svg"
              class="dev-journey__info__icon p-4">
         <h3 class="dev-journey-phase">dev.start()</h3>
-        Ciclo de oficinas de introdução a programação web
+        Ciclo de oficinas de introdução à programação web
         para o público geral da universidade, com tópicos
         como HTML, CSS e JavaScript
       </b-card>
