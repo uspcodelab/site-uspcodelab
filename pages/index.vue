@@ -5,7 +5,7 @@
       <the-header/>
       <main>
         <about-dev-journey/>
-        <about-code-schools/>
+        <about-dev-camp/>
         <about-hackathon-usp/>
       </main>
       <the-footer/>
@@ -21,7 +21,7 @@ import TheMap from "~/components/TheMap.vue";
 
 import AboutHackathonUsp from "~/components/AboutHackathonUsp.vue";
 import AboutDevJourney from "~/components/AboutDevJourney.vue";
-import AboutCodeSchools from "~/components/AboutCodeSchools.vue";
+import AboutDevCamp from "~/components/AboutDevCamp.vue";
 
 export default {
   components: {
@@ -32,7 +32,7 @@ export default {
 
     AboutHackathonUsp,
     AboutDevJourney,
-    AboutCodeSchools
+    AboutDevCamp
   }
 };
 </script>

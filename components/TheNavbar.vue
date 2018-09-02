@@ -7,7 +7,7 @@
     <b-collapse id="nav_dropdown_collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item v-scroll-to="'#dev-journey'">dev.journey()</b-nav-item>
-        <b-nav-item v-scroll-to="'#code-schools'">CodeSchools</b-nav-item>
+        <b-nav-item v-scroll-to="'#dev-camp'">dev.camp()</b-nav-item>
         <b-nav-item v-scroll-to="'#hackathon-usp'">HackathonUSP</b-nav-item>
         <b-nav-item v-scroll-to="'#footer'">Contato</b-nav-item>
       </b-navbar-nav>
