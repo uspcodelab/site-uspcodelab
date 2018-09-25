@@ -1,0 +1,15 @@
+version: '3.5'
+
+services:
+  web:
+    build: .
+    ports:
+      - '8080:8080'
+    volumes:
+      - '.:/usr/src/web'
+      - 'web_dependencies:/usr/src/web/node_modules'
+    env_file:
+      - '.env'
+
+volumes:
+  ? web_dependencies

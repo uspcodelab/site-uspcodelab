@@ -1,0 +1,16 @@
+$ucl-orange: #FF690A;
+$ucl-black: #292827;
+
+$theme-colors: (
+  "primary": $ucl-orange,
+  "success": $ucl-orange,
+  "dark": $ucl-black,
+);
+
+$font-family-base: Montserrat, "IBM Plex Sans Condensed";
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: normal;
+  src: url("~@/assets/fonts/Montserrat-Medium.otf");
+}
