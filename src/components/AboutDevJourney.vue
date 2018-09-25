@@ -1,7 +1,7 @@
 <template>
   <b-row id="dev-journey" tag="section" class="dev-journey px-3 py-5 px-sm-5">
     <b-col sm="12" class="py-5">
-      <h1 class="text-primary text-center pb-3">
+      <h1 class="title text-center pb-3">
         dev.journey()
       </h1>
       <p class="text-center">
@@ -60,8 +60,8 @@
 
 <style lang="scss">
 .dev-journey {
-  color: theme-color("dark");
-  background-color: theme-color("light");
+  color: $ucl-black;
+  background-color: $ucl-light;
 
   &__info {
     display: inline-flex;

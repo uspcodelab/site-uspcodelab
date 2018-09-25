@@ -12,22 +12,23 @@
         Encontre-nos nas redes sociais!
       </p>
       <a href="http://uclab.xyz/facebook">
-        <span class="fa fa-facebook mx-2"/>
+        <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook' }"/>
       </a>
       <a href="http://uclab.xyz/github">
-        <span class="fa fa-github mx-2"/>
+        <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'github' }"/>
+        <!-- <span class="fa fa-github mx-2"/> -->
       </a>
       <a href="http://uclab.xyz/gitlab">
-        <span class="fa fa-gitlab mx-2"/>
+        <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'gitlab' }"/>
       </a>
       <a href="http://uclab.xyz/telegram">
-        <span class="fa fa-telegram mx-2"/>
+        <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'telegram' }"/>
       </a>
       <a href="http://uclab.xyz/medium">
-        <span class="fa fa-medium mx-2"/>
+        <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'medium' }"/>
       </a>
       <a href="mailto:codelab@ime.usp.br">
-        <span class="fa fa-envelope mx-2"/>
+        <font-awesome-icon icon="envelope" />
       </a>
     </b-col>
   </b-row>
@@ -39,8 +40,8 @@ a:hover {
 }
 
 .footer {
-  color: theme-color("light");
-  background-color: theme-color("dark");
+  color: $ucl-light;
+  background-color: $ucl-black;
 
   &__about {
     display: flex;
@@ -68,12 +69,14 @@ a:hover {
       white-space: nowrap;
     }
 
-    .fa {
-      font-size: 1.7rem;
+    svg {
+      font-size: 3rem !important;
+      margin: .2rem;
+      padding: .5rem;
 
       /* Make the icon inside a circle*/
       height: 3rem;
-      width: 3rem;
+      width: 3rem !important;
       border-radius: 50%;
 
       /* Display icon */

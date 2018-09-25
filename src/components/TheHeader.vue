@@ -20,7 +20,7 @@
   min-height: calc(100vh - 4rem);
 
   color: theme-color("light");
-  background-image: linear-gradient(#ff8b46, theme-color("primary"));
+  background-image: linear-gradient(#ff8b46, $ucl-orange);
 
   &__logo {
     display: flex;

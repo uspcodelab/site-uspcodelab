@@ -1,7 +1,7 @@
 <template>
   <b-row id="dev-camp" tag="section" class="dev-camp px-3 py-5 px-sm-5">
     <b-col sm="12" class="py-5">
-      <h1 class="text-primary text-center pb-3">
+      <h1 class="title text-center pb-3">
         dev.camp()
       </h1>
       <p class="text-center">
@@ -24,8 +24,8 @@
 
 <style lang="scss">
 .dev-camp {
-  color: theme-color("light");
-  background-color: theme-color("dark");
+  color: $ucl-light;
+  background-color: $ucl-black;
 
   &__showcase {
     display: flex;

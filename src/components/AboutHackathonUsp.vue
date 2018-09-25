@@ -5,7 +5,7 @@
     </b-col>
 
     <b-col sm="6" class="hackathon-usp__text py-5 py-sm-0">
-      <h1 class="text-primary text-center text-md-left pb-3">
+      <h1 class="title text-center text-md-left pb-3">
         HackathonUSP
       </h1>
       <p class="text-center text-md-left">
@@ -20,6 +20,17 @@
 
 <style lang="scss">
 .hackathon-usp {
+  color: $ucl-black;
+
+  a {
+    color: $ucl-orange;
+
+    &:hover {
+      color: $ucl-dark-orange;
+      text-decoration: none;
+    }
+  }
+
   &__logo {
     display: flex;
     flex-direction: column;
