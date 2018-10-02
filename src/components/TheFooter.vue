@@ -71,8 +71,8 @@ a:hover {
 
     svg {
       font-size: 3rem !important;
-      margin: .2rem;
-      padding: .5rem;
+      margin: 0.2rem;
+      padding: 0.5rem;
 
       /* Make the icon inside a circle*/
       height: 3rem;

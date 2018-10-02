@@ -10,17 +10,46 @@
         de desenvolvimento!
       </p>
     </b-col>
-
     <b-col sm="12" class="dev-camp__showcase text-center pb-5">
-      <b-carousel class="dev-camp__showcase__carousel"
-                  controls indicators interval="4000">
-        <b-carousel-slide img-src="@/assets/dev-camp/team-process.jpg"/>
+      <carousel :autoplay="true"
+                :autoplay-timeout="3000"
+                :loop="true"
+                :pagination-enabled="true"
+                :pagination-active-color="'#f8f9fA'"
+                :pagination-color="'#505050'"
+                :per-page="1">
+        <slide>
+          <img src="@/assets/dev-camp/team-process.jpg">
+        </slide>
+        <slide>
+          <img src="@/assets/dev-camp/team-request.jpg">
+        </slide>
+        <slide>
+          <img src="@/assets/dev-camp/team-user.jpg">
+        </slide>
+      </carousel>
+      <!--
+      <b-carousel :interval="4000" class="dev-camp__showcase__carousel"
+                  controls indicators>
+        <b-carousel-slide img-src="@/assets/logos/ucl-logo-colored-alpha.svg"/>
         <b-carousel-slide img-src="@/assets/dev-camp/team-request.jpg"/>
         <b-carousel-slide img-src="@/assets/dev-camp/team-user.jpg"/>
       </b-carousel>
+      -->
     </b-col>
   </b-row>
 </template>
+
+<script>
+import { Carousel, Slide } from "vue-carousel";
+export default {
+  components: {
+    Carousel,
+    Slide
+  }
+};
+</script>
+
 
 <style lang="scss">
 .dev-camp {
@@ -33,9 +62,27 @@
   }
 }
 
+.VueCarousel {
+  width: 80vw;
+  height: auto;
+}
+
+.VueCarousel-slide {
+  img {
+    width: 80vw;
+    height: auto;
+  }
+}
+
 @media (min-width: 992px) {
-  .dev-camp__showcase__carousel {
-    max-width: 50vw;
+  .VueCarousel {
+    width: 50vw;
+  }
+
+  .VueCarousel-slide {
+    img {
+      width: 50vw;
+    }
   }
 }
 </style>
