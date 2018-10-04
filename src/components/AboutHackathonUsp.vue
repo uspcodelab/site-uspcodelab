@@ -12,11 +12,22 @@
         Maior evento do USPCodeLab, feito em parceria com o <a href="http://www.uspempreende.org">Núcleo de Empreendedorismo da USP (NEU)</a>. Voltado para USPianos,
         patrocinado pela reitoria da USP e empresas parceiras,
         focado em quem vai participar de um hackathon pela primeira vez!
-        Saiba mais em: <a href="http://uclab.xyz/hack">uclab.xyz/hack</a>
       </p>
+      <Button message="Saiba mais" link="https://uclab.xyz/hack" />
     </b-col>
   </b-row>
 </template>
+
+<script>
+import Button from "@/components/Button.vue";
+
+export default {
+  components: {
+    Button
+  }
+};
+</script>
+
 
 <style lang="scss">
 .hackathon-usp {
@@ -26,7 +37,7 @@
     color: $ucl-orange;
 
     &:hover {
-      color: $ucl-dark-orange;
+      color: $ucl-orange-dark;
       text-decoration: none;
     }
   }

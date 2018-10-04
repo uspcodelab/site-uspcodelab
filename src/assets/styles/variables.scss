@@ -1,7 +1,19 @@
+/* --------------------------------------------
+||                 Color Palette               ||
+  ---------------------------------------------*/
+
 $ucl-orange: #FF690A;
-$ucl-dark-orange: #BD4900;
+$ucl-orange-light: #FF883E;
+$ucl-orange-dark: #CA4E00;
+
 $ucl-black: #292827;
+$ucl-grey: #666361;
+$ucl-grey-light: #DDE4E9; 
 $ucl-light: #f8f9fA;
+
+/* --------------------------------------------
+||                     Font                    ||
+  ---------------------------------------------*/
 
 $font-family-base: Montserrat, "IBM Plex Sans Condensed";
 
@@ -10,3 +22,68 @@ $font-family-base: Montserrat, "IBM Plex Sans Condensed";
   font-weight: normal;
   src: url("~@/assets/fonts/Montserrat-Medium.otf");
 }
+
+$font-size-xs: 0.8rem;
+$font-size-s: 1rem;
+$font-size-m: 1.25rem;
+$font-size-l: 1.6rem;
+$font-size-xl: 2.4rem;
+$font-size-xxl: 3rem;
+
+/* --------------------------------------------
+||                 Border Radius                ||
+  ---------------------------------------------*/
+
+$br-s: 2px;
+$br-m: 4px;
+$br-l: 8px;
+$br-round: 50%;
+
+/* --------------------------------------------
+||                  Box Shadow                 ||
+  ---------------------------------------------*/
+
+$bs-navbar: 0 3px 5px rgba(57, 63, 72, 0.3);
+$bs-btn: 0 3px 3px rgba(57, 63, 72, 0.4);
+$bs-btn-pressed: 0 0px 3px rgba(57, 63, 72, 0.4);
+$bs-card: 0 3px 5px rgba(57, 63, 72, 0.3);
+
+/* --------------------------------------------
+||                Letter Spacing                ||
+  ---------------------------------------------*/
+
+$ls-negative-1: -1px;
+$ls-negative-2: -2px;
+$ls-negative-half: -0.5px;
+$ls-positive-half: 0.5px;
+$ls-positive-1: 1px;
+$ls-positive-2: 2px;
+
+/* --------------------------------------------
+||                   Padding                   ||
+  ---------------------------------------------*/
+
+$ph8: 8vh;
+$ph16: 16vh;
+$ph24: 24vh;
+$ph32: 32vh;
+$ph40: 40vh;
+$ph48: 48vh;
+$ph64: 64vh;
+
+$pw8: 8vw;
+$pw16: 16vw;
+$pw24: 24vw;
+$pw32: 32vw;
+$pw40: 40vw;
+$pw48: 48vw;
+$pw64: 64vw;
+
+$p-btn: 0.5rem 1.5rem 0.5rem 1.5rem;
+
+/* --------------------------------------------
+||                    Misc                     ||
+  ---------------------------------------------*/
+
+$b-btn-pressed: 2px solid $ucl-grey-light;
+$btn-height: 2rem;
