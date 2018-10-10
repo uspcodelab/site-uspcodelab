@@ -1,6 +1,7 @@
 <template>
   <div class="page">
-    <the-navbar/>
+    <the-navbar v-if="!isMobile()"/>
+    <mobile-menu v-else :links="links"/>
     <b-container fluid>
       <the-header/>
       <main>
@@ -14,8 +15,9 @@
 </template>
 
 <script>
-import TheHeader from "@/components/TheHeader.vue";
 import TheNavbar from "@/components/TheNavbar.vue";
+import MobileMenu from "@/components/MobileMenu.vue";
+import TheHeader from "@/components/TheHeader.vue";
 import TheFooter from "@/components/TheFooter.vue";
 import TheMap from "@/components/TheMap.vue";
 
@@ -26,6 +28,7 @@ import AboutDevCamp from "@/components/AboutDevCamp.vue";
 export default {
   components: {
     TheNavbar,
+    MobileMenu,
     TheHeader,
     TheFooter,
     TheMap,
@@ -33,6 +36,24 @@ export default {
     AboutHackathonUsp,
     AboutDevJourney,
     AboutDevCamp
+  },
+  data() {
+    return {
+      links: [
+        { url: "/", name: "Início" },
+        { url: "devcamp()", name: "dev.camp()" },
+        { url: "hackathonusp", name: "HackathonUSP" }
+      ]
+    };
+  },
+  methods: {
+    isMobile() {
+      if (screen.width <= 760) {
+        return true;
+      } else {
+        return false;
+      }
+    }
   }
 };
 </script>

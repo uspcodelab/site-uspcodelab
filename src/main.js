@@ -35,8 +35,13 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 // vue-carousel
 
-import VueCarousel from 'vue-carousel';
+import VueCarousel from "vue-carousel";
 Vue.use(VueCarousel);
+
+// v-scroll-lock
+
+import VScrollLock from "v-scroll-lock";
+Vue.use(VScrollLock);
 
 // Vue
 

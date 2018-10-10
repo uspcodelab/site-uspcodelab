@@ -15,7 +15,6 @@ body {
 
 .page {
   color: $ucl-light;
-  padding-top: 4rem;
 }
 
 .title {

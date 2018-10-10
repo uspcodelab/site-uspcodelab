@@ -44,6 +44,7 @@ $br-round: 50%;
   ---------------------------------------------*/
 
 $bs-navbar: 0 3px 5px rgba(57, 63, 72, 0.3);
+$bs-btn-menu: 0 2px 10px rgba(57, 63, 72, 0.5);
 $bs-btn: 0 3px 3px rgba(57, 63, 72, 0.4);
 $bs-btn-pressed: 0 0px 3px rgba(57, 63, 72, 0.4);
 $bs-card: 0 3px 5px rgba(57, 63, 72, 0.3);
@@ -87,3 +88,7 @@ $p-btn: 0.5rem 1.5rem 0.5rem 1.5rem;
 
 $b-btn-pressed: 2px solid $ucl-grey-light;
 $btn-height: 2rem;
+
+$btn-round-height: 6rem;
+$btn-round-bottom: 2rem;
+$btn-round-pb: 10rem;
