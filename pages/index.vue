@@ -17,6 +17,7 @@
 import TheHeader from "~/components/TheHeader.vue";
 import TheNavbar from "~/components/TheNavbar.vue";
 import TheFooter from "~/components/TheFooter.vue";
+import TheMap from "~/components/TheMap.vue";
 
 import AboutHackathonUsp from "~/components/AboutHackathonUsp.vue";
 import AboutDevJourney from "~/components/AboutDevJourney.vue";
@@ -27,6 +28,7 @@ export default {
     TheNavbar,
     TheHeader,
     TheFooter,
+    TheMap,
 
     AboutHackathonUsp,
     AboutDevJourney,

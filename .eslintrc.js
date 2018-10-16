@@ -19,8 +19,6 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    'vue/html-closing-bracket-newline': 'off',
-    'vue/html-closing-bracket-spacing': 'off',
     'vue/max-attributes-per-line': 'off'
   }
 }
