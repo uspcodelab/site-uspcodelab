@@ -11,7 +11,7 @@
       </p>
     </b-col>
 
-    <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
+    <b-col sm="6" md="4" class="dev-journey__info py-3 p-md-2">
       <b-card body-bg-variant="light" class="text-center">
         <img src="~/assets/dev-journey/dev-start.svg"
              class="dev-journey__info__icon p-4">
@@ -22,7 +22,7 @@
       </b-card>
     </b-col>
 
-    <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
+    <b-col sm="6" md="4" class="dev-journey__info py-3 p-md-2">
       <b-card body-bg-variant="light" class="text-center">
         <img src="~/assets/dev-journey/dev-learn.svg"
              class="dev-journey__info__icon p-4">
@@ -33,7 +33,7 @@
       </b-card>
     </b-col>
 
-    <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
+    <b-col sm="6" md="4" class="dev-journey__info py-3 p-md-2">
       <b-card body-bg-variant="light" class="text-center">
         <img src="~/assets/dev-journey/dev-boost.svg"
              class="dev-journey__info__icon p-4">
@@ -44,7 +44,19 @@
       </b-card>
     </b-col>
 
-    <b-col sm="6" md="6" lg="3" class="dev-journey__info py-3 p-md-2">
+    <b-col sm="6" md="4" class="dev-journey__info py-3 p-md-2">
+      <b-card body-bg-variant="light" class="text-center">
+        <img src="~/assets/dev-journey/dev-camp.svg"
+             class="dev-journey__info__icon p-4">
+        <h3 class="dev-journey-phase">dev.camp()</h3>
+        Escola de férias que serve de formatura para os
+        alunos do dev.learn() e dev.boost() incluindo
+        múltiplos times trabalhando num projeto
+        de grande porte
+      </b-card>
+    </b-col>
+
+    <b-col sm="6" md="4" class="dev-journey__info py-3 p-md-2">
       <b-card body-bg-variant="light" class="text-center">
         <img src="~/assets/dev-journey/dev-hire.svg"
              class="dev-journey__info__icon p-4">
@@ -53,6 +65,17 @@
         em particular dos participantes do programa,
         para facilitar o contato profissional
         com empresas parceiras
+      </b-card>
+    </b-col>
+
+    <b-col sm="6" md="4" class="dev-journey__info py-3 p-md-2">
+      <b-card body-bg-variant="light" class="text-center">
+        <img src="~/assets/dev-journey/dev-research.svg"
+             class="dev-journey__info__icon p-4">
+        <h3 class="dev-journey-phase">dev.research()</h3>
+        Programa de pesquisa para ajudar os participantes da
+        dev.journey() a fazerem iniciações científicas
+        relacionados aos temas de estudo do grupo.
       </b-card>
     </b-col>
   </b-row>
