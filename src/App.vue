@@ -5,6 +5,8 @@
 </template>
 
 <style lang="scss">
+@import "assets/styles/tailwind.postcss";
+
 html {
   font-size: 14px;
 }
