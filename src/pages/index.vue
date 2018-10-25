@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <the-navbar v-if="!isMobile()"/>
+    <the-navbar v-if="!isMobile()" :links="links"/>
     <mobile-menu v-else :links="links"/>
     <the-header/>
     <main>
