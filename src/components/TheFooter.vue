@@ -3,14 +3,14 @@
     <!-- Logo -->
     <div class="w-full md:w-1/2 text-center pb-3">
       <img src="@/assets/logos/ucl-logo-wb-alpha.svg" alt="Logo do USPCodeLab" class="h-16">
-      <p class="select-none">
+      <p class="select-none leading-normal mb-4">
         Estimulando a inovação tecnológica na USP
       </p>
     </div>
     <!-- Social Medias -->
     <div class="text-center no-underline w-full md:w-1/2">
       <div class="w-full">
-        <p>
+        <p class="leading-normal mb-4">
           Encontre-nos nas redes sociais!
         </p>
       </div>

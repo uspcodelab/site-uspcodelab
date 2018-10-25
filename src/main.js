@@ -7,11 +7,6 @@ Vue.config.productionTip = false;
 
 // bootstrap-vue
 
-import BootstrapVue from "bootstrap-vue";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-vue/dist/bootstrap-vue.css";
-Vue.use(BootstrapVue);
-
 // vue-scrollto
 
 const VueScrollTo = require("vue-scrollto");

@@ -1,9 +1,9 @@
 <template>
   <section id="dev-journey" class="dev-journey px-4 py-20">
-    <h1 class="title font-bold text-center pb-3 tracking-wide">
+    <h1 class="title text-4xl font-bold text-center pb-4 tracking-wide">
       dev.journey()
     </h1>
-    <p class="lg:text-sm text-grey-darker text-center pb-4">
+    <p class="lg:text-sm text-grey-darker text-center leading-normal mb-4 pb-4">
       Programa de 6 fases que visa introduzir e amadurecer
       os conhecimentos dos alunos da USP sobre desenvolvimento
       de software

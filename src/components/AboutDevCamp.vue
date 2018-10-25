@@ -1,9 +1,9 @@
 <template>
   <section id="dev-camp" class="dev-camp px-4 py-20 text-center">
-    <h1 class="title font-bold tracking-wide pb-3">
+    <h1 class="title text-4xl font-bold tracking-wide pb-4">
       dev.camp()
     </h1>
-    <p class="lg:text-xs text-center pb-4">
+    <p class="lg:text-xs text-center leading-normal mb-4 pb-4">
       Escolas de férias voltadas ao desenvolvimento de projetos em equipe
       usando as tecnologias mais modernas. Uma verdadeira experiência
       de desenvolvimento!
