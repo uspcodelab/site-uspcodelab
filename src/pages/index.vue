@@ -2,13 +2,13 @@
   <div class="page">
     <the-navbar v-if="!isMobile()"/>
     <mobile-menu v-else :links="links"/>
-      <the-header/>
-      <main>
-        <about-dev-journey :dev-journey-stages="devJourneyStages"/>
-        <about-dev-camp/>
-        <about-hackathon-usp/>
-      </main>
-      <the-footer :social-medias="socialMedias" />
+    <the-header/>
+    <main>
+      <about-dev-journey :dev-journey-stages="devJourneyStages"/>
+      <about-dev-camp/>
+      <about-hackathon-usp/>
+    </main>
+    <the-footer :social-medias="socialMedias" />
   </div>
 </template>
 
