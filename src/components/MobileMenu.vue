@@ -17,8 +17,10 @@
 export default {
   props: {
     links: {
-      type: Function,
-      default: () => {}
+      type: Array,
+      default() {
+        return [];
+      }
     }
   },
   data() {
