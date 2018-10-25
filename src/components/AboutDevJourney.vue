@@ -1,6 +1,6 @@
 <template>
   <section id="dev-journey" class="dev-journey px-4 py-20">
-    <h1 class="title font-bold text-center pb-3">
+    <h1 class="title font-bold text-center pb-3 tracking-wide">
       dev.journey()
     </h1>
     <p class="lg:text-sm text-grey-darker text-center pb-4">
@@ -13,7 +13,6 @@
 </template>
 
 <script>
-import Card from "@/components/Card.vue";
 import CardList from "@/components/CardList.vue";
 
 export default {
