@@ -17,7 +17,6 @@ import TheNavbar from "@/components/TheNavbar.vue";
 import MobileMenu from "@/components/MobileMenu.vue";
 import TheHeader from "@/components/TheHeader.vue";
 import TheFooter from "@/components/TheFooter.vue";
-import TheMap from "@/components/TheMap.vue";
 
 import AboutHackathonUsp from "@/components/AboutHackathonUsp.vue";
 import AboutDevJourney from "@/components/AboutDevJourney.vue";
@@ -36,7 +35,6 @@ export default {
     MobileMenu,
     TheHeader,
     TheFooter,
-    TheMap,
 
     AboutHackathonUsp,
     AboutDevJourney,
