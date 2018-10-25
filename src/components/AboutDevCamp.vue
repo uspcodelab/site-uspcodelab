@@ -10,13 +10,13 @@
     </p>
     <div class="flex flex-col items-center">
       <carousel :autoplay="true"
-              :autoplay-timeout="3000"
-              :loop="true"
-              :pagination-enabled="true"
-              :pagination-active-color="'#f8f9fA'"
-              :pagination-color="'#505050'"
-              :per-page="1"
-              class=" md:w-1/2">
+                :autoplay-timeout="3000"
+                :loop="true"
+                :pagination-enabled="true"
+                :pagination-active-color="'#f8f9fA'"
+                :pagination-color="'#505050'"
+                :per-page="1"
+                class=" md:w-1/2">
         <slide>
           <img src="@/assets/dev-camp/team-process.jpg">
         </slide>

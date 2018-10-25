@@ -1,9 +1,9 @@
 <template>
-  <footer id="footer" class="footer w-screen px-3 pt-8 p-footer md:pb-8 flex flex-wrap font-semibold">
+  <footer id="footer" class="footer w-screen px-3 pt-8 p-footer md:pb-8 flex flex-wrap font-semibold text-base md:text-xs">
     <!-- Logo -->
     <div class="w-full md:w-1/2 text-center pb-3">
       <img src="@/assets/logos/ucl-logo-wb-alpha.svg" alt="Logo do USPCodeLab" class="h-16">
-      <p>
+      <p class="select-none">
         Estimulando a inovação tecnológica na USP
       </p>
     </div>
