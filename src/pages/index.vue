@@ -2,15 +2,13 @@
   <div class="page">
     <the-navbar v-if="!isMobile()"/>
     <mobile-menu v-else :links="links"/>
-    <b-container fluid>
       <the-header/>
       <main>
         <about-dev-journey :dev-journey-stages="devJourneyStages"/>
         <about-dev-camp/>
         <about-hackathon-usp/>
       </main>
-      <the-footer/>
-    </b-container>
+      <the-footer :social-medias="socialMedias" />
   </div>
 </template>
 
@@ -58,7 +56,7 @@ export default {
             "Ciclo de oficinas de introdução à programação web \
           para o público geral da universidade, com tópicos \
           como HTML, CSS e JavaScript",
-          imgURL: devStartLogo,
+          imgUrl: devStartLogo,
           imgAlt: "Ícone dev.start()"
         },
         {
@@ -67,7 +65,7 @@ export default {
             "Grupos de estudo com reuniões semanais, ao longo \
           de um semestre, para aplicar os conhecimentos \
           em projetos propostos pela organização",
-          imgURL: devLearnLogo,
+          imgUrl: devLearnLogo,
           imgAlt: "Ícone dev.learn()"
         },
         {
@@ -76,7 +74,7 @@ export default {
             "Grupo de estudos avançado, com projetos em times \
           para aprendizado de técnicas de modelagem, \
           implementação e manutenção de sistemas",
-          imgURL: devBoostLogo,
+          imgUrl: devBoostLogo,
           imgAlt: "Ícone dev.boost()"
         },
         {
@@ -86,7 +84,7 @@ export default {
           em particular dos participantes do programa, \
           para facilitar o contato profissional \
           com empresas parceiras",
-          imgURL: devHireLogo,
+          imgUrl: devHireLogo,
           imgAlt: "Ícone dev.hire()"
         },
         {
@@ -95,7 +93,7 @@ export default {
             "Escola de férias que serve de formatura para os \
             alunos do dev.learn() e dev.boost() envolvendo um \
             projeto grande com múltiplos times",
-          imgURL: devCampLogo,
+          imgUrl: devCampLogo,
           imgAlt: "Ícone dev.camp()"
         },
         {
@@ -104,8 +102,40 @@ export default {
             "Ciclo de oficinas de introdução à programação web \
             para o público geral da universidade, com tópicos \
             como HTML, CSS e JavaScript",
-          imgURL: devResearchLogo,
+          imgUrl: devResearchLogo,
           imgAlt: "Ícone dev.research()"
+        }
+      ],
+      socialMedias: [
+        {
+          url: "http://uclab.xyz/facebook",
+          iconPrefix: "fab",
+          iconName: "facebook"
+        },
+        {
+          url: "http://uclab.xyz/github",
+          iconPrefix: "fab",
+          iconName: "github"
+        },
+        {
+          url: "http://uclab.xyz/gitlab",
+          iconPrefix: "fab",
+          iconName: "gitlab"
+        },
+        {
+          url: "http://uclab.xyz/telegram",
+          iconPrefix: "fab",
+          iconName: "telegram"
+        },
+        {
+          url: "http://uclab.xyz/medium",
+          iconPrefix: "fab",
+          iconName: "medium"
+        },
+        {
+          url: "mailto:codelab@ime.usp.br",
+          iconPrefix: "fas",
+          iconName: "envelope"
         }
       ]
     };
