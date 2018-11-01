@@ -124,7 +124,18 @@ let colors = {
   pink: "#f66d9b",
   "pink-light": "#fa7ea8",
   "pink-lighter": "#ffbbca",
-  "pink-lightest": "#ffebef"
+  "pink-lightest": "#ffebef",
+
+  // UCL Custom Colors
+
+  "ucl-orange-dark": "#ca4e00",
+  "ucl-orange": "#ff690a",
+  "ucl-orange-light": "ff883e",
+
+  "ucl-black": "#292827",
+  "ucl-grey": "#666361",
+  "ucl-grey-light": "dde4e9",
+  "ucl-white": "#f8f9fa",
 };
 
 module.exports = {

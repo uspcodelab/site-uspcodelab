@@ -13,7 +13,7 @@
         Voltado para USPianos, patrocinado pela reitoria da USP e empresas parceiras,
         focado em quem vai participar de um hackathon pela primeira vez!
       </p>
-      <Button message="Saiba mais" link="https://uclab.xyz/hack" />
+      <Button message="Saiba mais" link="https://uclab.xyz/hack"/>
     </div>
   </section>
 </template>
