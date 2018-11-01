@@ -636,7 +636,8 @@ module.exports = {
     "20": "5rem",
     "24": "6rem",
     "32": "8rem",
-    footer: "10rem"
+    footer: "10rem",
+    navbar: "4.25rem"
   },
 
   /*

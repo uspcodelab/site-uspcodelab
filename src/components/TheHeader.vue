@@ -1,5 +1,5 @@
 <template>
-  <header id="header" class="header h-screen md:h-full flex flex-wrap flex-row-reverse px-3 pt-5 md:pb-5 pb-footer">
+  <header id="header" class="header h-screen md:h-full flex flex-wrap flex-row-reverse px-3 pt-5 pb-footer md:pt-navbar md:pb-5">
     <div class="w-full md:w-1/2 flex items-end md:items-center justify-center md:pb-4">
       <img src="@/assets/logos/ucl-mark-alpha.svg" class="w-4/5 md:w-3/5 rounded-full">
     </div>
