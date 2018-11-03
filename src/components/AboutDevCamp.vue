@@ -1,5 +1,5 @@
 <template>
-  <section id="dev-camp" class="bg-ucl-black text-ucl-light px-4 py-20 text-center">
+  <section id="dev-camp" class="bg-ucl-black text-ucl-white px-4 py-20 text-center">
     <h1 class="title text-4xl font-bold tracking-wide pb-4">
       dev.camp()
     </h1>
