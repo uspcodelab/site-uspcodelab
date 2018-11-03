@@ -1,5 +1,5 @@
 <template>
-  <section id="dev-journey" class="dev-journey px-4 py-20">
+  <section id="dev-journey" class="bg-ucl-light text-ucl-black px-4 py-20">
     <h1 class="title text-4xl font-bold text-center pb-4 tracking-wide">
       dev.journey()
     </h1>
@@ -29,11 +29,3 @@ export default {
   }
 };
 </script>
-
-
-<style lang="scss">
-.dev-journey {
-  background-color: $ucl-light;
-  color: $ucl-black;
-}
-</style>
