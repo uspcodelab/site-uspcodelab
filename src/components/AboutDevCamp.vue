@@ -1,5 +1,5 @@
 <template>
-  <section id="dev-camp" class="dev-camp px-4 py-20 text-center">
+  <section id="dev-camp" class="bg-ucl-black text-ucl-light px-4 py-20 text-center">
     <h1 class="title text-4xl font-bold tracking-wide pb-4">
       dev.camp()
     </h1>
@@ -40,11 +40,3 @@ export default {
   }
 };
 </script>
-
-
-<style lang="scss">
-.dev-camp {
-  color: $ucl-light;
-  background-color: $ucl-black;
-}
-</style>
