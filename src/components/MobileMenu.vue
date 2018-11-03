@@ -1,7 +1,7 @@
 <template>
-  <div class="menu-wrapper">
+  <div v-scroll="handleMobileMenuScroll" class="menu-wrapper">
     <div class="menu-btn-wrapper">
-      <button :class="['menu-btn', toggled ? 'menu-btn__activated' : '']" @click="toggle"> {{ btnText }} </button>
+      <button id="menuBtn" :class="['menu-btn', btnState ? 'btn-orange' : 'btn-white']" @click="toggle"> {{ btnText }} </button>
     </div>
     <nav v-scroll-lock="toggled" :class="{ 'menu__activated' : toggled, 'menu__hidden' : !toggled }">
       <ul class="menu-list">
@@ -26,6 +26,7 @@ export default {
   data() {
     return {
       btnText: "MENU",
+      btnState: false,
       toggled: false
     };
   },
@@ -33,6 +34,13 @@ export default {
     toggle: function() {
       this.toggled = !this.toggled;
       this.btnText = this.toggled ? "FECHAR" : "MENU";
+    },
+    handleMobileMenuScroll: function(evt, el) {
+      if (window.scrollY <= 60) {
+        if (this.btnState == true) this.btnState = false;
+      } else {
+        if (this.btnState == false) this.btnState = true;
+      }
     }
   }
 };
@@ -48,8 +56,6 @@ export default {
     position: fixed;
     bottom: $btn-round-bottom;
 
-    background-color: $ucl-orange;
-    color: $ucl-light;
     box-shadow: $bs-btn-menu;
     border: none;
     border-radius: $br-round;
@@ -70,6 +76,16 @@ export default {
     color: $ucl-orange;
 
     font-size: 0.9rem;
+  }
+
+  .btn-orange {
+    background-color: $ucl-orange;
+    color: $ucl-light;
+  }
+
+  .btn-white {
+    background-color: $ucl-light;
+    color: $ucl-orange;
   }
 }
 

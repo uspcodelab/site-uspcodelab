@@ -5,8 +5,6 @@ import router from "./router";
 import "./registerServiceWorker";
 Vue.config.productionTip = false;
 
-// bootstrap-vue
-
 // vue-scrollto
 
 const VueScrollTo = require("vue-scrollto");
@@ -37,6 +35,19 @@ Vue.use(VueCarousel);
 
 import VScrollLock from "v-scroll-lock";
 Vue.use(VScrollLock);
+
+// Scroll directive
+
+Vue.directive("scroll", {
+  inserted: function(el, binding) {
+    let f = function(evt) {
+      if (binding.value(evt, el)) {
+        window.removeEventListener("scroll", f);
+      }
+    };
+    window.addEventListener("scroll", f);
+  }
+});
 
 // Vue
 
