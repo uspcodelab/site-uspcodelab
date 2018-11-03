@@ -1,12 +1,15 @@
 <template>
-  <div v-scroll="handleMobileMenuScroll" class="menu-wrapper">
-    <div class="menu-btn-wrapper">
-      <button id="menuBtn" :class="['menu-btn', btnState ? 'btn-orange' : 'btn-white']" @click="toggle"> {{ btnText }} </button>
+  <div v-scroll="handleMobileMenuScroll" class="flex justify-center">
+    <div class="menu-btn-wrapper flex justify-center">
+      <button id="menuBtn" :class="['menu-btn fixed h-16 w-16 z-50 border-0 rounded-full outline-none', btnState || toggled ? 'bg-ucl-white text-ucl-orange' : 'bg-ucl-orange text-ucl-white']" @click="toggle">
+        <font-awesome-icon v-if="!toggled" :icon="{ prefix: 'fas', iconName: 'bars' }" size="lg" />
+        <font-awesome-icon v-else :icon="{ prefix: 'fas', iconName: 'times' }" size="lg" />
+      </button>
     </div>
-    <nav v-scroll-lock="toggled" :class="{ 'menu__activated' : toggled, 'menu__hidden' : !toggled }">
-      <ul class="menu-list">
-        <router-link v-for="link in links" :to="link.url" :key="link.name" tag="li" class="menu-list-item" @click="toggle">
-          <a>{{ link.name }}</a>
+    <nav v-scroll-lock="toggled" :class="['fixed bg-ucl-orange overflow-hidden z-40', toggled ? 'menu__activated h-screen w-screen opacity-100 visible pin-b rounded-none' : 'menu__hidden h-16 v-16 opacity-0 invisible pin-b rounded-full']">
+      <ul class="menu-list h-full pl-0 pb-32 flex flex-col justify-end items-start list-reset">
+        <router-link v-for="link in links" :to="link.url" :key="link.name" tag="li" class="menu-list-item px-8 py-4 w-full text-ucl-white text-4xl no-underline hover:bg-ucl-orange-light" @click="toggle">
+          {{ link.name }}
         </router-link>
       </ul>
     </nav>
@@ -26,7 +29,7 @@ export default {
   data() {
     return {
       btnText: "MENU",
-      btnState: false,
+      btnState: true,
       toggled: false
     };
   },
@@ -36,7 +39,7 @@ export default {
       this.btnText = this.toggled ? "FECHAR" : "MENU";
     },
     handleMobileMenuScroll: function(evt, el) {
-      if (window.scrollY <= 60) {
+      if (window.scrollY > 60) {
         if (this.btnState == true) this.btnState = false;
       } else {
         if (this.btnState == false) this.btnState = true;
@@ -49,112 +52,30 @@ export default {
 
 <style lang="scss" scoped>
 .menu-btn-wrapper {
-  display: flex;
-  justify-content: center;
-
   .menu-btn {
-    position: fixed;
-    bottom: $btn-round-bottom;
-
-    box-shadow: $bs-btn-menu;
-    border: none;
-    border-radius: $br-round;
-    outline: none;
-    z-index: 100;
-
-    height: $btn-round-height;
-    width: $btn-round-height;
+    bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(57, 63, 72, 0.5);
 
     -webkit-transition: background-color 0.25s ease 0s;
     -moz-transition: background-color 0.25s ease 0s;
     -o-transition: background-color 0.25s ease 0s;
     transition: background-color 0.25s ease 0s;
   }
-
-  .menu-btn__activated {
-    background-color: $ucl-light;
-    color: $ucl-orange;
-
-    font-size: 0.9rem;
-  }
-
-  .btn-orange {
-    background-color: $ucl-orange;
-    color: $ucl-light;
-  }
-
-  .btn-white {
-    background-color: $ucl-light;
-    color: $ucl-orange;
-  }
-}
-
-.menu-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-nav {
-  background-color: $ucl-orange;
-  position: fixed;
-  overflow: hidden;
-  z-index: 99;
-
-  height: 100vh;
-  width: 100vw;
 }
 
 .menu__hidden {
-  border-radius: $br-round;
-  bottom: 0;
-  height: $btn-round-height;
-  width: $btn-round-height;
-
-  opacity: 0;
-  visibility: hidden;
-
   transform: scale(0);
-  transition: all 0.4s ease-in-out 0.1s;
+  transition: all 0.4s;
 }
 
 .menu__activated {
-  border-radius: 0;
-  bottom: 0;
-  height: 100vh;
-  width: 100vw;
-
-  opacity: 1;
-  visibility: visible;
-
   transform: scale(1);
-  transition: all 0.4s ease-in-out 0.1s;
+  transition: all 0.4s;
 }
 
 .menu-list {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  flex-direction: column;
-  list-style-type: none;
-
-  height: 100%;
-  padding-left: 0;
-  padding-bottom: $btn-round-pb;
-
   .menu-list-item {
-    padding: 1rem 2rem 1rem 2rem;
     transition: background-color 0.3s;
-    width: 100%;
-
-    a {
-      color: $ucl-light;
-      font-size: $font-size-xl;
-      text-decoration: none;
-    }
-
-    &:active {
-      background-color: $ucl-orange-light;
-    }
   }
 }
 </style>

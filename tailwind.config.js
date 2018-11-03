@@ -130,12 +130,12 @@ let colors = {
 
   "ucl-orange-dark": "#ca4e00",
   "ucl-orange": "#ff690a",
-  "ucl-orange-light": "ff883e",
+  "ucl-orange-light": "#ff883e",
 
   "ucl-black": "#292827",
   "ucl-grey": "#666361",
   "ucl-grey-light": "dde4e9",
-  "ucl-white": "#f8f9fa",
+  "ucl-white": "#f8f9fa"
 };
 
 module.exports = {
@@ -612,6 +612,7 @@ module.exports = {
   */
 
   maxHeight: {
+    "half-screen": "50vh",
     full: "100%",
     screen: "100vh"
   },
@@ -647,7 +648,7 @@ module.exports = {
     "20": "5rem",
     "24": "6rem",
     "32": "8rem",
-    footer: "10rem",
+    mobile: "6rem",
     navbar: "4.25rem"
   },
 
