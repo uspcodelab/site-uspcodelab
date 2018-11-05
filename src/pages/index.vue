@@ -18,9 +18,9 @@ import MobileMenu from "@/components/MobileMenu.vue";
 import TheHeader from "@/components/TheHeader.vue";
 import TheFooter from "@/components/TheFooter.vue";
 
-import AboutHackathonUsp from "@/components/AboutHackathonUsp.vue";
-import AboutDevJourney from "@/components/AboutDevJourney.vue";
-import AboutDevCamp from "@/components/AboutDevCamp.vue";
+import AboutHackathonUsp from "@/components/index/AboutHackathonUsp.vue";
+import AboutDevJourney from "@/components/index/AboutDevJourney.vue";
+import AboutDevCamp from "@/components/index/AboutDevCamp.vue";
 
 import devStartLogo from "@/assets/dev-journey/dev-start.svg";
 import devLearnLogo from "@/assets/dev-journey/dev-learn.svg";
@@ -106,27 +106,27 @@ export default {
       ],
       socialMedias: [
         {
-          url: "http://uclab.xyz/facebook",
+          url: "https://uclab.xyz/facebook",
           iconPrefix: "fab",
           iconName: "facebook"
         },
         {
-          url: "http://uclab.xyz/github",
+          url: "https://uclab.xyz/github",
           iconPrefix: "fab",
           iconName: "github"
         },
         {
-          url: "http://uclab.xyz/gitlab",
+          url: "https://uclab.xyz/gitlab",
           iconPrefix: "fab",
           iconName: "gitlab"
         },
         {
-          url: "http://uclab.xyz/telegram",
+          url: "https://uclab.xyz/telegram",
           iconPrefix: "fab",
           iconName: "telegram"
         },
         {
-          url: "http://uclab.xyz/medium",
+          url: "https://uclab.xyz/medium",
           iconPrefix: "fab",
           iconName: "medium"
         },
