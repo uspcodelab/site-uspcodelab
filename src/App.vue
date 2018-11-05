@@ -19,10 +19,6 @@ body {
   color: $ucl-light;
 }
 
-.title {
-  color: $ucl-orange !important;
-}
-
 @media (min-width: 992px) {
   html {
     font-size: 16px;
@@ -31,7 +27,7 @@ body {
 
 @media (min-width: 1200px) {
   html {
-    font-size: 1.5vmax;
+    font-size: 1.2vmax;
   }
 }
 </style>
