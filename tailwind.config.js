@@ -648,7 +648,7 @@ module.exports = {
     "20": "5rem",
     "24": "6rem",
     "32": "8rem",
-    mobile: "6rem",
+    mobile: "7rem", // 4rem for button height, 2rem top, 1rem bottom
     navbar: "4.25rem"
   },
 

@@ -30,4 +30,16 @@ body {
     font-size: 1.2vmax;
   }
 }
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 1.1vmax;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 1vmax;
+  }
+}
 </style>
