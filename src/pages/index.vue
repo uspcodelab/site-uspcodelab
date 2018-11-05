@@ -44,7 +44,7 @@ export default {
     return {
       links: [
         { url: "/", name: "Início" },
-        { url: "devcamp()", name: "dev.camp()" },
+        { url: "devcamp", name: "dev.camp()" },
         { url: "hackathonusp", name: "HackathonUSP" }
       ],
       devJourneyStages: [
