@@ -20,7 +20,6 @@ import TheFooter from "@/components/TheFooter.vue";
 
 import AboutHackathonUsp from "@/components/index/AboutHackathonUsp.vue";
 import AboutDevJourney from "@/components/index/AboutDevJourney.vue";
-import AboutDevCamp from "@/components/index/AboutDevCamp.vue";
 import ReunionCall from "@/components/index/ReunionCall.vue";
 
 import devStartLogo from "@/assets/dev-journey/dev-start.svg";
@@ -39,7 +38,6 @@ export default {
 
     AboutHackathonUsp,
     AboutDevJourney,
-    AboutDevCamp,
     ReunionCall
   },
   data() {
@@ -142,6 +140,14 @@ export default {
         }
       ]
     };
+  },
+  mounted() {
+    console.log(
+      "%cBem vindo(a) ao site do USP%cCode%cLab!",
+      "font-size:14px; font-weight: bold;",
+      "color: #ff690a; font-weight:bold; font-size: 14px",
+      "font-size:14px; font-weight: bold;"
+    );
   },
   methods: {
     isMobile() {
