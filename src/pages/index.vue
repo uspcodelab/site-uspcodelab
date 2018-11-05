@@ -5,7 +5,7 @@
     <the-header/>
     <main>
       <about-dev-journey :dev-journey-stages="devJourneyStages"/>
-      <about-dev-camp/>
+      <reunion-call :days="reunionDays" :time="reunionTime" :local="reunionLocal"/>
       <about-hackathon-usp/>
     </main>
     <the-footer :social-medias="socialMedias" />
@@ -21,6 +21,7 @@ import TheFooter from "@/components/TheFooter.vue";
 import AboutHackathonUsp from "@/components/index/AboutHackathonUsp.vue";
 import AboutDevJourney from "@/components/index/AboutDevJourney.vue";
 import AboutDevCamp from "@/components/index/AboutDevCamp.vue";
+import ReunionCall from "@/components/index/ReunionCall.vue";
 
 import devStartLogo from "@/assets/dev-journey/dev-start.svg";
 import devLearnLogo from "@/assets/dev-journey/dev-learn.svg";
@@ -38,7 +39,8 @@ export default {
 
     AboutHackathonUsp,
     AboutDevJourney,
-    AboutDevCamp
+    AboutDevCamp,
+    ReunionCall
   },
   data() {
     return {
@@ -47,6 +49,9 @@ export default {
         { url: "devcamp", name: "dev.camp()" },
         { url: "hackathonusp", name: "HackathonUSP" }
       ],
+      reunionDays: "toda quinta-feira",
+      reunionTime: "13h30",
+      reunionLocal: "sala B7 do IME-USP",
       devJourneyStages: [
         {
           name: "dev.start()",
