@@ -58,6 +58,10 @@ Vue.directive("scroll", {
   }
 });
 
+// vue-meta
+import Meta from "vue-meta";
+Vue.use(Meta);
+
 // Vue
 
 new Vue({

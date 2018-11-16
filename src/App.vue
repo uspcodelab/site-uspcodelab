@@ -4,6 +4,62 @@
   </div>
 </template>
 
+<script>
+export default {
+  methods: {
+    isMobile() {
+      if (screen.width <= 760) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+    getNavLinks() {
+      return [
+        { url: "/", name: "Início" },
+        { url: "dev-camp", name: "dev.camp()" },
+        { url: "hackathonusp", name: "HackathonUSP" }
+      ];
+    },
+    getSocialMedias() {
+      return [
+        {
+          url: "https://uclab.xyz/facebook",
+          iconPrefix: "fab",
+          iconName: "facebook"
+        },
+        {
+          url: "https://uclab.xyz/github",
+          iconPrefix: "fab",
+          iconName: "github"
+        },
+        {
+          url: "https://uclab.xyz/gitlab",
+          iconPrefix: "fab",
+          iconName: "gitlab"
+        },
+        {
+          url: "https://uclab.xyz/telegram",
+          iconPrefix: "fab",
+          iconName: "telegram"
+        },
+        {
+          url: "https://uclab.xyz/medium",
+          iconPrefix: "fab",
+          iconName: "medium"
+        },
+        {
+          url: "mailto:codelab@ime.usp.br",
+          iconPrefix: "fas",
+          iconName: "envelope"
+        }
+      ];
+    }
+  }
+};
+</script>
+
+
 <style lang="scss">
 @import "assets/styles/tailwind.postcss";
 

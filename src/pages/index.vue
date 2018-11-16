@@ -1,14 +1,14 @@
 <template>
   <div class="page">
-    <the-navbar v-if="!isMobile()" :links="links"/>
-    <mobile-menu v-else :links="links"/>
+    <the-navbar v-if="!this.$parent.isMobile()" :links="this.$parent.getNavLinks()"/>
+    <mobile-menu v-else :links="this.$parent.getNavLinks()"/>
     <the-header/>
     <main>
       <about-dev-journey :dev-journey-stages="devJourneyStages"/>
       <reunion-call :days="reunionDays" :time="reunionTime" :local="reunionLocal"/>
       <about-hackathon-usp/>
     </main>
-    <the-footer :social-medias="socialMedias" />
+    <the-footer :social-medias="this.$parent.getSocialMedias()" />
   </div>
 </template>
 
@@ -30,6 +30,24 @@ import devResearchLogo from "@/assets/dev-journey/dev-research.svg";
 import devCampLogo from "@/assets/dev-journey/dev-camp.svg";
 
 export default {
+  metaInfo: {
+    title: "USPCodeLab - Estimulando a inovação tecnológica na USP!",
+    meta: [
+      {
+        name: "description",
+        content:
+          "O USPCodeLab é um grupo de extensão sediado no IME-USP, cuja missão é estimular a " +
+          "inovação tecnológica na universidade. Atualmente, fazemos isso através do dev.journey() - " +
+          "que é composto por 6 partes: dev.start(), dev.learn(), dev.boost(), dev.hire(), dev.camp() " +
+          "e dev.research() - e de diversos hackathons e hackdays, sendo o HackathonUSP o maior evento."
+      },
+      {
+        name: "keywords",
+        content:
+          "USPCodeLab, USPCodeLabs, CodeLab, CodeLabs, HackathonUSP, dev journey, IME, USP, hackathon"
+      }
+    ]
+  },
   components: {
     TheNavbar,
     MobileMenu,
@@ -42,11 +60,6 @@ export default {
   },
   data() {
     return {
-      links: [
-        { url: "/", name: "Início" },
-        { url: "devcamp", name: "dev.camp()" },
-        { url: "hackathonusp", name: "HackathonUSP" }
-      ],
       reunionDays: "toda quinta-feira",
       reunionTime: "13h30",
       reunionLocal: "sala B7 do IME-USP",
@@ -106,38 +119,6 @@ export default {
           imgUrl: devResearchLogo,
           imgAlt: "Ícone dev.research()"
         }
-      ],
-      socialMedias: [
-        {
-          url: "https://uclab.xyz/facebook",
-          iconPrefix: "fab",
-          iconName: "facebook"
-        },
-        {
-          url: "https://uclab.xyz/github",
-          iconPrefix: "fab",
-          iconName: "github"
-        },
-        {
-          url: "https://uclab.xyz/gitlab",
-          iconPrefix: "fab",
-          iconName: "gitlab"
-        },
-        {
-          url: "https://uclab.xyz/telegram",
-          iconPrefix: "fab",
-          iconName: "telegram"
-        },
-        {
-          url: "https://uclab.xyz/medium",
-          iconPrefix: "fab",
-          iconName: "medium"
-        },
-        {
-          url: "mailto:codelab@ime.usp.br",
-          iconPrefix: "fas",
-          iconName: "envelope"
-        }
       ]
     };
   },
@@ -148,15 +129,6 @@ export default {
       "color: #ff690a; font-weight:bold; font-size: 14px",
       "font-size:14px; font-weight: bold;"
     );
-  },
-  methods: {
-    isMobile() {
-      if (screen.width <= 760) {
-        return true;
-      } else {
-        return false;
-      }
-    }
   }
 };
 </script>

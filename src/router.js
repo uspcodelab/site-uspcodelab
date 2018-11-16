@@ -15,7 +15,7 @@ export default new Router({
       component: Home
     },
     {
-      path: "/devcamp",
+      path: "/dev-camp",
       name: "devCamp()",
       component: DevCamp
     }
