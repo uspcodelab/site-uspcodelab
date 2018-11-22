@@ -5,6 +5,9 @@
 </template>
 
 <script>
+import navLinks from "@/json/navLinks.json";
+import socialMedias from "@/json/socialMedias.json";
+
 export default {
   methods: {
     isMobile() {
@@ -15,45 +18,10 @@ export default {
       }
     },
     getNavLinks() {
-      return [
-        { url: "/", name: "Início" },
-        { url: "dev-camp", name: "dev.camp()" },
-        { url: "hackathonusp", name: "HackathonUSP" }
-      ];
+      return navLinks;
     },
     getSocialMedias() {
-      return [
-        {
-          url: "https://uclab.xyz/facebook",
-          iconPrefix: "fab",
-          iconName: "facebook"
-        },
-        {
-          url: "https://uclab.xyz/github",
-          iconPrefix: "fab",
-          iconName: "github"
-        },
-        {
-          url: "https://uclab.xyz/gitlab",
-          iconPrefix: "fab",
-          iconName: "gitlab"
-        },
-        {
-          url: "https://uclab.xyz/telegram",
-          iconPrefix: "fab",
-          iconName: "telegram"
-        },
-        {
-          url: "https://uclab.xyz/medium",
-          iconPrefix: "fab",
-          iconName: "medium"
-        },
-        {
-          url: "mailto:codelab@ime.usp.br",
-          iconPrefix: "fas",
-          iconName: "envelope"
-        }
-      ];
+      return socialMedias;
     }
   }
 };

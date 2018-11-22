@@ -16,7 +16,7 @@
       </div>
       <div class="flex flex-wrap align-center justify-center">
         <a v-for="sm in socialMedias" :key="sm.iconName" :href="sm.url">
-          <font-awesome-icon :icon="{ prefix: sm.iconPrefix, iconName: sm.iconName }"/>
+          <font-awesome-icon :icon="{ prefix: sm.iconPrefix, iconName: sm.iconName }" :aria-labelledby="sm.ariaLabelledBy" :title="sm.linkTitle"/>
         </a>
       </div>
     </div>

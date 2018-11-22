@@ -1,0 +1,44 @@
+[
+  {
+    "url": "https://uclab.xyz/facebook",
+    "iconPrefix": "fab",
+    "iconName": "facebook",
+    "ariaLabelledBy": "socialMediaFacebook",
+    "linkTitle": "Link para pagina do USPCodeLab no Facebook"
+  },
+  {
+    "url": "https://uclab.xyz/github",
+    "iconPrefix": "fab",
+    "iconName": "github",
+    "ariaLabelledBy": "socialMediaGitHub",
+    "linkTitle": "Link para GitHub do USPCodeLab"
+  },
+  {
+    "url": "https://uclab.xyz/gitlab",
+    "iconPrefix": "fab",
+    "iconName": "gitlab",
+    "ariaLabelledBy": "socialMediaGitLab",
+    "linkTitle": "Link para GitLab do USPCodeLab"
+  },
+  {
+    "url": "https://uclab.xyz/telegram",
+    "iconPrefix": "fab",
+    "iconName": "telegram",
+    "ariaLabelledBy": "socialMediaTelegram",
+    "linkTitle": "Link para grupo do Telegram do USPCodeLab"
+  },
+  {
+    "url": "https://uclab.xyz/medium",
+    "iconPrefix": "fab",
+    "iconName": "medium",
+    "ariaLabelledBy": "socialMediaMedium",
+    "linkTitle": "Link para Medium do USPCodeLab"
+  },
+  {
+    "url": "mailto:codelab@ime.usp.br",
+    "iconPrefix": "fas",
+    "iconName": "envelope",
+    "ariaLabelledBy": "socialMediaEmail",
+    "linkTitle": "Link para enviar um e-mail para USPCodeLab"
+  }
+]
