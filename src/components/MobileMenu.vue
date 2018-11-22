@@ -1,9 +1,9 @@
 <template>
   <div v-scroll="handleMobileMenuScroll" class="flex justify-center">
     <div class="menu-btn-wrapper flex justify-center">
-      <button id="menuBtn" :class="['menu-btn fixed h-16 w-16 z-50 border-0 rounded-full outline-none', btnState || toggled ? 'bg-ucl-white text-ucl-orange' : 'bg-ucl-orange text-ucl-white']" @click="toggle">
-        <font-awesome-icon v-if="!toggled" :icon="{ prefix: 'fas', iconName: 'bars' }" size="lg" />
-        <font-awesome-icon v-else :icon="{ prefix: 'fas', iconName: 'times' }" size="lg" />
+      <button id="menuBtn" :class="['menu-btn fixed h-16 w-16 z-50 border-0 rounded-full outline-none', btnState || toggled ? 'bg-ucl-white text-ucl-orange' : 'bg-ucl-orange text-ucl-white']" role="button" tabindex="0" @click="toggle">
+        <font-awesome-icon v-if="!toggled" :icon="{ prefix: 'fas', iconName: 'bars' }" size="lg" aria-labelledby="menuOpenBtn" title="Botão para abrir menu" />
+        <font-awesome-icon v-else :icon="{ prefix: 'fas', iconName: 'times' }" size="lg" aria-labelledby="menuCloseBtn" title="Botão para fechar menu"/>
       </button>
     </div>
     <nav v-scroll-lock="toggled" :class="['fixed bg-ucl-orange overflow-hidden z-40', toggled ? 'menu__activated h-screen w-screen opacity-100 visible pin-b rounded-none' : 'menu__hidden h-screen w-screen opacity-0 invisible pin-b rounded-full']">
