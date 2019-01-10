@@ -3,7 +3,7 @@
     <the-navbar v-if="!this.$parent.isMobile()" :links="this.$parent.getNavLinks()"/>
     <mobile-menu v-else :links="this.$parent.getNavLinks()"/>
     <main>
-      <h1>dev.camp()</h1>
+      <dev-camp-header/>
     </main>
     <the-footer :social-medias="this.$parent.getSocialMedias()"/>
   </div>
@@ -13,6 +13,8 @@
 import TheNavbar from "@/components/TheNavbar.vue";
 import MobileMenu from "@/components/MobileMenu.vue";
 import TheFooter from "@/components/TheFooter.vue";
+
+import DevCampHeader from "@/components/dev-camp/DevCampHeader.vue";
 
 export default {
   metaInfo: {
@@ -34,6 +36,7 @@ export default {
     ]
   },
   components: {
+    DevCampHeader,
     MobileMenu,
     TheNavbar,
     TheFooter
