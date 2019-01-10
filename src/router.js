@@ -8,7 +8,7 @@ import NotFound from "@/pages/notFound.vue";
 Vue.use(Router);
 
 export default new Router({
-  mode: "history",
+  mode: "hash",
   routes: [
     {
       path: "/",
@@ -28,14 +28,9 @@ export default new Router({
       }
     },
     {
-      path: "/404",
+      path: "*",
       name: "404 Not Found",
       component: NotFound
-    },
-    {
-      path: "*",
-      name: "Redirect to 404 Not Found",
-      redirect: "/404"
     }
   ]
 });
