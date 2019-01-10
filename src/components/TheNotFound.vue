@@ -13,7 +13,9 @@
         Hmm...De fato, parece que não há nada aqui...<br>
         Verifique se o endereço foi digitado corretamente ou clique no botão abaixo para voltar à nossa página inicial.
       </p>
-      <Button link="/" message="Voltar à página inicial" />
+      <Button link="/" message="Voltar à página inicial">
+        Voltar à página inicial
+      </Button>
       <hr class="w-full mt-8 pb-2 border-t border-grey-light">
       <img src="@/assets/logos/ucl-mark-grey-alpha-reverse.png" alt="Logo do USPCodeLab" class="h-16">
     </div>

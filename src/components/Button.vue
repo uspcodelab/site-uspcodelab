@@ -1,11 +1,11 @@
 <template>
-  <a v-if="link" :href="link">
+  <router-link v-if="link" :to="link">
     <button :class="[transparent ? transparentBtn : solidBtn, baseClasses]" @click="onClickFunction">
-      {{ message }}
+      <slot></slot>
     </button>
-  </a>
+  </router-link>
   <button v-else :class="[transparent ? transparentBtn : solidBtn, baseClasses]" @click="onClickFunction">
-    {{ message }}
+    <slot></slot>
   </button>
 </template>
 
@@ -15,10 +15,6 @@ export default {
     link: {
       type: String,
       default: ""
-    },
-    message: {
-      type: String,
-      default: "Botão"
     },
     transparent: {
       type: Boolean,
