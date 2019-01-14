@@ -19,7 +19,13 @@ import {
   faGithub,
   faGitlab,
   faTelegram,
-  faMedium
+  faMedium,
+  faDiscord,
+  faDocker,
+  faLinux,
+  faNode,
+  faReact,
+  faVuejs
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -31,7 +37,13 @@ library.add(
   faGitlab,
   faMedium,
   faTelegram,
-  faTimes
+  faTimes,
+  faDiscord,
+  faDocker,
+  faLinux,
+  faNode,
+  faReact,
+  faVuejs
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

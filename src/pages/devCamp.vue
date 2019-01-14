@@ -4,6 +4,7 @@
     <mobile-menu v-else :links="this.$parent.getNavLinks()"/>
     <main>
       <dev-camp-header/>
+      <last-dev-camp :data="getLastDevCampData()"/>
     </main>
     <the-footer :social-medias="this.$parent.getSocialMedias()"/>
   </div>
@@ -15,6 +16,9 @@ import MobileMenu from "@/components/MobileMenu.vue";
 import TheFooter from "@/components/TheFooter.vue";
 
 import DevCampHeader from "@/components/dev-camp/DevCampHeader.vue";
+import LastDevCamp from "@/components/dev-camp/LastDevCamp.vue";
+
+import lastDevCampData from "@/json/lastDevCampData.json";
 
 export default {
   metaInfo: {
@@ -37,9 +41,15 @@ export default {
   },
   components: {
     DevCampHeader,
+    LastDevCamp,
     MobileMenu,
     TheNavbar,
     TheFooter
+  },
+  methods: {
+    getLastDevCampData() {
+      return lastDevCampData;
+    }
   }
 };
 </script>
