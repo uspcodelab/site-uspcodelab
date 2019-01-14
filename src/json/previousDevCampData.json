@@ -1,0 +1,53 @@
+[
+  {
+    "title": "Summer School 2018",
+    "description": "",
+    "gallery_url": "https://pt-br.facebook.com/pg/uspcodelab/photos/?tab=album&album_id=1647676391937066",
+    "photo_url": "https://scontent.fcgh9-1.fna.fbcdn.net/v/t1.0-9/27331607_1645755018795870_2009057645294732045_n.jpg?_nc_cat=102&_nc_ht=scontent.fcgh9-1.fna&oh=424af636ca45587a042b1d0f1cce139e&oe=5CB6E252",
+    "photo_alt": "Acesso à galeria de fotos da Summer School 2018 (no Facebook)",
+    "icons": [
+      {
+        "iconPrefix": "fab",
+        "iconName": "discord",
+        "ariaLabelledBy": "techDiscord",
+        "linkTitle": "Logo Discord"
+      },
+      {
+        "iconPrefix": "fab",
+        "iconName": "docker",
+        "ariaLabelledBy": "techDocker",
+        "linkTitle": "Logo Docker"
+      },
+      {
+        "iconPrefix": "fab",
+        "iconName": "gitlab",
+        "ariaLabelledBy": "techGitlab",
+        "linkTitle": "Logo GitLab"
+      },
+      {
+        "iconPrefix": "fab",
+        "iconName": "linux",
+        "ariaLabelledBy": "techLinux",
+        "linkTitle": "Logo Linux"
+      },
+      {
+        "iconPrefix": "fab",
+        "iconName": "node",
+        "ariaLabelledBy": "techNode",
+        "linkTitle": "Logo Node"
+      },
+      {
+        "iconPrefix": "fab",
+        "iconName": "react",
+        "ariaLabelledBy": "techReact",
+        "linkTitle": "Logo do React"
+      },
+      {
+        "iconPrefix": "fab",
+        "iconName": "vuejs",
+        "ariaLabelledBy": "techVueJS",
+        "linkTitle": "Logo do VueJS"
+      }
+    ]
+  }
+]
