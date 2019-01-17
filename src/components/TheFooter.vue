@@ -45,46 +45,4 @@ export default {
     transition: color 0.2s;
   }
 }
-
-.fa-envelope:hover {
-  color: #00aced !important;
-}
-.fa-envelope:focus {
-  color: #00aced !important;
-}
-
-.fa-facebook:hover {
-  color: #2b55ff !important;
-}
-.fa-facebook:focus {
-  color: #2b55ff !important;
-}
-
-.fa-telegram:hover {
-  color: #1f95d3 !important;
-}
-.fa-telegram:focus {
-  color: #1f95d3 !important;
-}
-
-.fa-gitlab:hover {
-  color: #e24329 !important;
-}
-.fa-gitlab:focus {
-  color: #e24329 !important;
-}
-
-.fa-medium:hover {
-  color: #02b875 !important;
-}
-.fa-medium:focus {
-  color: #02b875 !important;
-}
-
-.fa-github:hover {
-  color: #bfbfbf !important;
-}
-.fa-github:focus {
-  color: #bfbfbf !important;
-}
 </style>

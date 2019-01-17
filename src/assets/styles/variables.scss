@@ -23,72 +23,75 @@ $font-family-base: Montserrat, "IBM Plex Sans Condensed";
   src: url("~@/assets/fonts/Montserrat-Medium.otf");
 }
 
-$font-size-xs: 0.8rem;
-$font-size-s: 1rem;
-$font-size-m: 1.25rem;
-$font-size-l: 1.6rem;
-$font-size-xl: 2.4rem;
-$font-size-xxl: 3rem;
+.discord {
+  background-color: #738adb !important;
+}
+.docker {
+  background-color: #0db7ed !important;
+}
+.gitlab {
+  background-color: #e24329 !important;
+}
+.linux {
+  background-color: #333333 !important;
+}
+.nodejs {
+  background-color: #215732 !important;
+}
+.nuxt {
+  background-color: #42b883 !important;
+}
+.rails {
+  background-color: #cc0000 !important;
+}
+.react {
+  background-color: #00d8ff !important;
+}
+.ruby {
+  background-color: #cc342d !important;
+}
+.vuejs {
+  background-color: #42b883 !important;
+}
 
-/* --------------------------------------------
-||                 Border Radius                ||
-  ---------------------------------------------*/
+.fa-envelope:hover {
+  color: #00aced !important;
+}
+.fa-envelope:focus {
+  color: #00aced !important;
+}
 
-$br-s: 2px;
-$br-m: 4px;
-$br-l: 8px;
-$br-round: 50%;
+.fa-facebook:hover {
+  color: #2b55ff !important;
+}
+.fa-facebook:focus {
+  color: #2b55ff !important;
+}
 
-/* --------------------------------------------
-||                  Box Shadow                 ||
-  ---------------------------------------------*/
+.fa-telegram:hover {
+  color: #1f95d3 !important;
+}
+.fa-telegram:focus {
+  color: #1f95d3 !important;
+}
 
-$bs-navbar: 0 3px 5px rgba(57, 63, 72, 0.3);
-$bs-btn-menu: 0 2px 10px rgba(57, 63, 72, 0.5);
-$bs-btn: 0 3px 3px rgba(57, 63, 72, 0.4);
-$bs-btn-pressed: 0 0px 3px rgba(57, 63, 72, 0.4);
-$bs-card: 0 3px 5px rgba(57, 63, 72, 0.3);
+.fa-gitlab:hover {
+  color: #e24329 !important;
+}
+.fa-gitlab:focus {
+  color: #e24329 !important;
+}
 
-/* --------------------------------------------
-||                Letter Spacing                ||
-  ---------------------------------------------*/
+.fa-medium:hover {
+  color: #02b875 !important;
+}
+.fa-medium:focus {
+  color: #02b875 !important;
+}
 
-$ls-negative-1: -1px;
-$ls-negative-2: -2px;
-$ls-negative-half: -0.5px;
-$ls-positive-half: 0.5px;
-$ls-positive-1: 1px;
-$ls-positive-2: 2px;
-
-/* --------------------------------------------
-||                   Padding                   ||
-  ---------------------------------------------*/
-
-$ph8: 8vh;
-$ph16: 16vh;
-$ph24: 24vh;
-$ph32: 32vh;
-$ph40: 40vh;
-$ph48: 48vh;
-$ph64: 64vh;
-
-$pw8: 8vw;
-$pw16: 16vw;
-$pw24: 24vw;
-$pw32: 32vw;
-$pw40: 40vw;
-$pw48: 48vw;
-$pw64: 64vw;
-
-$p-btn: 0.5rem 1.5rem 0.5rem 1.5rem;
-
-/* --------------------------------------------
-||                    Misc                     ||
-  ---------------------------------------------*/
-
-$b-btn-pressed: 2px solid $ucl-grey-light;
-$btn-height: 2rem;
-
-$btn-round-height: 6rem;
-$btn-round-bottom: 2rem;
-$btn-round-pb: 10rem;
+.fa-github:hover {
+  color: #bfbfbf !important;
+}
+.fa-github:focus {
+  color: #bfbfbf !important;
+}

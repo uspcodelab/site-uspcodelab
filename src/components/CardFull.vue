@@ -49,36 +49,3 @@ export default {
   }
 };
 </script>
-
-<style>
-.discord {
-  background-color: #738adb !important;
-}
-.docker {
-  background-color: #0db7ed !important;
-}
-.gitlab {
-  background-color: #e24329 !important;
-}
-.linux {
-  background-color: #333333 !important;
-}
-.nodejs {
-  background-color: #215732 !important;
-}
-.nuxt {
-  background-color: #42b883 !important;
-}
-.rails {
-  background-color: #cc0000 !important;
-}
-.react {
-  background-color: #00d8ff !important;
-}
-.ruby {
-  background-color: #cc342d !important;
-}
-.vuejs {
-  background-color: #42b883 !important;
-}
-</style>
