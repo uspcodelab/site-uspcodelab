@@ -13,7 +13,12 @@ Vue.use(VueScrollTo);
 // FontsAwesome
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faBars, faEnvelope, faTimes } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faEnvelope,
+  faExternalLinkAlt,
+  faTimes
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faGithub,
@@ -43,7 +48,8 @@ library.add(
   faLinux,
   faNode,
   faReact,
-  faVuejs
+  faVuejs,
+  faExternalLinkAlt
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
