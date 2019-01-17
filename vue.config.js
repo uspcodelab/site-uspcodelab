@@ -6,6 +6,7 @@ module.exports = {
           @import "~@/assets/styles/variables.scss";
         `
       }
-    }
+    },
+    extract: false
   }
 };

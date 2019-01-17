@@ -9,7 +9,7 @@
         <div class="flex flex-wrap align-center justify-center">
           <font-awesome-icon
             v-for="icon in data.technologies" :key="icon.iconName" :icon="{ prefix: icon.iconPrefix, iconName: icon.iconName }"
-            :aria-labelledby="icon.ariaLabelledBy" :title="icon.iconTitle" class="hover:text-ucl-orange"/>
+            :aria-labelledby="icon.ariaLabelledBy" :title="icon.iconTitle" class="hover:text-ucl-orange h-12 w-12 text-5xl m-1 p-2"/>
         </div>
       </div>
       <div class="w-full md:w-1/2 flex items-end md:items-center justify-center px-2">
@@ -35,20 +35,7 @@ export default {
 <style lang="scss">
 .last-dev-camp {
   svg {
-    font-size: 3rem !important;
-    margin: 0.2rem;
-    padding: 0.5rem;
-
-    /* Make the icon inside a circle*/
-    height: 3rem;
     width: 3rem !important;
-
-    /* Centralize icon in the circle */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* Configure transition */
     transition: color 0.2s;
   }
 }
