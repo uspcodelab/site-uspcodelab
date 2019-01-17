@@ -16,13 +16,7 @@ export default {
     data: {
       type: Object,
       default() {
-        return { name: "", description: "", imgURL: "", imgAlt: "" };
-      }
-    },
-    img: {
-      type: String,
-      default() {
-        return "";
+        return { name: "", description: "", imgUrl: "", imgAlt: "" };
       }
     }
   }
