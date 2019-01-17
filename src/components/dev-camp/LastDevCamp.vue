@@ -8,8 +8,8 @@
         <p class="lg:text-xs text-justify leading-normal pb-4" v-html="data.description" />
         <div class="flex flex-wrap align-center justify-center">
           <font-awesome-icon
-            v-for="icon in data.icons" :key="icon.iconName" :icon="{ prefix: icon.iconPrefix, iconName: icon.iconName }"
-            :aria-labelledby="icon.ariaLabelledBy" :title="icon.linkTitle" class="hover:text-ucl-orange"/>
+            v-for="icon in data.technologies" :key="icon.iconName" :icon="{ prefix: icon.iconPrefix, iconName: icon.iconName }"
+            :aria-labelledby="icon.ariaLabelledBy" :title="icon.iconTitle" class="hover:text-ucl-orange"/>
         </div>
       </div>
       <div class="w-full md:w-1/2 flex items-end md:items-center justify-center px-2">
