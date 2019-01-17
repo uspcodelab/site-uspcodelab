@@ -126,16 +126,14 @@ let colors = {
   "pink-lighter": "#ffbbca",
   "pink-lightest": "#ffebef",
 
-  // UCL Custom Colors
+  "ucl-orange-dark": "#ca4e00" /* CUSTOM */,
+  "ucl-orange": "#ff690a" /* CUSTOM */,
+  "ucl-orange-light": "#ff883e" /* CUSTOM */,
 
-  "ucl-orange-dark": "#ca4e00",
-  "ucl-orange": "#ff690a",
-  "ucl-orange-light": "#ff883e",
-
-  "ucl-black": "#292827",
-  "ucl-grey": "#666361",
-  "ucl-grey-light": "dde4e9",
-  "ucl-white": "#f8f9fa"
+  "ucl-black": "#292827" /* CUSTOM */,
+  "ucl-grey": "#666361" /* CUSTOM */,
+  "ucl-grey-light": "dde4e9" /* CUSTOM */,
+  "ucl-white": "#f8f9fa" /* CUSTOM */
 };
 
 module.exports = {
@@ -255,6 +253,7 @@ module.exports = {
   */
 
   textSizes: {
+    "2xs": ".6rem" /* CUSTOM */,
     xs: ".75rem", // 12px
     sm: ".875rem", // 14px
     base: "1rem", // 16px
@@ -566,7 +565,7 @@ module.exports = {
   minHeight: {
     "0": "0",
     full: "100%",
-    "half-screen": "50vh",
+    "half-screen": "50vh" /* CUSTOM */,
     screen: "100vh"
   },
 
@@ -613,7 +612,7 @@ module.exports = {
   */
 
   maxHeight: {
-    "half-screen": "50vh",
+    "half-screen": "50vh" /* CUSTOM */,
     full: "100%",
     screen: "100vh"
   },
@@ -649,8 +648,8 @@ module.exports = {
     "20": "5rem",
     "24": "6rem",
     "32": "8rem",
-    mobile: "7rem", // 4rem for button height, 2rem top, 1rem bottom
-    navbar: "4.25rem"
+    mobile: "7rem" /* CUSTOM  4rem for button height, 2rem top, 1rem bottom */,
+    navbar: "4.25rem" /* CUSTOM */
   },
 
   /*
@@ -928,7 +927,7 @@ module.exports = {
 
   options: {
     prefix: "",
-    important: true,
+    important: false,
     separator: ":"
   },
 
