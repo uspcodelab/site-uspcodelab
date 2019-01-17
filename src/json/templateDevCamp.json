@@ -1,15 +1,23 @@
 {
-    "title": "",
-    "description": "",
-    "gallery_url": "",
-    "photo_url": "",
-    "photo_alt": "",
-    "icons": [
-      {
-        "iconPrefix": "",
-        "iconName": "",
-        "ariaLabelledBy": "",
-        "linkTitle": ""
-      },
-    ]
-  }
+  "title": "",
+  "description": "",
+  "gallery_url": "",
+  "photo_url": "",
+  "photo_alt": "",
+  "technologies": [
+    {
+      "name": "",
+      "iconPrefix": "",
+      "iconName": "",
+      "ariaLabelledBy": "",
+      "iconTitle": ""
+    },
+    {
+      "name": "",
+      "iconPrefix": "",
+      "iconName": "",
+      "ariaLabelledBy": "",
+      "iconTitle": ""
+    }
+  ]
+}
