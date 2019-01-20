@@ -12,7 +12,7 @@
     </div>
     <div class="px-6 py-4 flex flex-wrap justify-center items-center">
       <span v-for="(tech, key, index) in data.technologies" :key="index" :class="[ customClass(tech.name), baseTagClasses ]">
-        #{{ tech.name }} <font-awesome-icon v-if="tech.iconName" :icon="{ prefix: tech.iconPrefix, iconName: tech.iconName }" :aria-labelledby="tech.ariaLabelledBy" :title="tech.iconTitle"/>
+        <font-awesome-icon v-if="tech.iconName" :icon="{ prefix: tech.iconPrefix, iconName: tech.iconName }" :aria-labelledby="tech.ariaLabelledBy" :title="tech.iconTitle"/> {{ tech.name }}
       </span>
     </div>
   </div>
@@ -39,7 +39,7 @@ export default {
   data: function() {
     return {
       baseTagClasses:
-        "inline-block bg-grey-darker rounded-full px-3 py-1 text-base lg:text-2xs font-semibold text-grey-lightest mr-1 mb-1 cursor-default"
+        "tag inline-block bg-grey-lighter rounded-full px-3 py-1 text-base lg:text-2xs font-semibold text-grey-darker select-none mr-1 mb-1 cursor-default border-2"
     };
   },
   methods: {

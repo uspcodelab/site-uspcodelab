@@ -23,35 +23,51 @@ $font-family-base: Montserrat, "IBM Plex Sans Condensed";
   src: url("~@/assets/fonts/Montserrat-Medium.otf");
 }
 
-.discord {
-  background-color: #738adb !important;
+/* --------------------------------------------
+||              Custom Tech Classes            ||
+  ---------------------------------------------*/
+
+@mixin tag($color) {
+  // background-color: $color;
+  border-color: $color;
+  color: $color;
 }
-.docker {
-  background-color: #0db7ed !important;
+
+.tag {
+  transition: all 0.2s;
 }
-.gitlab {
-  background-color: #e24329 !important;
+
+/* purgecss start ignore */
+
+.discord:hover {
+  @include tag(#738adb);
 }
-.linux {
-  background-color: #333333 !important;
+.docker:hover {
+  @include tag(#0db7ed);
 }
-.nodejs {
-  background-color: #215732 !important;
+.gitlab:hover {
+  @include tag(#e24329);
 }
-.nuxt {
-  background-color: #42b883 !important;
+.linux:hover {
+  @include tag(#333333);
 }
-.rails {
-  background-color: #cc0000 !important;
+.nodejs:hover {
+  @include tag(#215732);
 }
-.react {
-  background-color: #00d8ff !important;
+.nuxt:hover {
+  @include tag(#42b883);
 }
-.ruby {
-  background-color: #cc342d !important;
+.rails:hover {
+  @include tag(#cc0000);
 }
-.vuejs {
-  background-color: #42b883 !important;
+.react:hover {
+  @include tag(#00d8ff);
+}
+.ruby:hover {
+  @include tag(#cc342d);
+}
+.vuejs:hover {
+  @include tag(#42b883);
 }
 
 .fa-envelope:hover {
@@ -95,3 +111,5 @@ $font-family-base: Montserrat, "IBM Plex Sans Condensed";
 .fa-github:focus {
   color: #bfbfbf !important;
 }
+
+/* purgecss end ignore */
