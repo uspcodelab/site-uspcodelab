@@ -1,15 +1,15 @@
 <template>
   <section id="not-found" class="bg-ucl-white text-ucl-black px-8 md:px-12 lg:px-20 xl:px-0 py-20 min-h-screen">
     <div class="container mx-auto flex flex-col items-center">
-      <span class="text-ucl-orange text-5xl font-bold tracking-wide pb-8">
+      <span class="text-ucl-orange text-4xl font-bold tracking-wide pb-8 cursor-default select-none">
         0000 0100<br>
         0000 0000<br>
         0000 0100
       </span>
-      <h1 class="text-ucl-orange text-3xl text-center font-bold tracking-wide pb-4">
+      <h1 class="text-ucl-orange text-2xl text-center font-bold tracking-wide pb-4">
         Página não encontrada!
       </h1>
-      <p class="lg:text-sm text-center leading-normal mb-4 pb-4">
+      <p class="lg:text-xs text-center leading-normal mb-4 pb-4">
         Hmm...De fato, parece que não há nada aqui...<br>
         Verifique se o endereço foi digitado corretamente ou clique no botão abaixo para voltar à nossa página inicial.
       </p>
