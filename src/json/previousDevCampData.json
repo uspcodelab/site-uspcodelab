@@ -92,14 +92,14 @@
         "iconPrefix": "",
         "iconName": "",
         "ariaLabelledBy": "",
-        "linkTitle": ""
+        "iconTitle": ""
       },
       {
         "name": "Rails",
         "iconPrefix": "",
         "iconName": "",
         "ariaLabelledBy": "",
-        "linkTitle": ""
+        "iconTitle": ""
       },
       {
         "name": "VueJS",
@@ -113,7 +113,7 @@
         "iconPrefix": "",
         "iconName": "",
         "ariaLabelledBy": "",
-        "linkTitle": ""
+        "iconTitle": ""
       }
     ]
   }

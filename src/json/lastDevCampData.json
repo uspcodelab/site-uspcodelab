@@ -46,14 +46,14 @@
       "iconPrefix": "fab",
       "iconName": "react",
       "ariaLabelledBy": "techReact",
-      "iconTitle": "Logo do React"
+      "iconTitle": "Logo React"
     },
     {
       "name": "VueJS",
       "iconPrefix": "fab",
       "iconName": "vuejs",
       "ariaLabelledBy": "techVueJS",
-      "iconTitle": "Logo do VueJS"
+      "iconTitle": "Logo VueJS"
     }
   ]
 }
