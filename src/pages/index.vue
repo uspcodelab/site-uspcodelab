@@ -69,42 +69,48 @@ export default {
           description:
             "<b>Cursos</b> sobre tecnologia onde os participantes são introduzidos a <b>ferramentas e técnicas de desenvolvimento</b> introdutórias e avançadas",
           imgUrl: devLearnLogo,
-          imgAlt: "Ícone dev.learn()"
+          imgAlt: "Ícone dev.learn()",
+          to: ""
         },
         {
           name: "dev.boost()",
           description:
             "<b>Grupos de estudos</b> onde os participantes praticam <b>desenvolvimento de sistemas</b> em times com projetos de clientes externos ou da universidade",
           imgUrl: devBoostLogo,
-          imgAlt: "Ícone dev.boost()"
+          imgAlt: "Ícone dev.boost()",
+          to: ""
         },
         {
           name: "dev.hack()",
           description:
             "<b>Hackathons</b> onde os participantes são desafiados a buscar, num tempo limitado, <b>soluções inovadoras</b> para problemas reais utilizando tecnologia",
           imgUrl: devStartLogo,
-          imgAlt: "Ícone dev.start()"
+          imgAlt: "Ícone dev.start()",
+          to: ""
         },
         {
           name: "dev.hire()",
           description:
             "<b>Assessoria de carreira</b> onde os participantes assistem palestras preparatórias e conhecem <b>empresas parceiras</b> com vagas de estágio e emprego",
           imgUrl: devHireLogo,
-          imgAlt: "Ícone dev.hire()"
+          imgAlt: "Ícone dev.hire()",
+          to: ""
         },
         {
           name: "dev.camp()",
           description:
             "<b>Escolas de férias</b> onde os participantes trabalham num <b>projeto multi-time</b> similar ao de uma empresa com arquitetura de software moderna",
           imgUrl: devCampLogo,
-          imgAlt: "Ícone dev.camp()"
+          imgAlt: "Ícone dev.camp()",
+          to: "dev-camp"
         },
         {
           name: "dev.research()",
           description:
             "<b>Divisão de pesquisa</b> onde os participantes da graduação são co-orientados por pós-graduandos em <b>ICs</b> ou <b>TCCs</b> nas áreas de atuação do grupo",
           imgUrl: devResearchLogo,
-          imgAlt: "Ícone dev.research()"
+          imgAlt: "Ícone dev.research()",
+          to: ""
         }
       ]
     };
