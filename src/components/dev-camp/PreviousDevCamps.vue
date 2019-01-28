@@ -1,7 +1,7 @@
 <template>
   <section id="previous-dev-camps" class="bg-ucl-white text-ucl-black px-8 md:px-12 lg:px-20 xl:px-0 py-20">
     <div class="container mx-auto">
-      <h1 class="text-ucl-orange text-4xl font-bold text-center pb-4 tracking-wide">
+      <h1 class="text-ucl-orange text-4xl font-thin text-center pb-4 tracking-wide">
         Últimas Edições
       </h1>
       <p class="lg:text-sm text-grey-darker text-center leading-normal mb-4 pb-4">

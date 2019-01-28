@@ -1,7 +1,7 @@
 <template>
   <section id="dev-camp" class="bg-ucl-black text-ucl-white px-8 md:px-12 lg:px-20 xl:px-0 py-20 text-center">
     <div class="container mx-auto">
-      <h1 class="text-ucl-orange text-4xl font-bold tracking-wide pb-4">
+      <h1 class="text-ucl-orange text-4xl font-thin tracking-wide pb-4">
         dev.camp()
       </h1>
       <p class="lg:text-xs text-center leading-normal mb-4 pb-4">

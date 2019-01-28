@@ -2,7 +2,7 @@
   <section id="last-dev-camp" class="last-dev-camp bg-ucl-black text-ucl-white px-8 md:px-12 lg:px-20 xl:px-0 py-20 text-center">
     <div class="container mx-auto flex flex-wrap flex-row">
       <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left justify-center px-2">
-        <h1 class="text-ucl-orange text-3xl font-bold tracking-wide pb-4">
+        <h1 class="text-ucl-orange text-3xl font-thin tracking-wide pb-4">
           {{ data.title }}
         </h1>
         <p class="lg:text-xs text-justify leading-normal pb-4" v-html="data.description" />

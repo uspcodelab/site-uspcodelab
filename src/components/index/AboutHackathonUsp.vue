@@ -5,7 +5,7 @@
         <img src="@/assets/logos/hackathon-usp.svg" alt="Logo do HackathonUSP" class="max-h-half-screen pb-5">
       </div>
       <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left justify-center">
-        <h1 class="text-ucl-orange text-4xl font-bold tracking-wide pb-4">
+        <h1 class="text-ucl-orange text-4xl font-thin tracking-wide pb-4">
           HackathonUSP
         </h1>
         <p class="lg:text-xs text-grey-darker leading-normal mb-4">
