@@ -1,5 +1,5 @@
 <template>
-  <header id="dev-camp-header" class="header h-screen md:h-full flex flex-wrap-reverse flex-row-reverse">
+  <header id="header" class="header h-screen md:h-full flex flex-wrap-reverse flex-row-reverse">
     <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left justify-start md:justify-center
         px-8 md:px-12 pt-8 pb-mobile md:pt-navbar md:pb-5">
       <h1 class="text-4xl font-bold tracking-wide">
