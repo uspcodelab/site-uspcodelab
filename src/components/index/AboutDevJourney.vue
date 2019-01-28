@@ -5,9 +5,7 @@
         dev.journey()
       </h1>
       <p class="lg:text-sm text-grey-darker text-center leading-normal mb-4 pb-4">
-        Programa de 6 fases que visa introduzir e amadurecer
-        os conhecimentos dos alunos da USP sobre desenvolvimento
-        de software
+        <b>Programa educacional</b> com 6 iniciativas que visa complementar a formação dos estudantes para que eles se tornem <b>engenheiros de software</b> capazes de desenvolverem sistemas reais
       </p>
       <card-list :array="devJourneyStages" />
     </div>

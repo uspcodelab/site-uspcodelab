@@ -38,7 +38,7 @@ export default {
         content:
           "O USPCodeLab é um grupo de extensão sediado no IME-USP, cuja missão é estimular a " +
           "inovação tecnológica na universidade. Atualmente, fazemos isso através do dev.journey() - " +
-          "que é composto por 6 partes: dev.start(), dev.learn(), dev.boost(), dev.hire(), dev.camp() " +
+          "que é composto por 6 partes: dev.learn(), dev.boost(), dev.hack(), dev.hire(), dev.camp() " +
           "e dev.research() - e de diversos hackathons e hackdays, sendo o HackathonUSP o maior evento."
       },
       {
@@ -65,57 +65,44 @@ export default {
       reunionLocal: "sala B7 do IME-USP",
       devJourneyStages: [
         {
-          name: "dev.start()",
-          description:
-            "Ciclo de oficinas de introdução à programação web \
-          para o público geral da universidade, com tópicos \
-          como HTML, CSS e JavaScript",
-          imgUrl: devStartLogo,
-          imgAlt: "Ícone dev.start()"
-        },
-        {
           name: "dev.learn()",
           description:
-            "Grupos de estudo com reuniões semanais, ao longo \
-          de um semestre, para aplicar os conhecimentos \
-          em projetos propostos pela organização",
+            "<b>Cursos</b> sobre tecnologia onde os participantes são introduzidos a <b>ferramentas e técnicas de desenvolvimento</b> introdutórias e avançadas",
           imgUrl: devLearnLogo,
           imgAlt: "Ícone dev.learn()"
         },
         {
           name: "dev.boost()",
           description:
-            "Grupo de estudos avançado, com projetos em times \
-          para aprendizado de técnicas de modelagem, \
-          implementação e manutenção de sistemas",
+            "<b>Grupos de estudos</b> onde os participantes praticam <b>desenvolvimento de sistemas</b> em times com projetos de clientes externos ou da universidade",
           imgUrl: devBoostLogo,
           imgAlt: "Ícone dev.boost()"
         },
         {
+          name: "dev.hack()",
+          description:
+            "<b>Hackathons</b> onde os participantes são desafiados a buscar, num tempo limitado, <b>soluções inovadoras</b> para problemas reais utilizando tecnologia",
+          imgUrl: devStartLogo,
+          imgAlt: "Ícone dev.start()"
+        },
+        {
           name: "dev.hire()",
           description:
-            "Iniciativa de captação de currículos de alunos, \
-          em particular dos participantes do programa, \
-          para facilitar o contato profissional \
-          com empresas parceiras",
+            "<b>Assessoria de carreira</b> onde os participantes assistem palestras preparatórias e conhecem <b>empresas parceiras</b> com vagas de estágio e emprego",
           imgUrl: devHireLogo,
           imgAlt: "Ícone dev.hire()"
         },
         {
           name: "dev.camp()",
           description:
-            "Escola de férias que serve de formatura para os \
-            alunos do dev.learn() e dev.boost() envolvendo um \
-            projeto grande com múltiplos times",
+            "<b>Escolas de férias</b> onde os participantes trabalham num <b>projeto multi-time</b> similar ao de uma empresa com arquitetura de software moderna",
           imgUrl: devCampLogo,
           imgAlt: "Ícone dev.camp()"
         },
         {
           name: "dev.research()",
           description:
-            "Ciclo de oficinas de introdução à programação web \
-            para o público geral da universidade, com tópicos \
-            como HTML, CSS e JavaScript",
+            "<b>Divisão de pesquisa</b> onde os participantes da graduação são co-orientados por pós-graduandos em <b>ICs</b> ou <b>TCCs</b> nas áreas de atuação do grupo",
           imgUrl: devResearchLogo,
           imgAlt: "Ícone dev.research()"
         }
