@@ -22,7 +22,7 @@ import AboutHackathonUsp from "@/components/index/AboutHackathonUsp.vue";
 import AboutDevJourney from "@/components/index/AboutDevJourney.vue";
 import ReunionCall from "@/components/index/ReunionCall.vue";
 
-import devStartLogo from "@/assets/dev-journey/dev-start.svg";
+import devHackLogo from "@/assets/dev-journey/dev-hack.svg";
 import devLearnLogo from "@/assets/dev-journey/dev-learn.svg";
 import devBoostLogo from "@/assets/dev-journey/dev-boost.svg";
 import devHireLogo from "@/assets/dev-journey/dev-hire.svg";
@@ -84,7 +84,7 @@ export default {
           name: "dev.hack()",
           description:
             "<b>Hackathons</b> onde os participantes são desafiados a buscar, num tempo limitado, <b>soluções inovadoras</b> para problemas reais utilizando tecnologia",
-          imgUrl: devStartLogo,
+          imgUrl: devHackLogo,
           imgAlt: "Ícone dev.start()",
           to: ""
         },
