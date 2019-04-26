@@ -20,16 +20,19 @@ import {
   faTimes
 } from "@fortawesome/free-solid-svg-icons";
 import {
+  faDiscord,
+  faDocker,
   faFacebook,
   faGithub,
   faGitlab,
-  faTelegram,
-  faMedium,
-  faDiscord,
-  faDocker,
+  faInstagram,
+  faLinkedin,
   faLinux,
+  faMedium,
   faNode,
   faReact,
+  faTelegram,
+  faTwitter,
   faVuejs
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -37,19 +40,23 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(
   faBars,
   faEnvelope,
+  faExternalLinkAlt,
+  faTimes,
+
+  faDiscord,
+  faDocker,
   faFacebook,
   faGithub,
   faGitlab,
-  faMedium,
-  faTelegram,
-  faTimes,
-  faDiscord,
-  faDocker,
+  faInstagram,
+  faLinkedin,
   faLinux,
+  faMedium,
   faNode,
   faReact,
-  faVuejs,
-  faExternalLinkAlt
+  faTelegram,
+  faTwitter,
+  faVuejs
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

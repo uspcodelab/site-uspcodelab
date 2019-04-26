@@ -1,11 +1,18 @@
 <template>
   <router-link v-if="link" :to="link">
-    <button :class="[transparent ? transparentBtn : solidBtn, baseClasses]" @click="onClickFunction">
-      <slot/>
+    <button
+      :class="[transparent ? transparentBtn : solidBtn, baseClasses]"
+      @click="onClickFunction"
+    >
+      <slot />
     </button>
   </router-link>
-  <button v-else :class="[transparent ? transparentBtn : solidBtn, baseClasses]" @click="onClickFunction">
-    <slot/>
+  <button
+    v-else
+    :class="[transparent ? transparentBtn : solidBtn, baseClasses]"
+    @click="onClickFunction"
+  >
+    <slot />
   </button>
 </template>
 

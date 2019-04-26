@@ -1,52 +1,95 @@
 <template>
-  <footer id="footer" class="footer bg-ucl-black text-ucl-white px-8 md:px-12 lg:px-20 xl:px-0 pt-8 pb-mobile md:pb-8 flex flex-wrap font-semibold text-base md:text-xs">
-    <div class="container mx-auto flex flex-wrap">
+  <footer class="footer">
+    <div class="column column--spaced column--highlight">
       <!-- Logo -->
-      <div class="w-full md:w-1/2 text-center pb-3">
-        <router-link v-scroll-to="'#header'" to="/" class="no-underline">
-          <img src="@/assets/logos/ucl-logo-wb-alpha.svg" alt="Logo do USPCodeLab" class="h-16">
-          <p class="text-ucl-white select-none leading-normal mb-4">
-            Estimulando a inovação tecnológica na USP
-          </p>
-        </router-link>
-      </div>
+      <router-link v-scroll-to="'#header'" to="/" class="no-underline">
+        <img
+          src="@/assets/logos/ucl-logo-wb-alpha.svg"
+          alt="Logo do USPCodeLab"
+          class="logo"
+        />
+        <p class="tagline">
+          Estimulando a inovação tecnológica na USP
+        </p>
+      </router-link>
+    </div>
+
+    <div class="column column--spaced column--highlight">
       <!-- Social Medias -->
-      <div class="text-center no-underline w-full md:w-1/2">
-        <div class="w-full">
-          <p class="leading-normal mb-4">
-            Siga-nos nas redes sociais!
-          </p>
-        </div>
-        <div class="flex flex-wrap align-center justify-center">
-          <a v-for="sm in socialMedias" :key="sm.iconName" :href="sm.url">
-            <font-awesome-icon :icon="{ prefix: sm.iconPrefix, iconName: sm.iconName }" :aria-labelledby="sm.ariaLabelledBy" :title="sm.iconTitle" class="bg-ucl-white h-12 w-12 text-ucl-black text-5xl m-1 p-2 rounded-full"/>
-          </a>
-        </div>
+      <div class="w-full">
+        <p class="tagline">
+          Siga-nos nas redes sociais!
+        </p>
+      </div>
+      <div class="icon_list">
+        <a v-for="sm in socialMedias" :key="sm.iconName" :href="sm.url">
+          <font-awesome-icon
+            :icon="{ prefix: sm.iconPrefix, iconName: sm.iconName }"
+            :aria-labelledby="sm.ariaLabelledBy"
+            :title="sm.iconTitle"
+            class="bg-ucl-white h-12 w-12 text-ucl-black text-5xl m-1 p-2 rounded-full flex-none"
+          />
+        </a>
       </div>
     </div>
   </footer>
 </template>
 
 <script>
+import socialMedias from "@/json/socialMedias.json";
+
 export default {
-  props: {
-    socialMedias: {
-      type: Array,
-      default() {
-        return [];
-      }
-    }
+  data() {
+    return {
+      socialMedias
+    };
   }
 };
 </script>
 
-
-<style lang="scss">
+<style>
 .footer {
+  @apply bg-ucl-black text-ucl-white;
+  @apply text-center text-base font-semibold;
+
+  @apply pb-24;
+
+  @apply flex flex-row justify-center items-stretch;
+
   svg {
     /* Configure transition */
     width: 3rem !important;
     transition: color 0.2s;
   }
 }
+@screen md {
+  .footer {
+    @apply py-8;
+  }
+}
+
+.footer--divided {
+  @apply flex-wrap;
+}
+@screen md {
+  .footer--divided {
+    @apply flex-no-wrap;
+  }
+}
+
+/* @screen md { */
+/*   .footer { */
+/*     @apply px-12 pb-8 text-xs; */
+/*   } */
+/* } */
+/* @screen lg { */
+/*   .footer { */
+/*     @apply px-20; */
+/*   } */
+/* } */
+/* @screen xl { */
+/*   .footer { */
+/*     @apply px-0; */
+/*   } */
+/* } */
 </style>

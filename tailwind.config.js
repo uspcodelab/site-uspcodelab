@@ -174,8 +174,9 @@ module.exports = {
   screens: {
     sm: "576px",
     md: "768px",
-    lg: "992px",
-    xl: "1200px"
+    lg: "1024px",
+    xl: "1440px",
+    xxl: "2560px"
   },
 
   /*
@@ -489,6 +490,7 @@ module.exports = {
     "4/5": "80%",
     "1/6": "16.66667%",
     "5/6": "83.33333%",
+    "9/20": "45%",
     full: "100%",
     screen: "100vw"
   },
@@ -648,8 +650,8 @@ module.exports = {
     "20": "5rem",
     "24": "6rem",
     "32": "8rem",
-    mobile: "7rem" /* CUSTOM  4rem for button height, 2rem top, 1rem bottom */,
-    navbar: "4.25rem" /* CUSTOM */
+    "48": "12rem",
+    "64": "16rem"
   },
 
   /*

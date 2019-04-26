@@ -11,15 +11,7 @@ class TailwindVueExtractor {
 }
 
 const extensionsUsingCSS = ["vue", "html"];
-const extensionsOfCSS = [
-  "css",
-  "less",
-  "pcss",
-  "postcss",
-  "sass",
-  "scss",
-  "styl"
-];
+const extensionsOfCSS = ["css", "pcss", "postcss"];
 
 module.exports = {
   plugins: [

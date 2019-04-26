@@ -7,6 +7,41 @@
     "linkTitle": "Link para pagina do USPCodeLab no Facebook"
   },
   {
+    "url": "https://uclab.xyz/instagram",
+    "iconPrefix": "fab",
+    "iconName": "instagram",
+    "ariaLabelledBy": "socialMediaInstagram",
+    "linkTitle": "Link para pagina do USPCodeLab no Instagram"
+  },
+  {
+    "url": "https://uclab.xyz/twitter",
+    "iconPrefix": "fab",
+    "iconName": "twitter",
+    "ariaLabelledBy": "socialMediaTwitter",
+    "linkTitle": "Link para pagina do USPCodeLab no Twitter"
+  },
+  {
+    "url": "https://uclab.xyz/linkedin",
+    "iconPrefix": "fab",
+    "iconName": "linkedin",
+    "ariaLabelledBy": "socialMediaLinkedin",
+    "linkTitle": "Link para pagina do USPCodeLab no Linkedin"
+  },
+  {
+    "url": "https://uclab.xyz/medium",
+    "iconPrefix": "fab",
+    "iconName": "medium",
+    "ariaLabelledBy": "socialMediaMedium",
+    "linkTitle": "Link para Medium do USPCodeLab"
+  },
+  {
+    "url": "https://uclab.xyz/telegram",
+    "iconPrefix": "fab",
+    "iconName": "telegram",
+    "ariaLabelledBy": "socialMediaTelegram",
+    "linkTitle": "Link para grupo do Telegram do USPCodeLab"
+  },
+  {
     "url": "https://uclab.xyz/github",
     "iconPrefix": "fab",
     "iconName": "github",
@@ -19,20 +54,6 @@
     "iconName": "gitlab",
     "ariaLabelledBy": "socialMediaGitLab",
     "linkTitle": "Link para GitLab do USPCodeLab"
-  },
-  {
-    "url": "https://uclab.xyz/telegram",
-    "iconPrefix": "fab",
-    "iconName": "telegram",
-    "ariaLabelledBy": "socialMediaTelegram",
-    "linkTitle": "Link para grupo do Telegram do USPCodeLab"
-  },
-  {
-    "url": "https://uclab.xyz/medium",
-    "iconPrefix": "fab",
-    "iconName": "medium",
-    "ariaLabelledBy": "socialMediaMedium",
-    "linkTitle": "Link para Medium do USPCodeLab"
   },
   {
     "url": "mailto:codelab@ime.usp.br",

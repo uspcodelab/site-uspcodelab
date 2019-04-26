@@ -1,11 +1,11 @@
-module.exports = {
-  css: {
-    loaderOptions: {
-      sass: {
-        data: `
-          @import "~@/assets/styles/variables.scss";
-        `
-      }
-    }
-  }
-};
+// module.exports = {
+//   css: {
+//     loaderOptions: {
+//       sass: {
+//         data: `
+//           @import "~@/assets/styles/variables.scss";
+//         `
+//       }
+//     }
+//   }
+// };

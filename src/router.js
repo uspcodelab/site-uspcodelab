@@ -1,36 +1,24 @@
 import Vue from "vue";
 import Router from "vue-router";
-
-import Home from "@/pages/index.vue";
-import DevCamp from "@/pages/devCamp.vue";
-import NotFound from "@/pages/notFound.vue";
+import routes from "vue-auto-routing";
+import { createRouterLayout } from "vue-router-layout";
 
 Vue.use(Router);
 
+const RouterLayout = createRouterLayout(layout => {
+  return import("@/layouts/" + layout + ".vue");
+});
+
 export default new Router({
-  mode: "hash",
   routes: [
     {
       path: "/",
-      name: "home",
-      component: Home
-    },
-    {
-      path: "/dev-camp",
-      name: "devCamp()",
-      component: DevCamp
-    },
-    {
-      path: "/hackathonusp",
-      name: "HackathonUSP",
-      beforeEnter() {
-        location.href = "https://hackathon.ime.usp.br";
-      }
+      component: RouterLayout,
+      children: routes
     },
     {
       path: "*",
-      name: "404 Not Found",
-      component: NotFound
+      redirect: "/404"
     }
   ]
 });
