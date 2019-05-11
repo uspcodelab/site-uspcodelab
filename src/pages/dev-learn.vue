@@ -2,6 +2,7 @@
   <main class="page">
     <the-header />
     <dev-learn-image />
+    <slides />
     <pillars />
   </main>
 </template>
@@ -10,6 +11,7 @@
 import TheHeader from "@/components/dev-learn/TheHeader.vue";
 
 import DevLearnImage from "@/components/dev-learn/DevLearnImage.vue";
+import Slides from "@/components/dev-learn/Slides.vue";
 import Pillars from "@/components/dev-learn/Pillars.vue";
 
 export default {
@@ -32,7 +34,8 @@ export default {
   components: {
     TheHeader,
     DevLearnImage,
-    Pillars
+    Pillars,
+    Slides
   }
 };
 </script>

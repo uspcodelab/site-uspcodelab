@@ -16,9 +16,9 @@
 import CardList from "@/components/util/CardList.vue";
 
 
-import progImage from "@/assets/pillars/prog.png";
-import fundImage from "@/assets/pillars/fundamentals.jpg";
-import advanceImage from "@/assets/pillars/advance.png";
+import progImage from "@/assets/dev-learn/prog.png";
+import fundImage from "@/assets/dev-learn/fundamentals.jpg";
+import advanceImage from "@/assets/dev-learn/advance.png";
 
 import devLearnPillars from "@/json/devLearnPillars.json";
 
