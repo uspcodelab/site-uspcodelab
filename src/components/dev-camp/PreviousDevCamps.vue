@@ -15,9 +15,10 @@ import CardList from "@/components/util/CardList.vue";
 
 import devCampList from "@/json/devCampList.json";
 
+
 export default {
   components: {
-    CardList
+    CardList,
   },
   data() {
     return {

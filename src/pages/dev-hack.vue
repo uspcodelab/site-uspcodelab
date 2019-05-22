@@ -1,16 +1,15 @@
 <template>
   <main class="page">
     <the-header />
-    <dev-learn-image />
-    <pillars />
+    <previous-dev-hacks />
+    <!-- <previous-dev-camps /> -->
   </main>
 </template>
 
 <script>
-import TheHeader from "@/components/dev-learn/TheHeader.vue";
-
-import DevLearnImage from "@/components/dev-learn/DevLearnImage.vue";
-import Pillars from "@/components/dev-learn/Pillars.vue";
+import TheHeader from "@/components/dev-hack/TheHeader.vue";
+import PreviousDevHacks from "@/components/dev-hack/PreviousDevHacks.vue";
+// import PreviousDevCamps from "@/components/dev-camp/PreviousDevCamps.vue";
 
 export default {
   metaInfo: {
@@ -31,8 +30,8 @@ export default {
   },
   components: {
     TheHeader,
-    DevLearnImage,
-    Pillars
+    PreviousDevHacks,
+    // PreviousDevCamps
   }
 };
 </script>

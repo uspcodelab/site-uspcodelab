@@ -1,5 +1,8 @@
 <template>
   <div class="card card--light">
+    <div class="card__content">
+      <div class="card__title">{{ data.title }}</div>
+    </div>
     <a
       v-if="data.imgHref"
       v-scroll-to="'#header'"
@@ -22,7 +25,6 @@
     <img v-else :src="data.imgUrl" :alt="data.imgAlt" :class="data.imgClass" />
 
     <div class="card__content">
-      <div class="card__title">{{ data.title }}</div>
       <p class="card__description" v-html="data.description" />
       <div class="flex flex-wrap justify-center items-center">
         <span
@@ -105,7 +107,7 @@ export default {
 
 .card__content {
   @apply flex-grow;
-  @apply px-8 my-6;
+  @apply px-8 my-1;
 }
 @screen md {
   .card__content {
@@ -118,7 +120,7 @@ export default {
   @apply text-3xl;
   @apply font-bold;
   @apply w-full;
-  @apply pb-4;
+  @apply pb-0;
 }
 
 .card__description {
@@ -129,7 +131,7 @@ export default {
 }
 
 .card__link {
-  @apply no-underline flex justify-center items-end;
+  @apply no-underline flex justify-end items-end;
 }
 
 .card__link__image {

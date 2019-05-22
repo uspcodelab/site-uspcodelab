@@ -1,12 +1,79 @@
 [
   {
+    "title": "Summer School 2019",
+    "summary": "A <strong>Summer School 2019</strong> ocorreu na primeira semana de <strong>fevereiro de 2019</strong> e teve <strong>16 participantes</strong> que foram divididos em 4 times para desenvolver o <strong>Hackanizer: uma plataforma para organizar e hospedar hackathons</strong>. O sistema foi feito com uma <strong>arquitetura de microserviços reativa</strong> utilizando tecnologias como React, Vue, Node, GraphQL, Docker, Kubernetes, PostgreSQL e Kafka",
+    "description": "<strong>Projeto:</strong> Hacknizer<br><strong>Descrição:</strong> Uma plataforma para organizar e hospedar hackathons<br><strong>Data:</strong> Fevereiro de 2019<br><strong>Local:</strong> Auditório do CCSL - IME-USP",
+    "imgHref": "https://www.facebook.com/pg/uspcodelab/photos/?tab=album&album_id=2115219058516128",
+    "imgUrl": "https://scontent.faep13-1.fna.fbcdn.net/v/t1.0-9/51253885_2115226261848741_2496587407386738688_n.jpg?_nc_cat=110&_nc_ht=scontent.faep13-1.fna&oh=a6dc9f4505f8ac2f96643df4cbfef521&oe=5D59ECEE",
+    "imgAlt": "Acesso à galeria de fotos da Winter School 2018 (no Facebook)",
+    "imgClass": "h-64 con",
+    "labels": [
+      {
+        "name": "Discord",
+        "iconPrefix": "fab",
+        "iconName": "discord",
+        "ariaLabelledBy": "techDiscord",
+        "iconTitle": "Logo Discord"
+      },
+      {
+        "name": "Docker",
+        "iconPrefix": "fab",
+        "iconName": "docker",
+        "ariaLabelledBy": "techDocker",
+        "iconTitle": "Logo Docker"
+      },
+      {
+        "name": "GitLab",
+        "iconPrefix": "fab",
+        "iconName": "gitlab",
+        "ariaLabelledBy": "techGitlab",
+        "iconTitle": "Logo GitLab"
+      },
+      {
+        "name": "Linux",
+        "iconPrefix": "fab",
+        "iconName": "linux",
+        "ariaLabelledBy": "techLinux",
+        "iconTitle": "Logo Linux"
+      },
+      {
+        "name": "NodeJS",
+        "iconPrefix": "fab",
+        "iconName": "node",
+        "ariaLabelledBy": "techNode",
+        "iconTitle": "Logo Node"
+      },
+      {
+        "name": "TailWind",
+        "iconPrefix": "fab",
+        "iconName": "wind",
+        "ariaLabelledBy": "techWind",
+        "iconTitle": "Logo TailWind"
+      },
+      {
+        "name": "GraphQL",
+        "iconPrefix": "fab",
+        "iconName": "garphql",
+        "ariaLabelledBy": "techGraphQL",
+        "iconTitle": "Logo GraphQL"
+      },
+      {
+        "name": "VueJS",
+        "iconPrefix": "fab",
+        "iconName": "vuejs",
+        "ariaLabelledBy": "techVueJS",
+        "iconTitle": "Logo VueJS"
+      }
+    ]
+  },
+  {
     "title": "Winter School 2018",
     "summary": "A <strong>Winter School 2018</strong> ocorreu na segunda semana de <strong>julho de 2018</strong> e teve <strong>26 participantes</strong> que foram divididos em 6 times para desenvolver o <strong>Hackanizer: uma plataforma para organizar e hospedar hackathons</strong>. O sistema foi feito com uma <strong>arquitetura de microserviços reativa</strong> utilizando tecnologias como React, Vue, Node, GraphQL, Docker, Kubernetes, PostgreSQL e Kafka",
     "description": "<strong>Projeto:</strong> Hacknizer<br><strong>Descrição:</strong> Uma plataforma para organizar e hospedar hackathons<br><strong>Data:</strong> Julho de 2018<br><strong>Local:</strong> Sala CAEM - IME-USP",
     "imgHref": "https://pt-br.facebook.com/pg/uspcodelab/photos/?tab=album&album_id=1829775497060487",
-    "imgUrl": "https://scontent.fcgh9-1.fna.fbcdn.net/v/t1.0-9/37290184_1829786920392678_433893552045424640_n.jpg?_nc_cat=111&_nc_ht=scontent.fcgh9-1.fna&oh=1a3f5d232154917684d29ad92e55bcb6&oe=5CD5AD37",
+    "imgUrl": "https://scontent.faep13-1.fna.fbcdn.net/v/t1.0-9/27067230_1644896798881692_3500145300919144688_n.jpg?_nc_cat=101&_nc_ht=scontent.faep13-1.fna&oh=befe15395813409bba4429db50298c9d&oe=5D5FA35C",
     "imgAlt": "Acesso à galeria de fotos da Winter School 2018 (no Facebook)",
-    "imgClass": "h-64",
+    "imgClass": "h-64 items-center",
     "labels": [
       {
         "name": "Discord",
@@ -63,7 +130,7 @@
     "title": "Summer School 2018",
     "description": "<strong>Projeto:</strong> Pandora<br><strong>Descrição:</strong> Um sistema para gerenciar os armários do CAMat<br><strong>Data:</strong> Fevereiro de 2018<br><strong>Local:</strong> Sala B07 - IME-USP",
     "imgHref": "https://pt-br.facebook.com/pg/uspcodelab/photos/?tab=album&album_id=1647676391937066",
-    "imgUrl": "https://scontent.fcgh9-1.fna.fbcdn.net/v/t1.0-9/27331607_1645755018795870_2009057645294732045_n.jpg?_nc_cat=102&_nc_ht=scontent.fcgh9-1.fna&oh=424af636ca45587a042b1d0f1cce139e&oe=5CB6E252",
+    "imgUrl": "https://scontent.faep13-1.fna.fbcdn.net/v/t1.0-9/37290184_1829786920392678_433893552045424640_n.jpg?_nc_cat=111&_nc_ht=scontent.faep13-1.fna&oh=a68df42e6881928ba39ebe90524f8eba&oe=5D9B6E37",
     "imgAlt": "Acesso à galeria de fotos da Summer School 2018 (no Facebook)",
     "imgClass": "h-64",
     "labels": [

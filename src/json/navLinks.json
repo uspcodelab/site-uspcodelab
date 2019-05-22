@@ -2,5 +2,6 @@
   { "url": "/", "name": "Início" },
   { "url": "dev-camp", "name": "dev.camp()" },
   { "url": "dev-learn", "name": "dev.learn()" },
+  { "url": "dev-hack", "name": "dev.hack()" },
   { "url": "hackathonusp", "name": "HackathonUSP" }
 ]
