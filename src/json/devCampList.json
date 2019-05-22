@@ -1,7 +1,7 @@
 [
   {
     "title": "Summer School 2019",
-    "summary": "A <strong>Summer School 2019</strong> ocorreu na primeira semana de <strong>fevereiro de 2019</strong> e teve <strong>16 participantes</strong> que foram divididos em 4 times para desenvolver o <strong>Hackanizer: uma plataforma para organizar e hospedar hackathons</strong>. O sistema foi feito com uma <strong>arquitetura de microserviços reativa</strong> utilizando tecnologias como React, Vue, Node, GraphQL, Docker, Kubernetes, PostgreSQL e Kafka",
+    "summary": "A <strong>Summer School 2019</strong> ocorreu na primeira semana de <strong>fevereiro de 2019</strong> e teve <strong>16 participantes</strong> que foram divididos em 4 times para desenvolver o <strong>Hackanizer: uma plataforma para organizar e hospedar hackathons</strong>. O sistema foi feito com uma <strong>arquitetura de microserviços reativa</strong> utilizando tecnologias como, Vue, Node, Redis, Nats, GraphQL, Docker e Apollo",
     "description": "<strong>Projeto:</strong> Hacknizer<br><strong>Descrição:</strong> Uma plataforma para organizar e hospedar hackathons<br><strong>Data:</strong> Fevereiro de 2019<br><strong>Local:</strong> Auditório do CCSL - IME-USP",
     "imgHref": "https://www.facebook.com/pg/uspcodelab/photos/?tab=album&album_id=2115219058516128",
     "imgUrl": "https://scontent.faep13-1.fna.fbcdn.net/v/t1.0-9/51253885_2115226261848741_2496587407386738688_n.jpg?_nc_cat=110&_nc_ht=scontent.faep13-1.fna&oh=a6dc9f4505f8ac2f96643df4cbfef521&oe=5D59ECEE",
