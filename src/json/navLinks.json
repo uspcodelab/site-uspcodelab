@@ -4,5 +4,6 @@
   { "url": "dev-learn", "name": "dev.learn()" },
   { "url": "dev-hack", "name": "dev.hack()" },
   { "url": "dev-hire", "name": "dev.hire()" },
-  { "url": "hackathonusp", "name": "HackathonUSP" }
+  { "url": "hackathonusp", "name": "HackathonUSP" },
+  { "url": "members", "name": "Membros" }
 ]
