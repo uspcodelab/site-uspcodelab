@@ -1,5 +1,7 @@
 <template>
+
   <div class="card card--light">
+
     <a
       v-if="data.imgHref"
       v-scroll-to="'#header'"
@@ -23,38 +25,24 @@
 
     <div class="card__content">
       <div class="card__title">{{ data.title }}</div>
+      
       <p class="card__description" v-html="data.description" />
-      <div class="flex flex-wrap justify-center items-center">
+      <div class="flex flex-row">
         <span
-          v-for="(label, key, index) in data.labels"
+          v-for="(role, key, index) in data.roles"
           :key="index"
-          class="card__label"
-          :class="[customClass(label.name)]"
         >
-          <font-awesome-icon
-            v-if="label.iconName"
-            :icon="{ prefix: label.iconPrefix, iconName: label.iconName }"
-            :aria-labelledby="label.ariaLabelledBy"
-            :title="label.iconTitle"
-          />
-          {{ label.name }}
+          <div class="tooltip">
+            <img
+            :src="role.imgUrl"
+            :alt="role.imgAlt"
+            class="small_role_icon"
+            />
+            <span class="tooltiptext">{{ role.name }}</span>
+          </div> 
         </span>
       </div>
     </div>
-
-    <router-link
-      v-if="data.linkTo"
-      v-scroll-to="'#header'"
-      :to="data.linkTo"
-      class="card__link"
-    >
-      <font-awesome-icon
-        :icon="{ prefix: 'fas', iconName: 'external-link-alt' }"
-        :aria-labelledby="data.title"
-        title="Ícone link externo"
-        class="card__link__icon"
-      />
-    </router-link>
   </div>
 </template>
 
@@ -67,13 +55,13 @@ export default {
         return {
           title: "",
           description: "",
-          roles: {},
           imgHref: "",
           imgUrl: "",
           imgAlt: "",
           imgClass: "",
           linkTo: "",
-          labels: []
+          labels: [],
+          roles: []
         };
       }
     }
@@ -106,7 +94,7 @@ export default {
 
 .card__content {
   @apply flex-grow;
-  @apply px-8 my-6;
+  @apply p-1;
 }
 @screen md {
   .card__content {
@@ -116,10 +104,11 @@ export default {
 
 .card__title {
   @apply text-ucl-black;
-  @apply text-3xl;
+  @apply text-2xl;
   @apply font-bold;
   @apply w-full;
   @apply pb-4;
+  @apply px-0;
 }
 
 .card__description {
@@ -134,20 +123,45 @@ export default {
 }
 
 .card__link__image {
-  object-fit: cover;
+  object-fit: none;
 }
 
 .card__link__icon {
   @apply absolute text-grey text-3xl pb-3 pr-3;
 }
 
-.card__label {
-  @apply bg-grey-lighter;
-  @apply text-grey-darker;
-  @apply text-sm font-semibold;
-  @apply m-1;
-  @apply px-3 py-1;
-  @apply border-2 rounded-full;
-  @apply select-none cursor-default;
+.small_role_icon {
+  @apply w-8;
+  @apply h-8;
 }
+/* Tooltip container */
+.tooltip {
+  /* position: relative; */
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+
+
 </style>

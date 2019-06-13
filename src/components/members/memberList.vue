@@ -44,8 +44,15 @@ export default {
           description: "",
           imgUrl: brunoScholl,
           imgAlt: "Foto de brunoSchool",
-          imgClass: "justify-center",
-          linkTo: ""
+          imgClass: "w-0",
+          linkTo: "",
+          "roles": [
+            {
+              name: "dev.camp()",
+              imgUrl: devCampLogo,
+              imgAlt: "dev.camp()"
+            }, 
+          ]
         },
         {
           title: "Caio Andrade",
@@ -55,14 +62,27 @@ export default {
           imgAlt: "Foto de Caio Andrade",
           imgClass: "",
           linkTo: "",
-          "labels": [
+          "roles": [
             {
-              "name": "dev.learn()",
-              "iconPrefix": "fab",
-              "iconName": "discord",
-              "ariaLabelledBy": "techDiscord",
-              "iconTitle": "Logo Discord"
+              name: "dev.learn()",
+              imgUrl: devLearnLogo,
+              imgAlt: "dev.learn()"
             },
+            {
+              name: "dev.boost()",
+              imgUrl: devBoostLogo,
+              imgAlt: "dev.boost()"
+            },
+            {
+              name: "dev.camp()",
+              imgUrl: devCampLogo,
+              imgAlt: "dev.camp()"
+            }, 
+            {
+              name: "dev.hack()",
+              imgUrl: devHackLogo,
+              imgAlt: "dev.hack()"
+            }, 
           ]
         },
         {
@@ -71,7 +91,14 @@ export default {
           imgUrl: edioCerati,
           imgAlt: "Foto de Édio Cerati",
           imgClass: "",
-          linkTo: ""
+          linkTo: "",
+          "roles": [
+            {
+              name: "dev.hack()",
+              imgUrl: devHackLogo,
+              imgAlt: "dev.hack()"
+            }, 
+          ]
         },
         {
           title: "Fernando Freire",
@@ -79,7 +106,14 @@ export default {
           imgUrl: fernandoFreire,
           imgAlt: "Foto de Fernando Freire",
           imgClass: "",
-          linkTo: ""
+          linkTo: "",
+          "roles": [
+            {
+              name: "dev.hack()",
+              imgUrl: devHackLogo,
+              imgAlt: "dev.hack()"
+            }, 
+          ]
         },
         {
           title: "João Daniel",
@@ -87,7 +121,14 @@ export default {
           imgUrl: joaoDaniel,
           imgAlt: "Foto de João Daniel",
           imgClass: "",
-          linkTo: ""
+          linkTo: "",
+          "roles": [
+            {
+              name: "dev.hack()",
+              imgUrl: devHackLogo,
+              imgAlt: "dev.hack()"
+            }, 
+          ]
         },
         {
           title: "Leandro Rodrigues",
@@ -95,7 +136,14 @@ export default {
           imgUrl: leandroRodrigues,
           imgAlt: "Foto de Leandro Rodrigues",
           imgClass: "",
-          linkTo: ""
+          linkTo: "",
+          "roles": [
+            {
+              name: "dev.hack()",
+              imgUrl: devHackLogo,
+              imgAlt: "dev.hack()"
+            }, 
+          ]
         },
         {
           title: "Leonardo Lana",
@@ -103,7 +151,14 @@ export default {
           imgUrl: leonardoLana,
           imgAlt: "Foto de Leonardo Lana",
           imgClass: "",
-          linkTo: ""
+          linkTo: "",
+          "roles": [
+            {
+              name: "dev.hack()",
+              imgUrl: devHackLogo,
+              imgAlt: "dev.hack()"
+            }, 
+          ]
         },
         {
           title: "Lucas Civile",
@@ -111,7 +166,14 @@ export default {
           imgUrl: lucasCivile,
           imgAlt: "Foto de Lucas Civile",
           imgClass: "",
-          linkTo: ""
+          linkTo: "",
+          "roles": [
+            {
+              name: "dev.hack()",
+              imgUrl: devHackLogo,
+              imgAlt: "dev.hack()"
+            }, 
+          ]
         },
         {
           title: "Renato Cordeiro",
@@ -119,7 +181,14 @@ export default {
           imgUrl: renatoCordeiro,
           imgAlt: "Foto de Renato Cordeiro",
           imgClass: "",
-          linkTo: ""
+          linkTo: "",
+          "roles": [
+            {
+              name: "dev.hack()",
+              imgUrl: devHackLogo,
+              imgAlt: "dev.hack()"
+            }, 
+          ]
         },
         {
           title: "Victor Hugo",
@@ -127,7 +196,14 @@ export default {
           imgUrl: victorHugo,
           imgAlt: "Foto de Victor Hugo",
           imgClass: "",
-          linkTo: ""
+          linkTo: "",
+          "roles": [
+            {
+              name: "dev.hack()",
+              imgUrl: devHackLogo,
+              imgAlt: "dev.hack()"
+            }, 
+          ]
         },
         {
           title: "Wander Souza",
@@ -135,7 +211,14 @@ export default {
           imgUrl: wanderSouza,
           imgAlt: "Foto de Wander Souza",
           imgClass: "",
-          linkTo: ""
+          linkTo: "",
+          "roles": [
+            {
+              name: "dev.hack()",
+              imgUrl: devHackLogo,
+              imgAlt: "dev.hack()"
+            }, 
+          ]
         },
         {
           title: "Washingtom Luiz",
@@ -143,7 +226,14 @@ export default {
           imgUrl: washingtomLuiz,
           imgAlt: "Foto de Washingtom Luiz",
           imgClass: "",
-          linkTo: ""
+          linkTo: "",
+          "roles": [
+            {
+              name: "dev.hack()",
+              imgUrl: devHackLogo,
+              imgAlt: "dev.hack()"
+            }, 
+          ]
         },
         {
           title: "Ygor tavela",
@@ -151,7 +241,14 @@ export default {
           imgUrl: ygorTavela,
           imgAlt: "Foto de Ygor Tavela",
           imgClass: "",
-          linkTo: ""
+          linkTo: "",
+          "roles": [
+            {
+              name: "dev.hack()",
+              imgUrl: devHackLogo,
+              imgAlt: "dev.hack()"
+            }, 
+          ]
         }
       ]
     };
