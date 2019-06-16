@@ -19,6 +19,7 @@ import leandroRodrigues from "@/assets/members/leandroRodrigues.jpg";
 import leonardoLana from "@/assets/members/leonardoLana.jpg";
 import lucasCivile from "@/assets/members/lucasCivile.jpg";
 import renatoCordeiro from "@/assets/members/renatoCordeiro.jpg";
+import ricardoKojo from "@/assets/members/ricardoKojo.jpg";
 import victorHugo from "@/assets/members/victorHugo.jpg";
 import wanderSouza from "@/assets/members/wanderSouza.jpg";
 import washingtomLuiz from "@/assets/members/washingtomLuiz.jpg";
@@ -180,6 +181,21 @@ export default {
           description:"",
           imgUrl: renatoCordeiro,
           imgAlt: "Foto de Renato Cordeiro",
+          imgClass: "",
+          linkTo: "",
+          "roles": [
+            {
+              name: "dev.hack()",
+              imgUrl: devHackLogo,
+              imgAlt: "dev.hack()"
+            }, 
+          ]
+        },
+        {
+          title: "Ricardo Kojo",
+          description:"",
+          imgUrl: ricardoKojo,
+          imgAlt: "Foto de Ricardo Kojo",
           imgClass: "",
           linkTo: "",
           "roles": [
