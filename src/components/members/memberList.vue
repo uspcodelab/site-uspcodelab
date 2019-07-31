@@ -45,7 +45,7 @@ export default {
           description: "",
           imgUrl: brunoScholl,
           imgAlt: "Foto de brunoSchool",
-          imgClass: "w-0",
+          imgClass: "rounded-full  h-64 w-64",
           linkTo: "",
           "roles": [
             {
@@ -61,7 +61,7 @@ export default {
           roles: {devLearnLogo}, 
           imgUrl: caioAndrade,
           imgAlt: "Foto de Caio Andrade",
-          imgClass: "",
+          imgClass: "rounded-full  h-64 w-64 ",
           linkTo: "",
           "roles": [
             {
@@ -91,13 +91,18 @@ export default {
           description: "",
           imgUrl: edioCerati,
           imgAlt: "Foto de Édio Cerati",
-          imgClass: "",
+          imgClass: "rounded-full  h-64 w-64 ",
           linkTo: "",
           "roles": [
             {
               name: "dev.hack()",
               imgUrl: devHackLogo,
               imgAlt: "dev.hack()"
+            },
+            {
+              name: "dev.camp()",
+              imgUrl: devCampLogo,
+              imgAlt: "dev.camp()"
             }, 
           ]
         },
@@ -106,13 +111,18 @@ export default {
           description:"",
           imgUrl: fernandoFreire,
           imgAlt: "Foto de Fernando Freire",
-          imgClass: "",
+          imgClass: "rounded-full object-contain  h-64 w-64 ",
           linkTo: "",
           "roles": [
             {
               name: "dev.hack()",
               imgUrl: devHackLogo,
               imgAlt: "dev.hack()"
+            }, 
+            {
+              name: "dev.camp()",
+              imgUrl: devCampLogo,
+              imgAlt: "dev.camp()"
             }, 
           ]
         },
@@ -121,13 +131,23 @@ export default {
           description: "",
           imgUrl: joaoDaniel,
           imgAlt: "Foto de João Daniel",
-          imgClass: "",
+          imgClass: "rounded-full  h-64 w-64 ",
           linkTo: "",
           "roles": [
             {
               name: "dev.hack()",
               imgUrl: devHackLogo,
               imgAlt: "dev.hack()"
+            },
+            {
+              name: "dev.boost()",
+              imgUrl: devBoostLogo,
+              imgAlt: "dev.boost()"
+            },
+            {
+              name: "dev.camp()",
+              imgUrl: devCampLogo,
+              imgAlt: "dev.camp()"
             }, 
           ]
         },
@@ -136,13 +156,18 @@ export default {
           description: "",
           imgUrl: leandroRodrigues,
           imgAlt: "Foto de Leandro Rodrigues",
-          imgClass: "",
+          imgClass: "rounded-full  h-64 w-64 ",
           linkTo: "",
           "roles": [
             {
               name: "dev.hack()",
               imgUrl: devHackLogo,
               imgAlt: "dev.hack()"
+            }, 
+            {
+              name: "dev.camp()",
+              imgUrl: devCampLogo,
+              imgAlt: "dev.camp()"
             }, 
           ]
         },
@@ -151,13 +176,18 @@ export default {
           description:"",
           imgUrl: leonardoLana,
           imgAlt: "Foto de Leonardo Lana",
-          imgClass: "",
+          imgClass: "rounded-full  h-64 w-64 ",
           linkTo: "",
           "roles": [
             {
               name: "dev.hack()",
               imgUrl: devHackLogo,
               imgAlt: "dev.hack()"
+            }, 
+            {
+              name: "dev.camp()",
+              imgUrl: devCampLogo,
+              imgAlt: "dev.camp()"
             }, 
           ]
         },
@@ -166,13 +196,18 @@ export default {
           description: "",
           imgUrl: lucasCivile,
           imgAlt: "Foto de Lucas Civile",
-          imgClass: "",
+          imgClass: "rounded-full  h-64 w-64 ",
           linkTo: "",
           "roles": [
             {
               name: "dev.hack()",
               imgUrl: devHackLogo,
               imgAlt: "dev.hack()"
+            }, 
+            {
+              name: "dev.camp()",
+              imgUrl: devCampLogo,
+              imgAlt: "dev.camp()"
             }, 
           ]
         },
@@ -181,7 +216,7 @@ export default {
           description:"",
           imgUrl: renatoCordeiro,
           imgAlt: "Foto de Renato Cordeiro",
-          imgClass: "",
+          imgClass: "rounded-full  h-64 w-64 ",
           linkTo: "",
           "roles": [
             {
@@ -189,6 +224,11 @@ export default {
               imgUrl: devHackLogo,
               imgAlt: "dev.hack()"
             }, 
+            {
+              name: "dev.boost()",
+              imgUrl: devBoostLogo,
+              imgAlt: "dev.boost()"
+            },
           ]
         },
         {
@@ -196,13 +236,18 @@ export default {
           description:"",
           imgUrl: ricardoKojo,
           imgAlt: "Foto de Ricardo Kojo",
-          imgClass: "",
+          imgClass: "rounded-full  h-64 w-64 ",
           linkTo: "",
           "roles": [
             {
               name: "dev.hack()",
               imgUrl: devHackLogo,
               imgAlt: "dev.hack()"
+            }, 
+            {
+              name: "dev.camp()",
+              imgUrl: devCampLogo,
+              imgAlt: "dev.camp()"
             }, 
           ]
         },
@@ -211,7 +256,7 @@ export default {
           description:"",
           imgUrl: victorHugo,
           imgAlt: "Foto de Victor Hugo",
-          imgClass: "",
+          imgClass: "rounded-full  h-64 w-64 ",
           linkTo: "",
           "roles": [
             {
@@ -219,6 +264,11 @@ export default {
               imgUrl: devHackLogo,
               imgAlt: "dev.hack()"
             }, 
+            {
+              name: "dev.boost()",
+              imgUrl: devBoostLogo,
+              imgAlt: "dev.boost()"
+            },
           ]
         },
         {
@@ -226,7 +276,7 @@ export default {
           description:"",
           imgUrl: wanderSouza,
           imgAlt: "Foto de Wander Souza",
-          imgClass: "",
+          imgClass: "rounded-full  h-64 w-64 ",
           linkTo: "",
           "roles": [
             {
@@ -234,6 +284,11 @@ export default {
               imgUrl: devHackLogo,
               imgAlt: "dev.hack()"
             }, 
+            {
+              name: "dev.boost()",
+              imgUrl: devBoostLogo,
+              imgAlt: "dev.boost()"
+            },
           ]
         },
         {
@@ -241,7 +296,7 @@ export default {
           description: "",
           imgUrl: washingtomLuiz,
           imgAlt: "Foto de Washingtom Luiz",
-          imgClass: "",
+          imgClass: "rounded-full  h-64 w-64 ",
           linkTo: "",
           "roles": [
             {
@@ -249,6 +304,11 @@ export default {
               imgUrl: devHackLogo,
               imgAlt: "dev.hack()"
             }, 
+            {
+              name: "dev.boost()",
+              imgUrl: devBoostLogo,
+              imgAlt: "dev.boost()"
+            },
           ]
         },
         {
@@ -256,13 +316,18 @@ export default {
           description:"",
           imgUrl: ygorTavela,
           imgAlt: "Foto de Ygor Tavela",
-          imgClass: "",
+          imgClass: "rounded-full  h-64 w-64 ",
           linkTo: "",
           "roles": [
             {
               name: "dev.hack()",
               imgUrl: devHackLogo,
               imgAlt: "dev.hack()"
+            }, 
+            {
+              name: "dev.camp()",
+              imgUrl: devCampLogo,
+              imgAlt: "dev.camp()"
             }, 
           ]
         }

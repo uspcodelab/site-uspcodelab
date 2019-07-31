@@ -2,26 +2,10 @@
 
   <div class="card card--light">
 
-    <a
-      v-if="data.imgHref"
-      v-scroll-to="'#header'"
-      :href="data.imgHref"
-      class="card__link"
-    >
-      <img
-        :src="data.imgUrl"
-        :alt="data.imgAlt"
-        class="card__link__image"
-        :class="data.imgClass"
-      />
-      <font-awesome-icon
-        :icon="{ prefix: 'fas', iconName: 'external-link-alt' }"
-        :aria-labelledby="data.title"
-        title="Ícone link externo"
-        class="card__link__icon"
-      />
-    </a>
-    <img v-else :src="data.imgUrl" :alt="data.imgAlt" :class="data.imgClass" />
+  
+    <div class="image-wrapper">
+      <img :src="data.imgUrl" :alt="data.imgAlt" :class="data.imgClass" />
+    </div>
 
     <div class="card__content">
       <div class="card__title">{{ data.title }}</div>
@@ -87,6 +71,12 @@ export default {
   @apply bg-ucl-white;
   @apply text-ucl-black;
 }
+
+.image-wrapper{
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
 .card--dark {
   @apply bg-ucl-black;
   @apply text-ucl-white;
@@ -123,7 +113,7 @@ export default {
 }
 
 .card__link__image {
-  object-fit: none;
+  object-fit: contain;
 }
 
 .card__link__icon {
