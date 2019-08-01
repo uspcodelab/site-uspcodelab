@@ -2,8 +2,9 @@
   { "url": "/", "name": "Início" },
   { "url": "dev-camp", "name": "dev.camp()" },
   { "url": "dev-learn", "name": "dev.learn()" },
+  { "url": "dev-boost", "name": "dev.boost()" },
   { "url": "dev-hack", "name": "dev.hack()" },
   { "url": "dev-hire", "name": "dev.hire()" },
-  { "url": "hackathonusp", "name": "HackathonUSP" },
+  { "url": "dev-research", "name": "dev.research()" },
   { "url": "members", "name": "Membros" }
 ]

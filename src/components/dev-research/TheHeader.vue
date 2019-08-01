@@ -2,19 +2,19 @@
   <header class="header header--forward header--divided">
     <div class="column column--spaced column--photo column--symbol">
       <img
-        src="@/assets/dev-journey/dev-camp.svg"
-        alt="Logo do dev.camp()"
+        src="@/assets/dev-journey/dev-research.svg"
+        alt="Logo do dev.research()"
         class="logo"
       />
     </div>
     <div class="column column--spaced column--info">
       <h1 class="banner">
-        dev.research()
+        dev.camp()
       </h1>
       <p class="lead">
-        <strong>Divisão de pesquisa</strong> onde os participantes da graduação 
-        são co-orientados por pós-graduandos em <strong>ICs e TCCs</strong> nas
-         áreas de atuação do grupo
+        <b>Escolas de férias</b> onde os participantes trabalham num
+        <b>projeto multi-time</b> como o de uma empresa com arquitetura de
+        software moderna
       </p>
     </div>
   </header>
