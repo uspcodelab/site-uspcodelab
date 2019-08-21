@@ -60,8 +60,8 @@ export default {
   },
   data() {
     return {
-      reunionDays: "toda quinta-feira",
-      reunionTime: "13h30",
+      reunionDays: "todas as quintas-feiras",
+      reunionTime: "12h15",
       reunionLocal: "sala B7 do IME-USP",
       devJourneyStages: [
         {
