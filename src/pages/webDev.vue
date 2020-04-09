@@ -5,12 +5,20 @@
     <img src="https://www.ime.usp.br/~renata/baby.gif" alt="gif bizarro" width="150px" />
     <p>Página em constante construção o//</p>
     <br />
+    <h2>Slides das aulas:</h2>
+    <br />
+    <ul>
+      <li>
+        <a href="https://slides.com/uspcodelab/introducao-codelab-e-web101/">Aula 1 - 11/04/20</a>
+      </li>
+    </ul>
+    <br />
     <h2>Tarefas</h2>
     <br />
     <ol>
       <li>
-        <h3>Tarefa 1:</h3>
-        <div>Para 11/abril</div>
+        <h3>Aula 1:</h3>
+        <div>Para 18/04</div>
         <ul>
           <li>Faça a sua versão da página feita pelo Rodrigo, com seus filmes favoritos!</li>
           <li>
