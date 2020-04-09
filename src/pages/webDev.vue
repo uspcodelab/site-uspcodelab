@@ -2,8 +2,11 @@
   <div>
     <h1>Bem-vindo a página do curso WebDev!</h1>
     <br />
-    <img src="https://www.ime.usp.br/~renata/baby.gif" alt="gif bizarro" width="150px" />
-    <p>Página em constante construção o//</p>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/1/19/Under_construction_graphic.gif"
+      alt="site em construção"
+    />
+    <p>página em construção conforme aprendemos coisas novas!</p>
     <br />
     <h2>Slides das aulas:</h2>
     <br />
