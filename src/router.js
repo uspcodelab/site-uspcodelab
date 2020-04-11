@@ -3,7 +3,6 @@ import Router from "vue-router";
 
 import Home from "@/pages/index.vue";
 import DevCamp from "@/pages/devCamp.vue";
-import WebDev from "@/pages/webDev.vue";
 import NotFound from "@/pages/notFound.vue";
 
 Vue.use(Router);
@@ -27,11 +26,6 @@ export default new Router({
       beforeEnter() {
         location.href = "https://hackathon.ime.usp.br";
       },
-    },
-    {
-      path: "/webdev2020",
-      name: "WebDev",
-      component: WebDev,
     },
     {
       path: "*",
