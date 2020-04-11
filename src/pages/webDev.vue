@@ -8,7 +8,7 @@
     />
     <p>página em construção conforme aprendemos coisas novas!</p>
     <br />
-    <h2>Slides das aulas:</h2>
+    <h2>Slides das aulas</h2>
     <br />
     <ul>
       <li>
@@ -31,6 +31,19 @@
                 uma lista com vários filmes usando a tag
                 <strong>ul</strong> (unordered list), criando novos itens com a tag
                 <strong>li</strong> (list item)
+              </li>
+              <li>
+                coloque o título dentro de uma tag de heading
+                <strong>h3</strong>
+              </li>
+              <li>
+                além disso, o título do filme deve ser um hyperlink que direciona para a página correspondente do mesmo na página do
+                <a
+                  href="https://www.imdb.com"
+                >imdb.com</a>
+                para isto basta usar a tag
+                <strong>a</strong> colocando a refência da página no atributo
+                <em>href</em>
               </li>
               <li>
                 inclua uma breve sinopse para cada filme usando a tag
