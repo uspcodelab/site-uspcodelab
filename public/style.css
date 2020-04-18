@@ -24,15 +24,14 @@ nav {
   text-align: center;
   background-color: lightpink;
   font-size: 1.5em;
-  padding: 2em;
+  padding: 1em;
 }
 
 .nav__link {
-  margin: 0 1em;
+  padding: 1em;
 }
 
 .nav__link:hover {
-  padding: 2em;
   background-color: aqua;
 }
 

@@ -141,11 +141,11 @@
                 <li>
                   Feito isso, as seções estão cada um com seu
                   <em>id</em> próprio, assim podemos criar a navegação. Para
-                  isto, no início da página crie uma lista de itens com os nomes
-                  dos títulos dentro de uma tag <code>&lt;a&gt;</code>. Em vez
-                  de referenciar uma página externa dentro do atributo
-                  <em>href</em>, insira uma referência para a tag usando um
-                  seletor de id, por exemplo,
+                  isto, crie uma tag <code>&lt;nav&gt;</code> no início da
+                  página que englobe os itens com os nomes dos títulos dentro de
+                  uma tag <code>&lt;a&gt;</code>. Em vez de referenciar uma
+                  página externa dentro do atributo <em>href</em>, insira uma
+                  referência para a tag usando um seletor de id, por exemplo,
                   <code>&lt;a href="#filmes"&gt;Filmes&lt;/a&gt;</code>.
                 </li>
                 <li>
@@ -310,6 +310,27 @@
                       >
                     </li>
                   </ul>
+                </li>
+                <li>
+                  Pseudoclasses: existem
+                  <a
+                    href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes"
+                    >várias</a
+                  >, elas atuam de forma a especificar um comportamento especial
+                  para um dado elemento. Na barra de navegação que fizemos
+                  anteriormente, poderiamos adicionar a pseudoclasse
+                  <em>hover</em> para agir sobre cada tag
+                  <code>&lt;a&gt;</code>, assim quando você passar o mouse por
+                  cima de cada referência ele poderia mudar de cor por exemplo.
+                  Para isto, adicione uma classe dentro de cada tag
+                  <code>&lt;a class="nav_item" href="#filmes"&gt;</code>, agora
+                  dentro da sua folha de estilos faça:
+                  <pre>
+  nav_item:hover {
+    background-color: red;
+  }
+</pre
+                  >
                 </li>
                 <li>
                   Pretendemos continuar com mais algumas aulas sobre
