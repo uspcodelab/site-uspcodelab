@@ -91,3 +91,7 @@ footer {
   letter-spacing: 2px;
   color: orangered;
 }
+
+.img__screen {
+  width: 800px;
+}
