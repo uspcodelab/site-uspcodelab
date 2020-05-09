@@ -22,21 +22,55 @@ header {
 }
 
 nav {
-  text-align: center;
-  background-color: lightpink;
-  font-size: 1.5em;
-  padding: 1em;
+  background-color: #333;
+  color: white;
+  font-weight: 800;
+  font-size: 1.1em;
+  border-bottom: 4px solid #4faddb;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: content-box;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.main__nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .nav__link {
-  padding: 1em;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 0 1em;
+  min-height: 100%;
 }
 
 .nav__link:hover {
-  background-color: aqua;
+  color: black;
+  background-color: #4faddb;
+}
+
+.logo {
+  padding: 0.5em;
+  width: 80px;
+}
+
+a {
+  outline: 0;
+}
+
+p {
+  margin: 0.2em 0;
 }
 
 section {
+  scroll-margin-top: 100px;
   padding: 2em;
 }
 
@@ -62,21 +96,9 @@ li {
   font-size: 1.5em;
 }
 
-#aulas {
-  background-color: lightcoral;
-}
-
-#tarefas {
-  background-color: lightcyan;
-}
-
-#links_uteis {
-  background-color: lightgreen;
-}
 #gifs {
   text-align: center;
   padding: 2em 0;
-  background-color: lightskyblue;
 }
 
 footer {
@@ -94,4 +116,43 @@ footer {
 
 .img__screen {
   width: 800px;
+}
+
+.block__lecture {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.button__collapse {
+  display: flex;
+  cursor: pointer;
+}
+
+.block__title {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 0;
+  background-color: #ff8339;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.img__arrow {
+  margin-right: 1em;
+}
+
+.block__hidden {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-top: 0;
+  background-color: #edf2f7;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
