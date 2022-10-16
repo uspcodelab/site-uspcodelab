@@ -29,7 +29,9 @@ import {
   faLinux,
   faNode,
   faReact,
-  faVuejs
+  faVuejs,
+  faInstagram,
+  faYoutube
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -48,7 +50,9 @@ library.add(
   faNode,
   faReact,
   faVuejs,
-  faExternalLinkAlt
+  faExternalLinkAlt,
+  faInstagram,
+  faYoutube
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
