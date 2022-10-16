@@ -7,6 +7,27 @@
     "linkTitle": "Link para pagina do USPCodeLab no Facebook"
   },
   {
+    "url": "https://uclab.xyz/instagram",
+    "iconPrefix": "fab",
+    "iconName": "instagram",
+    "ariaLabelledBy": "socialMediaInstagram",
+    "linkTitle": "Link para pagina do USPCodeLab no Instagram"
+  },
+  {
+    "url": "https://uclab.xyz/youtube",
+    "iconPrefix": "fab",
+    "iconName": "youtube",
+    "ariaLabelledBy": "socialMediaYoutube",
+    "linkTitle": "Link para o canal do USPCodeLab no YouTube"
+  }, 
+  {
+    "url": "https://uclab.xyz/discord",
+    "iconPrefix": "fab",
+    "iconName": "discord",
+    "ariaLabelledBy": "socialMediaDiscord",
+    "linkTitle": "Link para o servidor do USPCodeLab no Discord"
+  },
+  {
     "url": "https://uclab.xyz/github",
     "iconPrefix": "fab",
     "iconName": "github",
