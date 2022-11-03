@@ -1,13 +1,13 @@
 <template>
   <div class="page">
-    <the-navbar v-if="!this.$parent.isMobile()" :links="this.$parent.getNavLinks()"/>
-    <mobile-menu v-else :links="this.$parent.getNavLinks()"/>
+    <the-navbar v-if="!isMobile()" :links="getNavLinks()"/>
+    <mobile-menu v-else :links="getNavLinks()"/>
     <main>
       <dev-camp-header/>
       <last-dev-camp :data="getLastDevCampData()"/>
       <previous-dev-camps :data="getPreviousDevCampData()"/>
     </main>
-    <the-footer :social-medias="this.$parent.getSocialMedias()"/>
+    <the-footer :social-medias="getSocialMedias()"/>
   </div>
 </template>
 
@@ -50,6 +50,7 @@ export default {
     TheNavbar,
     TheFooter
   },
+  props: ["isMobile", "getNavLinks", "getSocialMedias"],
   methods: {
     getLastDevCampData() {
       return lastDevCampData;

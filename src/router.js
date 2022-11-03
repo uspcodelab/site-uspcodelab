@@ -1,14 +1,12 @@
-import Vue from "vue";
-import Router from "vue-router";
+import { createWebHistory, createRouter } from "vue-router";
 
 import Home from "@/pages/index.vue";
 import DevCamp from "@/pages/devCamp.vue";
 import NotFound from "@/pages/notFound.vue";
 
-Vue.use(Router);
-
-export default new Router({
+export default createRouter({
   mode: "hash",
+  history: createWebHistory(),
   routes: [
     {
       path: "/",
@@ -28,7 +26,7 @@ export default new Router({
       },
     },
     {
-      path: "*",
+      path: "/:catchAll(.*)",
       name: "404 Not Found",
       component: NotFound,
     },

@@ -1,14 +1,14 @@
 <template>
   <div class="page">
-    <the-navbar v-if="!this.$parent.isMobile()" :links="this.$parent.getNavLinks()"/>
-    <mobile-menu v-else :links="this.$parent.getNavLinks()"/>
+    <the-navbar v-if="!isMobile()" :links="getNavLinks()"/>
+    <mobile-menu v-else :links="getNavLinks()"/>
     <the-header/>
     <main>
       <about-dev-journey :dev-journey-stages="devJourneyStages"/>
       <reunion-call :days="reunionDays" :time="reunionTime" :local="reunionLocal"/>
       <about-hackathon-usp/>
     </main>
-    <the-footer :social-medias="this.$parent.getSocialMedias()" />
+    <the-footer :social-medias="getSocialMedias()" />
   </div>
 </template>
 
@@ -58,6 +58,7 @@ export default {
     AboutDevJourney,
     ReunionCall
   },
+  props: ["isMobile", "getNavLinks", "getSocialMedias"],
   data() {
     return {
       reunionDays: "todas as quintas-feiras",
@@ -122,6 +123,6 @@ export default {
       "color: #ff690a; font-weight:bold; font-size: 14px",
       "font-size:14px; font-weight: bold;"
     );
-  }
+  },
 };
 </script>

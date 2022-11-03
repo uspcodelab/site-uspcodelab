@@ -1,15 +1,12 @@
-import Vue from "vue";
+import Vue, { createApp } from "vue";
+import { createMetaManager } from 'vue-meta'
 import App from "./App.vue";
 import router from "./router";
 
-Vue.config.productionTip = false;
+import VueScrollTo from "vue-scrollto";
+import VueCarousel from "vue-carousel";
+import VScrollLock from "v-scroll-lock";
 
-// vue-scrollto
-
-const VueScrollTo = require("vue-scrollto");
-Vue.use(VueScrollTo);
-
-// FontsAwesome
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -50,38 +47,25 @@ library.add(
   faVuejs,
   faExternalLinkAlt
 );
-Vue.component("font-awesome-icon", FontAwesomeIcon);
 
-// vue-carousel
-
-import VueCarousel from "vue-carousel";
-Vue.use(VueCarousel);
-
-// v-scroll-lock
-
-import VScrollLock from "v-scroll-lock";
-Vue.use(VScrollLock);
-
-// Scroll directive
-
-Vue.directive("scroll", {
-  inserted: function(el, binding) {
-    let f = function(evt) {
-      if (binding.value(evt, el)) {
-        window.removeEventListener("scroll", f);
-      }
-    };
-    window.addEventListener("scroll", f);
-  }
-});
-
-// vue-meta
-import Meta from "vue-meta";
-Vue.use(Meta);
+Vue.config.productionTip = false;
 
 // Vue
-
-new Vue({
-  router,
-  render: h => h(App)
-}).$mount("#app");
+createApp(App)
+  .use(VScrollLock)
+  .use(VueCarousel)
+  .use(VueScrollTo)
+  .use(router)
+  .use(createMetaManager())
+  .component('font-awesome-icon', FontAwesomeIcon)
+  .directive("scroll", {
+    inserted: function (el, binding) {
+      let f = function (evt) {
+        if (binding.value(evt, el)) {
+          window.removeEventListener("scroll", f);
+        }
+      };
+      window.addEventListener("scroll", f);
+    }
+  })
+  .mount("#app")
