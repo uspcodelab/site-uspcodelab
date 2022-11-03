@@ -13,6 +13,8 @@
 </template>
 
 <script>
+import { useMeta } from 'vue-meta'
+
 import TheNavbar from "@/components/TheNavbar.vue";
 import MobileMenu from "@/components/MobileMenu.vue";
 import TheHeader from "@/components/TheHeader.vue";
@@ -30,24 +32,6 @@ import devResearchLogo from "@/assets/dev-journey/dev-research.svg";
 import devCampLogo from "@/assets/dev-journey/dev-camp.svg";
 
 export default {
-  metaInfo: {
-    title: "USPCodeLab - Estimulando a inovação tecnológica na USP!",
-    meta: [
-      {
-        name: "description",
-        content:
-          "O USPCodeLab é um grupo de extensão sediado no IME-USP, cuja missão é estimular a " +
-          "inovação tecnológica na universidade. Atualmente, fazemos isso através do dev.journey() - " +
-          "que é composto por 6 partes: dev.learn(), dev.boost(), dev.hack(), dev.hire(), dev.camp() " +
-          "e dev.research() - e de diversos hackathons e hackdays, sendo o HackathonUSP o maior evento."
-      },
-      {
-        name: "keywords",
-        content:
-          "USPCodeLab, USPCodeLabs, CodeLab, CodeLabs, HackathonUSP, dev journey, IME, USP, hackathon"
-      }
-    ]
-  },
   components: {
     TheNavbar,
     MobileMenu,
@@ -59,6 +43,26 @@ export default {
     ReunionCall
   },
   props: ["isMobile", "getNavLinks", "getSocialMedias"],
+  setup() {
+    useMeta({
+      title: "USPCodeLab - Estimulando a inovação tecnológica na USP!",
+      meta: [
+        {
+          name: "description",
+          content:
+            "O USPCodeLab é um grupo de extensão sediado no IME-USP, cuja missão é estimular a " +
+            "inovação tecnológica na universidade. Atualmente, fazemos isso através do dev.journey() - " +
+            "que é composto por 6 partes: dev.learn(), dev.boost(), dev.hack(), dev.hire(), dev.camp() " +
+            "e dev.research() - e de diversos hackathons e hackdays, sendo o HackathonUSP o maior evento."
+        },
+        {
+          name: "keywords",
+          content:
+            "USPCodeLab, USPCodeLabs, CodeLab, CodeLabs, HackathonUSP, dev journey, IME, USP, hackathon"
+        }
+      ]
+    });
+  },
   data() {
     return {
       reunionDays: "todas as quintas-feiras",

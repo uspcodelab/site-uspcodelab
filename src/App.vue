@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <metainfo>
-      <template #title="{ content }">{{ content ? `${content} | SITE_NAME` : `SITE_NAME` }}</template>
+      <template #title="{ content }">{{ content }}</template>
     </metainfo>
     <router-view :is-mobile="isMobile" :get-nav-links="getNavLinks" :get-social-medias="getSocialMedias"/>
   </div>
