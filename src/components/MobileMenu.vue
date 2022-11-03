@@ -8,7 +8,7 @@
     </div>
     <nav v-scroll-lock="toggled" :class="['fixed bg-ucl-orange overflow-hidden z-40', toggled ? 'menu__activated h-screen w-screen opacity-100 visible pin-b rounded-none' : 'menu__hidden h-screen w-screen opacity-0 invisible pin-b rounded-full']">
       <ul class="menu-list h-full pl-0 pb-32 flex flex-col justify-end list-reset">
-        <router-link v-scroll-to="'#header'" v-for="link in links" :to="link.url" :key="link.name" tag="li" class="menu-list-item px-8 py-4 w-full text-ucl-white text-3xl text-center font-bold uppercase no-underline cursor-pointer hover:bg-ucl-orange-light" @click="toggle">
+        <router-link v-for="link in links" :key="link.name" v-scroll-to="'#header'" :to="link.url" tag="li" class="menu-list-item px-8 py-4 w-full text-ucl-white text-3xl text-center font-bold uppercase no-underline cursor-pointer hover:bg-ucl-orange-light" @click="toggle">
           {{ link.name }}
         </router-link>
       </ul>

@@ -1,5 +1,5 @@
 <template>
-  <router-link v-scroll-to="'#header'" v-if="data.to" :to="data.to" class="no-underline">
+  <router-link v-if="data.to" v-scroll-to="'#header'" :to="data.to" class="no-underline">
     <div class="rounded overflow-hidden shadow-md text-center h-full">
       <img :src="data.imgUrl" :alt="data.imgAlt" class="w-1/2 lg:w-1/3 mt-6">
       <div class="px-6 pt-4 mb-6">

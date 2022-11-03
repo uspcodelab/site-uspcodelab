@@ -10,7 +10,8 @@
         de desenvolvimento!
       </p>
       <div class="flex flex-col items-center">
-        <carousel :autoplay="true"
+        <carousel
+:autoplay="true"
                   :autoplay-timeout="3000"
                   :loop="true"
                   :pagination-enabled="true"

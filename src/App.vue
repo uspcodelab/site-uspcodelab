@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <metainfo>
-      <template v-slot:title="{ content }">{{ content ? `${content} | SITE_NAME` : `SITE_NAME` }}</template>
+      <template #title="{ content }">{{ content ? `${content} | SITE_NAME` : `SITE_NAME` }}</template>
     </metainfo>
     <router-view :is-mobile="isMobile" :get-nav-links="getNavLinks" :get-social-medias="getSocialMedias"/>
   </div>
