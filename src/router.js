@@ -3,6 +3,7 @@ import { createWebHistory, createRouter } from "vue-router";
 import Home from "@/pages/index.vue";
 import DevCamp from "@/pages/devCamp.vue";
 import NotFound from "@/pages/notFound.vue";
+import Hackathons from "@/pages/hackathons.vue"
 
 export default createRouter({
   mode: "hash",
@@ -19,11 +20,9 @@ export default createRouter({
       component: DevCamp,
     },
     {
-      path: "/hackathonusp",
-      name: "HackathonUSP",
-      beforeEnter() {
-        location.href = "https://hackathon.ime.usp.br";
-      },
+      path: "/hackathons",
+      name: "Hackathons",
+      component: Hackathons,
     },
     {
       path: "/:catchAll(.*)",
