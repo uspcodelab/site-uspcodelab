@@ -10,6 +10,7 @@ services:
       - 'web_dependencies:/usr/src/web/node_modules'
     env_file:
       - '.env'
+    command: npm run dev
 
 volumes:
   ? web_dependencies
