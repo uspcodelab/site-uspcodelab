@@ -10,7 +10,8 @@
         </h1>
         <p class="lg:text-xs text-gray-600 leading-normal mb-4">
           Maior evento do USPCodeLab, feito em parceria com o
-          <a href="http://www.uspempreende.org"
+          <a
+href="http://www.uspempreende.org"
             class="text-ucl-orange hover:text-ucl-orange-dark no-underline hover:no-underline">Núcleo de
             Empreendedorismo da USP (NEU)</a>.
           Voltado para USPianos, patrocinado pela reitoria da USP e empresas parceiras,

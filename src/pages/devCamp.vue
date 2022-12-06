@@ -1,13 +1,13 @@
 <template>
   <div class="page">
-    <the-navbar v-if="!isMobile()" :links="getNavLinks()"/>
-    <mobile-menu v-else :links="getNavLinks()"/>
+    <the-navbar v-if="!isMobile()" :links="getNavLinks()" />
+    <mobile-menu v-else :links="getNavLinks()" />
     <main>
-      <dev-camp-header/>
-      <last-dev-camp :data="getLastDevCampData()"/>
-      <previous-dev-camps :data="getPreviousDevCampData()"/>
+      <dev-camp-header />
+      <last-dev-camp :data="getLastDevCampData()" />
+      <previous-dev-camps :data="getPreviousDevCampData()" />
     </main>
-    <the-footer :social-medias="getSocialMedias()"/>
+    <the-footer :social-medias="getSocialMedias()" />
   </div>
 </template>
 
@@ -24,6 +24,7 @@ import PreviousDevCamps from "@/components/dev-camp/PreviousDevCamps.vue";
 
 import lastDevCampData from "@/json/lastDevCampData.json";
 import previousDevCampData from "@/json/previousDevCampData.json";
+import { boolean } from 'yargs';
 
 export default {
   components: {
@@ -34,11 +35,21 @@ export default {
     TheNavbar,
     TheFooter
   },
-  props: ["isMobile", "getNavLinks", "getSocialMedias"],
+  props: {
+    isMobile: Boolean,
+    getNavLinks: {
+      type: Function,
+      default: () => { }
+    },
+    getSocialMedias: {
+      type: Function,
+      default: () => { }
+    },
+  },
   setup() {
     useMeta({
       title:
-      "dev.camp() | USPCodeLab - Estimulando a inovação tecnológica na USP!",
+        "dev.camp() | USPCodeLab - Estimulando a inovação tecnológica na USP!",
       meta: [
         {
           name: "description",
@@ -53,7 +64,7 @@ export default {
             "dev camp, dev.camp, dev.camp(), USPCodeLab, USPCodeLabs, CodeLab, CodeLabs, dev journey"
         }
       ]
-      });
+    });
   },
   methods: {
     getLastDevCampData() {

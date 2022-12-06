@@ -2,7 +2,8 @@
   <div class="max-w-sm rounded overflow-hidden shadow-lg">
     <a :href="data.gallery_url">
       <span class="flex justify-end">
-        <font-awesome-icon :icon="{ prefix: 'fas', iconName: 'external-link-alt' }" :aria-labelledby="data.title"
+        <font-awesome-icon
+:icon="{ prefix: 'fas', iconName: 'external-link-alt' }" :aria-labelledby="data.title"
           title="Ícone link externo"
           class="absolute text-ucl-white focus:text-ucl-white active:text-ucl-white mt-1 pr-1" />
       </span>
@@ -13,9 +14,11 @@
       <p class="text-gray-600 text-base lg:text-xs text-center" v-html="data.summary" />
     </div>
     <div class="px-6 py-4 flex flex-wrap justify-center items-center">
-      <span v-for="(tech, key, index) in data.technologies" :key="index"
+      <span
+v-for="(tech, key, index) in data.technologies" :key="index"
         :class="[customClass(tech.name), baseTagClasses]">
-        <font-awesome-icon v-if="tech.iconName" :icon="{ prefix: tech.iconPrefix, iconName: tech.iconName }"
+        <font-awesome-icon
+v-if="tech.iconName" :icon="{ prefix: tech.iconPrefix, iconName: tech.iconName }"
           :aria-labelledby="tech.ariaLabelledBy" :title="tech.iconTitle" /> {{ tech.name }}
       </span>
     </div>

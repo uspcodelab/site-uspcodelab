@@ -1,12 +1,12 @@
 <template>
   <div class="page">
-    <the-navbar v-if="!isMobile()" :links="getNavLinks()"/>
-    <mobile-menu v-else :links="getNavLinks()"/>
-    <the-header/>
+    <the-navbar v-if="!isMobile()" :links="getNavLinks()" />
+    <mobile-menu v-else :links="getNavLinks()" />
+    <the-header />
     <main>
-      <about-dev-journey :dev-journey-stages="devJourneyStages"/>
-      <reunion-call :days="reunionDays" :time="reunionTime" :local="reunionLocal"/>
-      <about-hackathon-usp/>
+      <about-dev-journey :dev-journey-stages="devJourneyStages" />
+      <reunion-call :days="reunionDays" :time="reunionTime" :local="reunionLocal" />
+      <about-hackathon-usp />
     </main>
     <the-footer :social-medias="getSocialMedias()" />
   </div>
@@ -42,7 +42,17 @@ export default {
     AboutDevJourney,
     ReunionCall
   },
-  props: ["isMobile", "getNavLinks", "getSocialMedias"],
+  props: {
+    isMobile: Boolean,
+    getNavLinks: {
+      type: Function,
+      default: () => { }
+    },
+    getSocialMedias: {
+      type: Function,
+      default: () => { }
+    },
+  },
   setup() {
     useMeta({
       title: "USPCodeLab - Estimulando a inovação tecnológica na USP!",

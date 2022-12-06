@@ -8,7 +8,8 @@
       </div>
     </div>
     <span class="flex justify-end items-end">
-      <font-awesome-icon :icon="{ prefix: 'fas', iconName: 'external-link-alt' }" :aria-labelledby="data.title"
+      <font-awesome-icon
+:icon="{ prefix: 'fas', iconName: 'external-link-alt' }" :aria-labelledby="data.title"
         title="Ícone link externo" class="absolute text-grey text-3xl pb-3 pr-3" />
     </span>
   </router-link>
