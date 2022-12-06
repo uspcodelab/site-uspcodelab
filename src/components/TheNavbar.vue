@@ -3,7 +3,8 @@
     <div v-scroll-to="'#header'" class="flex items-center flex-no-shrink mr-4 cursor-pointer">
       <img src="@/assets/logos/ucl-logo-colored-alpha.svg" alt="USPCodeLab" class="h-10">
     </div>
-    <router-link v-for="link in links" :key="link.name" v-scroll-to="'#header'" :to="link.url" class="text-grey-dark hover:text-grey-darkest text-xs cursor-pointer select-none no-underline mr-4">
+    <router-link v-for="link in links" :key="link.name" v-scroll-to="'#header'" :to="link.url"
+      class="text-gray-500 hover:text-gray-700 text-xs cursor-pointer select-none no-underline mr-4">
       {{ link.name }}
     </router-link>
   </nav>
