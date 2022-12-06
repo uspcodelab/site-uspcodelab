@@ -17,10 +17,12 @@ $ucl-light: #f8f9fa;
 
 $font-family-base: Montserrat, "IBM Plex Sans Condensed";
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
+
 @font-face {
   font-family: Montserrat;
   font-weight: normal;
-  src: url("~@/assets/fonts/Montserrat-Medium.otf");
+  src: local(Montserrat), url("@/assets/fonts/Montserrat-Medium.otf") format('opentype');
 }
 
 /* --------------------------------------------

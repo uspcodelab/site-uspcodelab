@@ -1,12 +1,13 @@
-import Vue, { createApp } from "vue";
+import { createApp } from "vue";
 import { createMetaManager } from 'vue-meta'
 import App from "./App.vue";
 import router from "./router";
 
+import "./style.css";
+
 import VueScrollTo from "vue-scrollto";
 import VueCarousel from "vue-carousel";
 import VScrollLock from "v-scroll-lock";
-
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -48,7 +49,7 @@ library.add(
   faExternalLinkAlt
 );
 
-Vue.config.productionTip = false;
+// Vue.config.productionTip = false;
 
 // Vue
 createApp(App)

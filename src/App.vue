@@ -3,7 +3,7 @@
     <metainfo>
       <template #title="{ content }">{{ content }}</template>
     </metainfo>
-    <router-view :is-mobile="isMobile" :get-nav-links="getNavLinks" :get-social-medias="getSocialMedias"/>
+    <router-view :is-mobile="isMobile" :get-nav-links="getNavLinks" :get-social-medias="getSocialMedias" />
   </div>
 </template>
 
@@ -32,8 +32,6 @@ export default {
 
 
 <style lang="scss">
-@import "assets/styles/tailwind.postcss";
-
 html {
   font-size: 14px;
 }

@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import Card from "@/components/Card";
-import CardFull from "@/components/CardFull";
+import Card from "@/components/Card.vue";
+import CardFull from "@/components/CardFull.vue";
 
 export default {
   components: {
@@ -19,13 +19,13 @@ export default {
   props: {
     array: {
       type: Array,
-      default: function() {
+      default: function () {
         return [];
       }
     },
     full: {
       type: Boolean,
-      default: function() {
+      default: function () {
         return false;
       }
     }
