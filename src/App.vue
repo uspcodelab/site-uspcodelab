@@ -41,7 +41,7 @@ body {
 }
 
 .page {
-  // color: $ucl-light;
+  color: $ucl-light;
 }
 
 @media (min-width: 992px) {

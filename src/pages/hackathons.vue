@@ -3,7 +3,7 @@
     <the-navbar v-if="!isMobile()" :links="getNavLinks()" />
     <mobile-menu v-else :links="getNavLinks()" />
     <main>
-      <hackathon />
+      <hackathon-history :hackathons="hackathons" />
     </main>
     <the-footer :social-medias="getSocialMedias()" />
   </div>
@@ -15,7 +15,7 @@ import { useMeta } from 'vue-meta'
 import TheNavbar from "@/components/TheNavbar.vue";
 import MobileMenu from "@/components/MobileMenu.vue";
 import TheFooter from "@/components/TheFooter.vue";
-import Hackathon from "@/components/hackathon/Hackathon.vue";
+import HackathonHistory from "@/components/hackathon/HackathonHistory.vue";
 
 
 import devHackLogo from "@/assets/dev-journey/dev-hack.svg";
@@ -30,7 +30,7 @@ export default {
     TheNavbar,
     MobileMenu,
     TheFooter,
-    Hackathon
+    HackathonHistory
   },
   props: ["isMobile", "getNavLinks", "getSocialMedias"],
   setup() {
@@ -55,58 +55,27 @@ export default {
   },
   data() {
     return {
-      reunionDays: "todas as quintas-feiras",
-      reunionTime: "12h15",
-      reunionLocal: "sala B7 do IME-USP",
-      devJourneyStages: [
+      hackathons: [
         {
-          name: "dev.learn()",
-          description:
-            "<b>Cursos</b> sobre tecnologia onde os participantes são introduzidos a <b>ferramentas e técnicas de desenvolvimento</b> introdutórias e avançadas",
+          title: "HackathonUSP 2018.2",
+          description: "A tecnologia a favor da sustentabilidade financeira das universidades",
           imgUrl: devLearnLogo,
           imgAlt: "Ícone dev.learn()",
+          year: 2018.2,
+          dates: [{ day: 10, month: 11, year: 2022 }, { day: 11, month: 11, year: 2022 }],
+          locals: ["Instituto de Matemática e Estatística da USP"],
           to: ""
         },
         {
-          name: "dev.boost()",
-          description:
-            "<b>Grupos de estudos</b> onde os participantes praticam <b>desenvolvimento de sistemas</b> em times com projetos de clientes externos ou da universidade",
-          imgUrl: devBoostLogo,
-          imgAlt: "Ícone dev.boost()",
+          title: "HackathonUSP 2018.1",
+          description: "Aplicando ciência de dados para melhorar o dia a dia universitário",
+          imgUrl: devLearnLogo,
+          imgAlt: "Ícone dev.learn()",
+          year: 2018.1,
+          dates: [{ day: 9, month: 7, year: 2018 }, { day: 10, month: 7, year: 2018 }],
+          locals: ["Instituto de Matemática e Estatística da USP"],
           to: ""
         },
-        {
-          name: "dev.hack()",
-          description:
-            "<b>Hackathons</b> onde os participantes são desafiados a buscar, num tempo limitado, <b>soluções inovadoras</b> para problemas reais utilizando tecnologia",
-          imgUrl: devHackLogo,
-          imgAlt: "Ícone dev.start()",
-          to: ""
-        },
-        {
-          name: "dev.hire()",
-          description:
-            "<b>Assessoria de carreira</b> onde os participantes assistem palestras preparatórias e conhecem <b>empresas parceiras</b> com vagas de estágio e emprego",
-          imgUrl: devHireLogo,
-          imgAlt: "Ícone dev.hire()",
-          to: ""
-        },
-        {
-          name: "dev.camp()",
-          description:
-            "<b>Escolas de férias</b> onde os participantes trabalham num <b>projeto multi-time</b> similar ao de uma empresa com arquitetura de software moderna",
-          imgUrl: devCampLogo,
-          imgAlt: "Ícone dev.camp()",
-          to: "dev-camp"
-        },
-        {
-          name: "dev.research()",
-          description:
-            "<b>Divisão de pesquisa</b> onde os participantes da graduação são co-orientados por pós-graduandos em <b>ICs</b> ou <b>TCCs</b> nas áreas de atuação do grupo",
-          imgUrl: devResearchLogo,
-          imgAlt: "Ícone dev.research()",
-          to: ""
-        }
       ]
     };
   },
