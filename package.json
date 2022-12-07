@@ -29,7 +29,7 @@
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
     "@fullhuman/postcss-purgecss": "^1.0.1",
-    "@vitejs/plugin-vue": "^1.6.1",
+    "@vitejs/plugin-vue": "^3.2.0",
     "@vue/compiler-sfc": "^3.1.0-0",
     "@vue/eslint-config-prettier": "^3.0.5",
     "@vue/test-utils": "^2.2.3",
@@ -46,7 +46,7 @@
     "prettier": "^2.4.1",
     "sass": "^1.56.1",
     "tailwindcss": "^3.2.4",
-    "vite": "^2.5.4"
+    "vite": "^3.0.0"
   },
   "eslintConfig": {
     "root": true,

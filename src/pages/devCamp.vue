@@ -24,7 +24,6 @@ import PreviousDevCamps from "@/components/dev-camp/PreviousDevCamps.vue";
 
 import lastDevCampData from "@/json/lastDevCampData.json";
 import previousDevCampData from "@/json/previousDevCampData.json";
-import { boolean } from 'yargs';
 
 export default {
   components: {
