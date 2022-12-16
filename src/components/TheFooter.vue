@@ -1,6 +1,5 @@
 <template>
-  <footer
-id="footer"
+  <footer id="footer"
     class="footer bg-ucl-black text-ucl-white px-8 md:px-12 lg:px-20 xl:px-0 pt-8 pb-mobile md:pb-8 flex flex-wrap font-semibold text-base md:text-xs">
     <div class="container mx-auto flex flex-wrap">
       <!-- Logo -->
@@ -21,8 +20,7 @@ id="footer"
         </div>
         <div class="flex flex-wrap align-center justify-center">
           <a v-for="sm in socialMedias" :key="sm.iconName" :href="sm.url">
-            <font-awesome-icon
-:icon="{ prefix: sm.iconPrefix, iconName: sm.iconName }"
+            <font-awesome-icon :icon="{ prefix: sm.iconPrefix, iconName: sm.iconName }"
               :aria-labelledby="sm.ariaLabelledBy" :title="sm.iconTitle"
               class="bg-ucl-white h-12 w-12 text-ucl-black text-5xl m-1 p-2 rounded-full" />
           </a>

@@ -1,68 +1,121 @@
 <template>
-    <div>
-        <div class="flex flex-start items-center">
-            <div class="bg-ucl-orange-dark w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2">
-            </div>
-            <h4 class="text-gray-800 font-semibold text-xl -mt-2">{{ title }}</h4>
+    <div :class="[isHeadline ? 'headline' : '', 'card-container']">
+        <div v-if="isHeadline" class="card-img-right">
+            <img :src="hackathon.imgUrl" alt="USPCodeLab">
         </div>
-        <div class="ml-6 mb-6 pb-6">
-            <!-- <a href="#!"
-                class="text-blue-600 hover:text-blue-700 focus:text-blue-800 duration-300 transition ease-in-out text-sm">
-                {{ year }}</a> -->
-            <p class="text-gray-700 mt-2 mb-4">{{ description }}</p>
-            <p class="text-gray-700 mt-2 mb-4" v-for="local in locals">
-                {{ local }}
-            </p>
-            <div class="flex flex-row gap-2 mb-4">
-                <span v-for=" date in dates"
-                    class="font-medium text-blue-600 hover:text-blue-700 focus:text-blue-800 duration-300 transition ease-in-out text-sm">
-                    {{ date.day }}/{{ date.month }}/{{ date.year }}
-                </span>
+        <div class="card-content">
+            <div class="card-title-container">
+                <h4 class="card-title">{{ hackathon.title }}</h4>
+                <div v-if="!isHeadline" class="card-img-title">
+                    <img :src="hackathon.imgUrl" alt="USPCodeLab">
+                </div>
             </div>
-            <button type="button" class="inline-block px-4 py-1.5
-            bg-ucl-orange-light text-white font-medium text-xs
-                leading-tight uppercase rounded shadow-md
-                hover:bg-ucl-orange hover:shadow-lg focus:bg-ucl-orange
-                focus:shadow-lg focus:outline-none focus:ring-0
-                active:bg-ucl-orange-dark active:shadow-lg transition duration-150 ease-in-out">
-                saber mais
-            </button>
+            <div class="card-details">
+
+                <span class="text-ucl-orange-dark text-sm">
+                    Edição [ {{ hackathon.year }} ]
+                </span>
+                <p class="card-text">{{ hackathon.description }}</p>
+                <hackathon-locals :locals="hackathon.locals" />
+                <hackathon-dates :dates="hackathon.dates" />
+                <div class="card-button">
+                    <Button>
+                        <a :href="hackathon.to" target="_blank"> Saiba mais </a>
+                    </Button>
+                </div>
+            </div>
+        </div>
+        <div v-if="!isHeadline" class="card-img-left">
+            <img :src="hackathon.imgUrl" alt="USPCodeLab">
         </div>
     </div>
 </template>
 
 <script>
-// import devBoostLogo from "@/assets/dev-journey/dev-boost.svg";
+import Button from "@/components/Button.vue";
+import HackathonDates from "./HackathonDates.vue";
+import HackathonLocals from "./HackathonLocals.vue";
 
 export default {
+    components: {
+        Button,
+        HackathonDates,
+        HackathonLocals
+    },
     props: {
-        title: {
-            type: String,
+        hackathon: {
+            type: Object,
             required: true
         },
-        description: {
-            type: String,
-            required: true
-        },
-        year: {
-            type: Number,
-            required: true
-        },
-        locals: {
-            type: Array,
-            required: true
-        },
-        dates: {
-            type: Array,
-            required: true
+        isHeadline: {
+            type: Boolean,
+            default: false
         }
     }
 }
 
 </script>
 
-<style lang="scss">
-.img {
-    width: 5%;
+<style lang="postcss" scoped>
+.card-container {
+    @apply flex flex-row flex-wrap justify-around items-center h-full;
+    @apply flex-row;
+    gap: 1rem;
+}
+
+.headline {
+    @apply flex-row;
+    @apply border-ucl-orange-light rounded-xl mb-8 shadow-xl;
+    @apply border-r-4 border-l-4 p-5 ml-1;
+}
+
+.card-content {
+    @apply ml-1 mb-1 p-1;
+    flex-basis: 30rem;
+}
+
+.card-details {
+    @apply flex flex-col self-center;
+    @apply ml-1 mb-1 pb-1;
+}
+
+.card-text {
+    @apply text-gray-700 mt-2 mb-4;
+}
+
+.card-title {
+    @apply text-gray-800 font-semibold text-3xl m-1;
+}
+
+
+.card-img-right,
+.card-img-left {
+    @apply mr-10 ml-10;
+    flex-basis: 20rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.card-title-container {
+    @apply flex flex-row items-center justify-between;
+}
+
+.card-img-title {
+    @apply hidden self-center justify-self-center;
+    flex-basis: 4rem;
+}
+
+@media (max-width: 992px) {
+    .card-img-title {
+        @apply flex;
+    }
+
+    .card-img-left {
+        @apply hidden;
+    }
+
+    .card-title {
+        @apply text-2xl;
+    }
 }
 </style>
