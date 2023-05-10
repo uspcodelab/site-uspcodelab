@@ -3,6 +3,7 @@ import Router from "vue-router";
 
 import Home from "@/pages/index.vue";
 import DevCamp from "@/pages/devCamp.vue";
+import DevLearn from "@/pages/devLearn.vue";
 import NotFound from "@/pages/notFound.vue";
 
 Vue.use(Router);
@@ -14,6 +15,11 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home,
+    },
+    {
+      path: "/dev-learn",
+      name: "devLearn()",
+      component: DevLearn,
     },
     {
       path: "/dev-camp",
