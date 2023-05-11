@@ -7,9 +7,9 @@
     <mobile-menu v-else :links="this.$parent.getNavLinks()" />
     <main class="bg-ucl-white text-ucl-black px-4 md:px-0">
       <the-projects-header :data="headerData" />
-      <codelab-bits />
-      <div class="p-full pt-1 mx-16 bg-ucl-orange rounded-lg" />
       <webdev />
+      <the-division />
+      <codelab-bits />
     </main>
     <the-footer :social-medias="this.$parent.getSocialMedias()" />
   </div>
@@ -21,6 +21,7 @@ import MobileMenu from "@/components/MobileMenu.vue";
 import TheFooter from "@/components/TheFooter.vue";
 
 import TheProjectsHeader from "@/components/TheProjectsHeader";
+import TheDivision from "@/components/TheDivision";
 
 import Webdev from "@/components/dev-learn/Webdev";
 import CodelabBits from "@/components/dev-learn/CodelabBits";
@@ -43,6 +44,7 @@ export default {
   },
   components: {
     TheProjectsHeader,
+    TheDivision,
     CodelabBits,
     Webdev,
     MobileMenu,

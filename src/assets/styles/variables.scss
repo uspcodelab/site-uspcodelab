@@ -24,6 +24,16 @@ $font-family-base: Montserrat, "IBM Plex Sans Condensed";
 }
 
 /* --------------------------------------------
+||                 Pixeloid Font               ||
+  ---------------------------------------------*/
+
+@font-face {
+  font-family: Pixeloid;
+  font-weight: normal;
+  src: url("~@/assets/fonts/PixeloidSansBold-PKnYd.ttf");
+
+}
+/* --------------------------------------------
 ||              Custom Tech Classes            ||
   ---------------------------------------------*/
 

@@ -2,13 +2,13 @@
   <section class="pb-20 md:pt-20 text-center">
     <div class="container mx-auto flex flex-wrap flex-col leading-loose">
       <div class="mb-10 md:mb-20 tracking-wide">
-        <p class="text-ucl-orange mb-8 text-center text-5xl">
-        Codelab
-        <span>
-          <span style="color: #ff34d2">B</span>
-          <span style="color: #05ff00">i</span>
-          <span style="color: #24ffff">t</span>
-          <span style="color: #ff0000">s</span>
+        <p class="text-ucl-orange mb-8 text-center text-5xl" style="font-family:pixeloid">
+        CODELAB
+        <span >
+          <span style="color: #ff34d2; margin-left: 0px"> B</span>
+          <span style="color: #05ff00">I</span>
+          <span style="color: #24ffff">T</span>
+          <span style="color: #ff0000">S</span>
         </span>
         </p>
         <span>
@@ -16,9 +16,9 @@
           ferramentas e técnicas de desenvolvimento introdutórias e avançadas.
         </span>
       </div>
-      <div v-for="(media, i) in medias" :key="media.title" class="flex flex-wrap justify-between mb-20" :class="{ 'flex-row-reverse': i % 2}">
+      <div v-for="(media, i) in medias" :key="media.title" class="flex flex-wrap justify-between mb-20 rounded shadow-md md:shadow-none pb-20 md:pb-0 pt-5 md:pt-5 px-10 md:px-0" :class="{ 'flex-row-reverse': i % 2}">
         <div class="text-center md:text-left w-full md:w-9/20 mb-4 md:mb-0">
-          <h2 class="font-light mb-5 md:mb-0" :style="{ color: media.titleColor }">
+          <h2 class="font-light mb-5 md:mb-0" :style="{ color: media.titleColor, 'font-family': 'pixeloid' }">
             {{ media.title }}
           </h2>
           <span>
@@ -27,7 +27,9 @@
         </div>
         <img
         :src="media.src"
-        class="w-full h-full md:w-1/2  md:h-1/2"
+        :style="{'box-shadow': media.titleColor + ' -4px 4px, rgba(149, 157, 165, 0.2) 0px 8px 24px'}"
+
+        class="w-full h-full md:w-1/2 md:h-1/2"
         >
       </div>
     </div>
