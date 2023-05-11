@@ -1,32 +1,58 @@
 <template>
-  <header class="md:pt-16 z-20 header text-ucl-white h-screen flex flex-wrap">
+  <header class="md:pt-16 z-20 text-ucl-white h-screen flex flex-wrap" :style="{'background': themeObj.bgColor} ">
     <div id="bubbleCounter"></div>
     <div id="bubbles-container" class="relative overflow-hidden flex w-full">
       <div class="w-full relative flex items-center justify-center pb-32">
-        <h1 id="title" class="text-header font-bold text-center tracking-wide z-10">
-          {{ data.title }}
+        <h1 id="title" class="text-header font-bold text-center tracking-wide z-10" :style="{'color': themeObj.titleColor }">
+          {{ title }}
         </h1>
       </div>
     </div>
     <section id="waves">
-      <div class="wave wave-one" />   
+      <div class="wave wave-one" />
       <div class="wave wave-two" />
       <div class="wave wave-three" />
-      <div class="wave wave-four" /> Estoure as bolhas 
+      <div class="wave wave-four" />
     </section>
   </header>
 </template>
 <script>
 export default {
   props: {
-    data: {
-      type: Object,
-      default: function () {
-        return {
-          title: "",
-        };
-      },
+    title: {
+      type: String,
+      default: 'default',
+      required: true
     },
+    theme: {
+      type: String,
+      default: 'default'
+    },
+  },
+  data () {
+    return {
+      themes: {
+        default: {
+          titleColor: 'white',
+          bgColor: 'linear-gradient(#ff8b46, #ff6900)',
+          bubblesColors: ['#FFB78B'],
+          bubbles: true,
+          bubbleGame: true,
+        },
+        webdev: {
+          titleColor: 'white',
+          bgColor: 'black',
+          bubblesColors: ["#8b3ff8", "#ff6900", "#ff4dbc", "#87fdc7"],
+          bubbles: true,
+          bubbleGame: true,
+        },
+      }
+    }
+  },
+  computed: {
+    themeObj () {
+      return this.themes[this.theme] || this.themes['default'];
+    }
   },
   mounted() {
     let numBubbles = 20;
@@ -36,6 +62,9 @@ export default {
     let container = this.$el.querySelector("#bubbles-container");
     let bubbleCounter = this.$el.querySelector("#bubbleCounter");
     let title = this.$el.querySelector("#title");
+    let themeObj = this.themeObj;
+
+    if(!themeObj.bubbles) return;
 
     startBubbles();
 
@@ -47,11 +76,11 @@ export default {
       }
     }
 
-    
     function createBubble() {
       let size = getBubbleSize();
       let location = getBubbleLocation();
       let delay = getAnimationDelay();
+      let color = getColor();
       let bubble = document.createElement("span");
 
       bubble.setAttribute("id", "bubble");
@@ -65,32 +94,46 @@ export default {
           location +
           "%; animation-delay: -" +
           delay +
-          "s;"
+          "s; background: " +
+          color +
+          " !important;"
       );
       bubble.addEventListener("click", popBubble);
       container.appendChild(bubble);
     }
-    
+
     function getBubbleSize() {
       return Math.floor(Math.random() * (maxSize - minSize + 1)) + minSize;
     }
-    
+
     function getAnimationDelay() {
       // animation-delay=-20s and animation-delay=0s
       return Math.random() * 20;
     }
-    
+
     function getBubbleLocation() {
       // Between left=2% and left=98%
       return Math.floor(Math.random() * 96) + 2;
     }
-    
+
+    function getColor(){
+      let colors = themeObj.bubblesColors;
+      if(colors.length == 1){
+        return colors[0];
+      }
+      let index = Math.floor(Math.random() * (colors.length));
+      return colors[index];
+    }
+
     function popBubble(event) {
       let bubble = event.target;
       bubble.classList.add("pop");
       setTimeout(()=>{
         bubble.remove();
       }, 50)
+
+      if(!themeObj.bubbleGame) return;
+
       poppedBubbles++;
       if(poppedBubbles >= 2){
         bubbleCounter.innerHTML = poppedBubbles + "/" + numBubbles;
@@ -99,12 +142,12 @@ export default {
         win();
       }
     }
-    
+
     function win(){
       bubbleCounter.innerHTML = "";
-      
+
       title.style.animation = "anticipate 0.4s forwards ease-out, goAway 1.7s 0.4s forwards ease";
-      
+
       setTimeout(() => {title.innerHTML = poppedBubbles + "/" + numBubbles + "!"
       title.style.animation = "goIn ease-out 1.7s"
       }, 2000);
@@ -112,14 +155,14 @@ export default {
       container.style.transition = "0.8s"
       setTimeout(()=>{
         startBubblesWin();
-        setTimeout(() => container.style.background = "#08407b", 2000);        
+        setTimeout(() => container.style.background = "#08407b", 2000);
       }, 2000);
     }
 
     function startBubblesWin() {
       numBubbles = 120;
       let countBubbles = 0;
-      
+
       function startBubble() {
         countBubbles++;
         createBubbleWin();
@@ -134,7 +177,7 @@ export default {
       let size = getBubbleSize();
       let location = getBubbleLocation();
       let bubble = document.createElement("span");
-      let color = getColor();
+      let color = getColorWin();
       bubble.setAttribute("id", "winBubble");
       bubble.setAttribute(
         "style",
@@ -145,18 +188,15 @@ export default {
           "px; left: " +
           location +
           "%; background: " +
-          color + 
-          "!important;"
-
+          color +
+          " !important;"
       );
       container.appendChild(bubble);
     }
 
-    function getColor(){
+    function getColorWin(){
       let colors = ["#8b3ff8", "#ff6900", "#ff4dbc", "#87fdc7"]
       let index = Math.floor(Math.random() * (colors.length));
-
-      console.log(colors[index]);
       return colors[index];
     }
 
@@ -165,19 +205,21 @@ export default {
 </script>
 
 <style lang="scss">
-//DEFAULT
+
+// WIN GAME
+
 #title {
   position: absolute;
 }
 
 @keyframes anticipate{
   to {
-    transform: translate(-20%) ; 
+    transform: translate(-20%) ;
   }
 }
 @keyframes goAway{
   to {
-    transform: translateX(100vw); 
+    transform: translateX(100vw);
   }
 }
 
@@ -234,13 +276,11 @@ $bubbles: lighten($background, 20%);
 
 .pop {
   transform: scale(1.8,1.8) !important;
-
   transition: 120ms;
 }
 
 #bubbleCounter {
   position: absolute;
-
   margin: 10px 0 0 10px;
 }
 
@@ -259,14 +299,14 @@ $bubbles: lighten($background, 20%);
   left: 0;
   position: absolute;
   width: 100%;
+  filter: brightness(0) invert(100%) sepia(4%) saturate(1431%)
+    hue-rotate(172deg) brightness(100%) contrast(97%);
 }
 
 #waves .wave.wave-one {
   animation: wave-one 30s linear infinite;
   z-index: 4;
   bottom: 0;
-  filter: brightness(0) invert(100%) sepia(4%) saturate(1431%)
-    hue-rotate(172deg) brightness(100%) contrast(97%);
 }
 
 #waves .wave.wave-two {
@@ -294,7 +334,6 @@ $bubbles: lighten($background, 20%);
   from {
     background-position-x: 0;
   }
-
   to {
     background-position-x: 1000px;
   }
@@ -304,7 +343,6 @@ $bubbles: lighten($background, 20%);
   from {
     background-position-x: 0;
   }
-
   to {
     background-position-x: -1000px;
   }

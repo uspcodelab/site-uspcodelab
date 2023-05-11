@@ -6,7 +6,7 @@
     />
     <mobile-menu v-else :links="this.$parent.getNavLinks()" />
     <main class="bg-ucl-white text-ucl-black px-4 md:px-0">
-      <the-projects-header :data="headerData" />
+      <the-projects-header :title="title"/>
       <webdev />
       <the-division />
       <codelab-bits />
@@ -53,11 +53,7 @@ export default {
   },
   data() {
     return {
-      headerData: {
-        title: this.$parent.isMobile() ? "Dev .learn()" : "Dev.learn()",
-        description:
-          "Cursos sobre tecnologia onde os participantes são introduzidos a ferramentas e técnicas de desenvolvimento introdutórias e avançadas",
-      },
+      title: this.$parent.isMobile() ? "Dev .learn()" : "Dev.learn()",
     };
   },
   computed: {},
