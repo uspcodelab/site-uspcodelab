@@ -15,7 +15,7 @@
   </header>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .header {
   background-image: linear-gradient(#ff8b46, $ucl-orange);
 }

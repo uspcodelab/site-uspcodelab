@@ -53,7 +53,7 @@ export default {
   },
   data() {
     return {
-      title: this.$parent.isMobile() ? "Dev .learn()" : "Dev.learn()",
+      title: this.$parent.isMobile() ? "Dev .learn( )" : "Dev.learn( )",
     };
   },
   computed: {},

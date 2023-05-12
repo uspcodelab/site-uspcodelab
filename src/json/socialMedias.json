@@ -4,35 +4,35 @@
     "iconPrefix": "fab",
     "iconName": "facebook",
     "ariaLabelledBy": "socialMediaFacebook",
-    "linkTitle": "Link para pagina do USPCodeLab no Facebook"
+    "linkTitle": "Link para a pagina do USPCodeLab no Facebook"
   },
   {
     "url": "https://uclab.xyz/github",
     "iconPrefix": "fab",
     "iconName": "github",
     "ariaLabelledBy": "socialMediaGitHub",
-    "linkTitle": "Link para GitHub do USPCodeLab"
+    "linkTitle": "Link para o GitHub do USPCodeLab"
   },
   {
     "url": "https://uclab.xyz/gitlab",
     "iconPrefix": "fab",
     "iconName": "gitlab",
     "ariaLabelledBy": "socialMediaGitLab",
-    "linkTitle": "Link para GitLab do USPCodeLab"
+    "linkTitle": "Link para o GitLab do USPCodeLab"
   },
   {
     "url": "https://uclab.xyz/telegram",
     "iconPrefix": "fab",
     "iconName": "telegram",
     "ariaLabelledBy": "socialMediaTelegram",
-    "linkTitle": "Link para grupo do Telegram do USPCodeLab"
+    "linkTitle": "Link para o grupo do Telegram do USPCodeLab"
   },
   {
     "url": "https://uclab.xyz/medium",
     "iconPrefix": "fab",
     "iconName": "medium",
     "ariaLabelledBy": "socialMediaMedium",
-    "linkTitle": "Link para Medium do USPCodeLab"
+    "linkTitle": "Link para o Medium do USPCodeLab"
   },
   {
     "url": "mailto:codelab@ime.usp.br",
@@ -40,5 +40,19 @@
     "iconName": "envelope",
     "ariaLabelledBy": "socialMediaEmail",
     "linkTitle": "Link para enviar um e-mail para USPCodeLab"
+  },
+  {
+    "url": "https://www.youtube.com/@CodeLabBR",
+    "iconPrefix": "fab",
+    "iconName": "youtube",
+    "ariaLabelledBy": "socialMediaYoutube",
+    "linkTitle": "Link para o youtube do USPCodeLab"
+  },
+  {
+    "url": "https://www.instagram.com/uspcodelab/",
+    "iconPrefix": "fab",
+    "iconName": "instagram",
+    "ariaLabelledBy": "socialMediaInstagram",
+    "linkTitle": "Link para o instagram do USPCodeLab"
   }
 ]
