@@ -146,17 +146,17 @@ export default {
     function win(){
       bubbleCounter.innerHTML = "";
 
-      title.style.animation = "anticipate 0.4s forwards ease-out, goAway 1.7s 0.4s forwards ease";
-
-      setTimeout(() => {title.innerHTML = poppedBubbles + "/" + numBubbles + "!"
-      title.style.animation = "goIn ease-out 1.7s"
-      }, 2000);
-
-      container.style.transition = "0.8s"
+      title.style.animation = "anticipate 0.4s forwards ease-out, goAway 0.4s 0.4s forwards ease";
+      
+      container.style.transition = "2s"
       setTimeout(()=>{
+        container.style.background = "#08407b";
         startBubblesWin();
-        setTimeout(() => container.style.background = "#08407b", 2000);
-      }, 2000);
+      }, 800);
+      setTimeout(() => {
+        title.innerHTML = poppedBubbles + "/" + poppedBubbles + "!"
+        title.style.animation = "goIn ease-out 1s"
+        }, 800);
     }
 
     function startBubblesWin() {
@@ -178,6 +178,7 @@ export default {
       let location = getBubbleLocation();
       let bubble = document.createElement("span");
       let color = getColorWin();
+      let time = getTime();
       bubble.setAttribute("id", "winBubble");
       bubble.setAttribute(
         "style",
@@ -189,7 +190,10 @@ export default {
           location +
           "%; background: " +
           color +
-          " !important;"
+          ";" +
+          "animation-duration: " +
+          time +
+          "s ;"
       );
       container.appendChild(bubble);
     }
@@ -199,12 +203,21 @@ export default {
       let index = Math.floor(Math.random() * (colors.length));
       return colors[index];
     }
-
+    
+    function getTime(){
+      return Math.floor(Math.random() * 4) + 1;
+    }
+    
   },
 };
 </script>
 
 <style lang="scss">
+//META-CSS
+
+body, html {
+  overflow-x: hidden;
+}
 
 // WIN GAME
 
@@ -250,7 +263,7 @@ $bubbles: lighten($background, 20%);
   position: absolute;
   border-radius: 50%;
   background: $bubbles;
-  animation: rise 6s ease-in infinite;
+  animation: rise ease-in infinite;
 }
 
 #bubble::before { //Aumentar a área clickável de cada bolha.
@@ -290,6 +303,7 @@ $bubbles: lighten($background, 20%);
   position: absolute;
   top: 100%;
   width: 100vw;
+
 }
 
 #waves .wave {
