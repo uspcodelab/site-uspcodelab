@@ -5,7 +5,7 @@
       :links="this.$parent.getNavLinks()"
     />
     <mobile-menu v-else :links="this.$parent.getNavLinks()" />
-    <main class="bg-ucl-white text-ucl-black px-4 md:px-0">
+    <main class="bg-ucl-white text-ucl-black">
       <the-projects-header :title="title"/>
       <webdev />
       <the-division />
