@@ -26,6 +26,7 @@
           </span>
         </div>
       </div>
+      <carousel-webdev />
     </div>
   </section>
 </template>
@@ -37,46 +38,51 @@ import CSSImage from '@/assets/dev-learn/css.png'
 import JSImage from '@/assets/dev-learn/js.png'
 import NodeImage from '@/assets/dev-learn/node.png'
 
-  export default {
-    data() {
-      return {
-        techs: [
-          {
-            title: "HTML",
-            titleColor: "#ff0000",
-            description: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper vel velit ut lacinia. Maecenas sollicitudin, leo eu aliquet mollis, elit dui tempus nisi, quis pulvinar risus tortor ut metus. `,
-            url: 'https://developer.mozilla.org/pt-BR/docs/Web/HTML',
-            src: HTMLImage
-          },
-          {
-            title: "CSS",
-            titleColor: "blue",
-            description: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper vel velit ut lacinia. Maecenas sollicitudin, leo eu aliquet mollis, elit dui tempus nisi, quis pulvinar risus tortor ut metus.`,
-            url: 'https://developer.mozilla.org/pt-BR/docs/Web/CSS',
-            src: CSSImage
-          },
-          {
-            title: "JavaScript",
-            titleColor: "black",
-            description: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper vel velit ut lacinia. Maecenas sollicitudin, leo eu aliquet mollis, elit dui tempus nisi, quis pulvinar risus tortor ut metus.`,
-            url: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript',
-            src: JSImage
-          },
-          {
-            title: "Node",
-            titleColor: "green",
-            description: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper vel velit ut lacinia. Maecenas sollicitudin, leo eu aliquet mollis, elit dui tempus nisi, quis pulvinar risus tortor ut metus.`,
-              url: 'https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction',
-            src: NodeImage
-          }
-        ]
-      }
+import CarouselWebdev from '@/components/dev-learn/CarouselWebdev'
+
+export default {
+  data() {
+    return {
+      techs: [
+        {
+          title: "HTML",
+          titleColor: "#ff0000",
+          description: `
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper vel velit ut lacinia. Maecenas sollicitudin, leo eu aliquet mollis, elit dui tempus nisi, quis pulvinar risus tortor ut metus. `,
+          url: 'https://developer.mozilla.org/pt-BR/docs/Web/HTML',
+          src: HTMLImage
+        },
+        {
+          title: "CSS",
+          titleColor: "blue",
+          description: `
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper vel velit ut lacinia. Maecenas sollicitudin, leo eu aliquet mollis, elit dui tempus nisi, quis pulvinar risus tortor ut metus.`,
+          url: 'https://developer.mozilla.org/pt-BR/docs/Web/CSS',
+          src: CSSImage
+        },
+        {
+          title: "JavaScript",
+          titleColor: "black",
+          description: `
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper vel velit ut lacinia. Maecenas sollicitudin, leo eu aliquet mollis, elit dui tempus nisi, quis pulvinar risus tortor ut metus.`,
+          url: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript',
+          src: JSImage
+        },
+        {
+          title: "Node",
+          titleColor: "green",
+          description: `
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper vel velit ut lacinia. Maecenas sollicitudin, leo eu aliquet mollis, elit dui tempus nisi, quis pulvinar risus tortor ut metus.`,
+            url: 'https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction',
+          src: NodeImage
+        }
+      ]
     }
+  },
+  components: {
+    CarouselWebdev
   }
+}
 </script>
 
 <style scoped>
