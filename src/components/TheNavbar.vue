@@ -22,11 +22,21 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .nav {
   background-color: $ucl-light;
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
   min-height: 4rem;
   z-index: 10;
 }
+
+img {
+  border-radius: 20px;
+  transition: ease-out 0.2s;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
 </style>
