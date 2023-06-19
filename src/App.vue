@@ -30,6 +30,7 @@ export default {
 
 <style lang="scss">
 @import "assets/styles/tailwind.postcss";
+// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@100&display=swap');
 
 html {
   font-size: 14px;

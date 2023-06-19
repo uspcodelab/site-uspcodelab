@@ -67,50 +67,58 @@ export default {
         {
           name: "dev.learn()",
           description:
-            "<b>Cursos</b> sobre tecnologia onde os participantes são introduzidos a <b>ferramentas e técnicas de desenvolvimento</b> introdutórias e avançadas",
+            "Cursos sobre tecnologia onde os<br>participantes são introduzidos a ferramentas<br>e técnicas de desenvolvimento introdutórias<br>e avançadas.",
           imgUrl: devLearnLogo,
           imgAlt: "Ícone dev.learn()",
-          to: ""
+          to: "dev-camp",
+          right: true
         },
         {
           name: "dev.boost()",
           description:
-            "<b>Grupos de estudos</b> onde os participantes praticam <b>desenvolvimento de sistemas</b> em times com projetos de clientes externos ou da universidade",
+            "Grupos de estudos onde os participantes<br>praticam desenvolvimento de sistemas em<br>times com projetos de clientes externos<br>ou da universidade.",
           imgUrl: devBoostLogo,
           imgAlt: "Ícone dev.boost()",
-          to: ""
+          to: "dev-camp",
+          right: false,
         },
         {
           name: "dev.hack()",
           description:
-            "<b>Hackathons</b> onde os participantes são desafiados a buscar, num tempo limitado, <b>soluções inovadoras</b> para problemas reais utilizando tecnologia",
+            "Hackathons onde os participantes são<br>desafiados a buscar, num tempo limitado,<br>soluções inovadoras para problemas reais<br>utilizando tecnologia.",
           imgUrl: devHackLogo,
           imgAlt: "Ícone dev.start()",
-          to: ""
-        },
-        {
-          name: "dev.hire()",
-          description:
-            "<b>Assessoria de carreira</b> onde os participantes assistem palestras preparatórias e conhecem <b>empresas parceiras</b> com vagas de estágio e emprego",
-          imgUrl: devHireLogo,
-          imgAlt: "Ícone dev.hire()",
-          to: ""
+          to: "dev-camp",
+          right: true
         },
         {
           name: "dev.camp()",
           description:
-            "<b>Escolas de férias</b> onde os participantes trabalham num <b>projeto multi-time</b> similar ao de uma empresa com arquitetura de software moderna",
+            "Escolas de férias voltadas ao<br>desenvolvimento de projetos em equipe<br>usando as tecnologias mais modernas.",
           imgUrl: devCampLogo,
           imgAlt: "Ícone dev.camp()",
-          to: "dev-camp"
+          to: "dev-camp",
+          right: false
+        },
+        {
+          name: "dev.hire()",
+          description:
+            "Assessoria de carreira onde os participantes<br>assistem palestras preparatórias e conhecem<br>empresas parceiras com vagas de estágio<br>e emprego.",
+          imgUrl: devHireLogo,
+          imgAlt: "Ícone dev.hire()",
+          to: "dev-camp",
+          right: true,
+          imgBackground: true
         },
         {
           name: "dev.research()",
           description:
-            "<b>Divisão de pesquisa</b> onde os participantes da graduação são co-orientados por pós-graduandos em <b>ICs</b> ou <b>TCCs</b> nas áreas de atuação do grupo",
+            "Divisão de pesquisa onde os participantes da<br>graduação são co-orientados por pós-<br>graduandos em <b>ICs</b> ou <b>TCCs</b> nas áreas de<br>atuação do grupo.",
           imgUrl: devResearchLogo,
           imgAlt: "Ícone dev.research()",
-          to: ""
+          to: "dev-camp",
+          right: false,
+          imgBackground: true
         }
       ]
     };

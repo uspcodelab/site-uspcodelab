@@ -151,7 +151,7 @@ module.exports = {
   */
 
   colors: colors,
-
+  
   /*
   |-----------------------------------------------------------------------------
   | Screens                      https://tailwindcss.com/docs/responsive-design
@@ -233,6 +233,9 @@ module.exports = {
     ]
   },
 
+  fontFamily: {
+    body: ["IBM Plex Sans Condensed"]
+  },
   /*
   |-----------------------------------------------------------------------------
   | Text sizes                         https://tailwindcss.com/docs/text-sizing
