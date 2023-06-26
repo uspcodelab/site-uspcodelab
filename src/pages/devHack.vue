@@ -7,11 +7,16 @@
     <mobile-menu v-else :links="this.$parent.getNavLinks()" />
     <main class="bg-ucl-white text-ucl-black">
       <the-projects-header :title="title"/>
-      <hackfools />
-      <shehacks />
-      <interhack />
-      <the-division />
-      <codelab-bits />
+        <div id="body">
+          <codelab-bits />
+          <hackfools />
+          <the-division />
+          <shehacks />
+          <the-division />
+          <interhack />
+          <the-division />
+          <codelab-bits />
+        </div>
     </main>
     <the-footer :social-medias="this.$parent.getSocialMedias()" />
   </div>
@@ -32,7 +37,7 @@ import Interhack from "@/components/dev-hack/Interhack";
 export default {
   metaInfo: {
     title:
-      "dev.learn() | USPCodeLab - Estimulando a inovação tecnológica na USP!",
+      "dev.hack () | USPCodeLab - Estimulando a inovação tecnológica na USP!",
     meta: [
       {
         name: "description",
@@ -41,7 +46,7 @@ export default {
       {
         name: "keywords",
         content:
-          "dev learn, dev.learn, dev.learn(), USPCodeLab, USPCodeLabs, CodeLab, CodeLabs, dev journey",
+          "dev hack, dev.hack, dev.hack(), USPCodeLab, USPCodeLabs, CodeLab, CodeLabs, dev journey",
       },
     ],
   },
@@ -57,7 +62,7 @@ export default {
   },
   data() {
     return {
-      title: this.$parent.isMobile() ? "Dev .camp( )" : "Dev.camp( )",
+      title: this.$parent.isMobile() ? "Dev .hack( )" : "Dev.hack( )",
     };
   },
   computed: {},

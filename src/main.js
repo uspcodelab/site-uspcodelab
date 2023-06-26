@@ -12,12 +12,15 @@ Vue.use(VueScrollTo);
 // FontsAwesome
 
 import { library } from "@fortawesome/fontawesome-svg-core";
+
 import {
   faBars,
   faEnvelope,
   faExternalLinkAlt,
-  faTimes
+  faTimes,
+  faArrowDown
 } from "@fortawesome/free-solid-svg-icons";
+
 import {
   faFacebook,
   faGithub,
@@ -38,6 +41,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(
   faBars,
   faEnvelope,
+  faArrowDown,
   faFacebook,
   faGithub,
   faGitlab,
@@ -54,6 +58,7 @@ library.add(
   faInstagram,
   faYoutube
 );
+
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 // vue-carousel

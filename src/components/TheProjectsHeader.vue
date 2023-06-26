@@ -8,6 +8,11 @@
         </h1>
       </div>
     </div>
+    <span id="arrow" class="absolute md:hidden">
+      <div v-scroll-to="'#body'" class="flex items-center flex-no-shrink mr-4 cursor-pointer">
+        <font-awesome-icon :icon="{ prefix: 'fas', iconName: 'arrow-down' }" id="arrow-icon" aria-labelledby="arrowDown" title="Flecha para indicar mais conteúdo" />
+      </div>
+    </span>
     <section id="waves">
       <div class="wave wave-one" />
       <div class="wave wave-two" />
@@ -147,7 +152,7 @@ export default {
       bubbleCounter.innerHTML = "";
 
       title.style.animation = "anticipate 0.4s forwards ease-out, goAway 0.4s 0.4s forwards ease";
-      
+
       container.style.transition = "2s"
       setTimeout(()=>{
         container.style.background = "#08407b";
@@ -203,11 +208,11 @@ export default {
       let index = Math.floor(Math.random() * (colors.length));
       return colors[index];
     }
-    
+
     function getTime(){
       return Math.floor(Math.random() * 4) + 1;
     }
-    
+
   },
 };
 </script>
@@ -242,6 +247,30 @@ body, html {
   }
   to {
     transform: translate(0,0);
+  }
+}
+
+// ARROW
+
+#arrow {
+  left: 50%;
+  top: 70%;
+  transform: translateX(-50%);
+  -webkit-animation: arrow-animation 4s infinite ease-in-out;
+  -moz-animation: arrow-animation 4s infinite ease-in-out;
+  animation-direction:alternate;
+}
+
+#arrow-icon {
+  transform: scale(3);
+}
+
+@-webkit-keyframes arrow-animation {
+  0%, 100% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(50%);
   }
 }
 

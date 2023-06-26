@@ -6,7 +6,13 @@
          WEBDEV
         </p>
         <span>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper vel velit ut lacinia. Maecenas sollicitudin, leo eu aliquet mollis, elit dui tempus nisi, quis pulvinar risus tortor ut metus. Maecenas non placerat risus. Duis sagittis in lectus non ornare. Praesent lacinia convallis purus, vel eleifend lectus laoreet vel. Ut fermentum molestie sollicitudin. Cras varius eleifend eros id congue. Aliquam pharetra semper dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Anualmente, o USPCodelab prove o Webdev, um curso Introdutório de Desenvolvimento
+          Web lecionado pelos próprios membros do grupo. É um curso pensado para iniciantes
+          e para aqueles que não têm muita noção de Web. Em maioria, são calouros do curso
+          de Ciência da Computação do IME que participam, entretanto vale notar que
+          é um curso aberto a todos alunos da Universidade de São Paulo. Geralmente possui
+          duração de 10 aulas, que ocorrem semanalmente ao longo do primeiro semestre. As
+          tecnologias ensinadas são:
         </span>
       </div>
       <div v-for="(media, i) in techs" :key="media.title" class="flex flex-wrap md:justify-between justify-center mb-20 rounded shadow-md md:shadow-none pb-10 pt-10 md:pb-0 pt-5 md:pt-5 px-10 md:px-0">
@@ -48,7 +54,10 @@ export default {
           title: "HTML",
           titleColor: "#ff0000",
           description: `
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper vel velit ut lacinia. Maecenas sollicitudin, leo eu aliquet mollis, elit dui tempus nisi, quis pulvinar risus tortor ut metus. `,
+            HTML, ou Hypertext Markup Language é uma linguagem de marcação extremamente
+            utilizada na Web. Com a possibilidade de hipertextos, configura o "esqueleto
+            do site".
+          `,
           url: 'https://developer.mozilla.org/pt-BR/docs/Web/HTML',
           src: HTMLImage
         },
@@ -56,7 +65,9 @@ export default {
           title: "CSS",
           titleColor: "blue",
           description: `
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper vel velit ut lacinia. Maecenas sollicitudin, leo eu aliquet mollis, elit dui tempus nisi, quis pulvinar risus tortor ut metus.`,
+            O estilizador excepcional para o seu site. É com ele que você fará com que o seu
+            site desfile pela Web!
+          `,
           url: 'https://developer.mozilla.org/pt-BR/docs/Web/CSS',
           src: CSSImage
         },
@@ -64,7 +75,8 @@ export default {
           title: "JavaScript",
           titleColor: "black",
           description: `
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper vel velit ut lacinia. Maecenas sollicitudin, leo eu aliquet mollis, elit dui tempus nisi, quis pulvinar risus tortor ut metus.`,
+          Ás vezes, as coisas não estão dinâmicas o suficiente. Com o java script,
+          isso não é mais problema. Crie seu site como quiser. (mudar)`,
           url: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript',
           src: JSImage
         },
@@ -72,7 +84,9 @@ export default {
           title: "Node",
           titleColor: "green",
           description: `
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper vel velit ut lacinia. Maecenas sollicitudin, leo eu aliquet mollis, elit dui tempus nisi, quis pulvinar risus tortor ut metus.`,
+          Ok, já aprendeu o básico do front end e quer partir para o back. Aqui é
+          a nossa porta de entrada. Com o node, uma ferramenta extremamente poderosa,
+          você aprenderá a fazer um backend simples, mas funcional.`,
             url: 'https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction',
           src: NodeImage
         }

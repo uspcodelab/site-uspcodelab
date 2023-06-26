@@ -12,8 +12,7 @@
         </span>
         </p>
         <span>
-          Cursos sobre tecnologia onde os participantes são introduzidos a
-          ferramentas e técnicas de desenvolvimento introdutórias e avançadas.
+          Com o codelab bits, o Codelab entra de cabeça nas redes sociais mais populares.
         </span>
       </div>
       <div v-for="(media, i) in medias" :key="media.title" class="flex flex-wrap justify-between mb-20 rounded shadow-md md:shadow-none pb-10 md:pb-0 pt-5 md:pt-5 px-10 md:px-0" :class="{ 'flex-row-reverse': i % 2}">
