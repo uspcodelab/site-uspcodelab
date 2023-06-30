@@ -1,15 +1,16 @@
 <template>
-  <img src="@/assets/dev-journey/dev-learn.svg" :alt="alt" class="w-3/5 fill-white">
+  <img
+  :alt="alt"
+  src="@/assets/dev-journey/dev-learn.svg"
+  >
 </template>
 
 <script>
-  export default {
-    data: {
-      alt: "Icone dev learn"
-    }
-  }
+export default {
+  data: function () {
+    return {
+      alt: "Icone dev learn",
+    };
+  },
+};
 </script>
-
-<style scoped>
-
-</style>

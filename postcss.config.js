@@ -18,7 +18,7 @@ const extensionsOfCSS = [
   "postcss",
   "sass",
   "scss",
-  "styl"
+  "styl",
 ];
 
 module.exports = {
@@ -32,10 +32,10 @@ module.exports = {
         extractors: [
           {
             extractor: TailwindVueExtractor,
-            extensions: extensionsUsingCSS
-          }
-        ]
+            extensions: extensionsUsingCSS,
+          },
+        ],
       }),
-    require("autoprefixer")()
-  ]
+    require("autoprefixer")(),
+  ],
 };

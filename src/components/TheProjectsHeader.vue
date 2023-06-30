@@ -1,16 +1,31 @@
 <template>
-  <header class="md:pt-16 z-20 text-ucl-white h-screen flex flex-wrap" :style="{'background': themeObj.bgColor} ">
-    <div id="bubbleCounter"></div>
+  <header
+    :style="{ background: themeObj.bgColor }"
+    class="md:pt-16 z-20 text-ucl-white h-screen flex flex-wrap"
+  >
+    <div id="bubbleCounter" />
     <div id="bubbles-container" class="relative overflow-hidden flex w-full">
       <div class="w-full relative flex items-center justify-center pb-32">
-        <h1 id="title" class="text-header font-bold text-center tracking-wide z-10" :style="{'color': themeObj.titleColor }">
+        <h1
+          id="title"
+          :style="{ color: themeObj.titleColor }"
+          class="text-header font-bold text-center tracking-wide z-10"
+        >
           {{ title }}
         </h1>
       </div>
     </div>
     <span id="arrow" class="absolute md:hidden">
-      <div v-scroll-to="'#body'" class="flex items-center flex-no-shrink mr-4 cursor-pointer">
-        <font-awesome-icon :icon="{ prefix: 'fas', iconName: 'arrow-down' }" id="arrow-icon" aria-labelledby="arrowDown" title="Flecha para indicar mais conteúdo" />
+      <div
+        v-scroll-to="'#body'"
+        class="flex items-center flex-no-shrink mr-4 cursor-pointer"
+      >
+        <font-awesome-icon
+          id="arrow-icon"
+          :icon="{ prefix: 'fas', iconName: 'arrow-down' }"
+          aria-labelledby="arrowDown"
+          title="Flecha para indicar mais conteúdo"
+        />
       </div>
     </span>
     <section id="waves">
@@ -26,38 +41,38 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'default',
-      required: true
+      default: "default",
+      required: true,
     },
     theme: {
       type: String,
-      default: 'default'
+      default: "default",
     },
   },
-  data () {
+  data() {
     return {
       themes: {
         default: {
-          titleColor: 'white',
-          bgColor: 'linear-gradient(#ff8b46, #ff6900)',
-          bubblesColors: ['#FFB78B'],
+          titleColor: "white",
+          bgColor: "linear-gradient(#ff8b46, #ff6900)",
+          bubblesColors: ["#FFB78B"],
           bubbles: true,
           bubbleGame: true,
         },
         webdev: {
-          titleColor: 'white',
-          bgColor: 'black',
+          titleColor: "white",
+          bgColor: "black",
           bubblesColors: ["#8b3ff8", "#ff6900", "#ff4dbc", "#87fdc7"],
           bubbles: true,
           bubbleGame: true,
         },
-      }
-    }
+      },
+    };
   },
   computed: {
-    themeObj () {
-      return this.themes[this.theme] || this.themes['default'];
-    }
+    themeObj() {
+      return this.themes[this.theme] || this.themes["default"];
+    },
   },
   mounted() {
     let numBubbles = 20;
@@ -69,7 +84,7 @@ export default {
     let title = this.$el.querySelector("#title");
     let themeObj = this.themeObj;
 
-    if(!themeObj.bubbles) return;
+    if (!themeObj.bubbles) return;
 
     startBubbles();
 
@@ -121,47 +136,48 @@ export default {
       return Math.floor(Math.random() * 96) + 2;
     }
 
-    function getColor(){
+    function getColor() {
       let colors = themeObj.bubblesColors;
-      if(colors.length == 1){
+      if (colors.length == 1) {
         return colors[0];
       }
-      let index = Math.floor(Math.random() * (colors.length));
+      let index = Math.floor(Math.random() * colors.length);
       return colors[index];
     }
 
     function popBubble(event) {
       let bubble = event.target;
       bubble.classList.add("pop");
-      setTimeout(()=>{
+      setTimeout(() => {
         bubble.remove();
-      }, 50)
+      }, 50);
 
-      if(!themeObj.bubbleGame) return;
+      if (!themeObj.bubbleGame) return;
 
       poppedBubbles++;
-      if(poppedBubbles >= 2){
+      if (poppedBubbles >= 2) {
         bubbleCounter.innerHTML = poppedBubbles + "/" + numBubbles;
       }
-      if(poppedBubbles == numBubbles) {
+      if (poppedBubbles == numBubbles) {
         win();
       }
     }
 
-    function win(){
+    function win() {
       bubbleCounter.innerHTML = "";
 
-      title.style.animation = "anticipate 0.4s forwards ease-out, goAway 0.4s 0.4s forwards ease";
+      title.style.animation =
+        "anticipate 0.4s forwards ease-out, goAway 0.4s 0.4s forwards ease";
 
-      container.style.transition = "2s"
-      setTimeout(()=>{
+      container.style.transition = "2s";
+      setTimeout(() => {
         container.style.background = "#08407b";
         startBubblesWin();
       }, 800);
       setTimeout(() => {
-        title.innerHTML = poppedBubbles + "/" + poppedBubbles + "!"
-        title.style.animation = "goIn ease-out 1s"
-        }, 800);
+        title.innerHTML = poppedBubbles + "/" + poppedBubbles + "!";
+        title.style.animation = "goIn ease-out 1s";
+      }, 800);
     }
 
     function startBubblesWin() {
@@ -171,7 +187,7 @@ export default {
       function startBubble() {
         countBubbles++;
         createBubbleWin();
-        if(countBubbles == numBubbles) {
+        if (countBubbles == numBubbles) {
           clearInterval(i);
         }
       }
@@ -203,24 +219,23 @@ export default {
       container.appendChild(bubble);
     }
 
-    function getColorWin(){
-      let colors = ["#8b3ff8", "#ff6900", "#ff4dbc", "#87fdc7"]
-      let index = Math.floor(Math.random() * (colors.length));
+    function getColorWin() {
+      let colors = ["#8b3ff8", "#ff6900", "#ff4dbc", "#87fdc7"];
+      let index = Math.floor(Math.random() * colors.length);
       return colors[index];
     }
 
-    function getTime(){
+    function getTime() {
       return Math.floor(Math.random() * 4) + 1;
     }
-
   },
 };
 </script>
 
 <style lang="scss">
-//META-CSS
 
-body, html {
+body,
+html {
   overflow-x: hidden;
 }
 
@@ -230,12 +245,12 @@ body, html {
   position: absolute;
 }
 
-@keyframes anticipate{
+@keyframes anticipate {
   to {
-    transform: translate(-20%) ;
+    transform: translate(-20%);
   }
 }
-@keyframes goAway{
+@keyframes goAway {
   to {
     transform: translateX(100vw);
   }
@@ -243,10 +258,10 @@ body, html {
 
 @keyframes goIn {
   from {
-    transform: translateX(-100vw)
+    transform: translateX(-100vw);
   }
   to {
-    transform: translate(0,0);
+    transform: translate(0, 0);
   }
 }
 
@@ -258,7 +273,7 @@ body, html {
   transform: translateX(-50%);
   -webkit-animation: arrow-animation 4s infinite ease-in-out;
   -moz-animation: arrow-animation 4s infinite ease-in-out;
-  animation-direction:alternate;
+  animation-direction: alternate;
 }
 
 #arrow-icon {
@@ -266,7 +281,8 @@ body, html {
 }
 
 @-webkit-keyframes arrow-animation {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-50%);
   }
   50% {
@@ -295,12 +311,13 @@ $bubbles: lighten($background, 20%);
   animation: rise ease-in infinite;
 }
 
-#bubble::before { //Aumentar a área clickável de cada bolha.
+#bubble::before {
+  // Increase clickable area
   content: "";
   width: 300%;
   height: 300%;
   position: absolute;
-  transform: translate(-33.444%,-33.444%);
+  transform: translate(-33.444%, -33.444%);
 }
 
 #bubble:hover {
@@ -317,7 +334,7 @@ $bubbles: lighten($background, 20%);
 }
 
 .pop {
-  transform: scale(1.8,1.8) !important;
+  transform: scale(1.8, 1.8) !important;
   transition: 120ms;
 }
 
@@ -332,7 +349,6 @@ $bubbles: lighten($background, 20%);
   position: absolute;
   top: 100%;
   width: 100vw;
-
 }
 
 #waves .wave {

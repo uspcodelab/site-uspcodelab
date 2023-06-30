@@ -11,7 +11,7 @@ import TheNotFound from "@/components/TheNotFound.vue";
 
 export default {
   components: {
-    TheNotFound
-  }
+    TheNotFound,
+  },
 };
 </script>

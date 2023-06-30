@@ -18,7 +18,7 @@ import {
   faEnvelope,
   faExternalLinkAlt,
   faTimes,
-  faArrowDown
+  faArrowDown,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -34,7 +34,7 @@ import {
   faReact,
   faVuejs,
   faInstagram,
-  faYoutube
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -61,6 +61,11 @@ library.add(
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
+// CUSTOM
+
+import CustomTransition from './components/CustomTransition'
+Vue.component("custom-transition", CustomTransition);
+
 // vue-carousel
 
 import VueCarousel from "vue-carousel";
@@ -74,14 +79,14 @@ Vue.use(VScrollLock);
 // Scroll directive
 
 Vue.directive("scroll", {
-  inserted: function(el, binding) {
-    let f = function(evt) {
+  inserted: function (el, binding) {
+    let f = function (evt) {
       if (binding.value(evt, el)) {
         window.removeEventListener("scroll", f);
       }
     };
     window.addEventListener("scroll", f);
-  }
+  },
 });
 
 // vue-meta
@@ -92,5 +97,5 @@ Vue.use(Meta);
 
 new Vue({
   router,
-  render: h => h(App)
+  render: (h) => h(App),
 }).$mount("#app");

@@ -13,8 +13,10 @@ COPY package.json ./
 # Install dependencies
 RUN npm install
 
+RUN npm install vue-intersect --save
+
 # Copy remaining source code
 COPY . .
 
 # Run in development mode
-CMD npm run serve
+CMD npm run build

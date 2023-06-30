@@ -5,6 +5,7 @@ import Home from "@/pages/index.vue";
 import DevCamp from "@/pages/devCamp.vue";
 import DevLearn from "@/pages/devLearn.vue";
 import DevHack from "@/pages/devHack.vue";
+import About from "@/pages/about.vue";
 import NotFound from "@/pages/notFound.vue";
 
 Vue.use(Router);
@@ -30,7 +31,12 @@ export default new Router({
     {
       path: "/dev-hack",
       name: "devHack()",
-      component: DevHack
+      component: DevHack,
+    },
+    {
+      path: "/about",
+      name: "Sobre",
+      component: About,
     },
     {
       path: "/hackathonusp",

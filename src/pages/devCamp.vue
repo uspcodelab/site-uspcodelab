@@ -1,13 +1,16 @@
 <template>
   <div class="page">
-    <the-navbar v-if="!this.$parent.isMobile()" :links="this.$parent.getNavLinks()"/>
-    <mobile-menu v-else :links="this.$parent.getNavLinks()"/>
+    <the-navbar
+      v-if="!this.$parent.isMobile()"
+      :links="this.$parent.getNavLinks()"
+    />
+    <mobile-menu v-else :links="this.$parent.getNavLinks()" />
     <main>
-      <dev-camp-header/>
-      <last-dev-camp :data="getLastDevCampData()"/>
-      <previous-dev-camps :data="getPreviousDevCampData()"/>
+      <dev-camp-header />
+      <last-dev-camp :data="getLastDevCampData()" />
+      <previous-dev-camps :data="getPreviousDevCampData()" />
     </main>
-    <the-footer :social-medias="this.$parent.getSocialMedias()"/>
+    <the-footer :social-medias="this.$parent.getSocialMedias()" />
   </div>
 </template>
 
@@ -33,14 +36,14 @@ export default {
         content:
           "O dev.camp() é uma das partes do dev.journey(), oferecido pelo USPCodeLab. " +
           "Consiste numa escola de férias que serve de formatura para os alunos do " +
-          "dev.learn() e dev.boost(), envolvendo um projeto grande com múltiplos times mistos."
+          "dev.learn() e dev.boost(), envolvendo um projeto grande com múltiplos times mistos.",
       },
       {
         name: "keywords",
         content:
-          "dev camp, dev.camp, dev.camp(), USPCodeLab, USPCodeLabs, CodeLab, CodeLabs, dev journey"
-      }
-    ]
+          "dev camp, dev.camp, dev.camp(), USPCodeLab, USPCodeLabs, CodeLab, CodeLabs, dev journey",
+      },
+    ],
   },
   components: {
     DevCampHeader,
@@ -48,7 +51,7 @@ export default {
     PreviousDevCamps,
     MobileMenu,
     TheNavbar,
-    TheFooter
+    TheFooter,
   },
   methods: {
     getLastDevCampData() {
@@ -56,7 +59,7 @@ export default {
     },
     getPreviousDevCampData() {
       return previousDevCampData;
-    }
-  }
+    },
+  },
 };
 </script>

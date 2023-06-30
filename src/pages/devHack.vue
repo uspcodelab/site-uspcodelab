@@ -6,17 +6,13 @@
     />
     <mobile-menu v-else :links="this.$parent.getNavLinks()" />
     <main class="bg-ucl-white text-ucl-black">
-      <the-projects-header :title="title"/>
-        <div id="body">
-          <codelab-bits />
-          <hackfools />
-          <the-division />
-          <shehacks />
-          <the-division />
-          <interhack />
-          <the-division />
-          <codelab-bits />
-        </div>
+      <the-projects-header :title="title" />
+      <div id="body">
+        <hackathons-header />
+        <interhack />
+        <shehacks />
+        <hackfools />
+      </div>
     </main>
     <the-footer :social-medias="this.$parent.getSocialMedias()" />
   </div>
@@ -30,9 +26,11 @@ import TheFooter from "@/components/TheFooter.vue";
 import TheProjectsHeader from "@/components/TheProjectsHeader";
 import TheDivision from "@/components/TheDivision";
 
-import Hackfools from "@/components/dev-hack/Hackfools";
-import Shehacks from "@/components/dev-hack/Shehacks";
-import Interhack from "@/components/dev-hack/Interhack";
+import HackathonsHeader from "@/components/dev-hack/HackathonsHeader";
+
+import Hackfools from "@/components/dev-hack/hackfools/Hackfools";
+import Shehacks from "@/components/dev-hack/shehacks/Shehacks";
+import Interhack from "@/components/dev-hack/interhack/Interhack";
 
 export default {
   metaInfo: {
@@ -53,6 +51,7 @@ export default {
   components: {
     TheProjectsHeader,
     TheDivision,
+    HackathonsHeader,
     Hackfools,
     Shehacks,
     Interhack,
@@ -68,3 +67,10 @@ export default {
   computed: {},
 };
 </script>
+
+<style scoped lang="scss">
+#headers-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+</style>

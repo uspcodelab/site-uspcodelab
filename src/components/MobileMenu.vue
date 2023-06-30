@@ -65,12 +65,12 @@ export default {
 
 .menu__hidden {
   transform: scale(0);
-  transition: all 0.2s ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
 }
 
 .menu__activated {
   transform: scale(1);
-  transition: all 0.2s ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
 }
 
 .menu-list {

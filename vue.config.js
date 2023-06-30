@@ -4,8 +4,8 @@ module.exports = {
       sass: {
         data: `
           @import "~@/assets/styles/variables.scss";
-        `
-      }
-    }
-  }
+        `,
+      },
+    },
+  },
 };

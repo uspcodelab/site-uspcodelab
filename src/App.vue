@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -22,14 +22,14 @@ export default {
     },
     getSocialMedias() {
       return socialMedias;
-    }
-  }
+    },
+  },
 };
 </script>
 
-
 <style lang="scss">
 @import "assets/styles/tailwind.postcss";
+// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@100&display=swap');
 
 html {
   font-size: 14px;

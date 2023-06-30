@@ -1,3 +1,6 @@
 [
-  { "url": "/", "name": "Início" }
+  { "url": "/", "name": "Início" },
+  { "url": "/about", "name": "Sobre" },
+  { "url": "/dev-learn", "name": "dev.learn( )" },
+  { "url": "/dev-hack", "name": "dev.hack( )" }
 ]

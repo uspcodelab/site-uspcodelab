@@ -1,5 +1,7 @@
 <template>
-    <carousel id="carousel"
+  <div class="container mx-auto mt-20">
+  <carousel
+    id="carousel"
     :autoplay="true"
     :autoplay-timeout="5000"
     :loop="true"
@@ -7,29 +9,32 @@
     :pagination-active-color="'#ff6900'"
     :pagination-color="'#505050'"
     :per-page="1"
-    class=" w-full">
+    class="mx-4"
+  >
     <slide>
-    <img src="@/assets/dev-camp/team-process.jpg">
+      <img src="@/assets/dev-camp/team-process.jpg" />
     </slide>
     <slide>
-    <img src="@/assets/dev-camp/team-request.jpg">
+      <img src="@/assets/dev-camp/team-request.jpg" />
     </slide>
     <slide>
-    <img src="@/assets/dev-camp/team-user.jpg">
+      <img src="@/assets/dev-camp/team-user.jpg" />
     </slide>
-    </carousel>
+  </carousel>
+  </div>
 </template>
 
 <script>
-  export default {
-    data: {
-      alt: "Icone dev learn"
-    }
-  }
+export default {
+  data: function () {
+    return {
+      alt: "Icone dev learn",
+    };
+  },
+};
 </script>
 
 <style scoped>
-
 img {
   border-radius: 20px !important;
 }
@@ -41,5 +46,4 @@ bla {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px, #ff6900 -10px 10px,
     rgba(149, 157, 165, 0.2) -25px 8px 24px !important;
 }
-
 </style>

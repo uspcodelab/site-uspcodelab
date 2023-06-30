@@ -1,31 +1,130 @@
 <template>
-  <section id="dev-journey" class="bg-ucl-white text-ucl-black px-8 md:px-12 lg:px-20 xl:px-0 py-20">
-    <div class="container mx-auto">
-      <h1 class="text-ucl-orange text-4xl font-thin text-center pb-4 tracking-wide">
-        dev.journey()
-      </h1>
-      <p class="lg:text-sm text-grey-darker text-center leading-normal mb-4 pb-4">
-        <b>Programa educacional</b> com 6 iniciativas que visa complementar a formação dos estudantes para que eles se tornem <b>engenheiros de software</b> capazes de desenvolverem sistemas reais
-      </p>
-      <card-list :array="devJourneyStages" />
+  <section
+    class="relative bg-ucl-white text-ucl-black md:px-12 lg:px-20 xl:px-0 pt-20 overflow-hidden flex"
+    id="dev-journey"
+    >
+    <div class="relative flex w-full" id="bubbles-container-menu">
+      <div class="container mx-auto">
+        <h1
+          class="text-ucl-orange text-5xl font-thin text-center pb-4 tracking-wide"
+          >
+          dev.journey( )
+        </h1>
+          <p class="leading-loose text-center font-hairline mt-10 mx-2">
+          Bem vindo à nossa jornada! O dev.journey é um programa educacional
+          com 6 iniciativas que visa complementar a formação dos estudantes
+          para que eles se tornem engenheiros de software capazes de
+          desenvolverem sistemas reais. Abaixo, você pode se aventurar por
+          todas elas!
+          </p>
+
+    <!-- <card-list :array="devJourneyStages" /> -->
+
+    <section-list :array="devJourneyStages" />
+      </div>
     </div>
-  </section>
+    </section>
 </template>
 
 <script>
 import CardList from "@/components/CardList.vue";
+import SectionList from "@/components/SectionList.vue";
 
 export default {
   components: {
-    CardList
+    CardList,
+    SectionList,
   },
   props: {
     devJourneyStages: {
       type: Array,
       default() {
         return [];
+      },
+    },
+  },
+  mounted () {
+    let numBubbles = 20;
+    let poppedBubbles = 0;
+    let minSize = 20;
+    let maxSize = 60;
+    let container = this.$el.querySelector("#bubbles-container-menu");
+
+    startBubbles();
+
+    function startBubbles() {
+      let contBubbles;
+      contBubbles = numBubbles;
+      while (contBubbles--) {
+        createBubble();
       }
     }
-  }
+
+    function createBubble() {
+      let size = getBubbleSize();
+      let location = getBubbleLocation();
+      let delay = getAnimationDelay();
+      let bubble = document.createElement("span");
+
+      bubble.setAttribute("id", "bubble-linear");
+      bubble.setAttribute(
+        "style",
+        "width: " +
+          size +
+          "px; height: " +
+          size +
+          "px; left: " +
+          location +
+          "%; animation-delay: -" +
+          delay +
+          "s;"
+      );
+      container.appendChild(bubble);
+    }
+
+    function getBubbleSize() {
+      return Math.floor(Math.random() * (maxSize - minSize + 1)) + minSize;
+    }
+
+    function getAnimationDelay() {
+      // animation-delay=-20s and animation-delay=0s
+      return Math.random() * 20;
+    }
+
+    function getBubbleLocation() {
+      // Between left=2% and left=98%
+      return Math.floor(Math.random() * 96) + 2;
+    }
+  },
 };
 </script>
+
+<style lang="scss">
+#dev-journey {
+  background-image: linear-gradient(#f8f9fa, #FFDDC6);
+}
+
+// BUBBLES
+
+#bubbles-container-menu * {
+  z-index: 2;
+}
+
+#bubble-linear {
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,105,10,0.1);
+  animation: rise 12s linear infinite;
+  z-index: 1;
+}
+
+@keyframes rise {
+  from {
+    bottom: -5%;
+  }
+  to {
+    bottom: 120%;
+  }
+}
+</style>

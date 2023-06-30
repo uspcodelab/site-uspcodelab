@@ -134,6 +134,19 @@ let colors = {
   "ucl-grey": "#666361" /* CUSTOM */,
   "ucl-grey-light": "dde4e9" /* CUSTOM */,
   "ucl-white": "#f8f9fa" /* CUSTOM */,
+
+  "sh-pink-dark": "#DB74BF" /* CUSTOM */,
+  "sh-pink-light": "#F3D8EC" /* CUSTOM */,
+  "sh-blue": "#85D5D3" /* CUSTOM */,
+  "sh-green": "#8FBC33" /* CUSTOM */,
+  "sh-green-dark": "#516C14" /* CUSTOM */,
+
+  "inter-red": "#ff0000" /* CUSTOM */,
+  "inter-red-light": "#F82947" /* CUSTOM */,
+  "inter-red-dark": "#AC1508" /* CUSTOM */,
+
+  "instagram": "#ff34d2" /* CUSTOM */,
+  "section-bg": "rgba(255,255,255,0.7)" /* CUSTOM */,
 };
 
 module.exports = {
@@ -231,6 +244,22 @@ module.exports = {
       "Courier New",
       "monospace",
     ],
+    pixeloid: [
+      "pixeloid",
+      "system-ui",
+      "BlinkMacSystemFont",
+      "-apple-system",
+      "Segoe UI",
+      "Roboto",
+    ],
+    inter: [
+      "inter",
+      "system-ui",
+      "BlinkMacSystemFont",
+      "-apple-system",
+      "Segoe UI",
+      "Roboto",
+    ],
   },
 
   /*
@@ -263,6 +292,7 @@ module.exports = {
     "3xl": "1.875rem", // 30px
     "4xl": "2.25rem", // 36px
     "5xl": "3rem", // 48px
+    "6xl": "3.75rem", // 60px
     header: "6rem" /* CUSTOM */,
   },
 
@@ -597,6 +627,10 @@ module.exports = {
     "3xl": "80rem",
     "4xl": "90rem",
     "5xl": "100rem",
+    "1/2": "50%" /* CUSTOM */,
+    "1/3": "33.33333%" /* CUSTOM */,
+    "2/3": "66.66667%" /* CUSTOM */,
+    "1/4": "25%" /* CUSTOM */,
     full: "100%",
   },
 
