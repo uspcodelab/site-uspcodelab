@@ -1,5 +1,5 @@
 <template>
-  <section class="pb-20 text-center ">
+  <section class="pb-20 text-center" id="bits">
     <div class="mb-10 md:mb-20 tracking-wide py-20 bg-ucl-black">
       <custom-transition type="fade">
         <p
@@ -93,10 +93,7 @@
             title: "Youtube",
             titleColor: "#ff0000",
             description: `
-            Desde 2019, administramos o canal do youtube USPCodelab. Postamos
-            vídeos educativos sobre computação. Feito por alunos, os vídeos
-            abrangem desde cursos introdutórios até técnicas de programação mais
-            avançadas.`,
+            Desde 2019, administramos o canal do YouTube USPCodelab, onde postamos vídeos educativos sobre computação. Estes, que geralmente são produzidos pelos membros, abrangem desde cursos introdutórios até técnicas de programação mais avançadas.`,
             src: YoutubeImage,
             icon: socialMedias.find((sm) => sm.iconName === "youtube"),
           },
@@ -104,10 +101,8 @@
             title: "Instagram",
             titleColor: "#ff34d2",
             description: `
-            Lorem ipsum dolor sit ametesse ea nulla sunt ex occaecat
-            reprehenderit commodo officia dolor Lorem duis laboris cupidatat
-            officia voluptate. Culpa proident adipisicing id nulla nisi laboris
-            ex in Lorem sunt duis officia eiusmod. Aliqua duis
+            Ultimamente, não temos utilizado o Instagram tanto quanto em
+            alguns outros momentos. Entretanto, ainda serve como um local de divulgação conteúdos e eventos do Codelab Butantã.
             `,
             src: InstagramImage,
             icon: socialMedias.find((sm) => sm.iconName === "instagram"),

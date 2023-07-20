@@ -1,12 +1,5 @@
 [
   {
-    "url": "https://uclab.xyz/facebook",
-    "iconPrefix": "fab",
-    "iconName": "facebook",
-    "ariaLabelledBy": "socialMediaFacebook",
-    "linkTitle": "Link para a pagina do USPCodeLab no Facebook"
-  },
-  {
     "url": "https://uclab.xyz/github",
     "iconPrefix": "fab",
     "iconName": "github",

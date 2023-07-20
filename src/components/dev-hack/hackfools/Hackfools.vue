@@ -68,10 +68,10 @@ export default {
           title: "Hackfools 2022",
           titleColor: "#ff690a",
           description: `
-            Realizado no Instituto de Matemática e Estatística, em 2022, o tema escolhido foi
-            "Serviços de Pizzaria". Dentre os projetos, destaca-se um
-            bot do discord para auxiliar pedidos (que mais atrapalhava do que ajudava)
-            e um site que (de uma maneira extrapolada) permitia o cliente escolher o formato da pizza.
+            Realizado no Instituto de Matemática e Estatística em 2022, o tema escolhido foi
+            "Serviços de Pizzaria". Dentre os projetos, destacou-se um
+            bot do discord para agilizar pedidos pela rede social (que curiosamente mais atrapalhava que ajudava)
+            e um site que (de uma maneira bem extrapolada) permitia o cliente escolher o formato da pizza que gostaria.
             O evento contou tanto com estudantes da EACH quanto com do Butantã.
             `,
           buttonTheme: "default",
@@ -84,7 +84,7 @@ export default {
           description: `
             O tema escolhido para 2023 foi "Dominação Mundial". Aqui, os participantes criaram
             ideias mirabolantes (e até enfadonhas) para se dominar o mundo. Tivemos desde uma
-            extensão de navegador bizarra até um plano "do mau" que pretendia acabar com o mundo
+            extensão de navegador bizarra até um plano "do mal" que pretendia acabar com o mundo
             para, então, lucrar com o aluguel de bunkers.
             `,
           buttonTheme: "hackfools2023",

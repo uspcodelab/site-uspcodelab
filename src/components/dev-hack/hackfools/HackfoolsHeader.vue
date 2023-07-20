@@ -9,9 +9,9 @@
       <custom-transition type="top">
         <p>
         Com temas leves, ambiente divertido e muitas risadas, esse é o
-        Hackfools. É um hackathon cômico, sendo perfeito para mandar embora
-        a tensão do primeiro hackathon. Querendo apenas divertir e promover
-        os hackathons, aqui, tentamos sempre fugir das competições.
+        Hackfools. É um hackathon cômico, sendo <span class="text-ucl-orange">perfeito para mandar embora
+          a tensão do primeiro hackathon</span>. Com intenção de divertir e promover
+        esses adoráveis eventos, aqui, tentamos sempre <b>fugir das competições.</b>
         </p>
       </custom-transition>
     </div>

@@ -6,7 +6,7 @@
     <div class="container mx-auto flex flex-wrap">
       <!-- Logo -->
       <div class="w-full md:w-1/2 text-center pb-3">
-        <router-link v-scroll-to="'#header'" to="/" class="no-underline">
+        <a href="/Codelab.jpeg" target="_blank" class="no-underline">
           <img
             src="@/assets/logos/ucl-logo-wb-alpha.svg"
             alt="Logo do USPCodeLab"
@@ -15,7 +15,7 @@
           <p class="text-ucl-white select-none leading-normal mb-4">
             Estimulando a inovação tecnológica na USP
           </p>
-        </router-link>
+        </a>
       </div>
       <!-- Social Medias -->
       <div class="text-center no-underline w-full md:w-1/2">

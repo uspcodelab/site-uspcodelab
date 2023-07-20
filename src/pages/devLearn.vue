@@ -23,7 +23,6 @@ import MobileMenu from "@/components/MobileMenu.vue";
 import TheFooter from "@/components/TheFooter.vue";
 
 import TheProjectsHeader from "@/components/TheProjectsHeader";
-import TheDivision from "@/components/TheDivision";
 
 import LearnHeader from "@/components/dev-learn/LearnHeader";
 import Webdev from "@/components/dev-learn/Webdev";
@@ -32,11 +31,11 @@ import CodelabBits from "@/components/dev-learn/CodelabBits";
 export default {
   metaInfo: {
     title:
-      "dev.learn() | USPCodeLab - Estimulando a inovação tecnológica na USP!",
+      "dev.learn() | UCL Butantã",
     meta: [
       {
         name: "description",
-        content: `Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.`,
+        content: `Cursos sobre tecnologia onde os participantes são introduzidos a ferramentas e técnicas de desenvolvimento introdutórias e avançadas.`,
       },
       {
         name: "keywords",

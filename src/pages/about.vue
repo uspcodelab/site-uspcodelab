@@ -21,23 +21,22 @@ import MobileMenu from "@/components/MobileMenu.vue";
 import TheFooter from "@/components/TheFooter.vue";
 
 import TheProjectsHeader from "@/components/TheProjectsHeader";
-import TheDivision from "@/components/TheDivision";
 
 import History from "@/components/about/history";
 
 export default {
   metaInfo: {
     title:
-      "Sobre nós | USPCodeLab - Estimulando a inovação tecnológica na USP!",
+      "Sobre nós | UCL Butantã",
     meta: [
       {
         name: "description",
-        content: `Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.`,
+        content: `História do USPCodelab`,
       },
       {
         name: "keywords",
         content:
-          "dev learn, dev.learn, dev.learn(), USPCodeLab, USPCodeLabs, CodeLab, CodeLabs, dev journey",
+          "Sobre nós, Sobre Codelab, História Codelab",
       },
     ],
   },

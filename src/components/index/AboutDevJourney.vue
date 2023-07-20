@@ -10,16 +10,13 @@
           >
           dev.journey( )
         </h1>
-          <p class="leading-loose text-center font-hairline mt-10 mx-2">
-          Bem vindo à nossa jornada! O dev.journey é um programa educacional
-          com 6 iniciativas que visa complementar a formação dos estudantes
-          para que eles se tornem engenheiros de software capazes de
+          <p class="leading-loose text-center mt-10 mx-2">
+          <b>Bem-vindo à nossa jornada!</b> O dev.journey é um programa educacional
+          com <b>6 iniciativas</b> que visa complementar a formação dos estudantes
+          para que eles se tornem<span class="text-ucl-orange"> engenheiros de software</span> capazes de
           desenvolverem sistemas reais. Abaixo, você pode se aventurar por
           todas elas!
           </p>
-
-    <!-- <card-list :array="devJourneyStages" /> -->
-
     <section-list :array="devJourneyStages" />
       </div>
     </div>
@@ -27,8 +24,8 @@
 </template>
 
 <script>
-import CardList from "@/components/CardList.vue";
-import SectionList from "@/components/SectionList.vue";
+import CardList from "@/components/dev-journey/CardList.vue";
+import SectionList from "@/components/dev-journey/SectionList.vue";
 
 export default {
   components: {

@@ -8,10 +8,7 @@
       </custom-transition>
       <custom-transition type="top">
         <p class="text-white">
-        Com temas leves, ambiente divertido e muitas risadas, esse é o
-        Hackfools. É um hackathon cômico, sendo perfeito para mandar embora
-        a tensão do primeiro hackathon. Querendo apenas divertir e promover
-        os hackathons, aqui, tentamos sempre fugir das competições.
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in massa tempor nec feugiat nisl pretium fusce id. Sapien eget mi proin sed libero enim. Urna nunc id cursus
         </p>
       </custom-transition>
     </div>
@@ -28,7 +25,7 @@
 }
 
 .hero {
-  background-position: 50% 50%; /* This could be 50% 50%, 0 0, or really anything.  The world is your stinky little oyster! */
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;

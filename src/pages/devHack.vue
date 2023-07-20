@@ -24,7 +24,6 @@ import MobileMenu from "@/components/MobileMenu.vue";
 import TheFooter from "@/components/TheFooter.vue";
 
 import TheProjectsHeader from "@/components/TheProjectsHeader";
-import TheDivision from "@/components/TheDivision";
 
 import HackathonsHeader from "@/components/dev-hack/HackathonsHeader";
 
@@ -35,11 +34,11 @@ import Interhack from "@/components/dev-hack/interhack/Interhack";
 export default {
   metaInfo: {
     title:
-      "dev.hack () | USPCodeLab - Estimulando a inovação tecnológica na USP!",
+      "dev.hack() | UCL Butantã",
     meta: [
       {
         name: "description",
-        content: `Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.`,
+        content: `Hackathons onde os participantes são desafiados a buscar, num tempo limitado, soluções inovadoras para problemas reais utilizando tecnologia.`,
       },
       {
         name: "keywords",
@@ -50,7 +49,6 @@ export default {
   },
   components: {
     TheProjectsHeader,
-    TheDivision,
     HackathonsHeader,
     Hackfools,
     Shehacks,

@@ -8,10 +8,10 @@
       </custom-transition>
       <custom-transition type="top">
         <p class="text-white">
-        Com temas leves, ambiente divertido e muitas risadas, esse é o
-        Hackfools. É um hackathon cômico, sendo perfeito para mandar embora
-        a tensão do primeiro hackathon. Querendo apenas divertir e promover
-        os hackathons, aqui, tentamos sempre fugir das competições.
+        Feito <b>exclusivamente</b> por mulheres para mulheres, esse é o maior hackathon feminino do Brasil.
+        Com <b>temas relevantes à sociedade</b>, mulheres universitárias cis e trans têm
+        a oportunidade de criar ideias geniais, além de desenvolver
+        <b>networkings incríveis.</b>
         </p>
       </custom-transition>
     </div>

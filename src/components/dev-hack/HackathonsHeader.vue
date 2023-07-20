@@ -1,27 +1,34 @@
 <template>
   <div
-    class="flex flex-wrap container md:pt-12 mb-4 md:mb-0 mx-auto px-4 md:px-4 leading-loose"
+    class="flex flex-wrap container md:pt-12 mb-12 md:mb-0 mx-auto px-4 md:px-4 leading-loose"
   >
     <div>
       <custom-transition type="fade">
-        <h1 class="pb-4 text-center">Essa é a nossa Essência.</h1>
+        <h1 class="pb-4 text-center">Essa é a nossa <span class="bg-ucl-orange text-white"> Essência. </span> </h1>
       </custom-transition>
-      <custom-transition type="fade">
-        <p class="lg:text-xs mb-8 text-left text-grey-darker">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Purus in massa
-        tempor nec feugiat nisl pretium fusce id. Sapien eget mi proin sed
-        libero enim. Urna nunc id cursus metus aliquam eleifend mi in. Mauris
-        pellentesque pulvinar pellentesque habitant morbi tristique senectus et
-        netus. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus.
-        Ultrices eros in cursus turpis massa tincidunt. Iaculis at erat
-        pellentesque adipiscing commodo elit at imperdiet dui. Facilisis
-        volutpat est velit egestas dui id ornare arcu. Nunc mi ipsum faucibus
-        vitae aliquet nec ullamcorper sit. Aliquet nec ullamcorper sit amet
-        risus nullam eget felis eget. Adipiscing commodo elit at imperdiet dui
-        accumsan sit amet nulla. Feugiat in ante metus dictum at tempor commodo
-        ullamcorper a. Ac felis donec et odio pellentesque diam volutpat
-        commodo. Nunc faucibus a pellentesque sit amet porttitor eget .
+      <custom-transition type="fade" class="lg:text-xs text-left text-grey-darker">
+        <p class="mb-2">
+        Apaixonados por hackathons, foi com a ideia de criar um grupo para a organização
+        deles que os fundadores trouxeram o Codelab ao mundo, <b>sendo uma peça importantíssima para o nosso surgimento.</b>
+        Desde o início, buscamos cultivar a <b> paixão por hackathons entre os membros</b>, que têm
+        se dedicado extensivamente para a organização de alguns dos maiores eventos
+        de tecnologia do Brasil. <span class="text-ucl-orange">Com anos e mais anos de experiência, esses eventos estão
+          no nosso sangue</span>.
+        </p>
+        <p class="mb-2">
+        O primeiro de todos — e que desencadeou uma sucessão incrível
+        de tantos outros — foi o HackathonIME, que ocorreu em 2015 para um público restrito
+        de 28 pessoas do Instituto de Matemática e Estatística da USP. Ainda estávamos começando.
+        Evoluindo ano a ano, chegamos até 2019 com o Interhack, um evento incrível que suportou <b> 112 participantes
+          no que viria ser um dos maiores hackathons já feitos no Brasil.</b>
+        </p>
+        <p class="mb-2">
+        Com a pandemia, a organização dos hackathons que amamos ficou impossibilitada e,
+        então, agora pretendemos voltar com tudo. Por isso, em 2023, teremos 3 maravilhosos hackathons:
+        <span class="text-inter-red cursor-pointer" v-scroll-to="'#' + hackathons.Interhack.title" > Interhack</span>,
+        <span class="text-sh-blue cursor-pointer" v-scroll-to="'#' + hackathons.Shehacks.title" > Shehacks </span>
+        e
+        <span class="text-ucl-orange cursor-pointer" v-scroll-to="'#' + hackathons.Hackfools.title" > Hackfools</span>.
         </p>
       </custom-transition>
     </div>

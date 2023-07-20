@@ -9,13 +9,14 @@
           Comece por aqui :)
         </h1>
         <p class="lg:text-xs text-grey-darker leading-loose mb-6 md:mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Purus in massa
-          tempor nec feugiat nisl pretium fusce id. Sapien eget mi proin sed
-          libero enim. Urna nunc id cursus metus aliquam eleifend mi in. Mauris
-          pellentesque pulvinar pellentesque habitant morbi tristique senectus et
-          netus. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus.
-        </p>
+        Nessa iniciativa, organizamos <b>cursos, palestras e video-aulas gratuitos para todos.</b>
+        O conteúdo costuma ser ligado a <span class="text-ucl-orange">Web</span>, mas, como somos um grupo de Inovação
+          Tecnológica, não há tantas restrições: vamos desde<span class="text-ucl-orange"> conceitos básicos de HTML até métodos ágeis ou conteúdos avançados
+            de backend</span>.
+          É pensando nessa diversidade que costumeiramente
+
+          realizamos um curso de desenvolvimento web básico em todo início de ano, o<b><span v-scroll-to="'#webdev'" class="text-ucl-orange cursor-pointer"> Webdev</span></b>, além de estarmos
+          adentrando nas redes sociais com o <b><span v-scroll-to="'#bits'" class="text-instagram cursor-pointer">Codelab Bits</span></b>, onde facilmente se pode encontrar conteúdos <b>diversificados e mais avançados.</b> </p>
       </custom-transition>
     </div>
   </section>

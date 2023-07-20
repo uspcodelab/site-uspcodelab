@@ -39,20 +39,20 @@ import devCampLogo from "@/assets/dev-journey/dev-camp.svg";
 
 export default {
   metaInfo: {
-    title: "USPCodeLab - Estimulando a inovação tecnológica na USP!",
+    title: "USPCodeLab Butantã - Estimulando a inovação tecnológica na USP!",
     meta: [
       {
         name: "description",
         content:
-          "O USPCodeLab é um grupo de extensão sediado no IME-USP, cuja missão é estimular a " +
+          "O USPCodeLab Butantã é um grupo de extensão sediado no IME-USP, cuja missão é estimular a " +
           "inovação tecnológica na universidade. Atualmente, fazemos isso através do dev.journey() - " +
           "que é composto por 6 partes: dev.learn(), dev.boost(), dev.hack(), dev.hire(), dev.camp() " +
-          "e dev.research() - e de diversos hackathons e hackdays, sendo o HackathonUSP o maior evento.",
+          "e dev.research().",
       },
       {
         name: "keywords",
         content:
-          "USPCodeLab, USPCodeLabs, CodeLab, CodeLabs, HackathonUSP, dev journey, IME, USP, hackathon",
+          "USPCodeLab, USPCodeLabs, CodeLab, CodeLabs, Codelab Butantã, USPCodelab Butantã, dev journey, IME, USP, hackathon",
       },
     ],
   },
@@ -74,7 +74,7 @@ export default {
         {
           name: "dev.learn( )",
           description:
-          "Cursos sobre tecnologia onde os participantes são introduzidos a ferramentas e técnicas de desenvolvimento <span class=\"text-ucl-orange\"> introdutórias </span> e <span class=\"text-ucl-orange\"> avançadas</span>.",
+          "Cursos sobre tecnologia onde os participantes são introduzidos a ferramentas e técnicas de desenvolvimento <span class=\"text-ucl-orange\"> introdutórias e avançadas</span>.",
           imgUrl: devLearnLogo,
           imgAlt: "Ícone dev.learn()",
           to: "dev-learn",
@@ -83,7 +83,7 @@ export default {
         {
           name: "dev.boost( )",
           description:
-            "Grupos de estudos onde os participantes praticam desenvolvimento de sistemas em times com projetos de clientes externos ou da universidade.",
+          "Grupos de estudos onde os participantes praticam <span class=\"text-ucl-orange\"> desenvolvimento de sistemas em times </span> com projetos de clientes externos ou da universidade.",
           imgUrl: devBoostLogo,
           imgAlt: "Ícone dev.boost()",
           to: "",
@@ -92,16 +92,16 @@ export default {
         {
           name: "dev.hack( )",
           description:
-            "Hackathons onde os participantes são desafiados a buscar, num tempo limitado, soluções inovadoras para problemas reais utilizando tecnologia.",
+          "Hackathons onde os participantes são desafiados a buscar, num tempo limitado,<span class=\"text-ucl-orange\"> soluções inovadoras </span> para problemas reais utilizando tecnologia.",
           imgUrl: devHackLogo,
-          imgAlt: "Ícone dev.start()",
+          imgAlt: "Ícone dev.hack()",
           to: "dev-hack",
           right: true,
         },
         {
           name: "dev.camp( )",
           description:
-            "Escolas de férias voltadas ao desenvolvimento de projetos em equipe usando as tecnologias mais modernas.",
+          "Escolas de férias voltadas ao desenvolvimento de projetos em equipe usando as<span class=\"text-ucl-orange\"> tecnologias mais modernas</span>.",
           imgUrl: devCampLogo,
           imgAlt: "Ícone dev.camp()",
           to: "",
@@ -110,7 +110,7 @@ export default {
         {
           name: "dev.hire( )",
           description:
-            "Assessoria de carreira onde os participantes assistem palestras preparatórias e conhecem empresas parceiras com vagas de estágio e emprego.",
+          "Assessoria de carreira onde os participantes <span class=\"text-ucl-orange\">assistem palestras preparatórias e conhecem empresas parceiras </span> com vagas de estágio e emprego.",
           imgUrl: devHireLogo,
           imgAlt: "Ícone dev.hire()",
           to: "",
@@ -120,7 +120,7 @@ export default {
         {
           name: "dev.research( )",
           description:
-            "Divisão de pesquisa onde os participantes da graduação são co-orientados por pós- graduandos em <b>ICs</b> ou <b>TCCs</b> nas áreas de atuação do grupo.",
+          "Divisão de pesquisa onde os participantes da graduação são co-orientados por pós- graduandos em <span class=\"text-ucl-orange\"><b>ICs</b> ou <b>TCCs</b></span> nas áreas de atuação do grupo.",
           imgUrl: devResearchLogo,
           imgAlt: "Ícone dev.research()",
           to: "",
@@ -132,7 +132,7 @@ export default {
   },
   mounted() {
     console.log(
-      "%cBem vindo(a) ao site do USP%cCode%cLab!",
+      "%cBem-vindo(a) ao site do %cUSPCodeLab %cButantã!",
       "font-size:14px; font-weight: bold;",
       "color: #ff690a; font-weight:bold; font-size: 14px",
       "font-size:14px; font-weight: bold;"

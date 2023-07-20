@@ -9,7 +9,8 @@
           Quem somos?
         </h1>
         <p class="lg:text-xs text-grey-darker leading-loose mb-6 md:mb-4">
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in massa tempor nec feugiat nisl pretium fusce id. Sapien eget mi proin sed libero enim
+        Apaixonados por Web e Hackathons, <b>tivemos, em 2015, a nossa estreia no IME-USP.</b>
+        Embora sejamos o primeiro polo, o USPCodelab Butantã é apenas um de alguns outros da <b>Codelab Initiative</b>, ou CLI.
         </p>
         <Button link="about">Saiba mais</Button>
       </div>

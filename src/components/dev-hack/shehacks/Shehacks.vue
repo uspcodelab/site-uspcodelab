@@ -36,7 +36,7 @@ export default {
 /* HERO */
 
 .image-as-background {
-  background-image: url("../../../assets/dev-hack/Hackfools.jpeg");
+  background-image: url("../../../assets/dev-hack/Shehacks.jpg");
 
   /* Set a specific height */
   min-height: 500px;

@@ -39,6 +39,22 @@ body {
   font-family: $font-family-base !important;
 }
 
+.vue-typer .custom.char.typed {
+  color: white;
+}
+
+.vue-typer .custom.char.selected {
+  color: white;
+}
+
+.vue-typer .custom.char.selected {
+  color: white;
+}
+
+.vue-typer .custom.caret {
+  background-color: white;
+}
+
 .page {
   color: $ucl-light;
 }
