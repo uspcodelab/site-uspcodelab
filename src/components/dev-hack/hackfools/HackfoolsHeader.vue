@@ -8,10 +8,12 @@
       </custom-transition>
       <custom-transition type="top">
         <p>
-        Com temas leves, ambiente divertido e muitas risadas, esse é o
-        Hackfools. É um hackathon cômico, sendo <span class="text-ucl-orange">perfeito para mandar embora
-          a tensão do primeiro hackathon</span>. Com intenção de divertir e promover
-        esses adoráveis eventos, aqui, tentamos sempre <b>fugir das competições.</b>
+          Com temas leves, ambiente divertido e muitas risadas, esse é o
+          Hackfools. É um hackathon cômico, sendo
+          <span class="text-ucl-orange"
+            >perfeito para mandar embora a tensão do primeiro hackathon</span
+          >. Com intenção de divertir e promover esses adoráveis eventos, aqui,
+          tentamos sempre <b>fugir das competições.</b>
         </p>
       </custom-transition>
     </div>
@@ -19,7 +21,6 @@
 </template>
 
 <style scoped lang="scss">
-
 .image-as-background {
   background-image: url("../../../assets/dev-hack/Hackfools.jpeg");
 

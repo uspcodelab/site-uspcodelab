@@ -7,11 +7,11 @@
     <mobile-menu v-else :links="this.$parent.getNavLinks()" />
     <main class="bg-ucl-white text-ucl-black">
       <the-projects-header :title="title" />
-        <div id="body">
-          <learn-header />
-          <webdev />
-          <codelab-bits />
-        </div>
+      <div id="body">
+        <learn-header />
+        <webdev />
+        <codelab-bits />
+      </div>
     </main>
     <the-footer :social-medias="this.$parent.getSocialMedias()" />
   </div>
@@ -30,8 +30,7 @@ import CodelabBits from "@/components/dev-learn/CodelabBits";
 
 export default {
   metaInfo: {
-    title:
-      "dev.learn() | UCL Butantã",
+    title: "dev.learn() | UCL Butantã",
     meta: [
       {
         name: "description",

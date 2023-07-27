@@ -29,7 +29,6 @@ export default {
 
 <style lang="scss">
 @import "assets/styles/tailwind.postcss";
-// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@100&display=swap');
 
 html {
   font-size: 14px;
@@ -37,22 +36,6 @@ html {
 
 body {
   font-family: $font-family-base !important;
-}
-
-.vue-typer .custom.char.typed {
-  color: white;
-}
-
-.vue-typer .custom.char.selected {
-  color: white;
-}
-
-.vue-typer .custom.char.selected {
-  color: white;
-}
-
-.vue-typer .custom.caret {
-  background-color: white;
 }
 
 .page {

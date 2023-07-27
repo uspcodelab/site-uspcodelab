@@ -1,12 +1,12 @@
 <template>
   <!-- mudar direction para isRightToLeft -->
-  <custom-transition type="fade" v-if="direction" class="absolute">
+  <custom-transition v-if="direction" type="fade" class="absolute">
     <div class="right-to-left" />
     <div class="right-to-left" />
     <div class="right-to-left" />
   </custom-transition>
 
-  <custom-transition type="fade" v-else class="absolute">
+  <custom-transition v-else type="fade" class="absolute">
     <div class="left-to-right" />
     <div class="left-to-right" />
     <div class="left-to-right" />

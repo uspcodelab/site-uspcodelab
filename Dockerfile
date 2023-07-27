@@ -1,5 +1,5 @@
 # Use official Node's alpine image as a base
-FROM node:10.5-alpine
+FROM node:14-alpine
 
 # Create an environment variable for our default installation path
 ENV INSTALL_PATH /usr/src/web
@@ -12,6 +12,10 @@ COPY package.json ./
 
 # Install dependencies
 RUN npm install
+
+RUN npm install --save-dev node-sass@4.14.1
+
+RUN npm rebuild node-sass
 
 # Copy remaining source code
 COPY . .

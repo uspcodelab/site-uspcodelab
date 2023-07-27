@@ -4,38 +4,68 @@
   >
     <div>
       <custom-transition type="fade">
-        <h1 class="pb-4 text-center">Essa é a nossa <span class="bg-ucl-orange text-white"> Essência. </span> </h1>
+        <h1 class="pb-4 text-center">
+          Essa é a nossa
+          <span class="bg-ucl-orange text-white"> Essência. </span>
+        </h1>
       </custom-transition>
-      <custom-transition type="fade" class="lg:text-xs text-left text-grey-darker">
+      <custom-transition
+        type="fade"
+        class="lg:text-xs text-left text-grey-darker"
+      >
         <p class="mb-2">
-        Apaixonados por hackathons, foi com a ideia de criar um grupo para a organização
-        deles que os fundadores trouxeram o Codelab ao mundo, <b>sendo uma peça importantíssima para o nosso surgimento.</b>
-        Desde o início, buscamos cultivar a <b> paixão por hackathons entre os membros</b>, que têm
-        se dedicado extensivamente para a organização de alguns dos maiores eventos
-        de tecnologia do Brasil. <span class="text-ucl-orange">Com anos e mais anos de experiência, esses eventos estão
-          no nosso sangue</span>.
+          Apaixonados por hackathons, foi com a ideia de criar um grupo para a
+          organização deles que os fundadores trouxeram o Codelab ao mundo,
+          <b>sendo uma peça importantíssima para o nosso surgimento.</b> Desde o
+          início, buscamos cultivar a
+          <b> paixão por hackathons entre os membros</b>, que têm se dedicado
+          extensivamente para a organização de alguns dos maiores eventos de
+          tecnologia do Brasil.
+          <span class="text-ucl-orange"
+            >Com anos e mais anos de experiência, esses eventos estão
+          sangue</span
+          >.
         </p>
         <p class="mb-2">
-        O primeiro de todos — e que desencadeou uma sucessão incrível
-        de tantos outros — foi o HackathonIME, que ocorreu em 2015 para um público restrito
-        de 28 pessoas do Instituto de Matemática e Estatística da USP. Ainda estávamos começando.
-        Evoluindo ano a ano, chegamos até 2019 com o Interhack, um evento incrível que suportou <b> 112 participantes
-          no que viria ser um dos maiores hackathons já feitos no Brasil.</b>
+          O primeiro de todos — e que desencadeou uma sucessão incrível de
+          tantos outros — foi o HackathonIME, que ocorreu em 2015 para um
+          público restrito de 28 pessoas do Instituto de Matemática e
+          Estatística da USP. Ainda estávamos começando. Evoluindo ano a ano,
+          chegamos até 2019 com o Interhack, um evento incrível que suportou
+          <b>
+            112 participantes no que viria ser um dos maiores hackathons já
+            feitos no Brasil.</b
+          >
         </p>
         <p class="mb-2">
-        Com a pandemia, a organização dos hackathons que amamos ficou impossibilitada e,
-        então, agora pretendemos voltar com tudo. Por isso, em 2023, teremos 3 maravilhosos hackathons:
-        <span class="text-inter-red cursor-pointer" v-scroll-to="'#' + hackathons.Interhack.title" > Interhack</span>,
-        <span class="text-sh-blue cursor-pointer" v-scroll-to="'#' + hackathons.Shehacks.title" > Shehacks </span>
-        e
-        <span class="text-ucl-orange cursor-pointer" v-scroll-to="'#' + hackathons.Hackfools.title" > Hackfools</span>.
+          Com a pandemia, a organização dos hackathons que amamos ficou
+          impossibilitada e, então, agora pretendemos voltar com tudo. Por isso,
+          em 2023, teremos 3 maravilhosos hackathons:
+          <span
+            v-scroll-to="'#' + hackathons.Interhack.title"
+            class="text-inter-red cursor-pointer"
+          >
+            Interhack</span
+          >,
+          <span
+            v-scroll-to="'#' + hackathons.Shehacks.title"
+            class="text-sh-blue cursor-pointer"
+          >
+            Shehacks
+          </span>
+          e
+          <span
+            v-scroll-to="'#' + hackathons.Hackfools.title"
+            class="text-ucl-orange cursor-pointer"
+          >
+            Hackfools</span
+          >.
         </p>
       </custom-transition>
     </div>
     <div
       class="hidden md:flex flex-wrap flex-col md:flex-row justify-between items-center md:mt-5"
     >
-
       <div class="w-1/2 md:w-1/4">
         <div
           v-scroll-to="'#' + hackathons.Interhack.title"
@@ -65,7 +95,6 @@
           <hackfools class="logo-hack" />
         </div>
       </div>
-
     </div>
   </div>
 </template>

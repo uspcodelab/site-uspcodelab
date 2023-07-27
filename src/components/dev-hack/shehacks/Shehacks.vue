@@ -3,8 +3,9 @@
     <div class="mb-10 tracking-wide">
       <shehacks-header />
     </div>
-    <div class="container mx-auto flex flex-wrap flex-col items-center leading-loose">
-
+    <div
+      class="container mx-auto flex flex-wrap flex-col items-center leading-loose"
+    >
       <custom-transition type="fade">
         <h1 class="mb-4">Edições Anteriores</h1>
       </custom-transition>
@@ -89,5 +90,4 @@ export default {
 p > span {
   margin: -5.3px;
 }
-
 </style>

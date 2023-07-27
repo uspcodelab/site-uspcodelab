@@ -8,7 +8,10 @@
       </custom-transition>
       <custom-transition type="top">
         <p class="text-white">
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in massa tempor nec feugiat nisl pretium fusce id. Sapien eget mi proin sed libero enim. Urna nunc id cursus
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in
+          massa tempor nec feugiat nisl pretium fusce id. Sapien eget mi proin
+          sed libero enim. Urna nunc id cursus
         </p>
       </custom-transition>
     </div>
@@ -16,7 +19,6 @@
 </template>
 
 <style scoped lang="scss">
-
 .image-as-background {
   background-image: url("../../../assets/dev-hack/Hackfools.jpeg");
 

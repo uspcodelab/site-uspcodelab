@@ -21,25 +21,25 @@
         </span>
         <div class="text-center md:text-left w-full md:w-7/10 mt-4 md:mt-0">
           <custom-transition type="fade">
-          <h1 :style="{ color: hfools.titleColor }" class="mb-5 md:mb-0">
-            {{ hfools.title }}
-          </h1>
+            <h1 :style="{ color: hfools.titleColor }" class="mb-5 md:mb-0">
+              {{ hfools.title }}
+            </h1>
           </custom-transition>
           <custom-transition type="top">
             <p class="text-grey-darker">
-            {{ hfools.description }}
+              {{ hfools.description }}
             </p>
           </custom-transition>
           <div class="pt-5">
-          <custom-transition type="bottom" class="mt-3">
-            <Button
-              :link="hfools.url"
-              :theme="hfools.buttonTheme"
-              message="Visitar instagram"
-            >
-              Veja imagens
-            </Button>
-          </custom-transition>
+            <custom-transition type="bottom" class="mt-3">
+              <Button
+                :link="hfools.url"
+                :theme="hfools.buttonTheme"
+                message="Visitar instagram"
+              >
+                Veja imagens
+              </Button>
+            </custom-transition>
           </div>
         </div>
       </div>
@@ -98,7 +98,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
 p > span {
   margin: -5.3px;
 }

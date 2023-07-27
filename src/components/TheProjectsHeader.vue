@@ -233,7 +233,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 body,
 html {
   overflow-x: hidden;

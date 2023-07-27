@@ -12,7 +12,7 @@
         link="https://evento2021.shehacks.xyz/"
         theme="shehacks2021"
         message="Visitar site Shehacks 2021"
-        >
+      >
         Saiba mais
       </Button>
     </custom-transition>
@@ -25,7 +25,6 @@ import Button from "@/components/Button";
 export default {
   components: {
     Button,
-  }
-}
-
+  },
+};
 </script>

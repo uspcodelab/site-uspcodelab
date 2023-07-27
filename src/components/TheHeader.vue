@@ -1,91 +1,124 @@
 <template>
   <header
     id="header"
-    class="h-screen text-ucl-white flex flex-wrap flex-row-reverse px-3 pt-5 pb-mobile md:pt-navbar md:pb-5"
-    :class="'header-' + ucl[state].toLowerCase()"
+    :class="[uclClass[state], 'h-screen', 'text-ucl-white', 'flex', 'flex-wrap', 'flex-row-reverse', 'px-3', 'pt-5', 'pb-mobile', 'md:pt-navbar', 'md:pb-5']"
   >
     <div
       class="w-full md:w-1/2 flex items-end md:items-center justify-center md:pb-4 state-fader"
     >
       <img
+        v-if="state == 0"
         src="@/assets/logos/ucl-butanta.svg"
         class="w-4/5 md:w-3/5 rounded-full cursor-pointer"
-        alt="Logo do USPCodeLab"
+        alt="Logo do USPCodeLab Butantã"
         @click="nextState"
-        v-if="state==0"
       >
       <img
+        v-if="state == 1"
         src="@/assets/logos/ucl-icmc.svg"
         class="w-4/5 md:w-3/5 rounded-full cursor-pointer"
-        alt="Logo do USPCodeLab"
+        alt="Logo do USPCodeLab ICMC"
         @click="nextState"
-        v-if="state==1"
       >
       <img
+        v-if="state == 2"
         src="@/assets/logos/ucl-each.svg"
         class="w-4/5 md:w-3/5 rounded-full cursor-pointer"
-        alt="Logo do USPCodeLab"
+        alt="Logo do USPCodeLab EACH"
         @click="nextState"
-        v-if="state==2"
       >
       <img
+        v-if="state == ucl.length - 1"
         src="@/assets/logos/ucl-pride.svg"
         class="w-4/5 md:w-3/5 rounded-full cursor-pointer"
-        alt="Logo do USPCodeLab"
+        alt="Logo do USPCodeLab Pride"
         @click="nextState"
-        v-if="state==ucl.length - 1"
       >
     </div>
     <div
       class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left justify-center px-4 md:px-12"
     >
-    <h1 class="text-4xl font-bold tracking-wide mb-10 md:mb-2">USPCodeLab <span> {{ ucl[state] }} </span></h1>
-      <p class="leading-normal md:leading-tight"> Grupo de extensão universitário que tem como objetivo
-      <b>estimular <br/>a
-          <vue-typer erase-style="backspace" :erase-delay='70' :text="change" :repeat="0" :pre-erase-delay="2000"></vue-typer>
+      <h1 class="text-4xl font-bold tracking-wide mb-10 md:mb-2">
+        USPCodeLab <span> {{ ucl[state] }} </span>
+      </h1>
+      <p class="leading-normal md:leading-tight">
+        Grupo de extensão universitário que tem como objetivo
+        <b
+          >estimular <br v-if="!this.$parent.$parent.isMobile()"/>a
+          <vue-typer
+            :erase-delay="70"
+            :text="change"
+            :repeat="0"
+            :pre-erase-delay="2000"
+            erase-style="backspace"
+          />
         </b>
       </p>
     </div>
-    <a class="d-hidden md:d-block" :href="'/pets/' + randomPet() + '.jpg'" target="_blank">
-    <font-awesome-icon id="pets" class="text-4xl" :icon="{ prefix: 'fas', iconName: 'cat' }" size="lg" aria-labelledby="menuOpenBtn"/>
+    <a
+      :href="'/pets/' + randomPet + '.jpg'"
+      @click="getNewPet()"
+      class="d-hidden md:d-block"
+      target="_blank"
+    >
+      <font-awesome-icon
+        id="pets"
+        :icon="{ prefix: 'fas', iconName: 'cat' }"
+        class="text-4xl"
+        size="lg"
+        aria-labelledby="menuOpenBtn"
+      />
     </a>
   </header>
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        change: [
-          "criatividade na computação.",
-          "genialidade de seus membros.",
-          "inovação tecnológica na USP."
-        ],
-        ucl: ["Butantã", "ICMC", "EACH", "Pride"],
-        state: 0,
-        counter: 0,
-        clicksUntilPride: 20
+export default {
+  data() {
+    return {
+      change: this.$parent.$parent.isMobile() ? [
+        `criatividade na
+computação.`,
+        `genialidade de
+seus membros.`,
+        `inovação
+tecnológica na USP.`,
+      ] :
+      [
+        `criatividade na computação.`,
+        `genialidade de seus membros.`,
+        `inovação tecnológica na USP.`,
+      ],
+      ucl: ["Butantã", "ICMC", "EACH", "Pride"],
+      uclClass: ["header-butanta", "header-icmc", "header-each", "header-pride"],
+      state: 0,
+      counter: 0,
+      clicksUntilPride: 20,
+      randomPet: 1,
+    };
+  },
+  methods: {
+    nextState() {
+      this.clicksUntilPride--;
+      if (this.clicksUntilPride <= 0) {
+        this.state = this.ucl.length - 1;
+        return;
       }
+      this.state = (this.state + 1) % (this.ucl.length - 1);
     },
-    methods: {
-      nextState(){
-        this.clicksUntilPride--;
-        if(this.clicksUntilPride <= 0){
-          this.state = this.ucl.length - 1;
-          return
-        }
-        this.state = (this.state + 1) % (this.ucl.length - 1);
-      },
-      randomPet() {
-        return Date.now() % 17 + 1;
-      }
+    getNewPet() {
+      this.randomPet = (Date.now() % 17) + 1;
     },
+  },
+  mounted() {
+    this.getNewPet();
   }
+};
 </script>
-
 <style lang="scss">
-.header-butantã {
-  background-image: linear-gradient(#ff8b46, $ucl-orange);
+
+.header-butanta {
+  background-image: linear-gradient(#ff8b46, #ff690a);
 }
 
 .header-icmc {
@@ -97,57 +130,48 @@
 }
 
 .header-pride {
-  background: repeating-linear-gradient(
-    135deg,
-    #D50000,
-    #D50000 20px,
-    #C51162 20px,
-    #C51162 40px,
-    #AA00FF 40px,
-    #AA00FF 60px,
-    #6200EA 60px,
-    #6200EA 80px,
-    #304FFE 80px,
-    #304FFE 100px,
-    #2962FF 100px,
-    #2962FF 120px,
-    #0091EA 120px,
-    #0091EA 140px,
-    #00B8D4 140px,
-    #00B8D4 160px,
-    #00BFA5 160px,
-    #00BFA5 180px,
-    #00C853 180px,
-    #00C853 200px,
-    #64DD17 200px,
-    #64DD17 220px,
-    #AEEA00 220px,
-    #AEEA00 240px,
-    #FFD600 240px,
-    #FFD600 260px,
-    #FFAB00 260px,
-    #FFAB00 280px,
-    #FF6D00 280px,
-    #FF6D00 300px,
-    #DD2C00 300px,
-    #DD2C00 320px
-      );
-}
-
-.custom.char {
-  color: white;
+  background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
 }
 
 #pets:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 #pets {
   position: absolute;
   bottom: 0%;
-  opacity: 0%;
+  opacity: 0;
   right: 1%;
   color: white;
+}
+
+.vue-typer .custom.char.typed {
+  color: white;
+}
+
+.vue-typer .custom.char.selected {
+  color: white;
+}
+
+.vue-typer .custom.caret {
+  background-color: white;
+}
+
+.typed {
+  color: white !important;
 }
 
 </style>

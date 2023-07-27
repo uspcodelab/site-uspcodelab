@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div ref="content" :class="[{'animated-content-show': showContent} , type]">
+    <div
+      ref="content"
+      :class="[{ 'animated-content-show': showContent }, type]"
+    >
       <slot />
     </div>
   </div>
@@ -17,19 +20,19 @@ export default {
   data() {
     return {
       showContent: false,
-      observer: null
+      observer: null,
     };
   },
   mounted() {
     this.observer = new IntersectionObserver(
-      entries => {
+      (entries) => {
         if (entries[0].isIntersecting) {
           this.showContent = true;
           this.observer.disconnect();
         }
       },
       {
-        threshold: 0.2
+        threshold: 0.2,
       }
     );
     this.observer.observe(this.$refs.content);
@@ -38,7 +41,7 @@ export default {
     if (this.observer) {
       this.observer.disconnect();
     }
-  }
+  },
 };
 </script>
 

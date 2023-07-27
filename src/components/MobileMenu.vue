@@ -1,14 +1,55 @@
 <template>
   <div v-scroll="handleMobileMenuScroll" class="flex justify-center">
     <div class="menu-btn-wrapper flex justify-center">
-      <button id="menuBtn" :class="['menu-btn fixed h-16 w-16 z-50 border-0 rounded-full outline-none', btnState || toggled ? 'bg-ucl-white text-ucl-orange' : 'bg-ucl-orange text-ucl-white']" role="button" tabindex="0" @click="toggle">
-        <font-awesome-icon v-if="!toggled" :icon="{ prefix: 'fas', iconName: 'bars' }" size="lg" aria-labelledby="menuOpenBtn" title="Botão para abrir menu" />
-        <font-awesome-icon v-else :icon="{ prefix: 'fas', iconName: 'times' }" size="lg" aria-labelledby="menuCloseBtn" title="Botão para fechar menu"/>
+      <button
+        id="menuBtn"
+        :class="[
+          'menu-btn fixed h-16 w-16 z-50 border-0 rounded-full outline-none',
+          btnState || toggled
+            ? 'bg-ucl-white text-ucl-orange'
+            : 'bg-ucl-orange text-ucl-white',
+        ]"
+        role="button"
+        tabindex="0"
+        @click="toggle"
+      >
+        <font-awesome-icon
+          v-if="!toggled"
+          :icon="{ prefix: 'fas', iconName: 'bars' }"
+          size="lg"
+          aria-labelledby="menuOpenBtn"
+          title="Botão para abrir menu"
+        />
+        <font-awesome-icon
+          v-else
+          :icon="{ prefix: 'fas', iconName: 'times' }"
+          size="lg"
+          aria-labelledby="menuCloseBtn"
+          title="Botão para fechar menu"
+        />
       </button>
     </div>
-    <nav v-scroll-lock="toggled" :class="['fixed bg-ucl-orange overflow-hidden z-40', toggled ? 'menu__activated h-screen w-screen opacity-100 visible pin-b rounded-none' : 'menu__hidden h-screen w-screen opacity-0 invisible pin-b rounded-full']">
-      <ul class="menu-list h-full pl-0 pb-32 flex flex-col justify-end list-reset">
-        <router-link v-scroll-to="'#header'" v-for="link in links" :to="link.url" :key="link.name" tag="li" class="menu-list-item px-8 py-4 w-full text-ucl-white text-3xl text-center font-bold uppercase no-underline cursor-pointer hover:bg-ucl-orange-light" @click="toggle">
+    <nav
+      v-scroll-lock="toggled"
+      :class="[
+        'fixed bg-ucl-orange overflow-hidden z-40',
+        toggled
+          ? 'menu__activated h-screen w-screen opacity-100 visible pin-b rounded-none'
+          : 'menu__hidden h-screen w-screen opacity-0 invisible pin-b rounded-full',
+      ]"
+    >
+      <ul
+        class="menu-list h-full pl-0 pb-32 flex flex-col justify-end list-reset"
+      >
+        <router-link
+          v-scroll-to="'#header'"
+          v-for="link in links"
+          :to="link.url"
+          :key="link.name"
+          tag="li"
+          class="menu-list-item px-8 py-4 w-full text-ucl-white text-3xl text-center font-bold uppercase no-underline cursor-pointer hover:bg-ucl-orange-light"
+          @click="toggle"
+        >
           {{ link.name }}
         </router-link>
       </ul>
@@ -23,32 +64,31 @@ export default {
       type: Array,
       default() {
         return [];
-      }
-    }
+      },
+    },
   },
   data() {
     return {
       btnText: "MENU",
       btnState: true,
-      toggled: false
+      toggled: false,
     };
   },
   methods: {
-    toggle: function() {
+    toggle: function () {
       this.toggled = !this.toggled;
       this.btnText = this.toggled ? "FECHAR" : "MENU";
     },
-    handleMobileMenuScroll: function(evt, el) {
+    handleMobileMenuScroll: function (evt, el) {
       if (window.scrollY > 60) {
         if (this.btnState == true) this.btnState = false;
       } else {
         if (this.btnState == false) this.btnState = true;
       }
-    }
-  }
+    },
+  },
 };
 </script>
-
 
 <style lang="scss" scoped>
 .menu-btn-wrapper {

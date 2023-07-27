@@ -1,26 +1,28 @@
 <template>
   <section
-    class="relative bg-ucl-white text-ucl-black md:px-12 lg:px-20 xl:px-0 pt-20 overflow-hidden flex"
     id="dev-journey"
-    >
-    <div class="relative flex w-full" id="bubbles-container-menu">
+    class="relative bg-ucl-white text-ucl-black md:px-12 lg:px-20 xl:px-0 pt-20 overflow-hidden flex"
+  >
+    <div id="bubbles-container-menu" class="relative flex w-full">
       <div class="container mx-auto">
         <h1
           class="text-ucl-orange text-5xl font-thin text-center pb-4 tracking-wide"
-          >
+        >
           dev.journey( )
         </h1>
-          <p class="leading-loose text-center mt-10 mx-2">
-          <b>Bem-vindo à nossa jornada!</b> O dev.journey é um programa educacional
-          com <b>6 iniciativas</b> que visa complementar a formação dos estudantes
-          para que eles se tornem<span class="text-ucl-orange"> engenheiros de software</span> capazes de
-          desenvolverem sistemas reais. Abaixo, você pode se aventurar por
-          todas elas!
-          </p>
-    <section-list :array="devJourneyStages" />
+        <p class="leading-loose text-center mt-10 mx-2">
+          <b>Bem-vindo à nossa jornada!</b> O dev.journey é um programa
+          educacional com <b>6 iniciativas</b> que visa complementar a formação
+          dos estudantes para que eles se tornem<span class="text-ucl-orange">
+            engenheiros de software</span
+            >
+          capazes de desenvolverem sistemas reais. Abaixo, você pode se
+          aventurar por todas elas!
+        </p>
+        <section-list :array="devJourneyStages" />
       </div>
     </div>
-    </section>
+  </section>
 </template>
 
 <script>
@@ -40,7 +42,7 @@ export default {
       },
     },
   },
-  mounted () {
+  mounted() {
     let numBubbles = 20;
     let poppedBubbles = 0;
     let minSize = 20;
@@ -98,7 +100,7 @@ export default {
 
 <style lang="scss">
 #dev-journey {
-  background-image: linear-gradient(#f8f9fa, #FFDDC6);
+  background-image: linear-gradient(#f8f9fa, #ffddc6);
 }
 
 // BUBBLES
@@ -111,7 +113,7 @@ export default {
   display: block;
   position: absolute;
   border-radius: 50%;
-  background: rgba(255,105,10,0.1);
+  background: rgba(255, 105, 10, 0.1);
   animation: rise 12s linear infinite;
   z-index: 1;
 }

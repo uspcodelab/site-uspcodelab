@@ -1,8 +1,5 @@
 <template>
-  <img
-  :alt="alt"
-  src="@/assets/dev-journey/dev-learn.svg"
-  >
+  <img :alt="alt" src="@/assets/dev-journey/dev-learn.svg" >
 </template>
 
 <script>

@@ -21,8 +21,8 @@
 
 <script>
 import TheNavbar from "@/components/TheNavbar.vue";
-import MobileMenu from "@/components/MobileMenu.vue";
 import TheHeader from "@/components/TheHeader.vue";
+import MobileMenu from "@/components/MobileMenu.vue";
 import TheFooter from "@/components/TheFooter.vue";
 
 import AboutDevJourney from "@/components/index/AboutDevJourney.vue";
@@ -35,7 +35,6 @@ import devBoostLogo from "@/assets/dev-journey/dev-boost.svg";
 import devHireLogo from "@/assets/dev-journey/dev-hire.svg";
 import devResearchLogo from "@/assets/dev-journey/dev-research.svg";
 import devCampLogo from "@/assets/dev-journey/dev-camp.svg";
-
 
 export default {
   metaInfo: {
@@ -58,8 +57,8 @@ export default {
   },
   components: {
     TheNavbar,
-    MobileMenu,
     TheHeader,
+    MobileMenu,
     TheFooter,
     AboutDevJourney,
     AboutUs,
@@ -74,7 +73,7 @@ export default {
         {
           name: "dev.learn( )",
           description:
-          "Cursos sobre tecnologia onde os participantes são introduzidos a ferramentas e técnicas de desenvolvimento <span class=\"text-ucl-orange\"> introdutórias e avançadas</span>.",
+            'Cursos sobre tecnologia onde os participantes são introduzidos a ferramentas e técnicas de desenvolvimento <span class="text-ucl-orange"> introdutórias e avançadas</span>.',
           imgUrl: devLearnLogo,
           imgAlt: "Ícone dev.learn()",
           to: "dev-learn",
@@ -83,7 +82,7 @@ export default {
         {
           name: "dev.boost( )",
           description:
-          "Grupos de estudos onde os participantes praticam <span class=\"text-ucl-orange\"> desenvolvimento de sistemas em times </span> com projetos de clientes externos ou da universidade.",
+            'Grupos de estudos onde os participantes praticam <span class="text-ucl-orange"> desenvolvimento de sistemas em times </span> com projetos de clientes externos ou da universidade.',
           imgUrl: devBoostLogo,
           imgAlt: "Ícone dev.boost()",
           to: "",
@@ -92,7 +91,7 @@ export default {
         {
           name: "dev.hack( )",
           description:
-          "Hackathons onde os participantes são desafiados a buscar, num tempo limitado,<span class=\"text-ucl-orange\"> soluções inovadoras </span> para problemas reais utilizando tecnologia.",
+            'Hackathons onde os participantes são desafiados a buscar, num tempo limitado,<span class="text-ucl-orange"> soluções inovadoras </span> para problemas reais utilizando tecnologia.',
           imgUrl: devHackLogo,
           imgAlt: "Ícone dev.hack()",
           to: "dev-hack",
@@ -101,7 +100,7 @@ export default {
         {
           name: "dev.camp( )",
           description:
-          "Escolas de férias voltadas ao desenvolvimento de projetos em equipe usando as<span class=\"text-ucl-orange\"> tecnologias mais modernas</span>.",
+            'Escolas de férias voltadas ao desenvolvimento de projetos em equipe usando as<span class="text-ucl-orange"> tecnologias mais modernas</span>.',
           imgUrl: devCampLogo,
           imgAlt: "Ícone dev.camp()",
           to: "",
@@ -110,7 +109,7 @@ export default {
         {
           name: "dev.hire( )",
           description:
-          "Assessoria de carreira onde os participantes <span class=\"text-ucl-orange\">assistem palestras preparatórias e conhecem empresas parceiras </span> com vagas de estágio e emprego.",
+            'Assessoria de carreira onde os participantes <span class="text-ucl-orange">assistem palestras preparatórias e conhecem empresas parceiras </span> com vagas de estágio e emprego.',
           imgUrl: devHireLogo,
           imgAlt: "Ícone dev.hire()",
           to: "",
@@ -120,7 +119,7 @@ export default {
         {
           name: "dev.research( )",
           description:
-          "Divisão de pesquisa onde os participantes da graduação são co-orientados por pós- graduandos em <span class=\"text-ucl-orange\"><b>ICs</b> ou <b>TCCs</b></span> nas áreas de atuação do grupo.",
+            'Divisão de pesquisa onde os participantes da graduação são co-orientados por pós- graduandos em <span class="text-ucl-orange"><b>ICs</b> ou <b>TCCs</b></span> nas áreas de atuação do grupo.',
           imgUrl: devResearchLogo,
           imgAlt: "Ícone dev.research()",
           to: "",

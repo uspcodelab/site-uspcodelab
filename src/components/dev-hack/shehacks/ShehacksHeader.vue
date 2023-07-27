@@ -2,16 +2,15 @@
   <section class="hero image-as-background flex justify-center">
     <div class="hero-container container">
       <custom-transition type="fade">
-        <h1 class="text-white mb-8 text-center font-bold text-5xl">
-          SheHacks
-        </h1>
+        <h1 class="text-white mb-8 text-center font-bold text-5xl">SheHacks</h1>
       </custom-transition>
       <custom-transition type="top">
         <p class="text-white">
-        Feito <b>exclusivamente</b> por mulheres para mulheres, esse é o maior hackathon feminino do Brasil.
-        Com <b>temas relevantes à sociedade</b>, mulheres universitárias cis e trans têm
-        a oportunidade de criar ideias geniais, além de desenvolver
-        <b>networkings incríveis.</b>
+          Feito <b>exclusivamente</b> por mulheres para mulheres, esse é o maior
+          hackathon feminino do Brasil. Com <b>temas relevantes à sociedade</b>,
+          mulheres universitárias cis e trans têm a oportunidade de criar ideias
+          geniais, além de desenvolver
+          <b>networkings incríveis.</b>
         </p>
       </custom-transition>
     </div>
@@ -19,7 +18,6 @@
 </template>
 
 <style scoped lang="scss">
-
 .image-as-background {
   background-image: url("../../../assets/dev-hack/Hackfools.jpeg");
 

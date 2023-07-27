@@ -17,7 +17,7 @@ import {
   faExternalLinkAlt,
   faTimes,
   faArrowDown,
-  faCat
+  faCat,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -56,7 +56,7 @@ library.add(
   faVuejs,
   faExternalLinkAlt,
   faInstagram,
-  faYoutube,
+  faYoutube
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
@@ -64,7 +64,7 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 // CUSTOM
 
 // transitions
-import CustomTransition from './components/CustomTransition';
+import CustomTransition from "./components/CustomTransition";
 Vue.component("custom-transition", CustomTransition);
 
 // vue-typer

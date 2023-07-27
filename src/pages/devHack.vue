@@ -33,8 +33,7 @@ import Interhack from "@/components/dev-hack/interhack/Interhack";
 
 export default {
   metaInfo: {
-    title:
-      "dev.hack() | UCL Butantã",
+    title: "dev.hack() | UCL Butantã",
     meta: [
       {
         name: "description",
