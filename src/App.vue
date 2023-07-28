@@ -65,4 +65,24 @@ body {
     font-size: 1vmax;
   }
 }
+
+/*! purgecss start ignore */
+
+.vue-typer .custom.char.typed {
+  color: white;
+}
+
+.vue-typer .custom.char.selected {
+  color: white;
+}
+
+.vue-typer .custom.caret {
+  background-color: white;
+}
+
+.typed {
+  color: white !important;
+}
+
+/*! purgecss end ignore */
 </style>

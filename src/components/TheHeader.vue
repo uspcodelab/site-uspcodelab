@@ -115,7 +115,7 @@ tecnológica na USP.`,
   }
 };
 </script>
-<style lang="scss">
+<style scoped>
 
 .header-butanta {
   background-image: linear-gradient(#ff8b46, #ff690a);
@@ -157,21 +157,4 @@ tecnológica na USP.`,
   right: 1%;
   color: white;
 }
-
-.vue-typer .custom.char.typed {
-  color: white;
-}
-
-.vue-typer .custom.char.selected {
-  color: white;
-}
-
-.vue-typer .custom.caret {
-  background-color: white;
-}
-
-.typed {
-  color: white !important;
-}
-
 </style>

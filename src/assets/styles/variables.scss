@@ -48,7 +48,6 @@ $font-family-base: Montserrat, "IBM Plex Sans Condensed";
   ---------------------------------------------*/
 
 @mixin tag($color) {
-  // background-color: $color;
   border-color: $color;
   color: $color;
 }
@@ -57,7 +56,7 @@ $font-family-base: Montserrat, "IBM Plex Sans Condensed";
   transition: all 0.2s;
 }
 
-/* purgecss start ignore */
+/*! purgecss start ignore */
 
 .discord:hover {
   @include tag(#738adb);
@@ -146,4 +145,4 @@ $font-family-base: Montserrat, "IBM Plex Sans Condensed";
   color: #ff0000 !important;
 }
 
-/* purgecss end ignore */
+/*! purgecss end ignore */
