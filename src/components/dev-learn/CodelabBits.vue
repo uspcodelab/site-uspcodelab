@@ -75,13 +75,13 @@
             >
           </custom-transition>
         </a>
-          <custom-transition class="md:hidden" type="fade">
-            <div class="mt-4">
-              <Button :link="media.icon.url" :theme="media.title">
-                Acessar
-              </Button>
-            </div>
-          </custom-transition>
+        <custom-transition class="md:hidden" type="fade">
+          <div class="mt-4">
+            <Button :link="media.icon.url" :theme="media.title">
+              Acessar
+            </Button>
+          </div>
+        </custom-transition>
       </div>
     </div>
   </section>

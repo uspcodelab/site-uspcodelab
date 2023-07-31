@@ -145,7 +145,7 @@ let colors = {
   "inter-red-light": "#F82947" /* CUSTOM */,
   "inter-red-dark": "#AC1508" /* CUSTOM */,
 
-  "instagram": "#ff34d2" /* CUSTOM */,
+  instagram: "#ff34d2" /* CUSTOM */,
   "section-bg": "rgba(255,255,255,0.8)" /* CUSTOM */,
 };
 

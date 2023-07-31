@@ -1,9 +1,9 @@
 <template>
   <header
+    id="header"
     :style="{ background: themeObj.bgColor }"
     class="z-n-10 text-ucl-white h-screen flex flex-wrap overflow-hidden md:pt-16"
     style="position: relative"
-    id="header"
   >
     <div id="bubbleCounter" />
     <div id="bubbles-container" class="relative overflow-hidden flex w-full">
@@ -234,7 +234,7 @@ export default {
     }
 
     function getTime(size) {
-      return (maxSize/size) * Math.random() + 1.5;
+      return (maxSize / size) * Math.random() + 1.5;
     }
 
     function getZIndex(size) {
@@ -245,7 +245,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 // WIN GAME
 
 #title {
