@@ -13,10 +13,6 @@ COPY package.json ./
 # Install dependencies
 RUN npm install
 
-RUN npm install --save-dev node-sass@4.14.1
-
-RUN npm rebuild node-sass
-
 # Copy remaining source code
 COPY . .
 
