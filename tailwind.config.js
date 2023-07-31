@@ -146,7 +146,7 @@ let colors = {
   "inter-red-dark": "#AC1508" /* CUSTOM */,
 
   "instagram": "#ff34d2" /* CUSTOM */,
-  "section-bg": "rgba(255,255,255,0.7)" /* CUSTOM */,
+  "section-bg": "rgba(255,255,255,0.8)" /* CUSTOM */,
 };
 
 module.exports = {
@@ -522,6 +522,7 @@ module.exports = {
     "5/6": "83.33333%",
     "9/20": "45%" /* CUSTOM */,
     "7/10": "70%" /* CUSTOM */,
+    "3/10": "30%" /* CUSTOM */,
     full: "100%",
     screen: "100vw",
   },
@@ -558,6 +559,7 @@ module.exports = {
     32: "8rem",
     48: "12rem",
     64: "16rem",
+    "80vh": "80vh" /* CUSTOM */,
     full: "100%",
     screen: "100vh",
   },
@@ -598,6 +600,7 @@ module.exports = {
   minHeight: {
     0: "0",
     full: "100%",
+    "1/2": "50%" /* CUSTOM */,
     "half-screen": "50vh" /* CUSTOM */,
     screen: "100vh",
   },
@@ -685,8 +688,9 @@ module.exports = {
     20: "5rem",
     24: "6rem",
     32: "8rem",
+    48: "12rem",
     mobile: "7rem" /* CUSTOM  4rem for button height, 2rem top, 1rem bottom */,
-    navbar: "4.25rem" /* CUSTOM */,
+    navbar: "4rem" /* CUSTOM */,
   },
 
   /*
@@ -802,6 +806,7 @@ module.exports = {
     30: 30,
     40: 40,
     50: 50,
+    60: 60,
   },
 
   /*

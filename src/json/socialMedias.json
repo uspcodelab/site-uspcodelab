@@ -21,13 +21,6 @@
     "linkTitle": "Link para o grupo do Telegram do USPCodeLab"
   },
   {
-    "url": "https://uclab.xyz/medium",
-    "iconPrefix": "fab",
-    "iconName": "medium",
-    "ariaLabelledBy": "socialMediaMedium",
-    "linkTitle": "Link para o Medium do USPCodeLab"
-  },
-  {
     "url": "mailto:codelab@ime.usp.br",
     "iconPrefix": "fas",
     "iconName": "envelope",

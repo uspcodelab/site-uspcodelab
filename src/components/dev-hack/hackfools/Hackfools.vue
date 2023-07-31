@@ -10,7 +10,7 @@
       <div
         v-for="(hfools, i) in hackathons"
         :key="hfools.title"
-        class="flex flex-wrap mx-2 md:mx-0 md:justify-between justify-center items-center mb-20 rounded shadow-md md:shadow-none pb-10 pt-10 md:pb-0 pt-5 md:pt-5 px-10 md:px-0"
+        class="flex flex-wrap mx-4 md:mx-0 md:justify-between justify-center items-center mb-12 rounded shadow-md md:shadow-none pb-10 pt-10 md:pb-0 pt-5 md:pt-5 px-10 md:px-0"
       >
         <span class="w-1/2 h-1/2 md:w-1/4 md:h-1/4">
           <custom-transition>
@@ -31,7 +31,7 @@
             </p>
           </custom-transition>
           <div class="pt-5">
-            <custom-transition type="bottom" class="mt-3">
+            <custom-transition type="bottom">
               <Button
                 :link="hfools.url"
                 :theme="hfools.buttonTheme"
@@ -50,7 +50,6 @@
 <script>
 import Hackfools2022 from "@/assets/dev-hack/Hackfools2022.jpeg";
 import Hackfools2023 from "@/assets/dev-hack/Hackfools2023.jpeg";
-import Hackfools from "@/assets/dev-hack/Hackfools.jpeg";
 
 import HackfoolsHeader from "./HackfoolsHeader";
 

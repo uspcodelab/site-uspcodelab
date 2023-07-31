@@ -1,7 +1,12 @@
 <template>
   <a v-if="isOuterUrl" :href="link" target="_blank">
-    <button :class="themeClass">
+    <button :class="themeClass" class="my-2">
       <slot />
+      <font-awesome-icon
+        :icon="{ prefix: 'fas', iconName: 'external-link-alt' }"
+        class="ml-2"
+        aria-labelledby="externalLink"
+      />
     </button>
   </a>
   <router-link v-scroll-to="'#header'" v-else :to="link">

@@ -4,7 +4,7 @@
       <button
         id="menuBtn"
         :class="[
-          'menu-btn fixed h-16 w-16 z-50 border-0 rounded-full outline-none',
+          'menu-btn fixed h-16 w-16 z-60 border-0 rounded-full outline-none',
           btnState || toggled
             ? 'bg-ucl-white text-ucl-orange'
             : 'bg-ucl-orange text-ucl-white',
@@ -32,7 +32,7 @@
     <nav
       v-scroll-lock="toggled"
       :class="[
-        'fixed bg-ucl-orange overflow-hidden z-40',
+        'fixed bg-ucl-orange overflow-hidden z-50',
         toggled
           ? 'menu__activated h-screen w-screen opacity-100 visible pin-b rounded-none'
           : 'menu__hidden h-screen w-screen opacity-0 invisible pin-b rounded-full',

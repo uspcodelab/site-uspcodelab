@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center mt-4 mx-4">
+  <div class="flex flex-col items-center mt-4 mx-5">
     <custom-transition type="fade">
       <div class="flex flex-col">
         <span class="flex font-inter font-bold uppercase pl-2">

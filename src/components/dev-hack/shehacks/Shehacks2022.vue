@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center mr-2 md:mr-0">
+  <div class="flex flex-col items-center mr-1 md:mr-0">
     <custom-transition type="fade">
       <div class="flex flex-col">
         <span class="font-inter text-header text-sh-pink-dark self-start -mb-10"

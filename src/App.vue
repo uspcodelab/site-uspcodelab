@@ -30,12 +30,14 @@ export default {
 <style lang="scss">
 @import "assets/styles/tailwind.postcss";
 
-html {
-  font-size: 14px;
-}
-
 body {
   font-family: $font-family-base !important;
+  overflow-x: hidden !important;
+}
+
+html {
+  font-size: 14px;
+  overflow-x: hidden !important;
 }
 
 .page {

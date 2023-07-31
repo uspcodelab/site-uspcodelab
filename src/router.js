@@ -45,4 +45,7 @@ export default new Router({
       component: NotFound,
     },
   ],
+  scrollBehavior: function (to, from, savedPosition) {
+    return savedPosition || { x: 0, y: 0 };
+  },
 });

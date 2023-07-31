@@ -1,7 +1,7 @@
 <template>
   <section
     id="dev-journey"
-    class="relative bg-ucl-white text-ucl-black md:px-12 lg:px-20 xl:px-0 pt-20 overflow-hidden flex"
+    class="relative bg-ucl-white text-ucl-black md:px-12 lg:px-20 xl:px-0 pt-20 overflow-hidden flex pb-10 md:pb-0"
   >
     <div id="bubbles-container-menu" class="relative flex w-full">
       <div class="container mx-auto">
@@ -10,7 +10,7 @@
         >
           dev.journey( )
         </h1>
-        <p class="leading-loose text-center mt-10 mx-2">
+        <p class="leading-loose text-center mt-10 mb-6 md:mb-0 mx-2">
           <b>Bem-vindo à nossa jornada!</b> O dev.journey é um programa
           educacional com <b>6 iniciativas</b> que visa complementar a formação
           dos estudantes para que eles se tornem<span class="text-ucl-orange">
@@ -26,12 +26,10 @@
 </template>
 
 <script>
-import CardList from "@/components/dev-journey/CardList.vue";
 import SectionList from "@/components/dev-journey/SectionList.vue";
 
 export default {
   components: {
-    CardList,
     SectionList,
   },
   props: {
@@ -65,7 +63,7 @@ export default {
       let delay = getAnimationDelay();
       let bubble = document.createElement("span");
 
-      bubble.setAttribute("id", "bubble-linear");
+      bubble.setAttribute("class", "bubble-menu");
       bubble.setAttribute(
         "style",
         "width: " +
@@ -76,7 +74,7 @@ export default {
           location +
           "%; animation-delay: -" +
           delay +
-          "s;"
+          "s; z-index: 1;"
       );
       container.appendChild(bubble);
     }
@@ -105,17 +103,16 @@ export default {
 
 // BUBBLES
 
-#bubbles-container-menu * {
+#bubbles-container-menu > * {
   z-index: 2;
 }
 
-#bubble-linear {
+.bubble-menu {
   display: block;
   position: absolute;
   border-radius: 50%;
   background: rgba(255, 105, 10, 0.1);
   animation: rise 12s linear infinite;
-  z-index: 1;
 }
 
 @keyframes rise {

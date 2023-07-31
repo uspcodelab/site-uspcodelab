@@ -1,5 +1,4 @@
 <template>
-  <!-- mudar direction para isRightToLeft -->
   <custom-transition v-if="direction" type="fade" class="absolute">
     <div class="right-to-left" />
     <div class="right-to-left" />

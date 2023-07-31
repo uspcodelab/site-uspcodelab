@@ -19,7 +19,7 @@
 
 <style scoped lang="scss">
 .image-as-background {
-  background-image: url("../../../assets/dev-hack/Hackfools.jpeg");
+  background-image: url("../../../assets/dev-hack/Shehacks.jpg");
 
   /* Set a specific height */
   min-height: 500px;
@@ -47,7 +47,7 @@
   }
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  // background-attachment: fixed;
 }
 
 .hero-container {

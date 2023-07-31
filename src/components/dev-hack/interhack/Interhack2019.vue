@@ -18,14 +18,14 @@
       commodo elit at imperdiet dui. Facilisis volutpat est velit egestas dui id
       ornare arcu.
     </p>
-    <custom-transition type="bottom" class="mt-10 flex justify-between">
+    <custom-transition type="bottom" class="mt-8 flex justify-between">
       <Button
         link="https://interhack.xyz/2019/"
         theme="interhack"
         message="Visitar site Interhack 2019"
         class="mx-2"
       >
-        Site de divugação
+        Site de divulgação
       </Button>
       <Button
         link="https://www.instagram.com/p/B4qNCJUhsoZ/"

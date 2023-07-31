@@ -12,7 +12,7 @@
             alt="Logo do USPCodeLab"
             class="h-16"
           >
-          <p class="text-ucl-white select-none leading-normal mb-4">
+          <p class="text-ucl-white select-none font-thin leading-normal mb-4">
             Estimulando a inovação tecnológica na USP
           </p>
         </a>
@@ -22,7 +22,7 @@
         <div class="w-full">
           <p class="leading-normal mb-4">Siga-nos nas redes sociais!</p>
         </div>
-        <div class="flex flex-wrap align-center justify-center">
+        <div class="flex flex-wrap items-center justify-center">
           <a v-for="sm in socialMedias" :key="sm.iconName" :href="sm.url">
             <font-awesome-icon
               :icon="{ prefix: sm.iconPrefix, iconName: sm.iconName }"

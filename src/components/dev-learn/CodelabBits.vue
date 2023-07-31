@@ -1,5 +1,5 @@
 <template>
-  <section id="bits" class="pb-20 text-center">
+  <section id="bits" class="md:mb-20 text-center">
     <div class="mb-10 md:mb-20 tracking-wide py-20 bg-ucl-black">
       <custom-transition type="fade">
         <p class="text-ucl-orange mb-8 text-center text-5xl font-pixeloid">
@@ -23,8 +23,8 @@
       <div
         v-for="(media, i) in medias"
         :key="media.title"
-        :class="{ 'flex-row-reverse': i % 2 }"
-        class="flex flex-wrap justify-between mb-20 rounded shadow-md md:shadow-none pb-10 mx-2 md:pb-0 pt-5 md:pt-5 px-10 md:px-0"
+        :class="{ 'md:flex-row-reverse': i % 2 }"
+        class="flex flex-wrap flex-col md:flex-row justify-between mb-12 rounded shadow-md md:shadow-none pb-10 mx-4 md:mx-0 md:pb-0 pt-5 md:pt-5 px-10 md:px-0"
       >
         <div class="text-center md:text-left w-full md:w-9/20 mb-4 md:mb-0">
           <custom-transition :type="i % 2 ? 'right' : 'left'">
@@ -47,12 +47,12 @@
               {{ media.title }}
             </h1>
           </custom-transition>
-          <custom-transition type="fade">
-            <span class="text-grey-darker lg:text-xs">
+          <custom-transition class="md:mt-3" type="fade">
+            <span class="text-grey-darker md:text-xs">
               {{ media.description }}
             </span>
           </custom-transition>
-          <custom-transition type="fade">
+          <custom-transition class="hidden md:block" type="fade">
             <div class="mt-4">
               <Button :link="media.icon.url" :theme="media.title">
                 Acessar
@@ -75,6 +75,13 @@
             >
           </custom-transition>
         </a>
+          <custom-transition class="md:hidden" type="fade">
+            <div class="mt-4">
+              <Button :link="media.icon.url" :theme="media.title">
+                Acessar
+              </Button>
+            </div>
+          </custom-transition>
       </div>
     </div>
   </section>

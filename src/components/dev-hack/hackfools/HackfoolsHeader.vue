@@ -50,7 +50,7 @@
   }
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  // background-attachment: fixed;
 }
 
 .hero-container {

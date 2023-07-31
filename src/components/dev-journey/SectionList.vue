@@ -7,14 +7,10 @@
 </template>
 
 <script>
-import Card from "@/components/dev-journey/Card";
-import CardFull from "@/components/dev-journey/CardFull";
 import JourneySection from "@/components/dev-journey/JourneySection";
 
 export default {
   components: {
-    Card,
-    CardFull,
     JourneySection,
   },
   props: {

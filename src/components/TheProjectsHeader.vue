@@ -1,7 +1,9 @@
 <template>
   <header
     :style="{ background: themeObj.bgColor }"
-    class="md:pt-16 z-20 text-ucl-white h-screen flex flex-wrap"
+    class="z-n-10 text-ucl-white h-screen flex flex-wrap overflow-hidden md:pt-16"
+    style="position: relative"
+    id="header"
   >
     <div id="bubbleCounter" />
     <div id="bubbles-container" class="relative overflow-hidden flex w-full">
@@ -9,13 +11,13 @@
         <h1
           id="title"
           :style="{ color: themeObj.titleColor }"
-          class="text-header font-bold text-center tracking-wide z-10"
+          class="text-header font-bold text-center tracking-wide"
         >
           {{ title }}
         </h1>
       </div>
     </div>
-    <span id="arrow" class="absolute md:hidden">
+    <span id="arrow" class="absolute md:hidden z-40">
       <div
         v-scroll-to="'#body'"
         class="flex items-center flex-no-shrink mr-4 cursor-pointer"
@@ -24,7 +26,7 @@
           id="arrow-icon"
           :icon="{ prefix: 'fas', iconName: 'arrow-down' }"
           aria-labelledby="arrowDown"
-          title="Flecha para indicar mais conteúdo"
+          title="Mais conteudo"
         />
       </div>
     </span>
@@ -75,7 +77,9 @@ export default {
     },
   },
   mounted() {
-    let numBubbles = 20;
+    let isMobile = this.$parent.$parent.isMobile();
+    let numBubbles = isMobile ? 10 : 20;
+    let winBubbles = isMobile ? 40 : 120;
     let poppedBubbles = 0;
     let minSize = 10;
     let maxSize = 35;
@@ -83,6 +87,7 @@ export default {
     let bubbleCounter = this.$el.querySelector("#bubbleCounter");
     let title = this.$el.querySelector("#title");
     let themeObj = this.themeObj;
+    let maxSafeZIndex = 35;
 
     if (!themeObj.bubbles) return;
 
@@ -103,7 +108,7 @@ export default {
       let color = getColor();
       let bubble = document.createElement("span");
 
-      bubble.setAttribute("id", "bubble");
+      bubble.setAttribute("class", "bubble");
       bubble.setAttribute(
         "style",
         "width: " +
@@ -181,7 +186,7 @@ export default {
     }
 
     function startBubblesWin() {
-      numBubbles = 120;
+      numBubbles = winBubbles;
       let countBubbles = 0;
 
       function startBubble() {
@@ -199,8 +204,10 @@ export default {
       let location = getBubbleLocation();
       let bubble = document.createElement("span");
       let color = getColorWin();
-      let time = getTime();
-      bubble.setAttribute("id", "winBubble");
+      let time = getTime(size);
+      let zIndex = getZIndex(size);
+
+      bubble.setAttribute("class", "winBubble");
       bubble.setAttribute(
         "style",
         "width: " +
@@ -211,10 +218,11 @@ export default {
           location +
           "%; background: " +
           color +
-          ";" +
-          "animation-duration: " +
+          "; animation-duration: " +
           time +
-          "s ;"
+          "s ; z-index: " +
+          zIndex +
+          ";"
       );
       container.appendChild(bubble);
     }
@@ -225,23 +233,24 @@ export default {
       return colors[index];
     }
 
-    function getTime() {
-      return Math.floor(Math.random() * 4) + 1;
+    function getTime(size) {
+      return (maxSize/size) * Math.random() + 1.5;
+    }
+
+    function getZIndex(size) {
+      return Math.min(maxSafeZIndex, size);
     }
   },
 };
 </script>
 
 <style lang="scss">
-body,
-html {
-  overflow-x: hidden;
-}
 
 // WIN GAME
 
 #title {
   position: absolute;
+  z-index: 39;
 }
 
 @keyframes anticipate {
@@ -264,7 +273,9 @@ html {
   }
 }
 
-// ARROW
+// ARROW FOR MOBILE
+
+/*! purgecss start ignore */
 
 #arrow {
   left: 50%;
@@ -289,12 +300,14 @@ html {
   }
 }
 
+/*! purgecss end ignore */
+
 // BUBBLES
 
 $background: #ff6900;
 $bubbles: lighten($background, 20%);
 
-#bubble {
+.bubble {
   display: block;
   position: absolute;
   border-radius: 50%;
@@ -302,7 +315,7 @@ $bubbles: lighten($background, 20%);
   animation: rise 6s ease-in infinite;
 }
 
-#winBubble {
+.winBubble {
   display: block;
   position: absolute;
   border-radius: 50%;
@@ -310,7 +323,7 @@ $bubbles: lighten($background, 20%);
   animation: rise ease-in infinite;
 }
 
-#bubble::before {
+.bubble::before {
   // Increase clickable area
   content: "";
   width: 300%;
@@ -319,7 +332,7 @@ $bubbles: lighten($background, 20%);
   transform: translate(-33.444%, -33.444%);
 }
 
-#bubble:hover {
+.bubble:hover {
   cursor: pointer;
 }
 
@@ -346,7 +359,7 @@ $bubbles: lighten($background, 20%);
 
 #waves {
   position: absolute;
-  top: 100%;
+  bottom: 0;
   width: 100vw;
 }
 
@@ -363,7 +376,7 @@ $bubbles: lighten($background, 20%);
 
 #waves .wave.wave-one {
   animation: wave-one 30s linear infinite;
-  z-index: 4;
+  z-index: 44;
   bottom: 0;
 }
 
@@ -371,21 +384,21 @@ $bubbles: lighten($background, 20%);
   animation: wave-two 15s -5s linear infinite;
   bottom: 10px;
   opacity: 0.5;
-  z-index: 3;
+  z-index: 43;
 }
 
 #waves .wave.wave-three {
   animation: wave-one 30s -2s linear infinite;
   bottom: 15px;
   opacity: 0.2;
-  z-index: 2;
+  z-index: 42;
 }
 
 #waves .wave.wave-four {
   animation: wave-two 5s -5s linear infinite;
   bottom: 20px;
   opacity: 0.7;
-  z-index: 1;
+  z-index: 41;
 }
 
 @keyframes wave-one {

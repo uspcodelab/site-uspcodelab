@@ -6,7 +6,7 @@
     />
     <mobile-menu v-else :links="this.$parent.getNavLinks()" />
     <main class="bg-ucl-white text-ucl-black">
-      <the-projects-header :title="title" />
+      <the-projects-header :title="title"/>
       <div id="body">
         <hackathons-header />
         <interhack />
@@ -61,13 +61,5 @@ export default {
       title: this.$parent.isMobile() ? "Dev .hack( )" : "Dev.hack( )",
     };
   },
-  computed: {},
 };
 </script>
-
-<style scoped lang="scss">
-#headers-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-</style>

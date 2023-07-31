@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="nav fixed pin-t w-screen flex flex-row flex-wrap items-center justify-start px-3 py-2"
+    class="nav fixed pin-t w-screen flex flex-row flex-wrap items-center justify-start px-3 py-2 z-50"
   >
     <div
       v-scroll-to="'#header'"
@@ -42,7 +42,6 @@ export default {
   background-color: $ucl-light;
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
   min-height: 4rem;
-  z-index: 10;
 }
 
 img {
