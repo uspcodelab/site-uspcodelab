@@ -11,6 +11,9 @@ Vue.use(VueScrollTo);
 // FontsAwesome
 import { library } from "@fortawesome/fontawesome-svg-core";
 
+// Service Worker config
+import "./registerServiceWorker";
+
 import {
   faBars,
   faEnvelope,
