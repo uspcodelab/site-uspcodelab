@@ -27,8 +27,8 @@ export default {
 };
 </script>
 
-<style>
-@import "assets/styles/tailwind.postcss";
+<style lang="scss">
+@import "assets/styles/tailwind";
 
 body {
   font-family: $font-family-base !important;
