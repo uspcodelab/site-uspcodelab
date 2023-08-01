@@ -16,7 +16,7 @@
 export default {
   props: {
     direction: {
-      direction: Boolean,
+      type: Boolean,
       default() {
         return false;
       },
