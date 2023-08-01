@@ -29,6 +29,7 @@
         @click="nextState"
       >
       <img
+        v-if="mounted"
         :class="{ 'z-10': state == 1 }"
         src="@/assets/logos/ucl-icmc.svg"
         class="w-4/5 md:w-3/10 rounded-full cursor-pointer"
@@ -37,6 +38,7 @@
         @click="nextState"
       >
       <img
+        v-if="mounted"
         :class="{ 'z-10': state == 2 }"
         src="@/assets/logos/ucl-each.svg"
         class="w-4/5 md:w-3/10 rounded-full cursor-pointer"
@@ -45,6 +47,7 @@
         @click="nextState"
       >
       <img
+        v-if="mounted"
         :class="{ 'z-10': state == ucl.length - 1 }"
         src="@/assets/logos/ucl-pride.svg"
         class="w-4/5 md:w-3/10 height: 70% rounded-full cursor-pointer"
@@ -111,9 +114,11 @@ export default {
       counter: 0,
       clicksUntilPride: 20,
       randomPet: 1,
+      mounted: false,
     };
   },
   mounted() {
+    this.mounted = true;
     this.getNewPet();
   },
   methods: {
