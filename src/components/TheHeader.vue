@@ -21,37 +21,44 @@
       class="w-full md:w-1/2 flex items-end md:items-center justify-center md:pb-4 state-fader pt-24 md:pt-0"
     >
       <img
-        :class="{ 'z-10': state == 0 }"
+        :class="[
+          { 'z-10': state == 0 },
+          'absolute w-4/5 md:w-3/10 rounded-full cursor-pointer',
+        ]"
         src="@/assets/logos/ucl-butanta.svg"
-        class="w-4/5 md:w-3/10 rounded-full cursor-pointer"
-        style="position: absolute"
         alt="Logo do USPCodeLab Butantã"
         @click="nextState"
       >
       <img
         v-if="mounted"
-        :class="{ 'z-10': state == 1 }"
+        :class="[
+          { 'z-10': state == 1 },
+          'absolute w-4/5 md:w-3/10 rounded-full cursor-pointer',
+        ]"
         src="@/assets/logos/ucl-icmc.svg"
-        class="w-4/5 md:w-3/10 rounded-full cursor-pointer"
-        style="position: absolute"
+        class="absolute w-4/5 md:w-3/10 rounded-full cursor-pointer"
         alt="Logo do USPCodeLab ICMC"
         @click="nextState"
       >
       <img
         v-if="mounted"
-        :class="{ 'z-10': state == 2 }"
+        :class="[
+          { 'z-10': state == 2 },
+          'absolute w-4/5 md:w-3/10 rounded-full cursor-pointer',
+        ]"
         src="@/assets/logos/ucl-each.svg"
-        class="w-4/5 md:w-3/10 rounded-full cursor-pointer"
-        style="position: absolute"
+        class="absolute w-4/5 md:w-3/10 rounded-full cursor-pointer"
         alt="Logo do USPCodeLab EACH"
         @click="nextState"
       >
       <img
         v-if="mounted"
-        :class="{ 'z-10': state == ucl.length - 1 }"
+        :class="[
+          { 'z-10': state == ucl.length - 1 },
+          'absolute w-4/5 md:w-3/10 rounded-full cursor-pointer',
+        ]"
         src="@/assets/logos/ucl-pride.svg"
-        class="w-4/5 md:w-3/10 height: 70% rounded-full cursor-pointer"
-        style="position: absolute"
+        class="absolute w-4/5 md:w-3/10 height: 70% rounded-full cursor-pointer"
         alt="Logo do USPCodeLab Pride"
         @click="nextState"
       >
@@ -76,25 +83,20 @@
           />
         </b>
       </p>
+      <image-hideout dir-name="pets">
+        <font-awesome-icon
+          id="pets"
+          :icon="{ prefix: 'fas', iconName: 'cat' }"
+          size="3x"
+          aria-labelledby="menuOpenBtn"
+        />
+      </image-hideout>
     </div>
-    <a
-      :href="'/pets/' + randomPet + '.jpg'"
-      class="hidden md:block"
-      target="_blank"
-      @click="getNewPet()"
-    >
-      <font-awesome-icon
-        id="pets"
-        :icon="{ prefix: 'fas', iconName: 'cat' }"
-        class="text-4xl"
-        size="lg"
-        aria-labelledby="menuOpenBtn"
-      />
-    </a>
   </header>
 </template>
 
 <script>
+
 export default {
   data() {
     return {
@@ -113,13 +115,11 @@ export default {
       state: 0,
       counter: 0,
       clicksUntilPride: 20,
-      randomPet: 1,
       mounted: false,
     };
   },
   mounted() {
     this.mounted = true;
-    this.getNewPet();
   },
   methods: {
     nextState() {
@@ -129,9 +129,6 @@ export default {
         return;
       }
       this.state = (this.state + 1) % (this.ucl.length - 1);
-    },
-    getNewPet() {
-      this.randomPet = (Date.now() % 17) + 1;
     },
   },
 };

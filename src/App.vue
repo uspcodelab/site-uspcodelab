@@ -37,7 +37,6 @@ body {
 
 html {
   font-size: 14px;
-  overflow-x: hidden !important;
 }
 
 .page {
@@ -83,7 +82,7 @@ html {
 }
 
 .typed {
-  color: white !important;
+  color: white;
 }
 
 /*! purgecss end ignore */

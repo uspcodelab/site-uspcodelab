@@ -64,9 +64,13 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 // CUSTOM
 
-// transitions
-import CustomTransition from "./components/CustomTransition";
+// custom transitions
+import CustomTransition from "./plugins/CustomTransition";
 Vue.component("custom-transition", CustomTransition);
+
+// custom hideouts
+import ImageHideout from "./plugins/ImageHideout.vue";
+Vue.component("image-hideout", ImageHideout);
 
 // vue-typer
 import { VueTyper } from "vue-typer";
