@@ -1,5 +1,5 @@
 <template>
-  <section id="bits" class="md:mb-20 text-center">
+  <section id="bits" class="md:pb-20 text-center">
     <div class="mb-10 md:mb-20 tracking-wide py-20 bg-ucl-black">
       <custom-transition type="fade">
         <p class="text-ucl-orange mb-8 text-center text-5xl font-pixeloid">
