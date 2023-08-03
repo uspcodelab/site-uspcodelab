@@ -51,7 +51,13 @@ export default {
     };
   },
   mounted() {
-    this.getImagesPaths(require.context('../assets/secrets/', true, /\.(gif|jpe?g|tiff?|png|webp|bmp)$/i));
+    this.getImagesPaths(
+      require.context(
+        "../assets/secrets/",
+        true,
+        /\.(gif|jpe?g|tiff?|png|webp|bmp)$/i
+      )
+    );
   },
   methods: {
     getImagesPaths(r) {
@@ -75,7 +81,7 @@ export default {
       }, this.timeoutMs);
     },
     getRandomImage() {
-      this.randomImage = Date.now() % this.imagesPaths.length;
+      this.randomImage = Math.floor(Math.random() * this.imagesPaths.length);
     },
     hideImage() {
       if (this.imageTimeoutID) {
