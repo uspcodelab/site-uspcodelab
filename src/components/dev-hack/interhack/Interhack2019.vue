@@ -3,7 +3,7 @@
     <custom-transition type="fade">
       <div class="flex flex-col">
         <span class="flex font-inter font-bold uppercase pl-2 -mt-20 -mb-10">
-          <img class="flex" src="@/assets/dev-hack/Interhack.svg" >
+          <img class="flex" src="@/assets/dev-hack/Interhack.svg" />
         </span>
       </div>
     </custom-transition>

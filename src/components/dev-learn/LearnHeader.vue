@@ -28,17 +28,17 @@
             de backend</span
           >. É pensando nessa diversidade que costumeiramente realizamos um
           curso de desenvolvimento web básico em todo início de ano, o<b
-          ><span
-            v-scroll-to="'#webdev'"
-            class="text-ucl-orange cursor-pointer"
-          >
-            Webdev</span
-          ></b
+            ><span
+              v-scroll-to="'#webdev'"
+              class="text-ucl-orange cursor-pointer"
+            >
+              Webdev</span
+            ></b
           >, além de estarmos adentrando nas redes sociais com o
           <b
-          ><span v-scroll-to="'#bits'" class="text-instagram cursor-pointer"
-          >Codelab Bits</span
-          ></b
+            ><span v-scroll-to="'#bits'" class="text-instagram cursor-pointer"
+              >Codelab Bits</span
+            ></b
           >, onde facilmente se pode encontrar conteúdos
           <b>diversificados e mais avançados.</b>
         </p>

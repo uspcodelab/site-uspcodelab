@@ -11,7 +11,7 @@
             src="@/assets/logos/ucl-logo-wb-alpha.svg"
             alt="Logo do USPCodeLab"
             class="h-16"
-          >
+          />
           <p class="text-ucl-white select-none font-thin leading-normal mb-4">
             Estimulando a inovação tecnológica na USP
           </p>

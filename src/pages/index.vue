@@ -130,6 +130,7 @@ export default {
     };
   },
   mounted() {
+    /* eslint-disable no-console */
     console.log(
       "%cBem-vindo(a) ao site do %cUSPCodeLab %cButantã!",
       "font-size:14px; font-weight: bold;",

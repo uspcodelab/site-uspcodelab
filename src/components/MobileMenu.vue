@@ -79,7 +79,7 @@ export default {
       this.toggled = !this.toggled;
       this.btnText = this.toggled ? "FECHAR" : "MENU";
     },
-    handleMobileMenuScroll: function (evt, el) {
+    handleMobileMenuScroll: function () {
       if (window.scrollY > 60) {
         if (this.btnState == true) this.btnState = false;
       } else {

@@ -30,7 +30,7 @@
         src="@/assets/logos/ucl-butanta.svg"
         alt="Logo do USPCodeLab Butantã"
         @click="nextState"
-      >
+      />
       <img
         v-if="mounted"
         :class="[
@@ -41,7 +41,7 @@
         class="absolute w-4/5 md:w-3/10 rounded-full cursor-pointer"
         alt="Logo do USPCodeLab ICMC"
         @click="nextState"
-      >
+      />
       <img
         v-if="mounted"
         :class="[
@@ -52,7 +52,7 @@
         class="absolute w-4/5 md:w-3/10 rounded-full cursor-pointer"
         alt="Logo do USPCodeLab EACH"
         @click="nextState"
-      >
+      />
       <img
         v-if="mounted"
         :class="[
@@ -63,7 +63,7 @@
         class="absolute w-4/5 md:w-3/10 height: 70% rounded-full cursor-pointer"
         alt="Logo do USPCodeLab Pride"
         @click="nextState"
-      >
+      />
     </div>
     <div
       class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left justify-center px-4 md:px-12 mt-10 md:mt-0"

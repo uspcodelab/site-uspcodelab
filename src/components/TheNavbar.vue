@@ -10,7 +10,7 @@
         src="@/assets/logos/ucl-logo-colored-alpha.svg"
         alt="USPCodeLab"
         class="h-10"
-      >
+      />
     </div>
     <router-link
       v-scroll-to="'#header'"

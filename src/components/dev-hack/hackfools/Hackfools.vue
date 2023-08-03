@@ -8,14 +8,14 @@
         <h1 class="md:text-left mb-4">Edições Anteriores</h1>
       </custom-transition>
       <div
-        v-for="(hfools, i) in hackathons"
+        v-for="hfools in hackathons"
         :key="hfools.title"
         class="flex flex-wrap mx-4 md:mx-0 md:justify-between justify-center items-center mb-12 rounded shadow-md md:shadow-none pb-10 pt-10 md:pb-0 pt-5 md:pt-5 px-10 md:px-0"
       >
         <span class="w-1/2 h-1/2 md:w-1/4 md:h-1/4">
           <custom-transition>
             <a :href="hfools.url" target="_blank">
-              <img :src="hfools.src" class="rounded-full" >
+              <img :src="hfools.src" class="rounded-full" />
             </a>
           </custom-transition>
         </span>

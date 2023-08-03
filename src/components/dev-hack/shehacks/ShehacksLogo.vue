@@ -4,7 +4,7 @@
       id="logo-wrapper"
       class="flex flex-col items-center rounded px-10 py-6"
     >
-      <img src="@/assets/dev-hack/Shehacks.svg" >
+      <img src="@/assets/dev-hack/Shehacks.svg" />
       <div class="text-white mt-4 text-lg">
         <span class="text-xl"><b>She</b>Hacks </span>
       </div>

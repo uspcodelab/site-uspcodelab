@@ -3,7 +3,7 @@
     <custom-transition type="fade">
       <div class="flex flex-col">
         <span class="flex font-inter font-bold uppercase pl-2">
-          <img class="flex h-32" src="@/assets/dev-hack/shehacks2021.svg" >
+          <img class="flex h-32" src="@/assets/dev-hack/shehacks2021.svg" />
         </span>
       </div>
     </custom-transition>

@@ -11,7 +11,7 @@
           src="@/assets/logos/cli.svg"
           alt="Logo do HackathonUSP"
           class="max-h-half-screen pb-5"
-        >
+        />
       </div>
       <div
         class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left justify-center"

@@ -72,7 +72,7 @@
                   media.titleColor +
                   ' -4px 4px, rgba(149, 157, 165, 0.2) 0px 8px 24px',
               }"
-            >
+            />
           </custom-transition>
         </a>
         <custom-transition class="md:hidden" type="fade">

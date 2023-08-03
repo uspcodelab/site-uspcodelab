@@ -15,7 +15,7 @@
           educacional com <b>6 iniciativas</b> que visa complementar a formação
           dos estudantes para que eles se tornem<span class="text-ucl-orange">
             engenheiros de software</span
-            >
+          >
           capazes de desenvolverem sistemas reais. Abaixo, você pode se
           aventurar por todas elas!
         </p>
@@ -42,7 +42,6 @@ export default {
   },
   mounted() {
     let numBubbles = 20;
-    let poppedBubbles = 0;
     let minSize = 20;
     let maxSize = 60;
     let container = this.$el.querySelector("#bubbles-container-menu");

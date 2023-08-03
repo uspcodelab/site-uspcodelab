@@ -5,7 +5,7 @@
       class="flex flex-col py-10 mx-4 md:mx-0 shadow-md items-center my-6 md:my-20 lg:my-24 md:flex-row md:justify-center md:shadow-none bg-section-bg md:bg-transparent rounded-lg"
     >
       <div class="w-2/3">
-        <img :src="data.imgUrl" :alt="data.imgAlt" >
+        <img :src="data.imgUrl" :alt="data.imgAlt" />
       </div>
 
       <div
@@ -26,7 +26,7 @@
       class="flex flex-col py-10 mx-4 md:mx-0 shadow-md items-center my-6 md:my-20 lg:my-24 md:flex-row-reverse md:justify-center md:shadow-none bg-section-bg md:bg-transparent rounded-lg"
     >
       <div class="w-2/3">
-        <img :src="data.imgUrl" :alt="data.imgAlt" >
+        <img :src="data.imgUrl" :alt="data.imgAlt" />
       </div>
 
       <div class="flex flex-col items-center md:items-start md:mr-24">

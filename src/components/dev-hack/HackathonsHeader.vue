@@ -23,7 +23,7 @@
           tecnologia do Brasil.
           <span class="text-ucl-orange"
             >Com anos e mais anos de experiência, esses eventos estão
-          sangue</span
+            sangue</span
           >.
         </p>
         <p class="mb-2">
