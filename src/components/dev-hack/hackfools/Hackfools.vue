@@ -1,5 +1,5 @@
 <template>
-  <section id="hackfools" class="text-center">
+  <section id="hackfools" class="text-center md:pb-16">
     <div class="mb-10 tracking-wide">
       <hackfools-header />
     </div>
