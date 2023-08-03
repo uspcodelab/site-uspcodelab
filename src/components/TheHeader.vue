@@ -150,7 +150,7 @@ export default {
 
 .header-pride {
   background: linear-gradient(
-    45deg,
+    225deg,
     rgba(255, 0, 0, 1) 0%,
     rgba(255, 154, 0, 1) 11%,
     rgba(208, 222, 33, 1) 22%,
