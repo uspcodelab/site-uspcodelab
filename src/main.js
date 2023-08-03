@@ -76,10 +76,6 @@ Vue.component("image-hideout", ImageHideout);
 import { VueTyper } from "vue-typer";
 Vue.component("vue-typer", VueTyper);
 
-// vue-carousel
-import VueCarousel from "vue-carousel";
-Vue.use(VueCarousel);
-
 // v-scroll-lock
 import VScrollLock from "v-scroll-lock";
 Vue.use(VScrollLock);
