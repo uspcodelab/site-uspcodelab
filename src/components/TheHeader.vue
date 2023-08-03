@@ -3,18 +3,20 @@
     id="header"
     :class="[
       uclClass[state],
-      'h-screen',
-      'text-ucl-white',
-      'flex',
-      'flex-wrap',
-      'flex-col',
-      'md:flex-row-reverse',
-      'justify-center',
-      'items-center',
-      'px-3',
-      'pt-mobile',
-      'md:pt-navbar',
-      'md:pb-5',
+      `h-screen
+      text-ucl-white
+      flex
+      flex-wrap
+      flex-col
+      md:flex-row-reverse
+      justify-center
+      items-center
+      px-3
+      pt-mobile
+      md:pt-navbar
+      md:pb-5
+      relative
+      `,
     ]"
   >
     <div
