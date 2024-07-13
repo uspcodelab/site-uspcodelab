@@ -106,7 +106,7 @@ export default {
           title: "Youtube",
           titleColor: "#ff0000",
           description: `
-            Desde 2019, administramos o canal do YouTube USPCodelab, onde postamos vídeos educativos sobre computação. Estes, que geralmente são produzidos pelos membros, abrangem desde cursos introdutórios até técnicas de programação mais avançadas.`,
+            Desde 2019, administramos o canal do YouTube USPCodelab, onde postamos vídeos educativos sobre computação. Estes, que em geral são produzidos pelos participantes do grupo, abrangem desde cursos introdutórios até técnicas de programação mais avançadas.`,
           src: YoutubeImage,
           icon: socialMedias.find((sm) => sm.iconName === "youtube"),
         },
@@ -114,8 +114,7 @@ export default {
           title: "Instagram",
           titleColor: "#ff34d2",
           description: `
-            Ultimamente, não temos utilizado o Instagram tanto quanto em
-            alguns outros momentos. Entretanto, ainda serve como um local de divulgação conteúdos e eventos do Codelab Butantã.
+            No instagram do USPCodelab, divulgamos eventos, novidades e outras informações importantes sobre o grupo. Além disso, são publicadas oportunidades e dicas técnicas relevantes para o dia a dia de um engenheiro de software.
             `,
           src: InstagramImage,
           icon: socialMedias.find((sm) => sm.iconName === "instagram"),

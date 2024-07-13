@@ -8,10 +8,7 @@
       </custom-transition>
       <custom-transition type="top">
         <p class="text-white">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in
-          massa tempor nec feugiat nisl pretium fusce id. Sapien eget mi proin
-          sed libero enim. Urna nunc id cursus
+          De universitários para universitários, este é, ainda hoje, um dos maiores hackathons já organizados no Brasil.
         </p>
       </custom-transition>
     </div>

@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex flex-wrap container md:pt-12 mb-12 md:mb-0 mx-auto px-4 md:px-4 leading-loose"
-  >
+  <div class="flex flex-wrap container md:pt-12 mb-12 md:mb-0 mx-auto px-4 md:px-4 leading-loose">
     <div>
       <custom-transition type="fade">
         <h1 class="pb-4 text-center">
@@ -9,89 +7,48 @@
           <span class="bg-ucl-orange text-white"> Essência. </span>
         </h1>
       </custom-transition>
-      <custom-transition
-        type="fade"
-        class="lg:text-xs text-left text-grey-darker"
-      >
+      <custom-transition type="fade" class="lg:text-xs text-left text-grey-darker">
         <p class="mb-2">
-          Apaixonados por hackathons, foi com a ideia de criar um grupo para a
-          organização deles que os fundadores trouxeram o Codelab ao mundo,
-          <b>sendo uma peça importantíssima para o nosso surgimento.</b> Desde o
-          início, buscamos cultivar a
-          <b> paixão por hackathons entre os membros</b>, que têm se dedicado
-          extensivamente para a organização de alguns dos maiores eventos de
-          tecnologia do Brasil.
-          <span class="text-ucl-orange"
-            >Com anos e mais anos de experiência, esses eventos estão
-            sangue</span
-          >.
+          Em geral, Hackathons são eventos de tecnologia que reúnem pessoas
+          apaixonadas por programação, design e inovação. <b>É um momento de
+            imersão</b>, onde os participantes têm a oportunidade de criar, inovar e
+          aprender através de muita cooperação e trabalho em grupo. Juntos de muita energia, comida, diversão e
+          networking, os
+          participantes se dedicam
+          por horas a fio para desenvolver projetos incríveis, apresentando-os
+          ao final do evento em pitches e concorrendo a prêmios.
         </p>
-        <p class="mb-2">
-          O primeiro de todos — e que desencadeou uma sucessão incrível de
-          tantos outros — foi o HackathonIME, que ocorreu em 2015 para um
-          público restrito de 28 pessoas do Instituto de Matemática e
-          Estatística da USP. Ainda estávamos começando. Evoluindo ano a ano,
-          chegamos até 2019 com o Interhack, um evento incrível que suportou
-          <b>
-            112 participantes no que viria ser um dos maiores hackathons já
-            feitos no Brasil.</b
-          >
-        </p>
-        <p class="mb-2">
-          Com a pandemia, a organização dos hackathons que amamos ficou
-          impossibilitada e, então, agora pretendemos voltar com tudo. Por isso,
-          em 2023, teremos 3 maravilhosos hackathons:
-          <span
-            v-scroll-to="'#' + hackathons.Interhack.title"
-            class="text-inter-red cursor-pointer"
-          >
-            Interhack</span
-          >,
-          <span
-            v-scroll-to="'#' + hackathons.Shehacks.title"
-            class="text-sh-blue cursor-pointer"
-          >
+        <p>
+          <span class="text-ucl-orange">Com anos e mais anos de experiência, esses eventos estão
+            sangue do USPCodelab</span>, afinal foi com a organização de hackathons que
+          o grupo nasceu e se consolidou. <b>É a nossa essência</b>. A seguir, estão
+          alguns dos hackathons que organizamos nos últimos anos, em que se destacam
+          <span v-scroll-to="'#' + hackathons.Interhack.title" class="text-inter-red cursor-pointer">
+            Interhack</span>,
+          <span v-scroll-to="'#' + hackathons.Shehacks.title" class="text-sh-blue cursor-pointer">
             Shehacks
           </span>
           e
-          <span
-            v-scroll-to="'#' + hackathons.Hackfools.title"
-            class="text-ucl-orange cursor-pointer"
-          >
-            Hackfools</span
-          >.
+          <span v-scroll-to="'#' + hackathons.Hackfools.title" class="text-ucl-orange cursor-pointer">
+            Hackfools</span>.
         </p>
       </custom-transition>
     </div>
-    <div
-      class="hidden md:flex flex-wrap flex-col md:flex-row justify-between items-center md:mt-5"
-    >
+    <div class="hidden md:flex flex-wrap flex-col md:flex-row justify-between items-center md:mt-5">
       <div class="w-1/2 md:w-1/4">
-        <div
-          v-scroll-to="'#' + hackathons.Interhack.title"
-          :alt="hackathons.Hackfools.alt"
-          class="cursor-pointer"
-        >
+        <div v-scroll-to="'#' + hackathons.Interhack.title" :alt="hackathons.Hackfools.alt" class="cursor-pointer">
           <interhack class="logo-hack" />
         </div>
       </div>
 
       <div class="w-1/2 md:w-1/4">
-        <div
-          v-scroll-to="'#' + hackathons.Shehacks.title"
-          :alt="hackathons.Shehacks.alt"
-          class="cursor-pointer"
-        >
+        <div v-scroll-to="'#' + hackathons.Shehacks.title" :alt="hackathons.Shehacks.alt" class="cursor-pointer">
           <shehacks class="logo-hack" />
         </div>
       </div>
 
       <div class="w-1/2 md:w-1/4 mb-10 md:mb-0">
-        <div
-          v-scroll-to="'#' + hackathons.Hackfools.title"
-          :alt="hackathons.Interhack.alt"
-          class="cursor-pointer"
-        >
+        <div v-scroll-to="'#' + hackathons.Hackfools.title" :alt="hackathons.Interhack.alt" class="cursor-pointer">
           <hackfools class="logo-hack" />
         </div>
       </div>

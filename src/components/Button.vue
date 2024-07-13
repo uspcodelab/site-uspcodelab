@@ -9,7 +9,12 @@
       />
     </button>
   </a>
-  <router-link v-scroll-to="'#header'" v-else :to="link">
+  <router-link v-else-if="isId"  v-scroll-to="link" to="">
+    <button :class="themeClass" @click="onClickFunction">
+      <slot />
+    </button>
+  </router-link>
+  <router-link v-else v-scroll-to="'#header'" :to="link">
     <button :class="themeClass" @click="onClickFunction">
       <slot />
     </button>
@@ -54,6 +59,9 @@ export default {
   computed: {
     isOuterUrl() {
       return !this.link ? false : this.link.startsWith("http");
+    },
+    isId() {
+      return !this.link ? false : this.link.startsWith("#");
     },
     themeClass() {
       const selectedTheme = this.themes[this.theme] || this.themes["default"];

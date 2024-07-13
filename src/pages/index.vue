@@ -8,11 +8,7 @@
     <the-header />
     <main>
       <about-us />
-      <reunion-call
-        :days="reunionDays"
-        :time="reunionTime"
-        :local="reunionLocal"
-      />
+      <reunion-call />
       <about-dev-journey :dev-journey-stages="devJourneyStages" />
     </main>
     <the-footer :social-medias="this.$parent.getSocialMedias()" />
@@ -66,9 +62,6 @@ export default {
   },
   data() {
     return {
-      reunionDays: "todas as sextas-feiras",
-      reunionTime: "13h00",
-      reunionLocal: "sala B6 do IME-USP",
       devJourneyStages: [
         {
           name: "dev.learn( )",

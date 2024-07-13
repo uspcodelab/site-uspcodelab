@@ -10,12 +10,10 @@
         <custom-transition type="top">
           <div class="mx-2 leading-loose text-grey-darker">
             Anualmente, o USPCodelab promove o <b>Webdev</b>, um curso
-            <span class="text-ucl-orange"
-              >introdutório de Desenvolvimento Web lecionado pelos próprios
-              membros do grupo</span
-            >. É voltado para
-            <b>iniciantes e para aqueles mais avançados</b> que se interessam
-            por aprender Desenvolvimento Web. O curso está sempre aberto a todos
+            <span class="text-ucl-orange">introdutório de Desenvolvimento Web lecionado pelos próprios
+              membros do grupo</span>. É voltado para
+            <b>iniciantes</b> , mas não é incomum que estudantes mais avançados se interessem. O curso está sempre
+            aberto a todos
             os alunos da Universidade de São Paulo. Geralmente, possui duração
             de 10 aulas, que devem ocorrer semanalmente ao longo do
             <b>primeiro semestre.</b>
@@ -35,12 +33,7 @@
       </p>
 
       <div class="flex justify-center items-center mx-10 max-w-xl">
-        <custom-transition
-          v-for="media in techs"
-          :key="media.title"
-          class="mx-2 md:mx-10 mb-20"
-          type="fade"
-        >
+        <custom-transition v-for="media in techs" :key="media.title" class="mx-2 md:mx-10 mb-20" type="fade">
           <a :href="media.url">
             <img :src="media.src" />
           </a>
@@ -88,7 +81,7 @@ export default {
 </script>
 
 <style scoped>
-p > span {
+p>span {
   margin: -5.3px;
 }
 

@@ -36,7 +36,7 @@
 
   /* Add a slight overlay on our image */
   &:after {
-    background-color: rgba(133, 213, 211, 0.95) !important;
+    background-color: rgba(0, 118, 94, 0.95) !important;
     bottom: 0;
     content: "";
     left: -2000%;

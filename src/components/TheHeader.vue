@@ -102,8 +102,8 @@ export default {
   data() {
     return {
       change: [
+        `engenharia de software na USP.`,
         `criatividade na computação.`,
-        `genialidade de seus membros.`,
         `inovação tecnológica na USP.`,
       ],
       ucl: ["Butantã", "ICMC", "EACH", "Pride"],
